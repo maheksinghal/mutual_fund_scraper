@@ -1,6 +1,69 @@
-<h2>Select an AMC</h2>
-<ul>
-  {% for amc in amcs %}
-    <li><a href="/{{ amc }}">{{ amc }}</a></li>
-  {% endfor %}
-</ul>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mutual Fund Holdings</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="p-5">
+    <div class="container">
+        <h2 class="mb-4">Mutual Fund Holdings Viewer</h2>
+
+        <div class="mb-3">
+            <label for="amc">Select AMC:</label>
+            <select id="amc" class="form-select">
+                <option value="">-- Choose AMC --</option>
+                {% for amc in amcs %}
+                    <option value="{{ amc }}">{{ amc }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="scheme">Select Scheme:</label>
+            <select id="scheme" class="form-select" disabled></select>
+        </div>
+
+        <div id="data-container" class="mt-4"></div>
+    </div>
+
+    <script>
+        const amcDropdown = document.getElementById('amc');
+        const schemeDropdown = document.getElementById('scheme');
+        const dataContainer = document.getElementById('data-container');
+
+        amcDropdown.addEventListener('change', () => {
+            const amc = amcDropdown.value;
+            schemeDropdown.innerHTML = '<option>Loading...</option>';
+            schemeDropdown.disabled = true;
+            fetch('/get_schemes', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({ amc })
+            })
+            .then(res => res.json())
+            .then(schemes => {
+                schemeDropdown.innerHTML = '<option value="">-- Choose Scheme --</option>';
+                schemes.forEach(s => {
+                    schemeDropdown.innerHTML += `<option value="${s}">${s}</option>`;
+                });
+                schemeDropdown.disabled = false;
+            });
+        });
+
+        schemeDropdown.addEventListener('change', () => {
+            const amc = amcDropdown.value;
+            const scheme = schemeDropdown.value;
+            dataContainer.innerHTML = 'Loading...';
+            fetch('/get_data', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({ amc, scheme })
+            })
+            .then(res => res.json())
+            .then(data => {
+                dataContainer.innerHTML = data.html;
+            });
+        });
+    </script>
+</body>
+</html>

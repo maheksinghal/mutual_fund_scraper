@@ -8,7 +8,7 @@ from datetime import datetime
 MfNAVChangePeriodType = 365
 
 # ex 10 means script will scrape first 10 AMC
-NUMBER_AMC_TO_SCRAPE = 2
+NUMBER_AMC_TO_SCRAPE = 1000
 
 # Represent month of which MF data will be scrapped
 MF_HOLDING_DATE = "2025-05-31"

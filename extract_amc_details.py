@@ -7,7 +7,9 @@ MfNAVChangePeriodType = 365
 NUMBER_AMC_TO_SCRAPE = 1000
 AMC_RECORD = "amc"
 
-# Automatically find the most recent date with data
+# Shared date for all schemes
+latest_common_date = None
+
 def find_latest_available_date(mf_scheme_id, days_to_check=15):
     for i in range(days_to_check):
         date_to_try = (datetime.today() - timedelta(days=i)).strftime('%Y-%m-%d')
@@ -80,6 +82,7 @@ def create_folder(path):
         print(f"Error creating folder {path}: {e}")
 
 def main():
+    global latest_common_date
     create_folder(AMC_RECORD)
     amc_list = get_amc_list()
     print(f"Pulling data from {len(amc_list)} AMCs")
@@ -95,15 +98,17 @@ def main():
         for mf_scheme in mf_scheme_records:
             mf_scheme_name = mf_scheme["Name"]
             mf_scheme_id = mf_scheme["ID"]
-
             print(f"→ Scheme: {mf_scheme_name}")
-            latest_date = find_latest_available_date(mf_scheme_id)
 
-            if not latest_date:
+            # Only check for the latest date once
+            if not latest_common_date:
+                latest_common_date = find_latest_available_date(mf_scheme_id)
+
+            if not latest_common_date:
                 print(f"No recent data for {mf_scheme_name}")
                 continue
 
-            holdings_records = get_mf_domestic_holdings(mf_scheme_id, latest_date)
+            holdings_records = get_mf_domestic_holdings(mf_scheme_id, latest_common_date)
             if holdings_records:
                 write_data_to_excel(amc_name, mf_scheme_name, holdings_records)
 

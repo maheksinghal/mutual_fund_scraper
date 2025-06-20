@@ -2,6 +2,7 @@ import requests
 import os
 import pandas as pd
 from datetime import datetime, timedelta
+import re
 
 MfNAVChangePeriodType = 365
 NUMBER_AMC_TO_SCRAPE = 1000
@@ -39,12 +40,23 @@ def get_mf_domestic_holdings(mf_scheme_id, mf_holding_date, check_only=False):
         print(f"Error checking scheme {mf_scheme_id}: {e}")
         return [] if check_only else []
 
+
 def write_data_to_excel(mf_bank, mf_scheme_name, holdings_records):
+    # Sanitize scheme name to make it a safe file name
+    safe_scheme_name = re.sub(r'[\\/*?:"<>|]', "_", mf_scheme_name)
+    safe_mf_bank = re.sub(r'[\\/*?:"<>|]', "_", mf_bank)
+
     data_frame = pd.DataFrame(holdings_records)
     date_str = datetime.today().strftime('%Y-%m-%d')
-    file_path = f"{AMC_RECORD}/{mf_bank}/{mf_scheme_name}_{date_str}.csv"
+    folder_path = f"{AMC_RECORD}/{safe_mf_bank}"
+    file_path = f"{folder_path}/{safe_scheme_name}_{date_str}.csv"
+
+    # Ensure directory exists
+    create_folder(folder_path)
+
     data_frame.to_csv(file_path, index=False)
     print(f"Created file: {file_path}")
+
 
 def get_mf_schema_details(mf_id):
     base_url = "https://api.stockedge.com/Api/MfAmcDashboardApi/GetPrimaryMfSchemeListByAmc"

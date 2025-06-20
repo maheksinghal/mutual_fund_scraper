@@ -10,7 +10,7 @@ AMC_RECORD = "amc"
 # Shared date for all schemes
 latest_common_date = None
 
-def find_latest_available_date(mf_scheme_id, days_to_check=15):
+def find_latest_available_date(mf_scheme_id, days_to_check=31):
     for i in range(days_to_check):
         date_to_try = (datetime.today() - timedelta(days=i)).strftime('%Y-%m-%d')
         holdings = get_mf_domestic_holdings(mf_scheme_id, date_to_try, check_only=True)

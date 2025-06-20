@@ -2,8 +2,11 @@ name: Monthly Mutual Fund Scraper
 
 on:
   schedule:
-    - cron: '0 6 * * *'  # Runs every day at 6 AM UTC
-  workflow_dispatch:     # Allows manual run from GitHub
+    - cron: '0 6 * * *'  # Runs daily at 6 AM UTC
+  workflow_dispatch:     # Manual trigger
+
+permissions:
+  contents: write
 
 jobs:
   run-script:
@@ -25,3 +28,11 @@ jobs:
       - name: Run the scraper
         run: |
           python extract_amc_details.py
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add amc/
+          git commit -m "Update scraped data $(date)" || echo "No changes to commit"
+          git push

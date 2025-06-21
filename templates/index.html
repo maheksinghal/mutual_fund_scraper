@@ -3,6 +3,9 @@
 <head>
     <title>Mutual Fund Holdings</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .d-none { display: none !important; }
+    </style>
 </head>
 <body class="p-5">
     <div class="container">
@@ -23,6 +26,20 @@
             <select id="scheme" class="form-select" disabled></select>
         </div>
 
+        <div class="mb-3 d-none" id="controls">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="monthFilter">Filter by Month:</label>
+                    <select id="monthFilter" class="form-select">
+                        <option value="">-- All Months --</option>
+                    </select>
+                </div>
+                <div class="col-md-6 d-flex align-items-end">
+                    <button id="toggleShares" class="btn btn-outline-primary">Toggle Number of Shares</button>
+                </div>
+            </div>
+        </div>
+
         <div id="data-container" class="mt-4"></div>
     </div>
 
@@ -30,6 +47,9 @@
         const amcDropdown = document.getElementById('amc');
         const schemeDropdown = document.getElementById('scheme');
         const dataContainer = document.getElementById('data-container');
+        const controls = document.getElementById('controls');
+        const monthFilter = document.getElementById('monthFilter');
+        const toggleShares = document.getElementById('toggleShares');
 
         amcDropdown.addEventListener('change', () => {
             const amc = amcDropdown.value;
@@ -51,9 +71,24 @@
         });
 
         schemeDropdown.addEventListener('change', () => {
+            loadData();
+        });
+
+        monthFilter.addEventListener('change', () => {
+            filterTableByMonth();
+        });
+
+        toggleShares.addEventListener('click', () => {
+            document.querySelectorAll('td[data-col="shares"], th[data-col="shares"]').forEach(el => {
+                el.classList.toggle('d-none');
+            });
+        });
+
+        function loadData() {
             const amc = amcDropdown.value;
             const scheme = schemeDropdown.value;
             dataContainer.innerHTML = 'Loading...';
+
             fetch('/get_data', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
@@ -62,8 +97,52 @@
             .then(res => res.json())
             .then(data => {
                 dataContainer.innerHTML = data.html;
+                populateMonthFilter();
+                markSharesColumn();
+                controls.classList.remove('d-none');
             });
-        });
+        }
+
+        function populateMonthFilter() {
+            monthFilter.innerHTML = '<option value="">-- All Months --</option>';
+            const months = new Set();
+            document.querySelectorAll('#data-container table tbody tr').forEach(row => {
+                const month = row.querySelector('td:nth-child(1)')?.innerText;
+                if (month) months.add(month.trim());
+            });
+            [...months].sort().forEach(month => {
+                monthFilter.innerHTML += `<option value="${month}">${month}</option>`;
+            });
+        }
+
+        function filterTableByMonth() {
+            const selectedMonth = monthFilter.value;
+            document.querySelectorAll('#data-container table tbody tr').forEach(row => {
+                const rowMonth = row.querySelector('td:nth-child(1)')?.innerText.trim();
+                row.style.display = (selectedMonth === "" || rowMonth === selectedMonth) ? "" : "none";
+            });
+        }
+
+        function markSharesColumn() {
+            const table = document.querySelector('#data-container table');
+            if (!table) return;
+
+            const headerCells = table.querySelectorAll('thead th');
+            let sharesIndex = -1;
+            headerCells.forEach((th, index) => {
+                if (th.innerText.toLowerCase().includes('number of shares')) {
+                    sharesIndex = index;
+                    th.setAttribute('data-col', 'shares');
+                }
+            });
+
+            if (sharesIndex >= 0) {
+                table.querySelectorAll('tbody tr').forEach(row => {
+                    const td = row.children[sharesIndex];
+                    if (td) td.setAttribute('data-col', 'shares');
+                });
+            }
+        }
     </script>
 </body>
 </html>

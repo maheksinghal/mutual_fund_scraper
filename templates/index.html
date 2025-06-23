@@ -1,147 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mutual Fund Holdings</title>
+    <title>Mutual Fund Viewer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <style>
-        .d-none { display: none !important; }
-    </style>
 </head>
-<body class="p-5">
+<body class="p-4">
     <div class="container">
-        <h2 class="mb-4">Mutual Fund Holdings Viewer</h2>
-
+        <h2>Select AMC and Scheme</h2>
         <div class="mb-3">
-            <label for="amc">Select AMC:</label>
-            <select id="amc" class="form-select">
-                <option value="">-- Choose AMC --</option>
-                {% for amc in amcs %}
-                    <option value="{{ amc }}">{{ amc }}</option>
-                {% endfor %}
-            </select>
+            <label>AMC:</label>
+            <select id="amcDropdown" class="form-select"></select>
         </div>
-
         <div class="mb-3">
-            <label for="scheme">Select Scheme:</label>
-            <select id="scheme" class="form-select" disabled></select>
+            <label>Scheme:</label>
+            <select id="schemeDropdown" class="form-select"></select>
         </div>
-
-        <div class="mb-3 d-none" id="controls">
-            <div class="row">
-                <div class="col-md-6">
-                    <label for="monthFilter">Filter by Month:</label>
-                    <select id="monthFilter" class="form-select">
-                        <option value="">-- All Months --</option>
-                    </select>
-                </div>
-                <div class="col-md-6 d-flex align-items-end">
-                    <button id="toggleShares" class="btn btn-outline-primary">Toggle Number of Shares</button>
-                </div>
-            </div>
+        <div class="mb-3">
+            <label>No. of Shares:</label>
+            <input type="number" id="minShares" class="form-control" value="1" min="0">
         </div>
+        <button class="btn btn-primary" onclick="loadData()">Load Data</button>
 
-        <div id="data-container" class="mt-4"></div>
+        <hr>
+        <div id="tableContainer"></div>
     </div>
 
     <script>
-        const amcDropdown = document.getElementById('amc');
-        const schemeDropdown = document.getElementById('scheme');
-        const dataContainer = document.getElementById('data-container');
-        const controls = document.getElementById('controls');
-        const monthFilter = document.getElementById('monthFilter');
-        const toggleShares = document.getElementById('toggleShares');
+        document.addEventListener('DOMContentLoaded', async () => {
+            const amcDropdown = document.getElementById('amcDropdown');
+            const schemeDropdown = document.getElementById('schemeDropdown');
 
-        amcDropdown.addEventListener('change', () => {
-            const amc = amcDropdown.value;
-            schemeDropdown.innerHTML = '<option>Loading...</option>';
-            schemeDropdown.disabled = true;
-            fetch('/get_schemes', {
-                method: 'POST',
-                headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify({ amc })
-            })
-            .then(res => res.json())
-            .then(schemes => {
-                schemeDropdown.innerHTML = '<option value="">-- Choose Scheme --</option>';
-                schemes.forEach(s => {
-                    schemeDropdown.innerHTML += `<option value="${s}">${s}</option>`;
+            // Load AMC list
+            const amcs = await fetch('/get_amcs').then(res => res.json());
+            amcs.forEach(amc => {
+                const option = document.createElement('option');
+                option.text = amc;
+                option.value = amc;
+                amcDropdown.add(option);
+            });
+
+            amcDropdown.addEventListener('change', async () => {
+                const selectedAMC = amcDropdown.value;
+                const response = await fetch('/get_schemes', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ amc: selectedAMC })
                 });
-                schemeDropdown.disabled = false;
-            });
-        });
-
-        schemeDropdown.addEventListener('change', () => {
-            loadData();
-        });
-
-        monthFilter.addEventListener('change', () => {
-            filterTableByMonth();
-        });
-
-        toggleShares.addEventListener('click', () => {
-            document.querySelectorAll('td[data-col="shares"], th[data-col="shares"]').forEach(el => {
-                el.classList.toggle('d-none');
-            });
-        });
-
-        function loadData() {
-            const amc = amcDropdown.value;
-            const scheme = schemeDropdown.value;
-            dataContainer.innerHTML = 'Loading...';
-
-            fetch('/get_data', {
-                method: 'POST',
-                headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify({ amc, scheme })
-            })
-            .then(res => res.json())
-            .then(data => {
-                dataContainer.innerHTML = data.html;
-                populateMonthFilter();
-                markSharesColumn();
-                controls.classList.remove('d-none');
-            });
-        }
-
-        function populateMonthFilter() {
-            monthFilter.innerHTML = '<option value="">-- All Months --</option>';
-            const months = new Set();
-            document.querySelectorAll('#data-container table tbody tr').forEach(row => {
-                const month = row.querySelector('td:nth-child(1)')?.innerText;
-                if (month) months.add(month.trim());
-            });
-            [...months].sort().forEach(month => {
-                monthFilter.innerHTML += `<option value="${month}">${month}</option>`;
-            });
-        }
-
-        function filterTableByMonth() {
-            const selectedMonth = monthFilter.value;
-            document.querySelectorAll('#data-container table tbody tr').forEach(row => {
-                const rowMonth = row.querySelector('td:nth-child(1)')?.innerText.trim();
-                row.style.display = (selectedMonth === "" || rowMonth === selectedMonth) ? "" : "none";
-            });
-        }
-
-        function markSharesColumn() {
-            const table = document.querySelector('#data-container table');
-            if (!table) return;
-
-            const headerCells = table.querySelectorAll('thead th');
-            let sharesIndex = -1;
-            headerCells.forEach((th, index) => {
-                if (th.innerText.toLowerCase().includes('number of shares')) {
-                    sharesIndex = index;
-                    th.setAttribute('data-col', 'shares');
-                }
-            });
-
-            if (sharesIndex >= 0) {
-                table.querySelectorAll('tbody tr').forEach(row => {
-                    const td = row.children[sharesIndex];
-                    if (td) td.setAttribute('data-col', 'shares');
+                const schemes = await response.json();
+                schemeDropdown.innerHTML = '';
+                schemes.forEach(scheme => {
+                    const option = document.createElement('option');
+                    option.text = scheme;
+                    option.value = scheme;
+                    schemeDropdown.add(option);
                 });
+            });
+
+            // Load first AMC's schemes by default
+            if (amcs.length > 0) {
+                amcDropdown.dispatchEvent(new Event('change'));
             }
+        });
+
+        async function loadData() {
+            const amc = document.getElementById('amcDropdown').value;
+            const scheme = document.getElementById('schemeDropdown').value;
+            const minShares = document.getElementById('minShares').value;
+
+            const response = await fetch('/get_data', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ amc, scheme, min_shares: minShares })
+            });
+
+            const data = await response.json();
+            document.getElementById('tableContainer').innerHTML = data.html;
         }
     </script>
 </body>

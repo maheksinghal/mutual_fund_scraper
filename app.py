@@ -7,11 +7,15 @@ BASE_DIR = "amc"
 
 @app.route('/')
 def home():
+    return render_template("index.html")  # No amcs passed anymore
+
+@app.route('/get_amcs', methods=['GET'])
+def get_amcs():
     try:
         amcs = [f for f in os.listdir(BASE_DIR) if os.path.isdir(os.path.join(BASE_DIR, f))]
     except FileNotFoundError:
         amcs = []
-    return render_template("index.html", amcs=amcs)
+    return jsonify(amcs)
 
 @app.route('/get_schemes', methods=['POST'])
 def get_schemes():
@@ -27,24 +31,25 @@ def get_schemes():
 def get_data():
     amc = request.json.get('amc')
     scheme = request.json.get('scheme')
+    min_shares = int(request.json.get('min_shares', 0))
     file_path = os.path.join(BASE_DIR, amc, scheme)
 
-    if not os.path.isfile(file_path):
-        return jsonify({"html": "<p class='text-danger'>Data not found.</p>"})
+    df = pd.read_csv(file_path)
 
-    try:
-        df = pd.read_csv(file_path)
+    if 'HoldingShares' not in df.columns:
+        return jsonify({"html": "<div class='text-danger'>Invalid CSV format</div>"})
 
-        # Optional: Sort by Month (if present)
-        if "Month" in df.columns:
-            df['Month'] = pd.to_datetime(df['Month'], format="%b-%Y", errors='coerce')
-            df = df.sort_values(by="Month").fillna("")
+    # Filter by min shares
+    df = df[df['HoldingShares'] >= min_shares]
 
-        df_html = df.to_html(classes='table table-bordered table-hover', index=False, escape=False)
-        return jsonify({"html": df_html})
+    # Pivot: Show shares per month
+    pivot = df.pivot_table(index=['Name', 'Sector'], columns='Month', values='HoldingShares', aggfunc='sum', fill_value=0)
+    pivot.reset_index(inplace=True)
+    pivot.columns.name = None
 
-    except Exception as e:
-        return jsonify({"html": f"<p class='text-danger'>Error loading data: {str(e)}</p>"})
+    return jsonify({
+        "html": pivot.to_html(classes='table table-bordered table-striped', index=False)
+    })
 
 if __name__ == '__main__':
     app.run(debug=True)

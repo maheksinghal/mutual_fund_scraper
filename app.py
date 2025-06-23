@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request, jsonify
 import os
 import pandas as pd
+import numpy as np
+from datetime import datetime
 
 app = Flask(__name__)
 BASE_DIR = "amc"
@@ -31,10 +33,6 @@ from dateutil import parser  # <-- add this
 
 @app.route('/get_data', methods=['POST'])
 def get_data():
-    import pandas as pd
-    import numpy as np
-    from datetime import datetime
-
     amc = request.json.get('amc')
     scheme = request.json.get('scheme')
     min_shares = int(request.json.get('min_shares', 0))
@@ -51,7 +49,6 @@ def get_data():
 
     df = df[df['NoOfShare'] >= min_shares]
 
-    # Pivot table
     pivot = df.pivot_table(
         index=['Name', 'SectorName'],
         columns='Month',
@@ -60,10 +57,8 @@ def get_data():
         fill_value=0
     )
 
-    # Step 1: Ensure clean column names
     pivot.columns = [str(col).strip() for col in pivot.columns]
 
-    # Step 2: Safely parse and sort columns using dateutil
     def try_parse(col):
         try:
             dt = parser.parse(col, dayfirst=False, fuzzy=True)
@@ -74,20 +69,95 @@ def get_data():
     parsed = list(filter(None, map(try_parse, pivot.columns)))
     sorted_cols = [col for col, _ in sorted(parsed, key=lambda x: x[1])]
 
-    # Step 3: Reorder
     pivot = pivot[sorted_cols]
 
-    # Final formatting
     pivot.reset_index(inplace=True)
     pivot.rename(columns={"Name": "Share", "SectorName": "Sector"}, inplace=True)
     pivot.columns.name = None
 
-    html_table = pivot.to_html(classes='table table-bordered table-striped', index=False)
-    html = f"<div style='display:block; overflow-x:auto; width:100%'>{html_table}</div>"
+    month_cols = sorted_cols
+    static_cols = ["Share", "Sector"]
+    columns = static_cols + month_cols
+
+    green_shades = [
+        "#e9fbe9",  # very light green
+        "#c8f7c5",
+        "#a3f3a3",
+        "#6de26d",
+        "#36c836",
+        "#1e9f1e",
+        "#107a10"   # darkest green
+    ]
+
+    red_shades = [
+        "#ffe6e6",  # very light red
+        "#ffc2c2",
+        "#ff9999",
+        "#ff6b6b",
+        "#ff3b3b",
+        "#e60000",
+        "#990000"   # darkest red
+    ]
+
+    def get_cumulative_color(trend_count, direction):
+        max_index = len(green_shades) - 1
+        trend_count = min(trend_count, max_index)
+        if direction == 'up':
+            return green_shades[trend_count]
+        elif direction == 'down':
+            return red_shades[trend_count]
+        else:
+            return green_shades[0]  # default
+
+    html = "<div style='display:block; overflow-x:auto; width:100%'><table class='table table-bordered table-striped'><thead><tr>"
+    for col in columns:
+        html += f"<th>{col}</th>"
+    html += "</tr></thead><tbody>"
+
+    for _, row in pivot.iterrows():
+        html += "<tr>"
+        html += f"<td>{row['Share']}</td><td>{row['Sector']}</td>"
+
+        prev_value = None
+        direction = None
+        trend_count = 0
+        prev_color = green_shades[0]  # start with lightest green
+
+        for i, month in enumerate(month_cols):
+            current_value = row[month]
+            if i == 0:
+                color = green_shades[0]
+                trend_count = 1
+                direction = 'up'
+            else:
+                if current_value > prev_value:
+                    if direction == 'up':
+                        trend_count += 1
+                    else:
+                        trend_count = 1
+                        direction = 'up'
+                    color = get_cumulative_color(trend_count, direction)
+
+                elif current_value < prev_value:
+                    if direction == 'down':
+                        trend_count += 1
+                    else:
+                        trend_count = 1
+                        direction = 'down'
+                    color = get_cumulative_color(trend_count, direction)
+
+                else:  # same value, keep previous color and trend
+                    color = prev_color
+
+            html += f"<td style='background-color:{color}'>{current_value}</td>"
+            prev_value = current_value
+            prev_color = color
+
+        html += "</tr>"
+
+    html += "</tbody></table></div>"
 
     return jsonify({"html": html})
-
-
 
 if __name__ == '__main__':
     app.run(debug=True)

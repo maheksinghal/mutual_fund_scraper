@@ -10,11 +10,7 @@ AMC_RECORD = "amc"
 
 def get_amc_list():
     url = "https://api.stockedge.com/Api/MfAmcDashboardApi/GetMfAmcList"
-    params = {
-        "page": 1,
-        "pageSize": NUMBER_AMC_TO_SCRAPE,
-        "lang": "en"
-    }
+    params = {"page": 1, "pageSize": NUMBER_AMC_TO_SCRAPE, "lang": "en"}
     try:
         response = requests.get(url, params=params)
         return response.json() if response.status_code == 200 else []
@@ -22,8 +18,7 @@ def get_amc_list():
         return []
 
 def get_mf_schema_details(mf_id):
-    base_url = "https://api.stockedge.com/Api/MfAmcDashboardApi/GetPrimaryMfSchemeListByAmc"
-    url = f"{base_url}/{mf_id}"
+    url = f"https://api.stockedge.com/Api/MfAmcDashboardApi/GetPrimaryMfSchemeListByAmc/{mf_id}"
     params = {
         "MfSchemeAssetTypeID": "1",
         "MfNAVChangePeriodType": MfNAVChangePeriodType,
@@ -38,99 +33,74 @@ def get_mf_schema_details(mf_id):
         return []
 
 def get_mf_domestic_holdings(mf_scheme_id, mf_holding_date, check_only=False):
-    base_url = "https://api.stockedge.com/Api/MfSchemeDashboardApi/GetDomesticEquityHoldings"
-    url = f"{base_url}/{mf_scheme_id}/{mf_holding_date}"
-    params = {
-        "page": 1,
-        "pageSize": 1000,
-        "lang": "en"
-    }
+    url = f"https://api.stockedge.com/Api/MfSchemeDashboardApi/GetDomesticEquityHoldings/{mf_scheme_id}/{mf_holding_date}"
+    params = {"page": 1, "pageSize": 1000, "lang": "en"}
     try:
         response = requests.get(url, params=params)
         if response.status_code == 200:
-            data = response.json()
-            return data if check_only else data
-        else:
-            return [] if check_only else []
-    except Exception as e:
-        print(f"Error checking scheme {mf_scheme_id}: {e}")
-        return [] if check_only else []
-
-def get_monthly_dates(months=6):
-    today = datetime.today()
-    dates = []
-    for _ in range(months):
-        date = today.replace(day=1)
-        dates.append(date.strftime('%Y-%m-%d'))
-        today = (date - timedelta(days=1))
-    return dates[::-1]  # oldest to newest
+            return response.json()
+    except:
+        return []
+    return []
 
 def find_latest_available_date_for_month(mf_scheme_id, month_start_date):
-    # Get the last day of the month
     next_month = month_start_date.replace(day=28) + timedelta(days=4)
-    month_end_date = (next_month - timedelta(days=next_month.day)).date()
-
-    for i in range((month_end_date - month_start_date.date()).days + 1):
-        date_to_try = (month_end_date - timedelta(days=i)).strftime('%Y-%m-%d')
-        holdings = get_mf_domestic_holdings(mf_scheme_id, date_to_try, check_only=True)
-        if holdings:
+    last_day = next_month - timedelta(days=next_month.day)
+    for i in range((last_day - month_start_date).days + 1):
+        date_to_try = (last_day - timedelta(days=i)).strftime('%Y-%m-%d')
+        if get_mf_domestic_holdings(mf_scheme_id, date_to_try, check_only=True):
             return date_to_try
     return None
 
-def create_folder(path):
-    try:
-        os.makedirs(path, exist_ok=True)
-    except Exception as e:
-        print(f"Error creating folder {path}: {e}")
+def add_missing_month_to_existing_files():
+    today = datetime.today()
+    if today.day < 5:
+        today = today.replace(day=1) - timedelta(days=1)
+    latest_month_date = today.replace(day=1)
+    target_month = latest_month_date.strftime("%b-%Y")
+    target_date = latest_month_date.strftime("%Y-%m-%d")
 
-def write_combined_data_to_csv(mf_bank, mf_scheme_name, all_data):
-    safe_scheme_name = re.sub(r'[\\/*?:"<>|]', "_", mf_scheme_name)
-    safe_mf_bank = re.sub(r'[\\/*?:"<>|]', "_", mf_bank)
-
-    df = pd.DataFrame(all_data)
-    folder_path = f"{AMC_RECORD}/{safe_mf_bank}"
-    file_path = f"{folder_path}/{safe_scheme_name}.csv"
-    create_folder(folder_path)
-
-    df.to_csv(file_path, index=False)
-    print(f"Saved: {file_path}")
-
-def main():
-    create_folder(AMC_RECORD)
     amc_list = get_amc_list()
-    print(f"Pulling data from {len(amc_list)} AMCs")
-
-    monthly_dates = get_monthly_dates(6)  # Last 6 months
 
     for amc in amc_list:
-        amc_name = amc["Name"]
+        amc_name = re.sub(r'[\\/*?:"<>|]', "_", amc["Name"])
         amc_id = amc["ID"]
-        print(f"\nAMC: {amc_name}")
+        print(f"\n Processing AMC: {amc_name} (ID: {amc_id})")
+        folder_path = f"{AMC_RECORD}/{amc_name}"
 
-        create_folder(f"{AMC_RECORD}/{amc_name}")
         mf_scheme_records = get_mf_schema_details(amc_id)
-
         for mf_scheme in mf_scheme_records:
-            mf_scheme_name = mf_scheme["Name"]
-            mf_scheme_id = mf_scheme["ID"]
-            print(f"Scheme: {mf_scheme_name}")
+            scheme_name = re.sub(r'[\\/*?:"<>|]', "_", mf_scheme["Name"])
+            scheme_id = mf_scheme["ID"]
+            file_path = f"{folder_path}/{scheme_name}.csv"
 
-            all_data = []
-            for month_str in monthly_dates:
-                month_start = datetime.strptime(month_str, "%Y-%m-%d")
-                date_found = find_latest_available_date_for_month(mf_scheme_id, month_start)
-                if not date_found:
-                    print(f"No data for {mf_scheme_name} in {month_str}")
-                    continue
+            if not os.path.exists(file_path):
+                continue
 
-                holdings_records = get_mf_domestic_holdings(mf_scheme_id, date_found)
-                if holdings_records:
-                    for record in holdings_records:
-                        record["Month"] = month_start.strftime("%b-%Y")
-                        all_data.append(record)
+            try:
+                df = pd.read_csv(file_path)
+            except:
+                continue
 
-            if all_data:
-                write_combined_data_to_csv(amc_name, mf_scheme_name, all_data)
+            if target_month in df["Month"].values:
+                print(f"{target_month} already exists in {scheme_name}")
+                continue
+
+            latest_data_date = find_latest_available_date_for_month(scheme_id, latest_month_date)
+            if not latest_data_date:
+                continue
+
+            new_data = get_mf_domestic_holdings(scheme_id, latest_data_date)
+            if not new_data:
+                continue
+
+            for record in new_data:
+                record["Month"] = target_month
+
+            new_df = pd.DataFrame(new_data)
+            updated_df = pd.concat([new_df, df], ignore_index=True)
+            updated_df.to_csv(file_path, index=False)
+            print(f"Added {target_month} to {file_path}")
 
 if __name__ == "__main__":
-    main()
+    add_missing_month_to_existing_files()

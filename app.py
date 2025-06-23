@@ -27,8 +27,14 @@ def get_schemes():
     schemes = [f for f in os.listdir(amc_path) if f.endswith('.csv')]
     return jsonify(schemes)
 
+from dateutil import parser  # <-- add this
+
 @app.route('/get_data', methods=['POST'])
 def get_data():
+    import pandas as pd
+    import numpy as np
+    from datetime import datetime
+
     amc = request.json.get('amc')
     scheme = request.json.get('scheme')
     min_shares = int(request.json.get('min_shares', 0))
@@ -39,26 +45,48 @@ def get_data():
     except Exception as e:
         return jsonify({"html": f"<div class='text-danger'>Error loading CSV: {e}</div>"})
 
-    # Check required columns
     required_cols = {'Name', 'SectorName', 'NoOfShare', 'Month'}
     if not required_cols.issubset(df.columns):
         return jsonify({"html": "<div class='text-danger'>Invalid CSV format: Missing required columns</div>"})
 
-    # Filter rows with sufficient shares
     df = df[df['NoOfShare'] >= min_shares]
 
-    # Pivot the data: rows -> (Name, Sector), columns -> Month, values -> NoOfShare
-    pivot = df.pivot_table(index=['Name', 'SectorName'], columns='Month', values='NoOfShare', aggfunc='sum', fill_value=0)
+    # Pivot table
+    pivot = df.pivot_table(
+        index=['Name', 'SectorName'],
+        columns='Month',
+        values='NoOfShare',
+        aggfunc='sum',
+        fill_value=0
+    )
 
-    # Reset and rename
+    # Step 1: Ensure clean column names
+    pivot.columns = [str(col).strip() for col in pivot.columns]
+
+    # Step 2: Safely parse and sort columns using dateutil
+    def try_parse(col):
+        try:
+            dt = parser.parse(col, dayfirst=False, fuzzy=True)
+            return (col, dt)
+        except:
+            return None
+
+    parsed = list(filter(None, map(try_parse, pivot.columns)))
+    sorted_cols = [col for col, _ in sorted(parsed, key=lambda x: x[1])]
+
+    # Step 3: Reorder
+    pivot = pivot[sorted_cols]
+
+    # Final formatting
     pivot.reset_index(inplace=True)
-    pivot.columns.name = None
     pivot.rename(columns={"Name": "Share", "SectorName": "Sector"}, inplace=True)
+    pivot.columns.name = None
 
-    # Convert to HTML table
     html_table = pivot.to_html(classes='table table-bordered table-striped', index=False)
+    html = f"<div style='display:block; overflow-x:auto; width:100%'>{html_table}</div>"
 
-    return jsonify({"html": html_table})
+    return jsonify({"html": html})
+
 
 
 if __name__ == '__main__':

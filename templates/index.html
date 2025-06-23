@@ -16,10 +16,8 @@
             <select id="schemeDropdown" class="form-select"></select>
         </div>
         <div class="mb-3">
-            <label>No. of Shares:</label>
-            <input type="number" id="minShares" class="form-control" value="1" min="0">
+            <button class="btn btn-primary" onclick="loadData()">No. of Shares</button>
         </div>
-        <button class="btn btn-primary" onclick="loadData()">Load Data</button>
 
         <hr>
         <div id="tableContainer"></div>
@@ -56,7 +54,7 @@
                 });
             });
 
-            // Load first AMC's schemes by default
+            // Load schemes for the first AMC
             if (amcs.length > 0) {
                 amcDropdown.dispatchEvent(new Event('change'));
             }
@@ -65,12 +63,11 @@
         async function loadData() {
             const amc = document.getElementById('amcDropdown').value;
             const scheme = document.getElementById('schemeDropdown').value;
-            const minShares = document.getElementById('minShares').value;
 
             const response = await fetch('/get_data', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ amc, scheme, min_shares: minShares })
+                body: JSON.stringify({ amc, scheme, min_shares: 1 }) // hardcoded min_shares as requested
             });
 
             const data = await response.json();

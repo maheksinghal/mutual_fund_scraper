@@ -34,22 +34,32 @@ def get_data():
     min_shares = int(request.json.get('min_shares', 0))
     file_path = os.path.join(BASE_DIR, amc, scheme)
 
-    df = pd.read_csv(file_path)
+    try:
+        df = pd.read_csv(file_path)
+    except Exception as e:
+        return jsonify({"html": f"<div class='text-danger'>Error loading CSV: {e}</div>"})
 
-    if 'HoldingShares' not in df.columns:
-        return jsonify({"html": "<div class='text-danger'>Invalid CSV format</div>"})
+    # Check required columns
+    required_cols = {'Name', 'SectorName', 'NoOfShare', 'Month'}
+    if not required_cols.issubset(df.columns):
+        return jsonify({"html": "<div class='text-danger'>Invalid CSV format: Missing required columns</div>"})
 
-    # Filter by min shares
-    df = df[df['HoldingShares'] >= min_shares]
+    # Filter rows with sufficient shares
+    df = df[df['NoOfShare'] >= min_shares]
 
-    # Pivot: Show shares per month
-    pivot = df.pivot_table(index=['Name', 'Sector'], columns='Month', values='HoldingShares', aggfunc='sum', fill_value=0)
+    # Pivot the data: rows -> (Name, Sector), columns -> Month, values -> NoOfShare
+    pivot = df.pivot_table(index=['Name', 'SectorName'], columns='Month', values='NoOfShare', aggfunc='sum', fill_value=0)
+
+    # Reset and rename
     pivot.reset_index(inplace=True)
     pivot.columns.name = None
+    pivot.rename(columns={"Name": "Share", "SectorName": "Sector"}, inplace=True)
 
-    return jsonify({
-        "html": pivot.to_html(classes='table table-bordered table-striped', index=False)
-    })
+    # Convert to HTML table
+    html_table = pivot.to_html(classes='table table-bordered table-striped', index=False)
+
+    return jsonify({"html": html_table})
+
 
 if __name__ == '__main__':
     app.run(debug=True)

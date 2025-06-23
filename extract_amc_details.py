@@ -37,16 +37,6 @@ def get_mf_schema_details(mf_id):
     except:
         return []
 
-def find_latest_available_date(mf_scheme_id, days_to_check=31):
-    for i in range(days_to_check):
-        date_to_try = (datetime.today() - timedelta(days=i)).strftime('%Y-%m-%d')
-        holdings = get_mf_domestic_holdings(mf_scheme_id, date_to_try, check_only=True)
-        if holdings:
-            print(f"Found data on: {date_to_try}")
-            return date_to_try
-    print("Could not find recent available data.")
-    return None
-
 def get_mf_domestic_holdings(mf_scheme_id, mf_holding_date, check_only=False):
     base_url = "https://api.stockedge.com/Api/MfSchemeDashboardApi/GetDomesticEquityHoldings"
     url = f"{base_url}/{mf_scheme_id}/{mf_holding_date}"
@@ -69,11 +59,23 @@ def get_mf_domestic_holdings(mf_scheme_id, mf_holding_date, check_only=False):
 def get_monthly_dates(months=6):
     today = datetime.today()
     dates = []
-    for i in range(months):
-        date = (today.replace(day=1) - timedelta(days=1))
-        dates.append(date.replace(day=1).strftime('%Y-%m-%d'))
-        today = date
-    return dates[::-1]  # From oldest to newest
+    for _ in range(months):
+        date = today.replace(day=1)
+        dates.append(date.strftime('%Y-%m-%d'))
+        today = (date - timedelta(days=1))
+    return dates[::-1]  # oldest to newest
+
+def find_latest_available_date_for_month(mf_scheme_id, month_start_date):
+    # Get the last day of the month
+    next_month = month_start_date.replace(day=28) + timedelta(days=4)
+    month_end_date = (next_month - timedelta(days=next_month.day)).date()
+
+    for i in range((month_end_date - month_start_date.date()).days + 1):
+        date_to_try = (month_end_date - timedelta(days=i)).strftime('%Y-%m-%d')
+        holdings = get_mf_domestic_holdings(mf_scheme_id, date_to_try, check_only=True)
+        if holdings:
+            return date_to_try
+    return None
 
 def create_folder(path):
     try:
@@ -103,7 +105,7 @@ def main():
     for amc in amc_list:
         amc_name = amc["Name"]
         amc_id = amc["ID"]
-        print(f"\n AMC: {amc_name}")
+        print(f"\nAMC: {amc_name}")
 
         create_folder(f"{AMC_RECORD}/{amc_name}")
         mf_scheme_records = get_mf_schema_details(amc_id)
@@ -111,19 +113,20 @@ def main():
         for mf_scheme in mf_scheme_records:
             mf_scheme_name = mf_scheme["Name"]
             mf_scheme_id = mf_scheme["ID"]
-            print(f"→ Scheme: {mf_scheme_name}")
+            print(f"Scheme: {mf_scheme_name}")
 
             all_data = []
-            for month_date in monthly_dates:
-                date_found = find_latest_available_date(mf_scheme_id)
+            for month_str in monthly_dates:
+                month_start = datetime.strptime(month_str, "%Y-%m-%d")
+                date_found = find_latest_available_date_for_month(mf_scheme_id, month_start)
                 if not date_found:
-                    print(f"No data for {mf_scheme_name} in {month_date}")
+                    print(f"No data for {mf_scheme_name} in {month_str}")
                     continue
 
                 holdings_records = get_mf_domestic_holdings(mf_scheme_id, date_found)
                 if holdings_records:
                     for record in holdings_records:
-                        record["Month"] = datetime.strptime(date_found, "%Y-%m-%d").strftime("%b-%Y")
+                        record["Month"] = month_start.strftime("%b-%Y")
                         all_data.append(record)
 
             if all_data:

@@ -44,7 +44,7 @@ def get_data():
     except Exception as e:
         return jsonify({"html": f"<div class='text-danger'>Error loading CSV: {e}</div>"})
 
-    required_cols = {'Name', 'SectorName', 'NoOfShare', 'Month', 'SharesZG', 'MarketValue', 'MarketValueZG'}
+    required_cols = {'Name', 'SectorName', 'NoOfShare', 'Month', 'SharesZG', 'MarketValue', 'MarketValueZG', 'HoldingPercentage'}
     if not required_cols.issubset(df.columns):
         return jsonify({"html": "<div class='text-danger'>Invalid CSV format: Missing required columns</div>"})
 
@@ -83,6 +83,7 @@ def get_data():
     pivot_shares_zg, _ = create_pivot_table('SharesZG')
     pivot_market_value, _ = create_pivot_table('MarketValue')
     pivot_market_value_zg, _ = create_pivot_table('MarketValueZG')
+    pivot_holding_percentage, _ = create_pivot_table('HoldingPercentage')
 
     static_cols = ["Share", "Sector"]
     columns = static_cols + month_cols
@@ -122,7 +123,7 @@ def get_data():
 
             for i, month in enumerate(month_cols):
                 current_value = row[month]
-                # Round to 2 decimal places for SharesZG, MarketValue, and MarketValueZG
+                # Round to 2 decimal places for SharesZG, MarketValue, MarketValueZG, and HoldingPercentage
                 display_value = f"{current_value:.2f}" if is_decimal else str(int(current_value))
                 if i == 0:
                     color = green_shades[0]
@@ -164,6 +165,8 @@ def get_data():
         html = generate_table(pivot_market_value, "Market Value", is_decimal=True)
     elif view == 'market_value_zg':
         html = generate_table(pivot_market_value_zg, "Changes in Market Value %", is_decimal=True)
+    elif view == 'holding_percentage':
+        html = generate_table(pivot_holding_percentage, "% of Total Holding", is_decimal=True)
     else:
         html = "<div class='text-danger'>Invalid view selected</div>"
 

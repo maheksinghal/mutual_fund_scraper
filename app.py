@@ -37,19 +37,39 @@ def get_data():
     scheme = request.json.get('scheme')
     min_shares = int(request.json.get('min_shares', 0))
     view = request.json.get('view', 'no_of_share')  # Default to no_of_share
-    file_path = os.path.join(BASE_DIR, amc, scheme)
-
-    try:
-        df = pd.read_csv(file_path)
-    except Exception as e:
-        return jsonify({"html": f"<div class='text-danger'>Error loading CSV: {e}</div>"})
 
     required_cols = {'Name', 'SectorName', 'NoOfShare', 'Month', 'SharesZG', 'MarketValue', 'MarketValueZG', 'HoldingPercentage'}
-    if not required_cols.issubset(df.columns):
-        return jsonify({"html": "<div class='text-danger'>Invalid CSV format: Missing required columns</div>"})
 
-    # Filter by min_shares based on NoOfShare
-    df = df[df['NoOfShare'] >= min_shares]
+    if view == 'sector_holding_all':
+        # Load all CSV files from all AMCs
+        try:
+            all_dfs = []
+            for amc_dir in os.listdir(BASE_DIR):
+                amc_path = os.path.join(BASE_DIR, amc_dir)
+                if os.path.isdir(amc_path):
+                    for scheme_file in os.listdir(amc_path):
+                        if scheme_file.endswith('.csv'):
+                            file_path = os.path.join(amc_path, scheme_file)
+                            df = pd.read_csv(file_path)
+                            if not required_cols.issubset(df.columns):
+                                continue  # Skip invalid CSVs
+                            df = df[df['NoOfShare'] >= min_shares]
+                            all_dfs.append(df)
+            if not all_dfs:
+                return jsonify({"html": "<div class='text-danger'>No valid CSV files found</div>"})
+            df = pd.concat(all_dfs, ignore_index=True)
+        except Exception as e:
+            return jsonify({"html": f"<div class='text-danger'>Error loading CSVs: {e}</div>"})
+    else:
+        # Load single CSV for specific AMC and scheme
+        file_path = os.path.join(BASE_DIR, amc, scheme)
+        try:
+            df = pd.read_csv(file_path)
+        except Exception as e:
+            return jsonify({"html": f"<div class='text-danger'>Error loading CSV: {e}</div>"})
+        if not required_cols.issubset(df.columns):
+            return jsonify({"html": "<div class='text-danger'>Invalid CSV format: Missing required columns</div>"})
+        df = df[df['NoOfShare'] >= min_shares]
 
     # Helper function to create pivot table
     def create_pivot_table(value_col, index_cols=['Name', 'SectorName']):
@@ -88,8 +108,9 @@ def get_data():
     pivot_market_value_zg, _ = create_pivot_table('MarketValueZG')
     pivot_holding_percentage, _ = create_pivot_table('HoldingPercentage')
     pivot_sector_holding, _ = create_pivot_table('HoldingPercentage', index_cols=['SectorName'])
+    pivot_sector_holding_all, _ = create_pivot_table('HoldingPercentage', index_cols=['SectorName'])
 
-    static_cols = ["Share", "Sector"] if view != 'sector_holding' else ["Sector"]
+    static_cols = ["Share", "Sector"] if view not in ['sector_holding', 'sector_holding_all'] else ["Sector"]
     columns = static_cols + month_cols
 
     green_shades = [
@@ -118,7 +139,7 @@ def get_data():
 
         for _, row in pivot.iterrows():
             html += "<tr>"
-            if view == 'sector_holding':
+            if view in ['sector_holding', 'sector_holding_all']:
                 html += f"<td>{row['Sector']}</td>"
             else:
                 html += f"<td>{row['Share']}</td><td>{row['Sector']}</td>"
@@ -130,7 +151,6 @@ def get_data():
 
             for i, month in enumerate(month_cols):
                 current_value = row[month]
-                # Round to 2 decimal places for SharesZG, MarketValue, MarketValueZG, HoldingPercentage, and sector_holding
                 display_value = f"{current_value:.2f}" if is_decimal else str(int(current_value))
                 if i == 0:
                     color = green_shades[0]
@@ -176,6 +196,8 @@ def get_data():
         html = generate_table(pivot_holding_percentage, "% of Total Holding", is_decimal=True)
     elif view == 'sector_holding':
         html = generate_table(pivot_sector_holding, "Sector Wise Holding %", is_decimal=True)
+    elif view == 'sector_holding_all':
+        html = generate_table(pivot_sector_holding_all, "Sector Wise Holding % (All AMCs)", is_decimal=True)
     else:
         html = "<div class='text-danger'>Invalid view selected</div>"
 

@@ -3,6 +3,13 @@
 <head>
     <title>Mutual Fund Viewer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        #loadingSpinner {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body class="p-4">
     <div class="container">
@@ -17,17 +24,26 @@
         </div>
 
         <!-- Buttons for all views -->
-        <div class="mb-3">
-            <button class="btn btn-primary me-2" onclick="loadData('no_of_share')">No. of Shares</button>
-            <button class="btn btn-secondary me-2" onclick="loadData('holding_change')">Changes in Holding %</button>
-            <button class="btn btn-info me-2" onclick="loadData('market_value')">Market Value</button>
-            <button class="btn btn-success me-2" onclick="loadData('market_value_zg')">Changes in Market Value %</button>
-            <button class="btn btn-warning me-2" onclick="loadData('holding_percentage')">% of Total Holding</button>
-            <button class="btn btn-danger" onclick="loadData('sector_holding')">Sector Wise Holding %</button>
+        <div class="mb-3 d-flex flex-wrap gap-2">
+            <button class="btn btn-primary" onclick="loadData('no_of_share', this)">No. of Shares</button>
+            <button class="btn btn-secondary" onclick="loadData('holding_change', this)">Changes in Holding %</button>
+            <button class="btn btn-info" onclick="loadData('market_value', this)">Market Value</button>
+            <button class="btn btn-success" onclick="loadData('market_value_zg', this)">Changes in Market Value %</button>
+            <button class="btn btn-warning" onclick="loadData('holding_percentage', this)">% of Total Holding</button>
+            <button class="btn btn-danger" onclick="loadData('sector_holding', this)">Sector Wise Holding %</button>
+            <button class="btn btn-dark" onclick="loadData('sector_holding_all', this)">Sector Wise Holding % (All AMCs)</button>
         </div>
 
+
         <hr>
-        <div id="tableContainer" class="mt-4" style="overflow-x: auto;"></div>
+        <div id="tableContainer" class="mt-4" style="overflow-x: auto;">
+            <div id="loadingSpinner">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <p>Loading data...</p>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -35,6 +51,7 @@
             const amcDropdown = document.getElementById('amcDropdown');
             const schemeDropdown = document.getElementById('schemeDropdown');
             const tableContainer = document.getElementById('tableContainer');
+            const loadingSpinner = document.getElementById('loadingSpinner');
 
             // Load AMC list
             try {
@@ -62,7 +79,7 @@
                         schemeDropdown.add(option);
                     });
                     // Clear table when AMC changes
-                    tableContainer.innerHTML = '';
+                    tableContainer.innerHTML = '<div id="loadingSpinner" style="display: none;"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p>Loading data...</p></div>';
                 });
 
                 // Load schemes for the first AMC
@@ -74,15 +91,21 @@
             }
         });
 
-        async function loadData(view) {
+        async function loadData(view, button) {
             const amc = document.getElementById('amcDropdown').value;
             const scheme = document.getElementById('schemeDropdown').value;
             const tableContainer = document.getElementById('tableContainer');
+            const loadingSpinner = document.getElementById('loadingSpinner');
 
-            if (!amc || !scheme) {
+            if (view !== 'sector_holding_all' && (!amc || !scheme)) {
                 tableContainer.innerHTML = "<div class='text-danger'>Please select both AMC and Scheme</div>";
                 return;
             }
+
+            // Disable button and show spinner
+            button.disabled = true;
+            loadingSpinner.style.display = 'block';
+            tableContainer.querySelectorAll('table, .text-danger, h4').forEach(el => el.remove());
 
             try {
                 const response = await fetch('/get_data', {
@@ -97,9 +120,15 @@
                 });
 
                 const data = await response.json();
-                tableContainer.innerHTML = data.html;
+                tableContainer.innerHTML = '<div id="loadingSpinner" style="display: none;"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p>Loading data...</p></div>';
+                tableContainer.insertAdjacentHTML('beforeend', data.html);
             } catch (error) {
-                tableContainer.innerHTML = `<div class='text-danger'>Error loading data: ${error}</div>`;
+                tableContainer.innerHTML = '<div id="loadingSpinner" style="display: none;"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p>Loading data...</p></div>';
+                tableContainer.insertAdjacentHTML('beforeend', `<div class='text-danger'>Error loading data: ${error}</div>`);
+            } finally {
+                // Re-enable button and hide spinner
+                button.disabled = false;
+                loadingSpinner.style.display = 'none';
             }
         }
     </script>

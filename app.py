@@ -52,9 +52,9 @@ def get_data():
     df = df[df['NoOfShare'] >= min_shares]
 
     # Helper function to create pivot table
-    def create_pivot_table(value_col):
+    def create_pivot_table(value_col, index_cols=['Name', 'SectorName']):
         pivot = df.pivot_table(
-            index=['Name', 'SectorName'],
+            index=index_cols,
             columns='Month',
             values=value_col,
             aggfunc='sum',
@@ -74,7 +74,10 @@ def get_data():
         sorted_cols = [col for col, _ in sorted(parsed, key=lambda x: x[1])]
         pivot = pivot[sorted_cols]
         pivot.reset_index(inplace=True)
-        pivot.rename(columns={"Name": "Share", "SectorName": "Sector"}, inplace=True)
+        if len(index_cols) == 2:
+            pivot.rename(columns={"Name": "Share", "SectorName": "Sector"}, inplace=True)
+        else:
+            pivot.rename(columns={"SectorName": "Sector"}, inplace=True)
         pivot.columns.name = None
         return pivot, sorted_cols
 
@@ -84,8 +87,9 @@ def get_data():
     pivot_market_value, _ = create_pivot_table('MarketValue')
     pivot_market_value_zg, _ = create_pivot_table('MarketValueZG')
     pivot_holding_percentage, _ = create_pivot_table('HoldingPercentage')
+    pivot_sector_holding, _ = create_pivot_table('HoldingPercentage', index_cols=['SectorName'])
 
-    static_cols = ["Share", "Sector"]
+    static_cols = ["Share", "Sector"] if view != 'sector_holding' else ["Sector"]
     columns = static_cols + month_cols
 
     green_shades = [
@@ -114,7 +118,10 @@ def get_data():
 
         for _, row in pivot.iterrows():
             html += "<tr>"
-            html += f"<td>{row['Share']}</td><td>{row['Sector']}</td>"
+            if view == 'sector_holding':
+                html += f"<td>{row['Sector']}</td>"
+            else:
+                html += f"<td>{row['Share']}</td><td>{row['Sector']}</td>"
 
             prev_value = None
             direction = None
@@ -123,7 +130,7 @@ def get_data():
 
             for i, month in enumerate(month_cols):
                 current_value = row[month]
-                # Round to 2 decimal places for SharesZG, MarketValue, MarketValueZG, and HoldingPercentage
+                # Round to 2 decimal places for SharesZG, MarketValue, MarketValueZG, HoldingPercentage, and sector_holding
                 display_value = f"{current_value:.2f}" if is_decimal else str(int(current_value))
                 if i == 0:
                     color = green_shades[0]
@@ -167,6 +174,8 @@ def get_data():
         html = generate_table(pivot_market_value_zg, "Changes in Market Value %", is_decimal=True)
     elif view == 'holding_percentage':
         html = generate_table(pivot_holding_percentage, "% of Total Holding", is_decimal=True)
+    elif view == 'sector_holding':
+        html = generate_table(pivot_sector_holding, "Sector Wise Holding %", is_decimal=True)
     else:
         html = "<div class='text-danger'>Invalid view selected</div>"
 

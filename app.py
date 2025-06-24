@@ -44,7 +44,7 @@ def get_data():
     except Exception as e:
         return jsonify({"html": f"<div class='text-danger'>Error loading CSV: {e}</div>"})
 
-    required_cols = {'Name', 'SectorName', 'NoOfShare', 'Month', 'SharesZG'}
+    required_cols = {'Name', 'SectorName', 'NoOfShare', 'Month', 'SharesZG', 'MarketValue'}
     if not required_cols.issubset(df.columns):
         return jsonify({"html": "<div class='text-danger'>Invalid CSV format: Missing required columns</div>"})
 
@@ -81,6 +81,7 @@ def get_data():
     # Create pivot tables
     pivot_no_shares, month_cols = create_pivot_table('NoOfShare')
     pivot_shares_zg, _ = create_pivot_table('SharesZG')
+    pivot_market_value, _ = create_pivot_table('MarketValue')
 
     static_cols = ["Share", "Sector"]
     columns = static_cols + month_cols
@@ -102,7 +103,7 @@ def get_data():
         else:
             return green_shades[0]
 
-    def generate_table(pivot, title, is_shares_zg=False):
+    def generate_table(pivot, title, is_decimal=False):
         html = f"<h4>{title}</h4>"
         html += "<div style='display:block; overflow-x:auto; width:100%'><table class='table table-bordered table-striped'><thead><tr>"
         for col in columns:
@@ -120,8 +121,8 @@ def get_data():
 
             for i, month in enumerate(month_cols):
                 current_value = row[month]
-                # Round to 2 decimal places for SharesZG
-                display_value = f"{current_value:.2f}" if is_shares_zg else str(int(current_value))
+                # Round to 2 decimal places for SharesZG and MarketValue
+                display_value = f"{current_value:.2f}" if is_decimal else str(int(current_value))
                 if i == 0:
                     color = green_shades[0]
                     trend_count = 1
@@ -157,7 +158,9 @@ def get_data():
     if view == 'no_of_share':
         html = generate_table(pivot_no_shares, "Number of Shares")
     elif view == 'holding_change':
-        html = generate_table(pivot_shares_zg, "Changes in Holding %", is_shares_zg=True)
+        html = generate_table(pivot_shares_zg, "Changes in Holding %", is_decimal=True)
+    elif view == 'market_value':
+        html = generate_table(pivot_market_value, "Market Value", is_decimal=True)
     else:
         html = "<div class='text-danger'>Invalid view selected</div>"
 

@@ -9,6 +9,39 @@
             text-align: center;
             margin-top: 20px;
         }
+        th .sort-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            justify-content: center;
+            align-items: center;
+        }
+        th .sort-btn {
+            cursor: pointer;
+            font-size: 12px;
+            padding: 2px 6px;
+            border: none;
+            background: none;
+            line-height: 1;
+            transition: background-color 0.2s;
+        }
+        th .sort-btn.asc::after {
+            content: '↑';
+        }
+        th .sort-btn.desc::after {
+            content: '↓';
+        }
+        th .sort-btn:hover {
+            background-color: #e9ecef;
+            border-radius: 3px;
+        }
+        th .sort-btn.active {
+            background-color: #d1e7dd;
+            font-weight: bold;
+        }
+        th {
+            vertical-align: middle;
+        }
     </style>
 </head>
 <body class="p-4">
@@ -34,7 +67,6 @@
             <button class="btn btn-dark" onclick="loadData('sector_holding_all', this)">Sector Wise Holding % (All AMCs)</button>
         </div>
 
-
         <hr>
         <div id="tableContainer" class="mt-4" style="overflow-x: auto;">
             <div id="loadingSpinner">
@@ -53,33 +85,45 @@
             const tableContainer = document.getElementById('tableContainer');
             const loadingSpinner = document.getElementById('loadingSpinner');
 
+            if (!amcDropdown || !schemeDropdown || !tableContainer || !loadingSpinner) {
+                console.error('Required DOM elements not found');
+                return;
+            }
+
             // Load AMC list
             try {
-                const amcs = await fetch('/get_amcs').then(res => res.json());
+                const response = await fetch('/get_amcs');
+                if (!response.ok) throw new Error('Failed to fetch AMCs');
+                const amcs = await response.json();
                 amcs.forEach(amc => {
                     const option = document.createElement('option');
                     option.text = amc;
                     option.value = amc;
-                    amcDropdown.add(option);
+                    amcDropdown.appendChild(option);
                 });
 
                 amcDropdown.addEventListener('change', async () => {
                     const selectedAMC = amcDropdown.value;
-                    const response = await fetch('/get_schemes', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ amc: selectedAMC })
-                    });
-                    const schemes = await response.json();
-                    schemeDropdown.innerHTML = '';
-                    schemes.forEach(scheme => {
-                        const option = document.createElement('option');
-                        option.text = scheme;
-                        option.value = scheme;
-                        schemeDropdown.add(option);
-                    });
-                    // Clear table when AMC changes
-                    tableContainer.innerHTML = '<div id="loadingSpinner" style="display: none;"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p>Loading data...</p></div>';
+                    try {
+                        const response = await fetch('/get_schemes', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ amc: selectedAMC })
+                        });
+                        if (!response.ok) throw new Error('Failed to fetch schemes');
+                        const schemes = await response.json();
+                        schemeDropdown.innerHTML = '';
+                        schemes.forEach(scheme => {
+                            const option = document.createElement('option');
+                            option.text = scheme;
+                            option.value = scheme;
+                            schemeDropdown.appendChild(option);
+                        });
+                        // Clear table when AMC changes
+                        tableContainer.innerHTML = '<div id="loadingSpinner" style="display: none;"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p>Loading data...</p></div>';
+                    } catch (error) {
+                        tableContainer.innerHTML = `<div class='text-danger'>Error loading schemes: ${error.message}</div>`;
+                    }
                 });
 
                 // Load schemes for the first AMC
@@ -87,17 +131,22 @@
                     amcDropdown.dispatchEvent(new Event('change'));
                 }
             } catch (error) {
-                tableContainer.innerHTML = `<div class='text-danger'>Error loading AMCs: ${error}</div>`;
+                tableContainer.innerHTML = `<div class='text-danger'>Error loading AMCs: ${error.message}</div>`;
             }
         });
 
         async function loadData(view, button) {
-            const amc = document.getElementById('amcDropdown').value;
-            const scheme = document.getElementById('schemeDropdown').value;
+            const amcDropdown = document.getElementById('amcDropdown');
+            const schemeDropdown = document.getElementById('schemeDropdown');
             const tableContainer = document.getElementById('tableContainer');
             const loadingSpinner = document.getElementById('loadingSpinner');
 
-            if (view !== 'sector_holding_all' && (!amc || !scheme)) {
+            if (!amcDropdown || !schemeDropdown || !tableContainer || !loadingSpinner) {
+                console.error('Required DOM elements not found');
+                return;
+            }
+
+            if (view !== 'sector_holding_all' && (!amcDropdown.value || !schemeDropdown.value)) {
                 tableContainer.innerHTML = "<div class='text-danger'>Please select both AMC and Scheme</div>";
                 return;
             }
@@ -112,24 +161,129 @@
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ 
-                        amc, 
-                        scheme, 
+                        amc: amcDropdown.value, 
+                        scheme: schemeDropdown.value, 
                         min_shares: 1,
                         view: view
                     })
                 });
 
+                if (!response.ok) throw new Error('Failed to fetch data');
+
                 const data = await response.json();
                 tableContainer.innerHTML = '<div id="loadingSpinner" style="display: none;"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p>Loading data...</p></div>';
-                tableContainer.insertAdjacentHTML('beforeend', data.html);
+                
+                // Modify table headers to include sort buttons only for month columns
+                let html = data.html;
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                const parsedTable = doc.querySelector('table');
+                if (parsedTable) {
+                    const headers = parsedTable.querySelectorAll('th');
+                    headers.forEach((header, index) => {
+                        const headerText = header.textContent.trim();
+                        // Skip adding sort buttons for 'Sector' and 'Share'
+                        if (headerText.toLowerCase() === 'sector' || headerText.toLowerCase() === 'share') {
+                            header.innerHTML = `<span>${headerText}</span>`;
+                        } else {
+                            header.innerHTML = `
+                                <div class="sort-buttons">
+                                    <span>${headerText}</span>
+                                    <div>
+                                        <button class="sort-btn asc" data-col="${index}" title="Sort Ascending"></button>
+                                        <button class="sort-btn desc" data-col="${index}" title="Sort Descending"></button>
+                                    </div>
+                                </div>`;
+                        }
+                    });
+                    html = parsedTable.outerHTML;
+                    // Include the title (h4) if present
+                    const title = doc.querySelector('h4');
+                    if (title) {
+                        html = `<h4>${title.textContent}</h4><div style='display:block; overflow-x:auto; width:100%'>${html}</div>`;
+                    }
+                }
+                
+                tableContainer.insertAdjacentHTML('beforeend', html);
+
+                // Add event listeners to sort buttons
+                const tableElement = tableContainer.querySelector('table');
+                if (tableElement) {
+                    const sortButtons = tableElement.querySelectorAll('.sort-btn');
+                    sortButtons.forEach(button => {
+                        button.addEventListener('click', () => {
+                            const colIndex = parseInt(button.getAttribute('data-col'));
+                            const isAscending = button.classList.contains('asc');
+                            sortTable(tableElement, colIndex, isAscending);
+                        });
+                    });
+                } else {
+                    console.warn('Table element not found after rendering');
+                }
             } catch (error) {
                 tableContainer.innerHTML = '<div id="loadingSpinner" style="display: none;"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p>Loading data...</p></div>';
-                tableContainer.insertAdjacentHTML('beforeend', `<div class='text-danger'>Error loading data: ${error}</div>`);
+                tableContainer.insertAdjacentHTML('beforeend', `<div class='text-danger'>Error loading data: ${error.message}</div>`);
             } finally {
                 // Re-enable button and hide spinner
                 button.disabled = false;
                 loadingSpinner.style.display = 'none';
             }
+        }
+
+        function sortTable(table, colIndex, isAscending) {
+            const tbody = table.querySelector('tbody');
+            if (!tbody) {
+                console.warn('Table body not found');
+                return;
+            }
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+            if (rows.length === 0) {
+                console.warn('No rows to sort');
+                return;
+            }
+
+            const header = table.querySelectorAll('th')[colIndex];
+            if (!header) {
+                console.warn('Header not found for column index:', colIndex);
+                return;
+            }
+            const buttons = header.querySelectorAll('.sort-btn');
+
+            // Remove 'active' class from all buttons in the table
+            table.querySelectorAll('.sort-btn').forEach(btn => btn.classList.remove('active'));
+            // Add 'active' class to the clicked button
+            const activeButton = header.querySelector(isAscending ? '.sort-btn.asc' : '.sort-btn.desc');
+            if (activeButton) activeButton.classList.add('active');
+
+            // Determine if the column is numeric
+            const isNumeric = rows.every(row => {
+                const cell = row.cells[colIndex];
+                if (!cell) return false;
+                const value = cell.textContent.trim();
+                return !isNaN(parseFloat(value)) && isFinite(parseFloat(value));
+            });
+
+            rows.sort((rowA, rowB) => {
+                const cellA = rowA.cells[colIndex];
+                const cellB = rowB.cells[colIndex];
+                if (!cellA || !cellB) return 0;
+                let valueA = cellA.textContent.trim();
+                let valueB = cellB.textContent.trim();
+
+                if (isNumeric) {
+                    const numA = parseFloat(valueA) || 0;
+                    const numB = parseFloat(valueB) || 0;
+                    return isAscending ? numA - numB : numB - numA;
+                } else {
+                    return isAscending
+                        ? valueA.localeCompare(valueB)
+                        : valueB.localeCompare(valueA);
+                }
+            });
+
+            // Rebuild tbody with sorted rows
+            tbody.innerHTML = '';
+            rows.forEach(row => tbody.appendChild(row));
         }
     </script>
 </body>

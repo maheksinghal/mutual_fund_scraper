@@ -15,64 +15,88 @@
             <label>Scheme:</label>
             <select id="schemeDropdown" class="form-select"></select>
         </div>
+
+        <!-- Buttons for both views -->
         <div class="mb-3">
-            <button class="btn btn-primary" onclick="loadData()">No. of Shares</button>
+            <button class="btn btn-primary me-2" onclick="loadData('no_of_share')">No. of Shares</button>
+            <button class="btn btn-secondary" onclick="loadData('holding_change')">Changes in Holding %</button>
         </div>
 
         <hr>
         <div id="tableContainer" class="mt-4" style="overflow-x: auto;"></div>
-
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', async () => {
             const amcDropdown = document.getElementById('amcDropdown');
             const schemeDropdown = document.getElementById('schemeDropdown');
+            const tableContainer = document.getElementById('tableContainer');
 
             // Load AMC list
-            const amcs = await fetch('/get_amcs').then(res => res.json());
-            amcs.forEach(amc => {
-                const option = document.createElement('option');
-                option.text = amc;
-                option.value = amc;
-                amcDropdown.add(option);
-            });
-
-            amcDropdown.addEventListener('change', async () => {
-                const selectedAMC = amcDropdown.value;
-                const response = await fetch('/get_schemes', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ amc: selectedAMC })
-                });
-                const schemes = await response.json();
-                schemeDropdown.innerHTML = '';
-                schemes.forEach(scheme => {
+            try {
+                const amcs = await fetch('/get_amcs').then(res => res.json());
+                amcs.forEach(amc => {
                     const option = document.createElement('option');
-                    option.text = scheme;
-                    option.value = scheme;
-                    schemeDropdown.add(option);
+                    option.text = amc;
+                    option.value = amc;
+                    amcDropdown.add(option);
                 });
-            });
 
-            // Load schemes for the first AMC
-            if (amcs.length > 0) {
-                amcDropdown.dispatchEvent(new Event('change'));
+                amcDropdown.addEventListener('change', async () => {
+                    const selectedAMC = amcDropdown.value;
+                    const response = await fetch('/get_schemes', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ amc: selectedAMC })
+                    });
+                    const schemes = await response.json();
+                    schemeDropdown.innerHTML = '';
+                    schemes.forEach(scheme => {
+                        const option = document.createElement('option');
+                        option.text = scheme;
+                        option.value = scheme;
+                        schemeDropdown.add(option);
+                    });
+                    // Clear table when AMC changes
+                    tableContainer.innerHTML = '';
+                });
+
+                // Load schemes for the first AMC
+                if (amcs.length > 0) {
+                    amcDropdown.dispatchEvent(new Event('change'));
+                }
+            } catch (error) {
+                tableContainer.innerHTML = `<div class='text-danger'>Error loading AMCs: ${error}</div>`;
             }
         });
 
-        async function loadData() {
+        async function loadData(view) {
             const amc = document.getElementById('amcDropdown').value;
             const scheme = document.getElementById('schemeDropdown').value;
+            const tableContainer = document.getElementById('tableContainer');
 
-            const response = await fetch('/get_data', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ amc, scheme, min_shares: 1 }) // hardcoded min_shares as requested
-            });
+            if (!amc || !scheme) {
+                tableContainer.innerHTML = "<div class='text-danger'>Please select both AMC and Scheme</div>";
+                return;
+            }
 
-            const data = await response.json();
-            document.getElementById('tableContainer').innerHTML = data.html;
+            try {
+                const response = await fetch('/get_data', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        amc, 
+                        scheme, 
+                        min_shares: 1,
+                        view: view
+                    })
+                });
+
+                const data = await response.json();
+                tableContainer.innerHTML = data.html;
+            } catch (error) {
+                tableContainer.innerHTML = `<div class='text-danger'>Error loading data: ${error}</div>`;
+            }
         }
     </script>
 </body>

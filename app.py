@@ -36,6 +36,7 @@ def get_data():
     amc = request.json.get('amc')
     scheme = request.json.get('scheme')
     min_shares = int(request.json.get('min_shares', 0))
+    view = request.json.get('view', 'no_of_share')  # Default to no_of_share
     file_path = os.path.join(BASE_DIR, amc, scheme)
 
     try:
@@ -43,60 +44,52 @@ def get_data():
     except Exception as e:
         return jsonify({"html": f"<div class='text-danger'>Error loading CSV: {e}</div>"})
 
-    required_cols = {'Name', 'SectorName', 'NoOfShare', 'Month'}
+    required_cols = {'Name', 'SectorName', 'NoOfShare', 'Month', 'SharesZG'}
     if not required_cols.issubset(df.columns):
         return jsonify({"html": "<div class='text-danger'>Invalid CSV format: Missing required columns</div>"})
 
+    # Filter by min_shares based on NoOfShare
     df = df[df['NoOfShare'] >= min_shares]
 
-    pivot = df.pivot_table(
-        index=['Name', 'SectorName'],
-        columns='Month',
-        values='NoOfShare',
-        aggfunc='sum',
-        fill_value=0
-    )
+    # Helper function to create pivot table
+    def create_pivot_table(value_col):
+        pivot = df.pivot_table(
+            index=['Name', 'SectorName'],
+            columns='Month',
+            values=value_col,
+            aggfunc='sum',
+            fill_value=0
+        )
+        pivot.columns = [str(col).strip() for col in pivot.columns]
 
-    pivot.columns = [str(col).strip() for col in pivot.columns]
+        # Sort columns by parsed dates
+        def try_parse(col):
+            try:
+                dt = parser.parse(col, dayfirst=False, fuzzy=True)
+                return (col, dt)
+            except:
+                return None
 
-    def try_parse(col):
-        try:
-            dt = parser.parse(col, dayfirst=False, fuzzy=True)
-            return (col, dt)
-        except:
-            return None
+        parsed = list(filter(None, map(try_parse, pivot.columns)))
+        sorted_cols = [col for col, _ in sorted(parsed, key=lambda x: x[1])]
+        pivot = pivot[sorted_cols]
+        pivot.reset_index(inplace=True)
+        pivot.rename(columns={"Name": "Share", "SectorName": "Sector"}, inplace=True)
+        pivot.columns.name = None
+        return pivot, sorted_cols
 
-    parsed = list(filter(None, map(try_parse, pivot.columns)))
-    sorted_cols = [col for col, _ in sorted(parsed, key=lambda x: x[1])]
+    # Create pivot tables
+    pivot_no_shares, month_cols = create_pivot_table('NoOfShare')
+    pivot_shares_zg, _ = create_pivot_table('SharesZG')
 
-    pivot = pivot[sorted_cols]
-
-    pivot.reset_index(inplace=True)
-    pivot.rename(columns={"Name": "Share", "SectorName": "Sector"}, inplace=True)
-    pivot.columns.name = None
-
-    month_cols = sorted_cols
     static_cols = ["Share", "Sector"]
     columns = static_cols + month_cols
 
     green_shades = [
-        "#e9fbe9",  # very light green
-        "#c8f7c5",
-        "#a3f3a3",
-        "#6de26d",
-        "#36c836",
-        "#1e9f1e",
-        "#107a10"   # darkest green
+        "#e9fbe9", "#c8f7c5", "#a3f3a3", "#6de26d", "#36c836", "#1e9f1e", "#107a10"
     ]
-
     red_shades = [
-        "#ffe6e6",  # very light red
-        "#ffc2c2",
-        "#ff9999",
-        "#ff6b6b",
-        "#ff3b3b",
-        "#e60000",
-        "#990000"   # darkest red
+        "#ffe6e6", "#ffc2c2", "#ff9999", "#ff6b6b", "#ff3b3b", "#e60000", "#990000"
     ]
 
     def get_cumulative_color(trend_count, direction):
@@ -107,55 +100,66 @@ def get_data():
         elif direction == 'down':
             return red_shades[trend_count]
         else:
-            return green_shades[0]  # default
+            return green_shades[0]
 
-    html = "<div style='display:block; overflow-x:auto; width:100%'><table class='table table-bordered table-striped'><thead><tr>"
-    for col in columns:
-        html += f"<th>{col}</th>"
-    html += "</tr></thead><tbody>"
+    def generate_table(pivot, title, is_shares_zg=False):
+        html = f"<h4>{title}</h4>"
+        html += "<div style='display:block; overflow-x:auto; width:100%'><table class='table table-bordered table-striped'><thead><tr>"
+        for col in columns:
+            html += f"<th>{col}</th>"
+        html += "</tr></thead><tbody>"
 
-    for _, row in pivot.iterrows():
-        html += "<tr>"
-        html += f"<td>{row['Share']}</td><td>{row['Sector']}</td>"
+        for _, row in pivot.iterrows():
+            html += "<tr>"
+            html += f"<td>{row['Share']}</td><td>{row['Sector']}</td>"
 
-        prev_value = None
-        direction = None
-        trend_count = 0
-        prev_color = green_shades[0]  # start with lightest green
+            prev_value = None
+            direction = None
+            trend_count = 0
+            prev_color = green_shades[0]
 
-        for i, month in enumerate(month_cols):
-            current_value = row[month]
-            if i == 0:
-                color = green_shades[0]
-                trend_count = 1
-                direction = 'up'
-            else:
-                if current_value > prev_value:
-                    if direction == 'up':
-                        trend_count += 1
+            for i, month in enumerate(month_cols):
+                current_value = row[month]
+                # Round to 2 decimal places for SharesZG
+                display_value = f"{current_value:.2f}" if is_shares_zg else str(int(current_value))
+                if i == 0:
+                    color = green_shades[0]
+                    trend_count = 1
+                    direction = 'up'
+                else:
+                    if current_value > prev_value:
+                        if direction == 'up':
+                            trend_count += 1
+                        else:
+                            trend_count = 1
+                            direction = 'up'
+                        color = get_cumulative_color(trend_count, direction)
+                    elif current_value < prev_value:
+                        if direction == 'down':
+                            trend_count += 1
+                        else:
+                            trend_count = 1
+                            direction = 'down'
+                        color = get_cumulative_color(trend_count, direction)
                     else:
-                        trend_count = 1
-                        direction = 'up'
-                    color = get_cumulative_color(trend_count, direction)
+                        color = prev_color
 
-                elif current_value < prev_value:
-                    if direction == 'down':
-                        trend_count += 1
-                    else:
-                        trend_count = 1
-                        direction = 'down'
-                    color = get_cumulative_color(trend_count, direction)
+                html += f"<td style='background-color:{color}'>{display_value}</td>"
+                prev_value = current_value
+                prev_color = color
 
-                else:  # same value, keep previous color and trend
-                    color = prev_color
+            html += "</tr>"
 
-            html += f"<td style='background-color:{color}'>{current_value}</td>"
-            prev_value = current_value
-            prev_color = color
+        html += "</tbody></table></div>"
+        return html
 
-        html += "</tr>"
-
-    html += "</tbody></table></div>"
+    # Select table based on view
+    if view == 'no_of_share':
+        html = generate_table(pivot_no_shares, "Number of Shares")
+    elif view == 'holding_change':
+        html = generate_table(pivot_shares_zg, "Changes in Holding %", is_shares_zg=True)
+    else:
+        html = "<div class='text-danger'>Invalid view selected</div>"
 
     return jsonify({"html": html})
 

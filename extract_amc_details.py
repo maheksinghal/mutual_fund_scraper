@@ -43,10 +43,12 @@ def get_mf_domestic_holdings(mf_scheme_id, mf_holding_date, check_only=False):
         return []
     return []
 
-def find_latest_available_date_for_month(mf_scheme_id, month_start_date):
+def find_latest_available_date_in_last_7_days(mf_scheme_id, month_start_date):
     next_month = month_start_date.replace(day=28) + timedelta(days=4)
     last_day = next_month - timedelta(days=next_month.day)
-    for i in range((last_day - month_start_date).days + 1):
+    
+    # Check last 7 days of the month only
+    for i in range(7):
         date_to_try = (last_day - timedelta(days=i)).strftime('%Y-%m-%d')
         if get_mf_domestic_holdings(mf_scheme_id, date_to_try, check_only=True):
             return date_to_try
@@ -58,9 +60,10 @@ def add_missing_month_to_existing_files():
         today = today.replace(day=1) - timedelta(days=1)
     latest_month_date = today.replace(day=1)
     target_month = latest_month_date.strftime("%b-%Y")
-    target_date = latest_month_date.strftime("%Y-%m-%d")
 
     amc_list = get_amc_list()
+
+    found_valid_date = None  # to track first successful holding date
 
     for amc in amc_list:
         amc_name = re.sub(r'[\\/*?:"<>|]', "_", amc["Name"])
@@ -72,6 +75,7 @@ def add_missing_month_to_existing_files():
         for mf_scheme in mf_scheme_records:
             scheme_name = re.sub(r'[\\/*?:"<>|]', "_", mf_scheme["Name"])
             scheme_id = mf_scheme["ID"]
+            print(f"\n Processing Scheme: {scheme_name} (ID: {scheme_id})")
             file_path = f"{folder_path}/{scheme_name}.csv"
 
             if not os.path.exists(file_path):
@@ -86,9 +90,14 @@ def add_missing_month_to_existing_files():
                 print(f"{target_month} already exists in {scheme_name}")
                 continue
 
-            latest_data_date = find_latest_available_date_for_month(scheme_id, latest_month_date)
-            if not latest_data_date:
-                continue
+            if not found_valid_date:
+                latest_data_date = find_latest_available_date_in_last_7_days(scheme_id, latest_month_date)
+                if not latest_data_date:
+                    print("No data found in last 7 days for first scheme — skipping further processing.")
+                    return  # Exit early — skip all other AMCs
+                found_valid_date = latest_data_date
+            else:
+                latest_data_date = found_valid_date
 
             new_data = get_mf_domestic_holdings(scheme_id, latest_data_date)
             if not new_data:

@@ -3,13 +3,14 @@ import os
 import pandas as pd
 import numpy as np
 from datetime import datetime
+from dateutil import parser
 
 app = Flask(__name__)
 BASE_DIR = "amc"
 
 @app.route('/')
 def home():
-    return render_template("index.html")  # No amcs passed anymore
+    return render_template("index.html")
 
 @app.route('/get_amcs', methods=['GET'])
 def get_amcs():
@@ -29,19 +30,16 @@ def get_schemes():
     schemes = [f for f in os.listdir(amc_path) if f.endswith('.csv')]
     return jsonify(schemes)
 
-from dateutil import parser  # <-- add this
-
 @app.route('/get_data', methods=['POST'])
 def get_data():
     amc = request.json.get('amc')
     scheme = request.json.get('scheme')
     min_shares = int(request.json.get('min_shares', 0))
-    view = request.json.get('view', 'no_of_share')  # Default to no_of_share
+    view = request.json.get('view', 'holding_percentage')
 
     required_cols = {'Name', 'SectorName', 'NoOfShare', 'Month', 'SharesZG', 'MarketValue', 'MarketValueZG', 'HoldingPercentage'}
 
     if view == 'sector_holding_all':
-        # Load all CSV files from all AMCs
         try:
             all_dfs = []
             for amc_dir in os.listdir(BASE_DIR):
@@ -52,7 +50,7 @@ def get_data():
                             file_path = os.path.join(amc_path, scheme_file)
                             df = pd.read_csv(file_path)
                             if not required_cols.issubset(df.columns):
-                                continue  # Skip invalid CSVs
+                                continue
                             df = df[df['NoOfShare'] >= min_shares]
                             all_dfs.append(df)
             if not all_dfs:
@@ -61,7 +59,6 @@ def get_data():
         except Exception as e:
             return jsonify({"html": f"<div class='text-danger'>Error loading CSVs: {e}</div>"})
     else:
-        # Load single CSV for specific AMC and scheme
         file_path = os.path.join(BASE_DIR, amc, scheme)
         try:
             df = pd.read_csv(file_path)
@@ -71,7 +68,6 @@ def get_data():
             return jsonify({"html": "<div class='text-danger'>Invalid CSV format: Missing required columns</div>"})
         df = df[df['NoOfShare'] >= min_shares]
 
-    # Helper function to create pivot table
     def create_pivot_table(value_col, index_cols=['Name', 'SectorName']):
         pivot = df.pivot_table(
             index=index_cols,
@@ -81,8 +77,7 @@ def get_data():
             fill_value=0
         )
         pivot.columns = [str(col).strip() for col in pivot.columns]
-
-        # Sort columns by parsed dates
+        
         def try_parse(col):
             try:
                 dt = parser.parse(col, dayfirst=False, fuzzy=True)
@@ -101,7 +96,7 @@ def get_data():
         pivot.columns.name = None
         return pivot, sorted_cols
 
-    # Create pivot tables
+    # Create all pivots needed for consolidated view and remaining views
     pivot_no_shares, month_cols = create_pivot_table('NoOfShare')
     pivot_shares_zg, _ = create_pivot_table('SharesZG')
     pivot_market_value, _ = create_pivot_table('MarketValue')
@@ -109,9 +104,6 @@ def get_data():
     pivot_holding_percentage, _ = create_pivot_table('HoldingPercentage')
     pivot_sector_holding, _ = create_pivot_table('HoldingPercentage', index_cols=['SectorName'])
     pivot_sector_holding_all, _ = create_pivot_table('HoldingPercentage', index_cols=['SectorName'])
-
-    static_cols = ["Share", "Sector"] if view not in ['sector_holding', 'sector_holding_all'] else ["Sector"]
-    columns = static_cols + month_cols
 
     green_shades = [
         "#e9fbe9", "#c8f7c5", "#a3f3a3", "#6de26d", "#36c836", "#1e9f1e", "#107a10"
@@ -130,74 +122,129 @@ def get_data():
         else:
             return green_shades[0]
 
-    def generate_table(pivot, title, is_decimal=False):
+    def generate_table(pivot, title, is_decimal=False, is_consolidated=False, pivots=None):
+        static_cols = ["Share", "Sector"] if view not in ['sector_holding', 'sector_holding_all'] else ["Sector"]
+        columns = static_cols + month_cols if not is_consolidated else static_cols
         html = f"<h4>{title}</h4>"
         html += "<div style='display:block; overflow-x:auto; width:100%'><table class='table table-bordered table-striped'><thead><tr>"
-        for col in columns:
-            html += f"<th>{col}</th>"
+        
+        if is_consolidated:
+            headers = ["Share", "Sector", "Metric"] + month_cols
+            for col in headers:
+                html += f"<th>{col}</th>"
+        else:
+            for col in columns:
+                html += f"<th>{col}</th>"
         html += "</tr></thead><tbody>"
 
-        for _, row in pivot.iterrows():
-            html += "<tr>"
-            if view in ['sector_holding', 'sector_holding_all']:
-                html += f"<td>{row['Sector']}</td>"
-            else:
-                html += f"<td>{row['Share']}</td><td>{row['Sector']}</td>"
-
-            prev_value = None
-            direction = None
-            trend_count = 0
-            prev_color = green_shades[0]
-
-            for i, month in enumerate(month_cols):
-                current_value = row[month]
-                display_value = f"{current_value:.2f}" if is_decimal else str(int(current_value))
-                if i == 0:
-                    color = green_shades[0]
-                    trend_count = 1
-                    direction = 'up'
-                else:
-                    if current_value > prev_value:
-                        if direction == 'up':
-                            trend_count += 1
-                        else:
+        if is_consolidated:
+            metrics = [
+                ("No. of Shares", pivot_no_shares, False),
+                ("Changes in Holding %", pivot_shares_zg, True),
+                ("Market Value", pivot_market_value, True),
+                ("Changes in Market Value %", pivot_market_value_zg, True),
+                ("% of Total Holding", pivot_holding_percentage, True)
+            ]
+            for _, row in pivot_no_shares.iterrows():
+                for metric_name, pivot_data, is_decimal in metrics:
+                    metric_row = pivot_data[(pivot_data['Share'] == row['Share']) & (pivot_data['Sector'] == row['Sector'])]
+                    if metric_row.empty:
+                        continue
+                    html += "<tr>"
+                    html += f"<td>{row['Share']}</td><td>{row['Sector']}</td><td>{metric_name}</td>"
+                    prev_value = None
+                    direction = None
+                    trend_count = 0
+                    prev_color = green_shades[0]
+                    for i, month in enumerate(month_cols):
+                        current_value = metric_row[month].iloc[0]
+                        current_value = float(current_value) if pd.notnull(current_value) else 0.0
+                        display_value = f"{current_value:.2f}" if is_decimal else str(int(current_value))
+                        if i == 0:
+                            color = green_shades[0]
                             trend_count = 1
                             direction = 'up'
-                        color = get_cumulative_color(trend_count, direction)
-                    elif current_value < prev_value:
-                        if direction == 'down':
-                            trend_count += 1
                         else:
-                            trend_count = 1
-                            direction = 'down'
-                        color = get_cumulative_color(trend_count, direction)
+                            if prev_value is not None and pd.notnull(prev_value):
+                                if current_value > prev_value:
+                                    if direction == 'up':
+                                        trend_count += 1
+                                    else:
+                                        trend_count = 1
+                                        direction = 'up'
+                                    color = get_cumulative_color(trend_count, direction)
+                                elif current_value < prev_value:
+                                    if direction == 'down':
+                                        trend_count += 1
+                                    else:
+                                        trend_count = 1
+                                        direction = 'down'
+                                    color = get_cumulative_color(trend_count, direction)
+                                else:
+                                    color = prev_color
+                            else:
+                                color = green_shades[0]
+                        html += f"<td style='background-color:{color}'>{display_value}</td>"
+                        prev_value = current_value
+                        prev_color = color
+                    html += "</tr>"
+        else:
+            for _, row in pivot.iterrows():
+                html += "<tr>"
+                if view in ['sector_holding', 'sector_holding_all']:
+                    html += f"<td>{row['Sector']}</td>"
+                else:
+                    html += f"<td>{row['Share']}</td><td>{row['Sector']}</td>"
+                prev_value = None
+                direction = None
+                trend_count = 0
+                prev_color = green_shades[0]
+                for i, month in enumerate(month_cols):
+                    current_value = row[month]
+                    current_value = float(current_value) if pd.notnull(current_value) else 0.0
+                    display_value = f"{current_value:.2f}" if is_decimal else str(int(current_value))
+                    if i == 0:
+                        color = green_shades[0]
+                        trend_count = 1
+                        direction = 'up'
                     else:
-                        color = prev_color
-
-                html += f"<td style='background-color:{color}'>{display_value}</td>"
-                prev_value = current_value
-                prev_color = color
-
-            html += "</tr>"
+                        if prev_value is not None and pd.notnull(prev_value):
+                            if current_value > prev_value:
+                                if direction == 'up':
+                                    trend_count += 1
+                                else:
+                                    trend_count = 1
+                                    direction = 'up'
+                                color = get_cumulative_color(trend_count, direction)
+                            elif current_value < prev_value:
+                                if direction == 'down':
+                                    trend_count += 1
+                                else:
+                                    trend_count = 1
+                                    direction = 'down'
+                                color = get_cumulative_color(trend_count, direction)
+                            else:
+                                color = prev_color
+                        else:
+                            color = green_shades[0]
+                    html += f"<td style='background-color:{color}'>{display_value}</td>"
+                    prev_value = current_value
+                    prev_color = color
+                html += "</tr>"
 
         html += "</tbody></table></div>"
         return html
 
-    # Select table based on view
-    if view == 'no_of_share':
-        html = generate_table(pivot_no_shares, "Number of Shares")
-    elif view == 'holding_change':
-        html = generate_table(pivot_shares_zg, "Changes in Holding %", is_decimal=True)
-    elif view == 'market_value':
-        html = generate_table(pivot_market_value, "Market Value", is_decimal=True)
-    elif view == 'market_value_zg':
-        html = generate_table(pivot_market_value_zg, "Changes in Market Value %", is_decimal=True)
-    elif view == 'holding_percentage':
+    if view == 'holding_percentage':
         html = generate_table(pivot_holding_percentage, "% of Total Holding", is_decimal=True)
     elif view == 'sector_holding':
         html = generate_table(pivot_sector_holding, "Sector Wise Holding %", is_decimal=True)
     elif view == 'sector_holding_all':
         html = generate_table(pivot_sector_holding_all, "Sector Wise Holding % (All AMCs)", is_decimal=True)
+    elif view == 'consolidated':
+        html = generate_table(pivot_no_shares, "Consolidated View", is_consolidated=True, 
+                            pivots=[pivot_no_shares, pivot_shares_zg, pivot_market_value, 
+                                   pivot_market_value_zg, pivot_holding_percentage])
     else:
         html = "<div class='text-danger'>Invalid view selected</div>"
 

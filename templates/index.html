@@ -56,15 +56,11 @@
             <select id="schemeDropdown" class="form-select"></select>
         </div>
 
-        <!-- Buttons for all views -->
         <div class="mb-3 d-flex flex-wrap gap-2">
-            <button class="btn btn-primary" onclick="loadData('no_of_share', this)">No. of Shares</button>
-            <button class="btn btn-secondary" onclick="loadData('holding_change', this)">Changes in Holding %</button>
-            <button class="btn btn-info" onclick="loadData('market_value', this)">Market Value</button>
-            <button class="btn btn-success" onclick="loadData('market_value_zg', this)">Changes in Market Value %</button>
             <button class="btn btn-warning" onclick="loadData('holding_percentage', this)">% of Total Holding</button>
             <button class="btn btn-danger" onclick="loadData('sector_holding', this)">Sector Wise Holding %</button>
             <button class="btn btn-dark" onclick="loadData('sector_holding_all', this)">Sector Wise Holding % (All AMCs)</button>
+            <button class="btn btn-primary" onclick="loadData('consolidated', this)">Consolidated View</button>
         </div>
 
         <hr>
@@ -90,7 +86,6 @@
                 return;
             }
 
-            // Load AMC list
             try {
                 const response = await fetch('/get_amcs');
                 if (!response.ok) throw new Error('Failed to fetch AMCs');
@@ -119,14 +114,12 @@
                             option.value = scheme;
                             schemeDropdown.appendChild(option);
                         });
-                        // Clear table when AMC changes
                         tableContainer.innerHTML = '<div id="loadingSpinner" style="display: none;"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p>Loading data...</p></div>';
                     } catch (error) {
                         tableContainer.innerHTML = `<div class='text-danger'>Error loading schemes: ${error.message}</div>`;
                     }
                 });
 
-                // Load schemes for the first AMC
                 if (amcs.length > 0) {
                     amcDropdown.dispatchEvent(new Event('change'));
                 }
@@ -146,12 +139,11 @@
                 return;
             }
 
-            if (view !== 'sector_holding_all' && (!amcDropdown.value || !schemeDropdown.value)) {
+            if (view !== 'sector_holding_all' && view !== 'consolidated' && (!amcDropdown.value || !schemeDropdown.value)) {
                 tableContainer.innerHTML = "<div class='text-danger'>Please select both AMC and Scheme</div>";
                 return;
             }
 
-            // Disable button and show spinner
             button.disabled = true;
             loadingSpinner.style.display = 'block';
             tableContainer.querySelectorAll('table, .text-danger, h4').forEach(el => el.remove());
@@ -173,42 +165,40 @@
                 const data = await response.json();
                 tableContainer.innerHTML = '<div id="loadingSpinner" style="display: none;"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p>Loading data...</p></div>';
                 
-                // Modify table headers to include sort buttons only for month columns
                 let html = data.html;
-                const parser = new DOMParser();
-                const doc = parser.parseFromString(html, 'text/html');
-                const parsedTable = doc.querySelector('table');
-                if (parsedTable) {
-                    const headers = parsedTable.querySelectorAll('th');
-                    headers.forEach((header, index) => {
-                        const headerText = header.textContent.trim();
-                        // Skip adding sort buttons for 'Sector' and 'Share'
-                        if (headerText.toLowerCase() === 'sector' || headerText.toLowerCase() === 'share') {
-                            header.innerHTML = `<span>${headerText}</span>`;
-                        } else {
-                            header.innerHTML = `
-                                <div class="sort-buttons">
-                                    <span>${headerText}</span>
-                                    <div>
-                                        <button class="sort-btn asc" data-col="${index}" title="Sort Ascending"></button>
-                                        <button class="sort-btn desc" data-col="${index}" title="Sort Descending"></button>
-                                    </div>
-                                </div>`;
+                if (view !== 'consolidated') {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, 'text/html');
+                    const parsedTable = doc.querySelector('table');
+                    if (parsedTable) {
+                        const headers = parsedTable.querySelectorAll('th');
+                        headers.forEach((header, index) => {
+                            const headerText = header.textContent.trim();
+                            if (headerText.toLowerCase() === 'sector' || headerText.toLowerCase() === 'share' || headerText.toLowerCase() === 'metric') {
+                                header.innerHTML = `<span>${headerText}</span>`;
+                            } else {
+                                header.innerHTML = `
+                                    <div class="sort-buttons">
+                                        <span>${headerText}</span>
+                                        <div>
+                                            <button class="sort-btn asc" data-col="${index}" title="Sort Ascending"></button>
+                                            <button class="sort-btn desc" data-col="${index}" title="Sort Descending"></button>
+                                        </div>
+                                    </div>`;
+                            }
+                        });
+                        html = parsedTable.outerHTML;
+                        const title = doc.querySelector('h4');
+                        if (title) {
+                            html = `<h4>${title.textContent}</h4><div style='display:block; overflow-x:auto; width:100%'>${html}</div>`;
                         }
-                    });
-                    html = parsedTable.outerHTML;
-                    // Include the title (h4) if present
-                    const title = doc.querySelector('h4');
-                    if (title) {
-                        html = `<h4>${title.textContent}</h4><div style='display:block; overflow-x:auto; width:100%'>${html}</div>`;
                     }
                 }
                 
                 tableContainer.insertAdjacentHTML('beforeend', html);
 
-                // Add event listeners to sort buttons
                 const tableElement = tableContainer.querySelector('table');
-                if (tableElement) {
+                if (tableElement && view !== 'consolidated') {
                     const sortButtons = tableElement.querySelectorAll('.sort-btn');
                     sortButtons.forEach(button => {
                         button.addEventListener('click', () => {
@@ -217,14 +207,11 @@
                             sortTable(tableElement, colIndex, isAscending);
                         });
                     });
-                } else {
-                    console.warn('Table element not found after rendering');
                 }
             } catch (error) {
                 tableContainer.innerHTML = '<div id="loadingSpinner" style="display: none;"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p>Loading data...</p></div>';
                 tableContainer.insertAdjacentHTML('beforeend', `<div class='text-danger'>Error loading data: ${error.message}</div>`);
             } finally {
-                // Re-enable button and hide spinner
                 button.disabled = false;
                 loadingSpinner.style.display = 'none';
             }
@@ -248,14 +235,10 @@
                 return;
             }
             const buttons = header.querySelectorAll('.sort-btn');
-
-            // Remove 'active' class from all buttons in the table
             table.querySelectorAll('.sort-btn').forEach(btn => btn.classList.remove('active'));
-            // Add 'active' class to the clicked button
             const activeButton = header.querySelector(isAscending ? '.sort-btn.asc' : '.sort-btn.desc');
             if (activeButton) activeButton.classList.add('active');
 
-            // Determine if the column is numeric
             const isNumeric = rows.every(row => {
                 const cell = row.cells[colIndex];
                 if (!cell) return false;
@@ -281,7 +264,6 @@
                 }
             });
 
-            // Rebuild tbody with sorted rows
             tbody.innerHTML = '';
             rows.forEach(row => tbody.appendChild(row));
         }

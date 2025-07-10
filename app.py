@@ -125,17 +125,12 @@ def get_data():
 
     def generate_table(pivot, title, is_decimal=False, is_consolidated=False, pivots=None):
         static_cols = ["Share", "Sector"] if view not in ['sector_holding', 'sector_holding_all'] else ["Sector"]
-        columns = static_cols + month_cols if not is_consolidated else static_cols
+        columns = static_cols + month_cols if not is_consolidated else ["Share", "Sector", "Metric"] + month_cols
         html = f"<h4>{title}</h4>"
         html += "<div style='display:block; overflow-x:auto; width:100%'><table class='table table-bordered table-striped'><thead><tr>"
         
-        if is_consolidated:
-            headers = ["Share", "Sector", "Metric"] + month_cols
-            for col in headers:
-                html += f"<th>{col}</th>"
-        else:
-            for col in columns:
-                html += f"<th>{col}</th>"
+        for col in columns:
+            html += f"<th>{col}</th>"
         html += "</tr></thead><tbody>"
 
         if is_consolidated:
@@ -147,18 +142,32 @@ def get_data():
                 ("% of Total Holding", pivot_holding_percentage, True)
             ]
             for _, row in pivot_no_shares.iterrows():
-                for metric_name, pivot_data, is_decimal in metrics:
-                    metric_row = pivot_data[(pivot_data['Share'] == row['Share']) & (pivot_data['Sector'] == row['Sector'])]
+                share, sector = row['Share'], row['Sector']
+                for metric_idx, (metric_name, pivot_data, is_decimal) in enumerate(metrics):
+                    metric_row = pivot_data[(pivot_data['Share'] == share) & (pivot_data['Sector'] == sector)]
                     if metric_row.empty:
+                        html += "<tr>"
+                        if metric_idx == 0:
+                            html += f"<td>{share}</td><td>{sector}</td>"
+                        else:
+                            html += "<td></td><td></td>"
+                        html += f"<td>{metric_name}</td>"
+                        for _ in month_cols:
+                            html += "<td style='background-color:#e9fbe9'>0</td>"
+                        html += "</tr>"
                         continue
                     html += "<tr>"
-                    html += f"<td>{row['Share']}</td><td>{row['Sector']}</td><td>{metric_name}</td>"
+                    if metric_idx == 0:
+                        html += f"<td>{share}</td><td>{sector}</td>"
+                    else:
+                        html += "<td></td><td></td>"
+                    html += f"<td>{metric_name}</td>"
                     prev_value = None
                     direction = None
                     trend_count = 0
                     prev_color = green_shades[0]
                     for i, month in enumerate(month_cols):
-                        current_value = metric_row[month].iloc[0]
+                        current_value = metric_row[month].iloc[0] if not metric_row.empty else 0.0
                         current_value = float(current_value) if pd.notnull(current_value) else 0.0
                         display_value = f"{current_value:.2f}" if is_decimal else str(int(current_value))
                         if i == 0:

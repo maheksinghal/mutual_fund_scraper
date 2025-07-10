@@ -39,7 +39,7 @@ def get_data():
 
     required_cols = {'Name', 'SectorName', 'NoOfShare', 'Month', 'SharesZG', 'MarketValue', 'MarketValueZG', 'HoldingPercentage'}
 
-    if view == 'sector_holding_all':
+    if view in ['sector_holding_all', 'share_wise_shares_all']:
         try:
             all_dfs = []
             for amc_dir in os.listdir(BASE_DIR):
@@ -96,7 +96,7 @@ def get_data():
         pivot.columns.name = None
         return pivot, sorted_cols
 
-    # Create all pivots needed for consolidated view and remaining views
+    # Create all pivots needed for views
     pivot_no_shares, month_cols = create_pivot_table('NoOfShare')
     pivot_shares_zg, _ = create_pivot_table('SharesZG')
     pivot_market_value, _ = create_pivot_table('MarketValue')
@@ -104,6 +104,7 @@ def get_data():
     pivot_holding_percentage, _ = create_pivot_table('HoldingPercentage')
     pivot_sector_holding, _ = create_pivot_table('HoldingPercentage', index_cols=['SectorName'])
     pivot_sector_holding_all, _ = create_pivot_table('HoldingPercentage', index_cols=['SectorName'])
+    pivot_share_shares_all, _ = create_pivot_table('NoOfShare', index_cols=['Name', 'SectorName'])
 
     green_shades = [
         "#e9fbe9", "#c8f7c5", "#a3f3a3", "#6de26d", "#36c836", "#1e9f1e", "#107a10"
@@ -241,6 +242,8 @@ def get_data():
         html = generate_table(pivot_sector_holding, "Sector Wise Holding %", is_decimal=True)
     elif view == 'sector_holding_all':
         html = generate_table(pivot_sector_holding_all, "Sector Wise Holding % (All AMCs)", is_decimal=True)
+    elif view == 'share_wise_shares_all':
+        html = generate_table(pivot_share_shares_all, "Share Wise Number of Shares (All AMCs)")
     elif view == 'consolidated':
         html = generate_table(pivot_no_shares, "Consolidated View", is_consolidated=True, 
                             pivots=[pivot_no_shares, pivot_shares_zg, pivot_market_value, 

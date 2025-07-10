@@ -60,6 +60,7 @@
             <button class="btn btn-warning" onclick="loadData('holding_percentage', this)">% of Total Holding</button>
             <button class="btn btn-danger" onclick="loadData('sector_holding', this)">Sector Wise Holding %</button>
             <button class="btn btn-dark" onclick="loadData('sector_holding_all', this)">Sector Wise Holding % (All AMCs)</button>
+            <button class="btn btn-success" onclick="loadData('share_wise_shares_all', this)">Share Wise Number of Shares (All AMCs)</button>
             <button class="btn btn-primary" onclick="loadData('consolidated', this)">Consolidated View</button>
         </div>
 
@@ -139,7 +140,7 @@
                 return;
             }
 
-            if (view !== 'sector_holding_all' && view !== 'consolidated' && (!amcDropdown.value || !schemeDropdown.value)) {
+            if (view !== 'sector_holding_all' && view !== 'share_wise_shares_all' && view !== 'consolidated' && (!amcDropdown.value || !schemeDropdown.value)) {
                 tableContainer.innerHTML = "<div class='text-danger'>Please select both AMC and Scheme</div>";
                 return;
             }

@@ -14,7 +14,7 @@ def home():
 @app.route('/get_amcs', methods=['GET'])
 def get_amcs():
     try:
-        amcs = [f for f in os.listdir(BASE_DIR) if os.path.isdir(os.path.join(BASE_DIR, f))]
+        amcs = sorted([f for f in os.listdir(BASE_DIR) if os.path.isdir(os.path.join(BASE_DIR, f))])
     except FileNotFoundError:
         amcs = []
     return jsonify(amcs)

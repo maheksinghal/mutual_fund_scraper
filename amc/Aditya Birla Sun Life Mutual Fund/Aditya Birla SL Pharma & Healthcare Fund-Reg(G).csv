@@ -1,35 +1,67 @@
 CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,Type,NoOfShare,PrevNoOfShare,SharesZG,MarketValue,PrevMarketValue,MarketValueZG,HoldingPercentage,Priority,SecuritySlug,McapCategory,Month
-420,5071,1,Sun Pharmaceutical Industries Ltd.,Healthcare,Healthcare,Domestic Equities,686256.0,686256.0,0.0,129.4519,122.21530000000001,5.921189900118887,14.5397808518221,1100,sun-pharmaceutical-industries,Large Cap,Dec-2024
-133330,5128,1,Cipla Ltd.,Healthcare,Healthcare,Domestic Equities,502098.0,502098.0,0.0,76.7708,77.0168,-0.31941082984492164,8.62274410664551,1100,cipla,Large Cap,Dec-2024
+420,5071,1,Sun Pharmaceutical Industries Ltd.,Healthcare,Healthcare,Domestic Equities,586256.0,586256.0,0.0,98.2389,98.3503,-0.11326859196160292,11.6884544641913,1100,sun-pharmaceutical-industries,Large Cap,Jun-2025
+133330,5128,1,Cipla Ltd.,Healthcare,Healthcare,Domestic Equities,427098.0,427098.0,0.0,64.3167,62.599799999999995,2.74266051968218,7.65239451212352,1100,cipla,Large Cap,Jun-2025
+38020,6672,1,Apollo Hospitals Enterprise Ltd.,Healthcare,Healthcare,Domestic Equities,84936.0,84936.0,0.0,61.5107,58.440200000000004,5.254088795041756,7.31853691369234,1100,apollo-hospitals-enterprise,Large Cap,Jun-2025
+152367,6359,1,Abbott India Ltd.,Healthcare,Healthcare,Domestic Equities,16294.0,16294.0,0.0,58.1207,49.623400000000004,17.123574765130957,6.91519505386279,1100,abbott-india,Mid Cap,Jun-2025
+152331,7581,1,Torrent Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,133346.0,140346.0,-4.987673321647927,45.446999999999996,44.555600000000005,2.000646383395116,5.40727949960862,1100,torrent-pharmaceuticals,Large Cap,Jun-2025
+152636,5140,1,Fortis Healthcare Ltd.,Healthcare,Healthcare,Domestic Equities,527564.0,527564.0,0.0,41.915,37.2618,12.487856195889629,4.9870424940281,1100,fortis-healthcare,Mid Cap,Jun-2025
+152211,6247,1,Lupin Ltd.,Healthcare,Healthcare,Domestic Equities,196214.0,196214.0,0.0,38.0263,38.412800000000004,-1.0061750249916717,4.52436535824074,1100,lupin,Large Cap,Jun-2025
+133495,5019,1,Ajanta Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,129312.0,129312.0,0.0,33.2862,32.4677,2.5209669918103197,3.96038873588735,1100,ajanta-pharma,Mid Cap,Jun-2025
+171465,6543,1,Aurobindo Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,271254.0,271254.0,0.0,30.7819,31.1345,-1.1325057412195398,3.662427373182,1100,aurobindo-pharma,Mid Cap,Jun-2025
+352,7184,1,Ipca Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,220197.0,220197.0,0.0,30.603,31.3737,-2.4565161265645976,3.64114186913377,1100,ipca-laboratories,Mid Cap,Jun-2025
+58780,8388,1,Alembic Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,240291.0,240291.0,0.0,24.968600000000002,24.4628,2.067629216606436,2.97076152251915,1100,alembic-pharmaceuticals,Small Cap,Jun-2025
+37877,7189,1,JB Chemicals & Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,140938.0,140938.0,0.0,23.6677,23.6254,0.17904458760486672,2.81598057105831,1100,jb-chemicals-pharmaceuticals,Small Cap,Jun-2025
+1152,105806,1,Mankind Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,100574.0,100574.0,0.0,23.3312,24.8186,-5.993085830788209,2.77594383482449,1100,mankind-pharma,Large Cap,Jun-2025
+95406,100018,1,Emcure Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,177757.0,177757.0,0.0,22.9982,23.639899999999997,-2.7144784876416406,2.73632352823946,1100,emcure-pharmaceuticals,Small Cap,Jun-2025
+861,112211,1,Sai Life Sciences Ltd.,Healthcare,Healthcare,Domestic Equities,254988.0,254988.0,0.0,19.7233,19.3013,2.186381228207417,2.34667625486018,1100,sai-life-sciences,Small Cap,Jun-2025
+102214,109824,1,Jupiter Life Line Hospitals Ltd.,Healthcare,Healthcare,Domestic Equities,131408.0,131408.0,0.0,19.6757,19.2486,2.218862670531885,2.34101281163661,1100,jupiter-life-line-hospitals,Small Cap,Jun-2025
+152386,5556,1,Glaxosmithkline Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,52318.0,69775.0,-25.018989609458973,17.7259,23.016,-22.98444560305874,2.10902580328982,1100,glaxosmithkline-pharmaceuticals,Mid Cap,Jun-2025
+171462,6372,1,Divi's Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,26000.0,26000.0,0.0,17.7047,17.1912,2.986993345432555,2.10650342941714,1100,divi's-laboratories,Large Cap,Jun-2025
+38931,15891,1,Alkem Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,35039.0,49770.0,-29.59815149688567,17.305799999999998,25.3752,-31.800340489927176,2.05904234744487,1100,alkem-laboratories,Mid Cap,Jun-2025
+133643,6434,1,Biocon Ltd.,Healthcare,Healthcare,Domestic Equities,418615.0,,,14.8901,,,1.77162260384893,1100,biocon,Mid Cap,Jun-2025
+154537,98873,1,Medi Assist Healthcare Services Ltd.,Business Services,Other,Domestic Equities,261527.0,261527.0,0.0,13.923699999999998,12.9547,7.4799107659768165,1.6566404288226,1100,medi-assist-healthcare-services,Small Cap,Jun-2025
+171585,5257,1,Dr. Reddy's Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,98975.0,98975.0,0.0,12.701500000000001,12.3838,2.565448408404527,1.51122319546458,1100,dr-reddy's-laboratories,Large Cap,Jun-2025
+152389,5123,1,Sanofi India Ltd.,Healthcare,Healthcare,Domestic Equities,19296.0,19296.0,0.0,12.294400000000001,11.949000000000002,2.890618461795963,1.46278647831514,1100,sanofi-india,Small Cap,Jun-2025
+97859,90258,1,Metropolis Healthcare Ltd.,Healthcare,Healthcare,Domestic Equities,67160.0,67160.0,0.0,11.458800000000002,11.2836,1.5526959481016884,1.36336687416365,1100,metropolis-healthcare,Small Cap,Jun-2025
+133360,5711,1,Procter & Gamble Health Ltd.,Healthcare,Healthcare,Domestic Equities,19000.0,19000.0,0.0,11.173,10.921199999999999,2.3056074424056026,1.32936241884232,1100,procter-gamble-health,Small Cap,Jun-2025
+61269,112232,1,Suraksha Diagnostic Ltd.,Healthcare,Healthcare,Domestic Equities,334736.0,334736.0,0.0,10.8856,10.748399999999998,1.2764690558594793,1.29516759568155,1100,suraksha-diagnostic,Small Cap,Jun-2025
+219108,112373,1,Sanofi Consumer Healthcare India Ltd.,Healthcare,Healthcare,Domestic Equities,18671.0,18671.0,0.0,10.635,9.837,8.112229338212865,1.26535123282808,1100,sanofi-consumer-healthcare-india,Small Cap,Jun-2025
+39219,111883,1,Akums Drugs & Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,172550.0,172550.0,0.0,10.1011,9.8595,2.4504285207160574,1.20182786440242,1100,akums-drugs-pharmaceuticals,Small Cap,Jun-2025
+77009,96064,1,Max Healthcare Institute Ltd.,Healthcare,Healthcare,Domestic Equities,70000.0,70000.0,0.0,8.932,7.8764,13.40206185567011,1.06272846371607,1100,max-healthcare-institute,Large Cap,Jun-2025
+190355,99127,1,Vijaya Diagnostic Centre Ltd.,Healthcare,Healthcare,Domestic Equities,78210.0,78210.0,0.0,7.7056,7.4792,3.027061717830782,0.916811514779505,1100,vijaya-diagnostic-centre,Small Cap,Jun-2025
+171411,6555,1,Vinati Organics Ltd.,Chemicals,Chemicals,Domestic Equities,38952.0,38952.0,0.0,7.6973,7.1804,7.1987633000947095,0.91582398161237,1100,vinati-organics,Small Cap,Jun-2025
+96373,16122,1,Thyrocare Technologies Ltd.,Healthcare,Healthcare,Domestic Equities,54893.0,,,5.437200000000001,,,0.64691751040271,1100,thyrocare-technologies,Small Cap,Jun-2025
+420,5071,1,Sun Pharmaceutical Industries Ltd.,Healthcare,Healthcare,Domestic Equities,686256.0,686256.0,0.0,129.4519,122.2153,5.921189900118887,14.5397808518221,1100,sun-pharmaceutical-industries,Large Cap,Dec-2024
+133330,5128,1,Cipla Ltd.,Healthcare,Healthcare,Domestic Equities,502098.0,502098.0,0.0,76.7708,77.0168,-0.3194108298449216,8.62274410664551,1100,cipla,Large Cap,Dec-2024
 152331,7581,1,Torrent Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,214696.0,214696.0,0.0,72.1389,71.3692,1.078476429608294,8.10249827844558,1100,torrent-pharmaceuticals,Large Cap,Dec-2024
 38020,6672,1,Apollo Hospitals Enterprise Ltd.,Healthcare,Healthcare,Domestic Equities,73936.0,73936.0,0.0,53.9463,50.4902,6.845090730478383,6.05914150172111,1100,apollo-hospitals-enterprise,Mid Cap,Dec-2024
 152211,6247,1,Lupin Ltd.,Healthcare,Healthcare,Domestic Equities,196214.0,196214.0,0.0,46.2221,40.2386,14.870050150850176,5.19157466604203,1100,lupin,Mid Cap,Dec-2024
-171465,6543,1,Aurobindo Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,341254.0,341254.0,0.0,45.540299999999995,43.0867,5.694564680052074,5.11499624127752,1100,aurobindo-pharma,Mid Cap,Dec-2024
+171465,6543,1,Aurobindo Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,341254.0,341254.0,0.0,45.5403,43.0867,5.694564680052074,5.11499624127752,1100,aurobindo-pharma,Mid Cap,Dec-2024
 152636,5140,1,Fortis Healthcare Ltd.,Healthcare,Healthcare,Domestic Equities,527564.0,727564.0,-27.488990659240976,37.9767,47.961000000000006,-20.81753925064115,4.26546767931094,1100,fortis-healthcare,Mid Cap,Dec-2024
 133495,5019,1,Ajanta Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,129312.0,129312.0,0.0,37.9169,39.0852,-2.98911096783437,4.25875106182646,1100,ajanta-pharma,Mid Cap,Dec-2024
 352,7184,1,Ipca Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,220197.0,220197.0,0.0,37.3278,33.9665,9.895926869121048,4.19258451734308,1100,ipca-laboratories,Mid Cap,Dec-2024
 38931,15891,1,Alkem Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,49770.0,49770.0,0.0,28.0399,28.0825,-0.1516958960206612,3.14938599670616,1100,alkem-laboratories,Mid Cap,Dec-2024
-58780,8388,1,Alembic Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,240291.0,240291.0,0.0,25.621,26.244600000000002,-2.3761078469475674,2.87769994263919,1100,alembic-pharmaceuticals,Small Cap,Dec-2024
+58780,8388,1,Alembic Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,240291.0,240291.0,0.0,25.621,26.2446,-2.3761078469475674,2.87769994263919,1100,alembic-pharmaceuticals,Small Cap,Dec-2024
 152367,6359,1,Abbott India Ltd.,Healthcare,Healthcare,Domestic Equities,7994.0,7994.0,0.0,23.775,22.1621,7.277739925368082,2.67036088116181,1100,abbott-india,Mid Cap,Dec-2024
-190355,99127,1,Vijaya Diagnostic Centre Ltd.,Healthcare,Healthcare,Domestic Equities,220987.0,220987.0,0.0,23.355,25.781399999999998,-9.411436151644203,2.62318731354507,1100,vijaya-diagnostic-centre,Small Cap,Dec-2024
-37877,7189,1,JB Chemicals & Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,122938.0,122938.0,0.0,22.671599999999998,21.3334,6.272792897522181,2.54642917995155,1100,jb-chemicals-pharmaceuticals,Small Cap,Dec-2024
-171585,5257,1,Dr. Reddy's Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,158975.0,158975.0,0.0,22.0737,19.113599999999998,15.486878453038674,2.47927423690858,1100,dr-reddy's-laboratories,Large Cap,Dec-2024
+190355,99127,1,Vijaya Diagnostic Centre Ltd.,Healthcare,Healthcare,Domestic Equities,220987.0,220987.0,0.0,23.355,25.7814,-9.411436151644205,2.62318731354507,1100,vijaya-diagnostic-centre,Small Cap,Dec-2024
+37877,7189,1,JB Chemicals & Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,122938.0,122938.0,0.0,22.6716,21.3334,6.272792897522181,2.54642917995155,1100,jb-chemicals-pharmaceuticals,Small Cap,Dec-2024
+171585,5257,1,Dr. Reddy's Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,158975.0,158975.0,0.0,22.0737,19.1136,15.486878453038674,2.47927423690858,1100,dr-reddy's-laboratories,Large Cap,Dec-2024
 1152,105806,1,Mankind Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,76574.0,64835.0,18.105961286342254,22.0564,16.6055,32.825870946373186,2.47733113519484,1100,mankind-pharma,Mid Cap,Dec-2024
 102214,109824,1,Jupiter Life Line Hospitals Ltd.,Healthcare,Healthcare,Domestic Equities,131408.0,131408.0,0.0,20.5364,19.8768,3.318441600257577,2.3066077476295,1100,jupiter-life-line-hospitals,Small Cap,Dec-2024
-861,112211,1,Sai Life Sciences Ltd.,Healthcare,Healthcare,Domestic Equities,254988.0,,,19.154700000000002,,,2.15141794197224,1100,sai-life-sciences,Small Cap,Dec-2024
+861,112211,1,Sai Life Sciences Ltd.,Healthcare,Healthcare,Domestic Equities,254988.0,,,19.1547,,,2.15141794197224,1100,sai-life-sciences,Small Cap,Dec-2024
 95406,100018,1,Emcure Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,122080.0,122080.0,0.0,17.6662,16.6639,6.014798456543773,1.98423257197816,1100,emcure-pharmaceuticals,Small Cap,Dec-2024
 97743,96921,1,Gland Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,94305.0,97657.0,-3.4324216390018125,16.7802,16.9728,-1.1347567873303162,1.88471880791047,1100,gland-pharma,Small Cap,Dec-2024
-154537,98873,1,Medi Assist Healthcare Services Ltd.,Business Services,Other,Domestic Equities,261527.0,261527.0,0.0,15.079600000000001,15.5857,-3.2472073759920885,1.69371078626993,1100,medi-assist-healthcare-services,Small Cap,Dec-2024
-224124,112798,1,Onesource Specialty Pharma Ltd.,Healthcare,,Domestic Equities,67236.0,,,11.421800000000001,,,1.28287393953539,1100,onesource-specialty-pharma,,Dec-2024
-39219,111883,1,Akums Drugs & Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,172550.0,172550.0,0.0,11.0156,10.440999999999999,5.503304281199123,1.23725036056892,1100,akums-drugs-pharmaceuticals,Small Cap,Dec-2024
-171968,4931,1,Zydus Lifesciences Ltd.,Healthcare,Healthcare,Domestic Equities,109792.0,159792.0,-31.29067788124562,10.6685,15.4351,-30.881562153792334,1.19826477647423,1100,zydus-lifesciences,Large Cap,Dec-2024
-133360,5711,1,Procter & Gamble Health Ltd.,Healthcare,Healthcare,Domestic Equities,19000.0,19000.0,0.0,9.952300000000001,9.8364,1.178276605262091,1.11782261188587,1100,procter-gamble-health,Small Cap,Dec-2024
+154537,98873,1,Medi Assist Healthcare Services Ltd.,Business Services,Other,Domestic Equities,261527.0,261527.0,0.0,15.0796,15.5857,-3.2472073759920885,1.69371078626993,1100,medi-assist-healthcare-services,Small Cap,Dec-2024
+224124,112798,1,Onesource Specialty Pharma Ltd.,Healthcare,,Domestic Equities,67236.0,,,11.4218,,,1.28287393953539,1100,onesource-specialty-pharma,,Dec-2024
+39219,111883,1,Akums Drugs & Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,172550.0,172550.0,0.0,11.0156,10.441,5.503304281199123,1.23725036056892,1100,akums-drugs-pharmaceuticals,Small Cap,Dec-2024
+171968,4931,1,Zydus Lifesciences Ltd.,Healthcare,Healthcare,Domestic Equities,109792.0,159792.0,-31.29067788124562,10.6685,15.4351,-30.88156215379233,1.19826477647423,1100,zydus-lifesciences,Large Cap,Dec-2024
+133360,5711,1,Procter & Gamble Health Ltd.,Healthcare,Healthcare,Domestic Equities,19000.0,19000.0,0.0,9.9523,9.8364,1.178276605262091,1.11782261188587,1100,procter-gamble-health,Small Cap,Dec-2024
 61269,112232,1,Suraksha Diagnostic Ltd.,Healthcare,Healthcare,Domestic Equities,222224.0,222224.0,0.0,8.3478,9.8001,-14.819236538402672,0.93760835178812,1100,suraksha-diagnostic,Small Cap,Dec-2024
-171411,6555,1,Vinati Organics Ltd.,Chemicals,Chemicals,Domestic Equities,38952.0,38952.0,0.0,7.0252,7.2663,-3.3180573331681895,0.789056541002647,1100,vinati-organics,Small Cap,Dec-2024
+171411,6555,1,Vinati Organics Ltd.,Chemicals,Chemicals,Domestic Equities,38952.0,38952.0,0.0,7.0252,7.2663,-3.318057333168189,0.789056541002647,1100,vinati-organics,Small Cap,Dec-2024
 152389,5123,1,Sanofi India Ltd.,Healthcare,Healthcare,Domestic Equities,11052.0,11052.0,0.0,6.7668,7.062799999999999,-4.190972418870706,0.760033565116539,1100,sanofi-india,Small Cap,Dec-2024
 420,5071,1,Sun Pharmaceutical Industries Ltd.,Healthcare,Healthcare,Domestic Equities,686256.0,686256.0,0.0,119.6796,129.4519,-7.548981513596953,14.6829452261007,1100,sun-pharmaceutical-industries,Large Cap,Jan-2025
 133330,5128,1,Cipla Ltd.,Healthcare,Healthcare,Domestic Equities,502098.0,502098.0,0.0,74.2804,76.7708,-3.243941707003183,9.11312407939908,1100,cipla,Large Cap,Jan-2025
-152331,7581,1,Torrent Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,214696.0,214696.0,0.0,70.1863,72.1389,-2.7067227251871078,8.61083759072282,1100,torrent-pharmaceuticals,Large Cap,Jan-2025
+152331,7581,1,Torrent Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,214696.0,214696.0,0.0,70.1863,72.1389,-2.706722725187108,8.61083759072282,1100,torrent-pharmaceuticals,Large Cap,Jan-2025
 38020,6672,1,Apollo Hospitals Enterprise Ltd.,Healthcare,Healthcare,Domestic Equities,73936.0,73936.0,0.0,50.3541,53.9463,-6.658844072716762,6.17771526817935,1100,apollo-hospitals-enterprise,Mid Cap,Jan-2025
 152211,6247,1,Lupin Ltd.,Healthcare,Healthcare,Domestic Equities,196214.0,196214.0,0.0,40.8213,46.2221,-11.684453973315794,5.00817943875334,1100,lupin,Mid Cap,Jan-2025
 171465,6543,1,Aurobindo Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,341254.0,341254.0,0.0,39.9916,45.5403,-12.184153376240385,4.90638732335443,1100,aurobindo-pharma,Mid Cap,Jan-2025

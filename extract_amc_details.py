@@ -2,6 +2,7 @@ import requests
 import os
 import pandas as pd
 from datetime import datetime, timedelta
+from dateutil.relativedelta import relativedelta
 import re
 
 MfNAVChangePeriodType = 365
@@ -38,31 +39,30 @@ def get_mf_domestic_holdings(mf_scheme_id, mf_holding_date, check_only=False):
     try:
         response = requests.get(url, params=params)
         if response.status_code == 200:
-            return response.json()
+            data = response.json()
+            return data if not check_only else bool(data)
     except:
-        return []
-    return []
+        return [] if not check_only else False
+    return [] if not check_only else False
 
-def find_latest_available_date_in_last_7_days(mf_scheme_id, month_start_date):
+def find_latest_available_date_in_month(mf_scheme_id, month_start_date):
     next_month = month_start_date.replace(day=28) + timedelta(days=4)
     last_day = next_month - timedelta(days=next_month.day)
-    
-    # Check last 7 days of the month only
-    for i in range(7):
+
+    # Check entire month in reverse order
+    for i in range((last_day - month_start_date).days + 1):
         date_to_try = (last_day - timedelta(days=i)).strftime('%Y-%m-%d')
         if get_mf_domestic_holdings(mf_scheme_id, date_to_try, check_only=True):
             return date_to_try
     return None
 
 def add_missing_month_to_existing_files():
+    # Always work on the latest fully completed month
     today = datetime.today()
-    if today.day < 5:
-        today = today.replace(day=1) - timedelta(days=1)
-    latest_month_date = today.replace(day=1)
+    latest_month_date = today.replace(day=1) - relativedelta(months=1)
     target_month = latest_month_date.strftime("%b-%Y")
 
     amc_list = get_amc_list()
-
     found_valid_date = None  # to track first successful holding date
 
     for amc in amc_list:
@@ -91,9 +91,9 @@ def add_missing_month_to_existing_files():
                 continue
 
             if not found_valid_date:
-                latest_data_date = find_latest_available_date_in_last_7_days(scheme_id, latest_month_date)
+                latest_data_date = find_latest_available_date_in_month(scheme_id, latest_month_date)
                 if not latest_data_date:
-                    print("No data found in last 7 days for first scheme — skipping further processing.")
+                    print("No data found in target month for first scheme — skipping further processing.")
                     return  # Exit early — skip all other AMCs
                 found_valid_date = latest_data_date
             else:

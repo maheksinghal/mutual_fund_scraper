@@ -1,30 +1,58 @@
 CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,Type,NoOfShare,PrevNoOfShare,SharesZG,MarketValue,PrevMarketValue,MarketValueZG,HoldingPercentage,Priority,SecuritySlug,McapCategory,Month
-171889,4926,1,Infosys Ltd.,IT,Information Technology,Domestic Equities,322922.0,322922.0,0.0,60.709300000000006,59.994099999999996,1.192117224860452,8.53420073638729,1100,infosys,Large Cap,Dec-2024
-133593,6508,1,Bharti Airtel Ltd.,Telecom,Telecom,Domestic Equities,378155.0,378155.0,0.0,60.041599999999995,61.531499999999994,-2.4213614165102393,8.44033890909418,1100,bharti-airtel,Large Cap,Dec-2024
+133593,6508,1,Bharti Airtel Ltd.,Telecom,Telecom,Domestic Equities,378155.0,378155.0,0.0,75.994,70.1931,8.264202606808919,11.0573928363099,1100,bharti-airtel,Large Cap,Jun-2025
+171889,4926,1,Infosys Ltd.,IT,Information Technology,Domestic Equities,322922.0,322922.0,0.0,51.72560000000001,50.463,2.502031191169772,7.52625574247743,1100,infosys,Large Cap,Jun-2025
+171369,7531,1,Tech Mahindra Ltd.,IT,Information Technology,Domestic Equities,241363.0,241363.0,0.0,40.7179,37.9881,7.185934542659413,5.92459688619604,1100,tech-mahindra,Large Cap,Jun-2025
+171528,8219,1,HCL Technologies Ltd.,IT,Information Technology,Domestic Equities,224418.0,224418.0,0.0,38.7929,36.7282,5.621565990165589,5.64450265231052,1100,hcl-technologies,Large Cap,Jun-2025
+95548,5980,1,Persistent Systems Ltd.,IT,Information Technology,Domestic Equities,43323.0,43323.0,0.0,26.1736,24.425500000000003,7.156864752000979,3.80835035845514,1100,persistent-systems,Mid Cap,Jun-2025
+156921,98676,1,Eternal Ltd.,Retailing,Information Technology,Domestic Equities,755103.0,755103.0,0.0,19.945999999999998,17.9949,10.842516490783494,2.9022127735484,1100,eternal,Large Cap,Jun-2025
+157113,99763,1,PB Fintech Ltd.,IT,Information Technology,Domestic Equities,108297.0,108297.0,0.0,19.7523,19.0776,3.53660837841238,2.8740287459621,1100,pb-fintech,Mid Cap,Jun-2025
+133657,7260,1,Coforge Ltd.,IT,Information Technology,Domestic Equities,97170.0,19434.0,400.0,18.7004,16.617,12.537762532346386,2.7209736162872,1100,coforge,Mid Cap,Jun-2025
+19255,6350,1,Mphasis Ltd.,IT,Information Technology,Domestic Equities,64341.0,64341.0,0.0,18.3076,16.4636,11.200466483636635,2.66381984222474,1100,mphasis,Mid Cap,Jun-2025
+171915,6797,1,Tata Consultancy Services Ltd.,IT,Information Technology,Domestic Equities,50605.0,50605.0,0.0,17.5195,17.526500000000002,-0.039939520155196154,2.54914853535451,1100,tata-consultancy-services,Large Cap,Jun-2025
+153405,17058,1,LTIMindtree Ltd.,IT,Information Technology,Domestic Equities,31415.0,31415.0,0.0,16.7034,15.923900000000001,4.895157593303137,2.43040313053686,1100,ltimindtree,Large Cap,Jun-2025
+171687,7000,1,Zensar Technologies Ltd.,IT,Information Technology,Domestic Equities,196893.0,196893.0,0.0,16.5892,16.4022,1.1400909634073506,2.41378663105129,1100,zensar-technologies,Small Cap,Jun-2025
+117072,93022,1,Home First Finance Company India Ltd.,Finance,Finance,Domestic Equities,82768.0,82768.0,0.0,11.409600000000001,10.551300000000001,8.134542662989388,1.66013671217677,1100,home-first-finance-company-india,Small Cap,Jun-2025
+57445,86554,1,Dixon Technologies (India) Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,7087.0,7087.0,0.0,10.6185,10.4122,1.9813295941299516,1.54502889481217,1100,dixon-technologies-india,Mid Cap,Jun-2025
+39589,15972,1,TeamLease Services Ltd.,Business Services,Other,Domestic Equities,46319.0,46319.0,0.0,9.4083,9.0586,3.8604199324398945,1.36894056138451,1100,teamlease-services,Small Cap,Jun-2025
+114433,5462,1,Cyient Ltd.,IT,Information Technology,Domestic Equities,71684.0,71684.0,0.0,9.2372,9.6544,-4.321345707656615,1.34404491285577,1100,cyient,Small Cap,Jun-2025
+133561,8133,1,Birlasoft Ltd.,IT,Information Technology,Domestic Equities,193424.0,193424.0,0.0,8.3849,7.7466,8.239743887641035,1.22003228140609,1100,birlasoft,Small Cap,Jun-2025
+152372,4964,1,Larsen & Toubro Ltd.,Infrastructure,Infrastructure,Domestic Equities,22624.0,22624.0,0.0,8.3026,8.3145,-0.14312345901738582,1.20805734351062,1100,larsen-toubro,Large Cap,Jun-2025
+114697,5402,1,JSW Energy Ltd.,Power,Power,Domestic Equities,156049.0,156049.0,0.0,8.1473,7.614400000000001,6.998581634797222,1.18546065025222,1100,jsw-energy,Mid Cap,Jun-2025
+115768,100528,1,Data Patterns (India) Ltd.,Capital Goods,Capital Goods,Domestic Equities,26423.0,26423.0,0.0,7.6645,7.5258,1.8429934359137905,1.11521156135875,1100,data-patterns-india,Small Cap,Jun-2025
+1427,98308,1,Sona BLW Precision Forgings Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,129707.0,129707.0,0.0,6.2434,7.0554,-11.508915157184559,0.908436540177081,1100,sona-blw-precision-forgings,Mid Cap,Jun-2025
+171698,8307,1,Oracle Financial Services Software Ltd.,IT,Information Technology,Domestic Equities,6757.0,6757.0,0.0,6.0718,5.7181,6.185621097917142,0.883468139899285,1100,oracle-financial-services-software,Mid Cap,Jun-2025
+152378,5539,1,Tata Motors Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,74746.0,74746.0,0.0,5.1425,5.377999999999999,-4.3789512830048265,0.748251739094186,1100,tata-motors,Large Cap,Jun-2025
+123299,91366,1,KPIT Technologies Ltd.,IT,Information Technology,Domestic Equities,38638.0,38638.0,0.0,4.8633999999999995,5.169,-5.912168698007352,0.707641712768238,1100,kpit-technologies,Mid Cap,Jun-2025
+195742,102041,1,TBO Tek Ltd.,Hospitality,Hospitality,Domestic Equities,33244.0,33244.0,0.0,4.6532,4.3373,7.283332949069692,0.67705687746292,1100,tbo-tek,Small Cap,Jun-2025
+114727,84195,1,Tejas Networks Ltd.,Telecom,Telecom,Domestic Equities,58830.0,58830.0,0.0,4.204,4.2237,-0.46641570187277204,0.61169670610636,1100,tejas-networks,Small Cap,Jun-2025
+133272,5382,1,ABB India Ltd.,Capital Goods,Capital Goods,Domestic Equities,6750.0,6750.0,0.0,4.1043,4.0304,1.8335649067090078,0.597190007343562,1100,abb-india,Large Cap,Jun-2025
+207271,109317,1,Netweb Technologies India Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,11817.0,11817.0,0.0,2.1805000000000003,2.3623,-7.695889599119493,0.317270377655784,1100,netweb-technologies-india,Small Cap,Jun-2025
+171889,4926,1,Infosys Ltd.,IT,Information Technology,Domestic Equities,322922.0,322922.0,0.0,60.709300000000006,59.9941,1.192117224860452,8.53420073638729,1100,infosys,Large Cap,Dec-2024
+133593,6508,1,Bharti Airtel Ltd.,Telecom,Telecom,Domestic Equities,378155.0,378155.0,0.0,60.0416,61.5315,-2.4213614165102397,8.44033890909418,1100,bharti-airtel,Large Cap,Dec-2024
 171528,8219,1,HCL Technologies Ltd.,IT,Information Technology,Domestic Equities,215715.0,196813.0,9.604040383511252,41.3612,36.372,13.717145056636976,5.81434448260583,1100,hcl-technologies,Large Cap,Dec-2024
 171369,7531,1,Tech Mahindra Ltd.,IT,Information Technology,Domestic Equities,189804.0,189804.0,0.0,32.3844,32.5001,-0.35599890461876,4.55243216982342,1100,tech-mahindra,Large Cap,Dec-2024
-95548,5980,1,Persistent Systems Ltd.,IT,Information Technology,Domestic Equities,43323.0,43323.0,0.0,27.9767,25.585,9.348055501270279,3.93282040382094,1100,persistent-systems,Mid Cap,Dec-2024
-157113,99763,1,PB Fintech Ltd.,IT,Information Technology,Domestic Equities,108297.0,134627.0,-19.557741017775037,22.8382,25.497,-10.427893477664025,3.21047653749525,1100,pb-fintech,Mid Cap,Dec-2024
-156921,98676,1,Eternal Ltd.,Retailing,Information Technology,Domestic Equities,755103.0,1000972.0,-24.563024739952766,20.9956,28.003200000000003,-25.02428293909268,2.95145331902844,1100,eternal,Large Cap,Dec-2024
-171915,6797,1,Tata Consultancy Services Ltd.,IT,Information Technology,Domestic Equities,50605.0,50605.0,0.0,20.721700000000002,21.6126,-4.122132459768845,2.91294986763472,1100,tata-consultancy-services,Large Cap,Dec-2024
-153405,17058,1,LTIMindtree Ltd.,IT,Information Technology,Domestic Equities,34653.0,34653.0,0.0,19.3568,21.389200000000002,-9.501991659342098,2.72107925497579,1100,ltimindtree,Large Cap,Dec-2024
+95548,5980,1,Persistent Systems Ltd.,IT,Information Technology,Domestic Equities,43323.0,43323.0,0.0,27.9767,25.585,9.34805550127028,3.93282040382094,1100,persistent-systems,Mid Cap,Dec-2024
+157113,99763,1,PB Fintech Ltd.,IT,Information Technology,Domestic Equities,108297.0,134627.0,-19.55774101777504,22.8382,25.497,-10.427893477664025,3.21047653749525,1100,pb-fintech,Mid Cap,Dec-2024
+156921,98676,1,Eternal Ltd.,Retailing,Information Technology,Domestic Equities,755103.0,1000972.0,-24.56302473995277,20.9956,28.003200000000003,-25.02428293909268,2.95145331902844,1100,eternal,Large Cap,Dec-2024
+171915,6797,1,Tata Consultancy Services Ltd.,IT,Information Technology,Domestic Equities,50605.0,50605.0,0.0,20.7217,21.6126,-4.122132459768845,2.91294986763472,1100,tata-consultancy-services,Large Cap,Dec-2024
+153405,17058,1,LTIMindtree Ltd.,IT,Information Technology,Domestic Equities,34653.0,34653.0,0.0,19.3568,21.3892,-9.501991659342098,2.72107925497579,1100,ltimindtree,Large Cap,Dec-2024
 133657,7260,1,Coforge Ltd.,IT,Information Technology,Domestic Equities,19434.0,31474.0,-38.25379678464765,18.779,27.3378,-31.307566812252634,2.63985510669069,1100,coforge,Mid Cap,Dec-2024
-19255,6350,1,Mphasis Ltd.,IT,Information Technology,Domestic Equities,64341.0,64341.0,0.0,18.319200000000002,19.1386,-4.281399893409123,2.57521879069642,1100,mphasis,Mid Cap,Dec-2024
-39589,15972,1,TeamLease Services Ltd.,Business Services,Other,Domestic Equities,46319.0,46319.0,0.0,13.576099999999999,13.4244,1.13003188224426,1.90845822003,1100,teamlease-services,Small Cap,Dec-2024
-114433,5462,1,Cyient Ltd.,IT,Information Technology,Domestic Equities,71684.0,90328.0,-20.640333008590915,13.1709,16.7418,-21.329247751137878,1.85149729084149,1100,cyient,Small Cap,Dec-2024
-57445,86554,1,Dixon Technologies (India) Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,7087.0,9161.0,-22.639449841720335,12.711500000000001,14.4812,-12.22067231997347,1.78691720478719,1100,dixon-technologies-india,Mid Cap,Dec-2024
+19255,6350,1,Mphasis Ltd.,IT,Information Technology,Domestic Equities,64341.0,64341.0,0.0,18.3192,19.1386,-4.281399893409123,2.57521879069642,1100,mphasis,Mid Cap,Dec-2024
+39589,15972,1,TeamLease Services Ltd.,Business Services,Other,Domestic Equities,46319.0,46319.0,0.0,13.5761,13.4244,1.13003188224426,1.90845822003,1100,teamlease-services,Small Cap,Dec-2024
+114433,5462,1,Cyient Ltd.,IT,Information Technology,Domestic Equities,71684.0,90328.0,-20.640333008590915,13.1709,16.7418,-21.32924775113788,1.85149729084149,1100,cyient,Small Cap,Dec-2024
+57445,86554,1,Dixon Technologies (India) Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,7087.0,9161.0,-22.63944984172033,12.7115,14.4812,-12.22067231997347,1.78691720478719,1100,dixon-technologies-india,Mid Cap,Dec-2024
 171687,7000,1,Zensar Technologies Ltd.,IT,Information Technology,Domestic Equities,155315.0,155315.0,0.0,11.6743,11.79,-0.9813401187446936,1.64111297044779,1100,zensar-technologies,Small Cap,Dec-2024
 133561,8133,1,Birlasoft Ltd.,IT,Information Technology,Domestic Equities,193424.0,193424.0,0.0,10.8385,11.4246,-5.1301577298111205,1.52362051088274,1100,birlasoft,Small Cap,Dec-2024
-114697,5402,1,JSW Energy Ltd.,Power,Power,Domestic Equities,156049.0,156049.0,0.0,10.028500000000001,10.2157,-1.8324735456209587,1.40975488244569,1100,jsw-energy,Large Cap,Dec-2024
+114697,5402,1,JSW Energy Ltd.,Power,Power,Domestic Equities,156049.0,156049.0,0.0,10.0285,10.2157,-1.8324735456209589,1.40975488244569,1100,jsw-energy,Large Cap,Dec-2024
 171698,8307,1,Oracle Financial Services Software Ltd.,IT,Information Technology,Domestic Equities,6757.0,6757.0,0.0,8.6418,7.903300000000001,9.344197993243316,1.21481973805845,1100,oracle-financial-services-software,Mid Cap,Dec-2024
 152372,4964,1,Larsen & Toubro Ltd.,Infrastructure,Infrastructure,Domestic Equities,22624.0,22624.0,0.0,8.161900000000001,8.427,-3.1458407499703323,1.14735786758074,1100,larsen-toubro,Large Cap,Dec-2024
 1427,98308,1,Sona BLW Precision Forgings Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,129707.0,129707.0,0.0,7.715,8.7111,-11.434836013821448,1.08453496715047,1100,sona-blw-precision-forgings,Mid Cap,Dec-2024
-192044,99995,1,RateGain Travel Technologies Ltd.,IT,Information Technology,Domestic Equities,101527.0,101527.0,0.0,7.3622000000000005,7.1262,3.3117229378911657,1.03494016009789,1100,rategain-travel-technologies,Small Cap,Dec-2024
+192044,99995,1,RateGain Travel Technologies Ltd.,IT,Information Technology,Domestic Equities,101527.0,101527.0,0.0,7.3622,7.1262,3.3117229378911657,1.03494016009789,1100,rategain-travel-technologies,Small Cap,Dec-2024
 114727,84195,1,Tejas Networks Ltd.,Telecom,Telecom,Domestic Equities,58830.0,58830.0,0.0,6.975499999999999,7.7653,-10.17088843959667,0.980579865632936,1100,tejas-networks,Small Cap,Dec-2024
 117072,93022,1,Home First Finance Company India Ltd.,Finance,Finance,Domestic Equities,65909.0,65909.0,0.0,6.957000000000001,6.9346000000000005,0.3230179101894859,0.977979230909373,1100,home-first-finance-company-india,Small Cap,Dec-2024
 115768,100528,1,Data Patterns (India) Ltd.,Capital Goods,Other,Domestic Equities,26423.0,26423.0,0.0,6.528300000000001,6.6147,-1.306181686244272,0.917714792747687,1100,data-patterns-india,Small Cap,Dec-2024
-782,108121,1,Cyient DLM Ltd.,Electricals,Capital Goods,Domestic Equities,94573.0,94573.0,0.0,6.3326,6.6129999999999995,-4.240133071223343,0.890204294617895,1100,cyient-dlm,Small Cap,Dec-2024
-195742,102041,1,TBO Tek Ltd.,Hospitality,Hospitality,Domestic Equities,33244.0,33244.0,0.0,5.765,5.274500000000001,9.299459664423159,0.810414009802003,1100,tbo-tek,Small Cap,Dec-2024
+782,108121,1,Cyient DLM Ltd.,Electricals,Capital Goods,Domestic Equities,94573.0,94573.0,0.0,6.3326,6.613,-4.240133071223343,0.890204294617895,1100,cyient-dlm,Small Cap,Dec-2024
+195742,102041,1,TBO Tek Ltd.,Hospitality,Hospitality,Domestic Equities,33244.0,33244.0,0.0,5.765,5.274500000000001,9.29945966442316,0.810414009802003,1100,tbo-tek,Small Cap,Dec-2024
 123299,91366,1,KPIT Technologies Ltd.,IT,Information Technology,Domestic Equities,38638.0,38638.0,0.0,5.659299999999999,5.2888,7.005369838148531,0.795555248165217,1100,kpit-technologies,Mid Cap,Dec-2024
 152378,5539,1,Tata Motors Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,74746.0,74746.0,0.0,5.5323,5.8784,-5.887656505171477,0.777702242225086,1100,tata-motors,Large Cap,Dec-2024
 171509,5522,1,Tata Communications Ltd.,Telecom,Telecom,Domestic Equities,32449.0,32449.0,0.0,5.5274,5.6951,-2.944636617443062,0.777013425460467,1100,tata-communications,Mid Cap,Dec-2024
@@ -45,7 +73,7 @@ CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,
 57445,86554,1,Dixon Technologies (India) Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,7087.0,7087.0,0.0,10.6205,12.7115,-16.449671557251317,1.56601581277113,1100,dixon-technologies-india,Mid Cap,Jan-2025
 114433,5462,1,Cyient Ltd.,IT,Information Technology,Domestic Equities,71684.0,71684.0,0.0,10.426099999999998,13.1709,-20.83988186076882,1.53735111016742,1100,cyient,Small Cap,Jan-2025
 133561,8133,1,Birlasoft Ltd.,IT,Information Technology,Domestic Equities,193424.0,193424.0,0.0,10.3404,10.8385,-4.595654380218661,1.52471445886527,1100,birlasoft,Small Cap,Jan-2025
-117072,93022,1,Home First Finance Company India Ltd.,Finance,Finance,Domestic Equities,82768.0,65909.0,25.579207695458887,8.2433,6.957000000000001,18.489291361218918,1.215492505006,1100,home-first-finance-company-india,Small Cap,Jan-2025
+117072,93022,1,Home First Finance Company India Ltd.,Finance,Finance,Domestic Equities,82768.0,65909.0,25.579207695458887,8.2433,6.957000000000001,18.48929136121892,1.215492505006,1100,home-first-finance-company-india,Small Cap,Jan-2025
 152372,4964,1,Larsen & Toubro Ltd.,Infrastructure,Infrastructure,Domestic Equities,22624.0,22624.0,0.0,8.0709,8.161900000000001,-1.1149364731251328,1.19007175022781,1100,larsen-toubro,Large Cap,Jan-2025
 114697,5402,1,JSW Energy Ltd.,Power,Power,Domestic Equities,156049.0,156049.0,0.0,7.936699999999999,10.0285,-20.858553123597755,1.17028366849212,1100,jsw-energy,Large Cap,Jan-2025
 192044,99995,1,RateGain Travel Technologies Ltd.,IT,Information Technology,Domestic Equities,101527.0,101527.0,0.0,7.0983,7.3622,-3.584526364401943,1.04665976590493,1100,rategain-travel-technologies,Small Cap,Jan-2025
@@ -54,7 +82,7 @@ CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,
 115768,100528,1,Data Patterns (India) Ltd.,Capital Goods,Capital Goods,Domestic Equities,26423.0,26423.0,0.0,5.8326,6.528300000000001,-10.65667938054318,0.860029549415647,1100,data-patterns-india,Small Cap,Jan-2025
 123299,91366,1,KPIT Technologies Ltd.,IT,Information Technology,Domestic Equities,38638.0,38638.0,0.0,5.4449000000000005,5.659299999999999,-3.78845440248793,0.802862341599502,1100,kpit-technologies,Mid Cap,Jan-2025
 114727,84195,1,Tejas Networks Ltd.,Telecom,Telecom,Domestic Equities,58830.0,58830.0,0.0,5.3897,6.975499999999999,-22.733854203999705,0.794722981600918,1100,tejas-networks,Small Cap,Jan-2025
-152378,5539,1,Tata Motors Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,74746.0,74746.0,0.0,5.3526,5.5323,-3.2481969524429317,0.789252505949695,1100,tata-motors,Large Cap,Jan-2025
+152378,5539,1,Tata Motors Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,74746.0,74746.0,0.0,5.3526,5.5323,-3.248196952442932,0.789252505949695,1100,tata-motors,Large Cap,Jan-2025
 195742,102041,1,TBO Tek Ltd.,Hospitality,Hospitality,Domestic Equities,33244.0,33244.0,0.0,5.1797,5.765,-10.152645273200342,0.763758025084564,1100,tbo-tek,Small Cap,Jan-2025
 782,108121,1,Cyient DLM Ltd.,Electricals,Capital Goods,Domestic Equities,94573.0,94573.0,0.0,4.6166,6.3326,-27.0978744907305,0.680727705968569,1100,cyient-dlm,Small Cap,Jan-2025
 133272,5382,1,ABB India Ltd.,Capital Goods,Capital Goods,Domestic Equities,6750.0,6750.0,0.0,3.9654,4.6658,-15.011359252432587,0.584706850333094,1100,abb-india,Large Cap,Jan-2025

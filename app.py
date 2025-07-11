@@ -128,7 +128,7 @@ def get_data():
         columns = static_cols + month_cols if not is_consolidated else ["Share", "Sector", "Metric"] + month_cols
         html = f"<h4>{title}</h4>"
         html += "<div style='display:block; overflow-x:auto; width:100%'><table class='table table-bordered table-striped'><thead><tr>"
-        
+
         for col in columns:
             html += f"<th>{col}</th>"
         html += "</tr></thead><tbody>"
@@ -141,35 +141,29 @@ def get_data():
                 ("Changes in Market Value %", pivot_market_value_zg, True),
                 ("% of Total Holding", pivot_holding_percentage, True)
             ]
-            for _, row in pivot_no_shares.iterrows():
-                share, sector = row['Share'], row['Sector']
+
+            grouped = pivot_no_shares.groupby(['Share', 'Sector'])
+            for (share, sector), group in grouped:
+                rowspan = len(metrics)
                 for metric_idx, (metric_name, pivot_data, is_decimal) in enumerate(metrics):
                     metric_row = pivot_data[(pivot_data['Share'] == share) & (pivot_data['Sector'] == sector)]
-                    if metric_row.empty:
-                        html += "<tr>"
-                        if metric_idx == 0:
-                            html += f"<td>{share}</td><td>{sector}</td>"
-                        else:
-                            html += "<td></td><td></td>"
-                        html += f"<td>{metric_name}</td>"
-                        for _ in month_cols:
-                            html += "<td style='background-color:#e9fbe9'>0</td>"
-                        html += "</tr>"
-                        continue
                     html += "<tr>"
                     if metric_idx == 0:
-                        html += f"<td>{share}</td><td>{sector}</td>"
-                    else:
-                        html += "<td></td><td></td>"
+                        html += f"<td rowspan='{rowspan}' style='text-align:center; vertical-align:middle;'>{share}</td>"
+                        html += f"<td rowspan='{rowspan}' style='text-align:center; vertical-align:middle;'>{sector}</td>"
+
                     html += f"<td>{metric_name}</td>"
+
                     prev_value = None
                     direction = None
                     trend_count = 0
                     prev_color = green_shades[0]
+
                     for i, month in enumerate(month_cols):
                         current_value = metric_row[month].iloc[0] if not metric_row.empty else 0.0
                         current_value = float(current_value) if pd.notnull(current_value) else 0.0
                         display_value = f"{current_value:.2f}" if is_decimal else str(int(current_value))
+
                         if i == 0:
                             color = green_shades[0]
                             trend_count = 1
@@ -194,10 +188,13 @@ def get_data():
                                     color = prev_color
                             else:
                                 color = green_shades[0]
+
                         html += f"<td style='background-color:{color}'>{display_value}</td>"
                         prev_value = current_value
                         prev_color = color
+
                     html += "</tr>"
+
         else:
             for _, row in pivot.iterrows():
                 html += "<tr>"
@@ -205,14 +202,17 @@ def get_data():
                     html += f"<td>{row['Sector']}</td>"
                 else:
                     html += f"<td>{row['Share']}</td><td>{row['Sector']}</td>"
+
                 prev_value = None
                 direction = None
                 trend_count = 0
                 prev_color = green_shades[0]
+
                 for i, month in enumerate(month_cols):
                     current_value = row[month]
                     current_value = float(current_value) if pd.notnull(current_value) else 0.0
                     display_value = f"{current_value:.2f}" if is_decimal else str(int(current_value))
+
                     if i == 0:
                         color = green_shades[0]
                         trend_count = 1
@@ -237,6 +237,7 @@ def get_data():
                                 color = prev_color
                         else:
                             color = green_shades[0]
+
                     html += f"<td style='background-color:{color}'>{display_value}</td>"
                     prev_value = current_value
                     prev_color = color
@@ -244,6 +245,7 @@ def get_data():
 
         html += "</tbody></table></div>"
         return html
+
 
     if view == 'holding_percentage':
         html = generate_table(pivot_holding_percentage, "% of Total Holding", is_decimal=True)

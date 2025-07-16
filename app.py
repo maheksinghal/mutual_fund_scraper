@@ -45,6 +45,8 @@ def load_all_data(min_shares, cache_key):
                         df = pd.read_csv(file_path, usecols=required_cols, dtype=dtypes)
                         if required_cols.issubset(df.columns):
                             df = df[df['NoOfShare'] >= min_shares]
+                            df['AMC'] = amc_dir
+                            df['Scheme'] = scheme_file
                             all_dfs.append(df)
                     except Exception as e:
                         print(f"Error reading {file_path}: {e}")
@@ -71,6 +73,21 @@ def get_schemes():
     
     schemes = [f for f in os.listdir(amc_path) if f.endswith('.csv')]
     return jsonify(schemes)
+
+@app.route('/get_funds_for_share', methods=['POST'])
+def get_funds_for_share():
+    share = request.json.get('share')
+    min_shares = 1
+    try:
+        cache_key = get_cache_key(min_shares)
+        df = load_all_data(min_shares, cache_key)
+        if df.empty:
+            return jsonify([])
+        funds = df[df['Name'] == share][['AMC', 'Scheme']].drop_duplicates()
+        fund_names = funds.apply(lambda x: f"{x['AMC']} - {x['Scheme']}", axis=1).tolist()
+        return jsonify(fund_names)
+    except Exception as e:
+        return jsonify([])
 
 @app.route('/get_data', methods=['POST'])
 def get_data():
@@ -152,10 +169,10 @@ def get_data():
         return jsonify({"html": "<div class='text-danger'>Invalid view selected</div>"})
 
     green_shades = [
-        "#e9fbe9", "#c8f7c5", "#a3f3a3", "#6de26d", "#36c836", "#1e9f1e", "#107a10"
+        "#e9fbe9", "#c8f7c5", "#a3f3a3", "#6de26d", "#36c836", "#1e9f1e", "#107a10", "#075c07", "#033b03"
     ]
     red_shades = [
-        "#ffe6e6", "#ffc2c2", "#ff9999", "#ff6b6b", "#ff3b3b", "#e60000", "#990000"
+        "#ffe6e6", "#ffc2c2", "#ff9999", "#ff6b6b", "#ff3b3b", "#e60000", "#990000", "#660000", "#330000"
     ]
 
     def get_cumulative_color(trend_count, direction):
@@ -236,7 +253,8 @@ def get_data():
                 if view in ['sector_holding', 'sector_holding_all']:
                     html += f"<td>{row['Sector']}</td>"
                 else:
-                    html += f"<td>{row['Share']}</td><td>{row['Sector']}</td>"
+                    share_cell_class = "share-cell" if view == 'share_wise_shares_all' else ""
+                    html += f"<td class='{share_cell_class}'>{row['Share']}</td><td>{row['Sector']}</td>"
 
                 values = [row[month] for month in month_cols]
                 colors = get_trend_colors(values)

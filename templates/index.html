@@ -42,6 +42,60 @@
         th {
             vertical-align: middle;
         }
+        .share-cell {
+            position: relative;
+            cursor: pointer;
+        }
+        .share-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+            display: none;
+            min-width: 200px;
+            max-height: 200px; /* Limit height to enable scrolling */
+            overflow-y: auto; /* Enable vertical scrolling */
+            padding: 5px 0;
+            margin: 0;
+            font-size: 14px;
+            color: #212529;
+            background-color: #fff;
+            border: 1px solid rgba(0,0,0,0.15);
+            border-radius: 4px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+        }
+        .share-dropdown.show {
+            display: block;
+        }
+        .share-dropdown-item {
+            display: block;
+            padding: 3px 10px;
+            color: #212529;
+            text-decoration: none;
+        }
+        .share-dropdown-item:hover {
+            background-color: #f8f9fa;
+        }
+        /* Custom Scrollbar Styles */
+        .share-dropdown::-webkit-scrollbar {
+            width: 8px; /* Width of the scrollbar */
+        }
+        .share-dropdown::-webkit-scrollbar-track {
+            background: #f1f1f1; /* Track background */
+            border-radius: 4px;
+        }
+        .share-dropdown::-webkit-scrollbar-thumb {
+            background: #888; /* Scrollbar thumb color */
+            border-radius: 4px;
+        }
+        .share-dropdown::-webkit-scrollbar-thumb:hover {
+            background: #555; /* Scrollbar thumb color on hover */
+        }
+        /* For Firefox */
+        .share-dropdown {
+            scrollbar-width: thin; /* Thin scrollbar */
+            scrollbar-color: #888 #f1f1f1; /* Thumb and track colors */
+        }
     </style>
 </head>
 <body class="p-4">
@@ -208,6 +262,55 @@
                             sortTable(tableElement, colIndex, isAscending);
                         });
                     });
+
+                    if (view === 'share_wise_shares_all') {
+                        const shareCells = tableElement.querySelectorAll('tbody tr td:first-child');
+                        shareCells.forEach(cell => {
+                            cell.classList.add('share-cell');
+                            cell.addEventListener('click', async (e) => {
+                                const shareName = cell.textContent.trim();
+                                const existingDropdown = cell.querySelector('.share-dropdown');
+                                if (existingDropdown && existingDropdown.classList.contains('show')) {
+                                    existingDropdown.classList.remove('show');
+                                    return;
+                                }
+                                try {
+                                    const response = await fetch('/get_funds_for_share', {
+                                        method: 'POST',
+                                        headers: { 'Content-Type': 'application/json' },
+                                        body: JSON.stringify({ share: shareName })
+                                    });
+                                    if (!response.ok) throw new Error('Failed to fetch funds');
+                                    const funds = await response.json();
+                                    const dropdown = document.createElement('div');
+                                    dropdown.className = 'share-dropdown';
+                                    if (funds.length === 0) {
+                                        dropdown.innerHTML = '<div class="share-dropdown-item">No funds found</div>';
+                                    } else {
+                                        funds.forEach(fund => {
+                                            const item = document.createElement('div');
+                                            item.className = 'share-dropdown-item';
+                                            item.textContent = fund;
+                                            dropdown.appendChild(item);
+                                        });
+                                    }
+                                    cell.querySelectorAll('.share-dropdown').forEach(d => d.remove());
+                                    cell.appendChild(dropdown);
+                                    setTimeout(() => dropdown.classList.add('show'), 0);
+
+                                    const hideDropdown = (event) => {
+                                        if (!cell.contains(event.target)) {
+                                            dropdown.classList.remove('show');
+                                            document.removeEventListener('click', hideDropdown);
+                                        }
+                                    };
+                                    document.addEventListener('click', hideDropdown);
+                                } catch (error) {
+                                    console.error('Error fetching funds:', error);
+                                }
+                            });
+                        });
+                    }
                 }
             } catch (error) {
                 tableContainer.innerHTML = '<div id="loadingSpinner" style="display: none;"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p>Loading data...</p></div>';

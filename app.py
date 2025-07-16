@@ -221,7 +221,7 @@ def get_data():
 
         if is_consolidated:
             metrics = [
-                ("No. of Shares", pivot_no_shares, False),
+                ("No. of Shares (in L)", pivot_no_shares, False),
                 ("Changes in Holding %", pivot_shares_zg, True),
                 ("Market Value", pivot_market_value, True),
                 ("Changes in Market Value %", pivot_market_value_zg, True),
@@ -241,9 +241,13 @@ def get_data():
                     html += f"<td>{metric_name}</td>"
 
                     values = [metric_row[month].iloc[0] if not metric_row.empty else 0.0 for month in month_cols]
+                    if metric_name == "No. of Shares (in L)":
+                        values = [value / 100000 for value in values]  # Convert to lakhs
                     colors = get_trend_colors(values)
                     for value, color in zip(values, colors):
-                        display_value = f"{value:.2f}" if is_decimal else str(int(value))
+                        display_value = f"{value:.2f}" if is_decimal or metric_name == "No. of Shares (in L)" else str(int(value))
+                        if metric_name == "No. of Shares (in L)":
+                            display_value += " L"
                         html += f"<td style='background-color:{color}'>{display_value}</td>"
                     html += "</tr>"
 
@@ -257,9 +261,11 @@ def get_data():
                     html += f"<td class='{share_cell_class}'>{row['Share']}</td><td>{row['Sector']}</td>"
 
                 values = [row[month] for month in month_cols]
+                if view == 'share_wise_shares_all':
+                    values = [value / 100000 for value in values]  # Convert to lakhs
                 colors = get_trend_colors(values)
                 for value, color in zip(values, colors):
-                    display_value = f"{value:.2f}" if is_decimal else str(int(value))
+                    display_value = f"{value:.2f} L" if view == 'share_wise_shares_all' else f"{value:.2f}" if is_decimal else str(int(value))
                     html += f"<td style='background-color:{color}'>{display_value}</td>"
                 html += "</tr>"
 

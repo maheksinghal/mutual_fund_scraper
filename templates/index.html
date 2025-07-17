@@ -45,56 +45,80 @@
         .share-cell {
             position: relative;
             cursor: pointer;
+            transition: background-color 0.2s;
         }
-        .share-dropdown {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            z-index: 1000;
-            display: none;
-            min-width: 200px;
-            max-height: 200px; /* Limit height to enable scrolling */
-            overflow-y: auto; /* Enable vertical scrolling */
-            padding: 5px 0;
-            margin: 0;
-            font-size: 14px;
-            color: #212529;
-            background-color: #fff;
-            border: 1px solid rgba(0,0,0,0.15);
-            border-radius: 4px;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+        .share-cell:hover {
+            background-color: #f1f3f5;
         }
-        .share-dropdown.show {
-            display: block;
+        .table-container {
+            overflow-x: auto;
+            max-width: 100%;
+            position: relative;
         }
-        .share-dropdown-item {
-            display: block;
-            padding: 3px 10px;
-            color: #212529;
-            text-decoration: none;
-        }
-        .share-dropdown-item:hover {
+        .share-funds-row {
             background-color: #f8f9fa;
         }
-        /* Custom Scrollbar Styles */
-        .share-dropdown::-webkit-scrollbar {
-            width: 8px; /* Width of the scrollbar */
+        .share-funds-container {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+            display: none;
+            max-height: 300px;
+            overflow-y: auto;
+            overflow-x: auto;
+            width: 100%;
         }
-        .share-dropdown::-webkit-scrollbar-track {
-            background: #f1f1f1; /* Track background */
+        .share-funds-container.show {
+            display: block;
+        }
+        .main-table, .share-funds-table {
+            width: 100%;
+            table-layout: fixed;
+            min-width: max-content;
+        }
+        .main-table th:not(:nth-child(-n+2)),
+        .share-funds-table th:not(:nth-child(-n+2)) {
+            width: 100px;
+        }
+        .main-table th:nth-child(1),
+        .share-funds-table th:nth-child(1) {
+            width: 200px;
+        }
+        .main-table th:nth-child(2),
+        .share-funds-table th:nth-child(2) {
+            width: 150px;
+        }
+        .main-table th, .main-table td,
+        .share-funds-table th, .share-funds-table td {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: left;
+        }
+        .table-container::-webkit-scrollbar,
+        .share-funds-container::-webkit-scrollbar {
+            height: 8px;
+            width: 8px;
+        }
+        .table-container::-webkit-scrollbar-track,
+        .share-funds-container::-webkit-scrollbar-track {
+            background: #f1f1f1;
             border-radius: 4px;
         }
-        .share-dropdown::-webkit-scrollbar-thumb {
-            background: #888; /* Scrollbar thumb color */
+        .table-container::-webkit-scrollbar-thumb,
+        .share-funds-container::-webkit-scrollbar-thumb {
+            background: #888;
             border-radius: 4px;
         }
-        .share-dropdown::-webkit-scrollbar-thumb:hover {
-            background: #555; /* Scrollbar thumb color on hover */
+        .table-container::-webkit-scrollbar-thumb:hover,
+        .share-funds-container::-webkit-scrollbar-thumb:hover {
+            background: #555;
         }
-        /* For Firefox */
-        .share-dropdown {
-            scrollbar-width: thin; /* Thin scrollbar */
-            scrollbar-color: #888 #f1f1f1; /* Thumb and track colors */
+        .table-container,
+        .share-funds-container {
+            scrollbar-width: thin;
+            scrollbar-color: #888 #f1f1f1;
         }
     </style>
 </head>
@@ -119,7 +143,7 @@
         </div>
 
         <hr>
-        <div id="tableContainer" class="mt-4" style="overflow-x: auto;">
+        <div id="tableContainer" class="mt-4 table-container">
             <div id="loadingSpinner">
                 <div class="spinner-border text-primary" role="status">
                     <span class="visually-hidden">Loading...</span>
@@ -143,8 +167,9 @@
 
             try {
                 const response = await fetch('/get_amcs');
-                if (!response.ok) throw new Error('Failed to fetch AMCs');
+                if (!response.ok) throw new Error(`Failed to fetch AMCs: ${response.statusText}`);
                 const amcs = await response.json();
+                console.log('AMCs loaded:', amcs);
                 amcs.forEach(amc => {
                     const option = document.createElement('option');
                     option.text = amc;
@@ -154,14 +179,16 @@
 
                 amcDropdown.addEventListener('change', async () => {
                     const selectedAMC = amcDropdown.value;
+                    console.log('Selected AMC:', selectedAMC);
                     try {
                         const response = await fetch('/get_schemes', {
                             method: 'POST',
                             headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify({ amc: selectedAMC })
                         });
-                        if (!response.ok) throw new Error('Failed to fetch schemes');
+                        if (!response.ok) throw new Error(`Failed to fetch schemes: ${response.statusText}`);
                         const schemes = await response.json();
+                        console.log('Schemes loaded:', schemes);
                         schemeDropdown.innerHTML = '';
                         schemes.forEach(scheme => {
                             const option = document.createElement('option');
@@ -171,6 +198,7 @@
                         });
                         tableContainer.innerHTML = '<div id="loadingSpinner" style="display: none;"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p>Loading data...</p></div>';
                     } catch (error) {
+                        console.error('Error loading schemes:', error);
                         tableContainer.innerHTML = `<div class='text-danger'>Error loading schemes: ${error.message}</div>`;
                     }
                 });
@@ -179,6 +207,7 @@
                     amcDropdown.dispatchEvent(new Event('change'));
                 }
             } catch (error) {
+                console.error('Error loading AMCs:', error);
                 tableContainer.innerHTML = `<div class='text-danger'>Error loading AMCs: ${error.message}</div>`;
             }
         });
@@ -201,9 +230,10 @@
 
             button.disabled = true;
             loadingSpinner.style.display = 'block';
-            tableContainer.querySelectorAll('table, .text-danger, h4').forEach(el => el.remove());
+            tableContainer.querySelectorAll('table, .text-danger, h4, .share-funds-row').forEach(el => el.remove());
 
             try {
+                console.log('Fetching data for view:', view);
                 const response = await fetch('/get_data', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
@@ -215,9 +245,10 @@
                     })
                 });
 
-                if (!response.ok) throw new Error('Failed to fetch data');
+                if (!response.ok) throw new Error(`Failed to fetch data: ${response.statusText}`);
 
                 const data = await response.json();
+                console.log('Main table data received:', { htmlLength: data.html?.length });
                 tableContainer.innerHTML = '<div id="loadingSpinner" style="display: none;"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p>Loading data...</p></div>';
                 
                 let html = data.html;
@@ -226,6 +257,7 @@
                     const doc = parser.parseFromString(html, 'text/html');
                     const parsedTable = doc.querySelector('table');
                     if (parsedTable) {
+                        parsedTable.classList.add('main-table');
                         const headers = parsedTable.querySelectorAll('th');
                         headers.forEach((header, index) => {
                             const headerText = header.textContent.trim();
@@ -245,14 +277,18 @@
                         html = parsedTable.outerHTML;
                         const title = doc.querySelector('h4');
                         if (title) {
-                            html = `<h4>${title.textContent}</h4><div style='display:block; overflow-x:auto; width:100%'>${html}</div>`;
+                            html = `<h4>${title.textContent}</h4><div style='display:block; overflow-x:auto; width:100%' class='table-container'>${html}</div>`;
                         }
+                    } else {
+                        console.error('No table found in main data HTML');
+                        tableContainer.innerHTML = `<div class='text-danger'>No table data available</div>`;
+                        return;
                     }
                 }
                 
                 tableContainer.insertAdjacentHTML('beforeend', html);
 
-                const tableElement = tableContainer.querySelector('table');
+                const tableElement = tableContainer.querySelector('table.main-table');
                 if (tableElement && view !== 'consolidated') {
                     const sortButtons = tableElement.querySelectorAll('.sort-btn');
                     sortButtons.forEach(button => {
@@ -265,54 +301,124 @@
 
                     if (view === 'share_wise_shares_all') {
                         const shareCells = tableElement.querySelectorAll('tbody tr td:first-child');
+                        console.log('Share cells found:', shareCells.length);
                         shareCells.forEach(cell => {
                             cell.classList.add('share-cell');
                             cell.addEventListener('click', async (e) => {
-                                const shareName = cell.textContent.trim();
-                                const existingDropdown = cell.querySelector('.share-dropdown');
-                                if (existingDropdown && existingDropdown.classList.contains('show')) {
-                                    existingDropdown.classList.remove('show');
+                                e.stopPropagation();
+                                const shareName = cell.textContent.trim().replace(/\s+/g, ' ');
+                                console.log('Clicked share:', JSON.stringify(shareName));
+                                const row = cell.parentElement;
+                                const existingRow = tableContainer.querySelector('.share-funds-row');
+                                if (existingRow) {
+                                    console.log('Hiding existing funds row');
+                                    existingRow.classList.remove('show');
+                                    setTimeout(() => existingRow.remove(), 300);
                                     return;
                                 }
+
                                 try {
-                                    const response = await fetch('/get_funds_for_share', {
+                                    console.log('Sending fetch request for share:', shareName);
+                                    const response = await fetch('/get_data_for_share_funds', {
                                         method: 'POST',
                                         headers: { 'Content-Type': 'application/json' },
                                         body: JSON.stringify({ share: shareName })
                                     });
-                                    if (!response.ok) throw new Error('Failed to fetch funds');
-                                    const funds = await response.json();
-                                    const dropdown = document.createElement('div');
-                                    dropdown.className = 'share-dropdown';
-                                    if (funds.length === 0) {
-                                        dropdown.innerHTML = '<div class="share-dropdown-item">No funds found</div>';
-                                    } else {
-                                        funds.forEach(fund => {
-                                            const item = document.createElement('div');
-                                            item.className = 'share-dropdown-item';
-                                            item.textContent = fund;
-                                            dropdown.appendChild(item);
+                                    console.log('Fetch response status:', response.status, response.statusText);
+                                    if (!response.ok) {
+                                        const errorText = await response.text();
+                                        console.error('Fetch error response:', errorText);
+                                        throw new Error(`Failed to fetch funds data: ${response.statusText}`);
+                                    }
+                                    const data = await response.json();
+                                    console.log('Funds data received:', { htmlLength: data.html?.length, htmlPreview: data.html?.substring(0, 200) });
+
+                                    if (!data.html) {
+                                        console.error('No HTML in funds data');
+                                        tableContainer.insertAdjacentHTML('beforeend', `<div class='text-danger'>No funds data available for ${shareName}</div>`);
+                                        return;
+                                    }
+
+                                    const parser = new DOMParser();
+                                    const doc = parser.parseFromString(data.html, 'text/html');
+                                    const fundsTable = doc.querySelector('table');
+                                    if (!fundsTable) {
+                                        console.error('No table in funds data HTML:', data.html.substring(0, 200));
+                                        tableContainer.insertAdjacentHTML('beforeend', `<div class='text-danger'>No table data for ${shareName}. Raw response: ${data.html}</div>`);
+                                        return;
+                                    }
+
+                                    const fundsContainer = document.createElement('div');
+                                    fundsContainer.className = 'share-funds-container';
+                                    fundsContainer.innerHTML = data.html;
+                                    fundsTable.classList.add('share-funds-table');
+
+                                    const mainTable = tableContainer.querySelector('.main-table');
+                                    const headerCount = mainTable.querySelectorAll('th').length;
+                                    const fundsRow = document.createElement('tr');
+                                    fundsRow.className = 'share-funds-row';
+                                    const fundsCell = document.createElement('td');
+                                    fundsCell.colSpan = headerCount;
+                                    fundsCell.appendChild(fundsContainer);
+                                    row.insertAdjacentElement('afterend', fundsRow);
+                                    fundsRow.appendChild(fundsCell);
+
+                                    if (mainTable && fundsTable) {
+                                        fundsTable.style.width = mainTable.offsetWidth + 'px';
+                                        console.log('Main table width:', mainTable.offsetWidth, 'Funds table width:', fundsTable.offsetWidth);
+
+                                        const mainHeaders = mainTable.querySelectorAll('th');
+                                        const fundsHeaders = fundsTable.querySelectorAll('th');
+                                        console.log('Main headers:', mainHeaders.length, 'Funds headers:', fundsHeaders.length);
+                                        mainHeaders.forEach((mainTh, index) => {
+                                            const fundsTh = fundsHeaders[index];
+                                            if (fundsTh) {
+                                                const width = mainTh.getBoundingClientRect().width;
+                                                console.log(`Column ${index} width: ${width}`);
+                                                fundsTh.style.width = width + 'px';
+                                                fundsTh.style.minWidth = width + 'px';
+                                                fundsTh.style.maxWidth = width + 'px';
+                                            }
+                                        });
+
+                                        const fundsRows = fundsTable.querySelectorAll('tbody tr');
+                                        fundsRows.forEach(row => {
+                                            const cells = row.querySelectorAll('td');
+                                            cells.forEach((cell, index) => {
+                                                const mainTh = mainHeaders[index];
+                                                if (mainTh) {
+                                                    const width = mainTh.getBoundingClientRect().width;
+                                                    cell.style.width = width + 'px';
+                                                    cell.style.minWidth = width + 'px';
+                                                    cell.style.maxWidth = width + 'px';
+                                                }
+                                            });
                                         });
                                     }
-                                    cell.querySelectorAll('.share-dropdown').forEach(d => d.remove());
-                                    cell.appendChild(dropdown);
-                                    setTimeout(() => dropdown.classList.add('show'), 0);
 
-                                    const hideDropdown = (event) => {
-                                        if (!cell.contains(event.target)) {
-                                            dropdown.classList.remove('show');
-                                            document.removeEventListener('click', hideDropdown);
+                                    console.log('Showing funds row');
+                                    setTimeout(() => fundsContainer.classList.add('show'), 10);
+                                    fundsRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+                                    const hideTable = (event) => {
+                                        if (!cell.contains(event.target) && !fundsContainer.contains(event.target)) {
+                                            console.log('Hiding funds row');
+                                            fundsContainer.classList.remove('show');
+                                            setTimeout(() => fundsRow.remove(), 300);
+                                            document.removeEventListener('click', hideTable);
                                         }
                                     };
-                                    document.addEventListener('click', hideDropdown);
+                                    document.addEventListener('click', hideTable);
                                 } catch (error) {
-                                    console.error('Error fetching funds:', error);
+                                    console.error('Error in funds table rendering:', error);
+                                    tableContainer.insertAdjacentHTML('beforeend', `<div class='text-danger'>Error loading funds data for ${shareName}: ${error.message}</div>`);
                                 }
                             });
                         });
                     }
                 }
             } catch (error) {
+                console.error('Error loading data:', error);
                 tableContainer.innerHTML = '<div id="loadingSpinner" style="display: none;"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p>Loading data...</p></div>';
                 tableContainer.insertAdjacentHTML('beforeend', `<div class='text-danger'>Error loading data: ${error.message}</div>`);
             } finally {
@@ -327,7 +433,7 @@
                 console.warn('Table body not found');
                 return;
             }
-            const rows = Array.from(tbody.querySelectorAll('tr'));
+            const rows = Array.from(tbody.querySelectorAll('tr:not(.share-funds-row)'));
             if (rows.length === 0) {
                 console.warn('No rows to sort');
                 return;
@@ -368,8 +474,14 @@
                 }
             });
 
+            const existingFundsRow = table.querySelector('.share-funds-row');
             tbody.innerHTML = '';
-            rows.forEach(row => tbody.appendChild(row));
+            rows.forEach(row => {
+                tbody.appendChild(row);
+            });
+            if (existingFundsRow) {
+                tbody.appendChild(existingFundsRow);
+            }
         }
     </script>
 </body>

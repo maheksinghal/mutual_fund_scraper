@@ -74,6 +74,97 @@ def get_schemes():
     schemes = [f for f in os.listdir(amc_path) if f.endswith('.csv')]
     return jsonify(schemes)
 
+@app.route('/get_data_for_share_funds', methods=['POST'])
+def get_data_for_share_funds():
+    share = request.json.get('share')
+    min_shares = 1
+    try:
+        cache_key = get_cache_key(min_shares)
+        df = load_all_data(min_shares, cache_key)
+        if df.empty:
+            return jsonify({"html": "<div class='text-danger'>No valid CSV files found</div>"})
+
+        df = df[df['Name'] == share]
+        if df.empty:
+            return jsonify({"html": "<div class='text-danger'>No funds found for this share</div>"})
+
+        # Create pivot table for number of shares
+        pivot = df.pivot_table(
+            index=['AMC', 'Scheme'],
+            columns='Month',
+            values='NoOfShare',
+            aggfunc="sum",
+            fill_value=0
+        )
+        pivot.columns = [str(col).strip() for col in pivot.columns]
+        
+        # Sort columns by date
+        def try_parse(col):
+            try:
+                dt = parser.parse(col, dayfirst=False, fuzzy=True)
+                return (col, dt)
+            except:
+                return None
+
+        parsed = list(filter(None, map(try_parse, pivot.columns)))
+        sorted_cols = [col for col, _ in sorted(parsed, key=lambda x: x[1])]
+        pivot = pivot[sorted_cols]
+        pivot.reset_index(inplace=True)
+        pivot.columns.name = None
+
+        # Generate HTML table
+        green_shades = [
+            "#e9fbe9", "#c8f7c5", "#a3f3a3", "#6de26d", "#36c836", "#1e9f1e", "#107a10", "#075c07", "#033b03"
+        ]
+        red_shades = [
+            "#ffe6e6", "#ffc2c2", "#ff9999", "#ff6b6b", "#ff3b3b", "#e60000", "#990000", "#660000", "#330000"
+        ]
+
+        def get_trend_colors(values):
+            colors = [green_shades[0]] * len(values)
+            trend_count = 1
+            direction = 'up'
+            for i in range(1, len(values)):
+                if pd.notnull(values[i]) and pd.notnull(values[i-1]):
+                    if values[i] > values[i-1]:
+                        if direction == 'up':
+                            trend_count += 1
+                        else:
+                            trend_count = 1
+                            direction = 'up'
+                        colors[i] = green_shades[min(trend_count, len(green_shades)-1)]
+                    elif values[i] < values[i-1]:
+                        if direction == 'down':
+                            trend_count += 1
+                        else:
+                            trend_count = 1
+                            direction = 'down'
+                        colors[i] = red_shades[min(trend_count, len(red_shades)-1)]
+                    else:
+                        colors[i] = colors[i-1]
+            return colors
+
+        html = f"<h5>Funds Holding {share} (Shares in Lakhs)</h5>"
+        html += "<table class='table table-bordered table-striped'><thead><tr>"
+        columns = ['AMC', 'Scheme'] + sorted_cols
+        for col in columns:
+            html += f"<th>{col}</th>"
+        html += "</tr></thead><tbody>"
+
+        for _, row in pivot.iterrows():
+            html += "<tr>"
+            html += f"<td>{row['AMC']}</td><td>{row['Scheme']}</td>"
+            values = [row[month] / 100000 for month in sorted_cols]  # Convert to lakhs
+            colors = get_trend_colors(values)
+            for value, color in zip(values, colors):
+                html += f"<td style='background-color:{color}'>{value:.2f} L</td>"
+            html += "</tr>"
+
+        html += "</tbody></table>"
+        return jsonify({"html": html})
+    except Exception as e:
+        return jsonify({"html": f"<div class='text-danger'>Error loading funds data: {e}</div>"})
+
 @app.route('/get_funds_for_share', methods=['POST'])
 def get_funds_for_share():
     share = request.json.get('share')

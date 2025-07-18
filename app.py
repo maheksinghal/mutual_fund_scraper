@@ -1,17 +1,16 @@
-from flask import Flask, render_template, request, jsonify, session, redirect, url_for
 import os
+import psycopg2
+from flask import Flask, render_template, request, jsonify, session, redirect, url_for
 import pandas as pd
 import numpy as np
 from datetime import datetime
 from dateutil import parser
 from flask_caching import Cache
-import uuid
 
 app = Flask(__name__)
-app.secret_key = os.urandom(24)  # Secure random key for sessions
+app.secret_key = os.urandom(24)
 cache = Cache(app, config={'CACHE_TYPE': 'SimpleCache'})
 BASE_DIR = "amc"
-EMAIL_STORAGE = "user_emails.txt"  # File to store user emails
 required_cols = {'Name', 'SectorName', 'NoOfShare', 'Month', 'SharesZG', 'MarketValue', 'MarketValueZG', 'HoldingPercentage'}
 
 def get_cache_key(min_shares):
@@ -55,12 +54,29 @@ def load_all_data(min_shares, cache_key):
                         print(f"Error reading {file_path}: {e}")
     return pd.concat(all_dfs, ignore_index=True) if all_dfs else pd.DataFrame()
 
-def store_email(email):
-    """Store user email with timestamp in a file."""
+def init_db():
     try:
-        with open(EMAIL_STORAGE, 'a') as f:
+        conn = psycopg2.connect(os.environ.get('DATABASE_URL'))
+        with conn.cursor() as cur:
+            cur.execute('''
+                CREATE TABLE IF NOT EXISTS user_logins (
+                    email TEXT NOT NULL,
+                    timestamp TEXT NOT NULL
+                )
+            ''')
+            conn.commit()
+        conn.close()
+    except Exception as e:
+        print(f"Error initializing database: {e}")
+
+def store_email(email):
+    try:
+        conn = psycopg2.connect(os.environ.get('DATABASE_URL'))
+        with conn.cursor() as cur:
             timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            f.write(f"{email},{timestamp}\n")
+            cur.execute('INSERT INTO user_logins (email, timestamp) VALUES (%s, %s)', (email, timestamp))
+            conn.commit()
+        conn.close()
     except Exception as e:
         print(f"Error storing email: {e}")
 
@@ -68,13 +84,15 @@ def store_email(email):
 def login():
     if request.method == 'POST':
         email = request.json.get('email')
-        if email and '@' in email and '.' in email:  # Basic email validation
+        if email and '@' in email and '.' in email:
             session['user_email'] = email
             store_email(email)
             return jsonify({"success": True, "redirect": url_for('home')})
         return jsonify({"success": False, "message": "Invalid email"})
     return render_template("login.html")
 
+# Initialize database when app starts
+init_db()
 @app.route('/')
 def home():
     if 'user_email' not in session:

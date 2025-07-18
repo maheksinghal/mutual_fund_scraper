@@ -1,14 +1,17 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, session, redirect, url_for
 import os
 import pandas as pd
 import numpy as np
 from datetime import datetime
 from dateutil import parser
 from flask_caching import Cache
+import uuid
 
 app = Flask(__name__)
+app.secret_key = os.urandom(24)  # Secure random key for sessions
 cache = Cache(app, config={'CACHE_TYPE': 'SimpleCache'})
 BASE_DIR = "amc"
+EMAIL_STORAGE = "user_emails.txt"  # File to store user emails
 required_cols = {'Name', 'SectorName', 'NoOfShare', 'Month', 'SharesZG', 'MarketValue', 'MarketValueZG', 'HoldingPercentage'}
 
 def get_cache_key(min_shares):
@@ -52,12 +55,36 @@ def load_all_data(min_shares, cache_key):
                         print(f"Error reading {file_path}: {e}")
     return pd.concat(all_dfs, ignore_index=True) if all_dfs else pd.DataFrame()
 
+def store_email(email):
+    """Store user email with timestamp in a file."""
+    try:
+        with open(EMAIL_STORAGE, 'a') as f:
+            timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            f.write(f"{email},{timestamp}\n")
+    except Exception as e:
+        print(f"Error storing email: {e}")
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        email = request.json.get('email')
+        if email and '@' in email and '.' in email:  # Basic email validation
+            session['user_email'] = email
+            store_email(email)
+            return jsonify({"success": True, "redirect": url_for('home')})
+        return jsonify({"success": False, "message": "Invalid email"})
+    return render_template("login.html")
+
 @app.route('/')
 def home():
+    if 'user_email' not in session:
+        return redirect(url_for('login'))
     return render_template("index.html")
 
 @app.route('/get_amcs', methods=['GET'])
 def get_amcs():
+    if 'user_email' not in session:
+        return jsonify({"error": "Unauthorized"}), 401
     try:
         amcs = sorted([f for f in os.listdir(BASE_DIR) if os.path.isdir(os.path.join(BASE_DIR, f))])
     except FileNotFoundError:
@@ -66,6 +93,8 @@ def get_amcs():
 
 @app.route('/get_schemes', methods=['POST'])
 def get_schemes():
+    if 'user_email' not in session:
+        return jsonify({"error": "Unauthorized"}), 401
     amc = request.json.get('amc')
     amc_path = os.path.join(BASE_DIR, amc)
     if not os.path.exists(amc_path):
@@ -76,6 +105,8 @@ def get_schemes():
 
 @app.route('/get_data_for_share_funds', methods=['POST'])
 def get_data_for_share_funds():
+    if 'user_email' not in session:
+        return jsonify({"error": "Unauthorized"}), 401
     share = request.json.get('share')
     min_shares = 1
     try:
@@ -167,6 +198,8 @@ def get_data_for_share_funds():
 
 @app.route('/get_funds_for_share', methods=['POST'])
 def get_funds_for_share():
+    if 'user_email' not in session:
+        return jsonify({"error": "Unauthorized"}), 401
     share = request.json.get('share')
     min_shares = 1
     try:
@@ -182,6 +215,8 @@ def get_funds_for_share():
 
 @app.route('/get_data', methods=['POST'])
 def get_data():
+    if 'user_email' not in session:
+        return jsonify({"error": "Unauthorized"}), 401
     amc = request.json.get('amc')
     scheme = request.json.get('scheme')
     min_shares = int(request.json.get('min_shares', 0))

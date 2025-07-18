@@ -264,7 +264,13 @@
 
             try {
                 const response = await fetch('/get_amcs');
-                if (!response.ok) throw new Error(`Failed to fetch AMCs: ${response.statusText}`);
+                if (!response.ok) {
+                    if (response.status === 401) {
+                        window.location.href = '/login';
+                        return;
+                    }
+                    throw new Error(`Failed to fetch AMCs: ${response.statusText}`);
+                }
                 const amcs = await response.json();
                 console.log('AMCs loaded:', amcs);
                 amcs.forEach(amc => {
@@ -283,7 +289,13 @@
                             headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify({ amc: selectedAMC })
                         });
-                        if (!response.ok) throw new Error(`Failed to fetch schemes: ${response.statusText}`);
+                        if (!response.ok) {
+                            if (response.status === 401) {
+                                window.location.href = '/login';
+                                return;
+                            }
+                            throw new Error(`Failed to fetch schemes: ${response.statusText}`);
+                        }
                         const schemes = await response.json();
                         console.log('Schemes loaded:', schemes);
                         schemeDropdown.innerHTML = '';
@@ -362,7 +374,13 @@
                     })
                 });
 
-                if (!response.ok) throw new Error(`Failed to fetch data: ${response.statusText}`);
+                if (!response.ok) {
+                    if (response.status === 401) {
+                        window.location.href = '/login';
+                        return;
+                    }
+                    throw new Error(`Failed to fetch data: ${response.statusText}`);
+                }
 
                 const data = await response.json();
                 console.log('Main table data received:', { htmlLength: data.html?.length });
@@ -488,6 +506,10 @@
                                     });
                                     console.log('Fetch response status:', response.status, response.statusText);
                                     if (!response.ok) {
+                                        if (response.status === 401) {
+                                            window.location.href = '/login';
+                                            return;
+                                        }
                                         const errorText = await response.text();
                                         console.error('Fetch error response:', errorText);
                                         throw new Error(`Failed to fetch funds data: ${response.statusText}`);

@@ -39,6 +39,73 @@
             background-color: #d1e7dd;
             font-weight: bold;
         }
+        th .color-filter {
+            position: relative;
+            display: inline-block;
+        }
+        th .color-btn {
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            background-color: #ff9999; /* Default red color */
+            margin-left: 8px;
+        }
+        th .color-btn:hover {
+            border-color: #666;
+        }
+        .color-dropdown {
+            display: none;
+            position: fixed;
+            z-index: 3000;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            padding: 5px;
+            min-width: 120px;
+            max-height: 200px; /* Fixed height for scrollbar */
+            overflow-y: auto; /* Enable vertical scrollbar */
+        }
+        .color-dropdown::-webkit-scrollbar {
+            width: 6px;
+        }
+        .color-dropdown::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 3px;
+        }
+        .color-dropdown::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 3px;
+        }
+        .color-dropdown::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        .color-dropdown.show {
+            display: block;
+        }
+        .color-option {
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .color-option:hover {
+            background-color: #f1f3f5;
+        }
+        .color-swatch {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .color-option.clear {
+            font-style: italic;
+            color: #666;
+        }
         th {
             vertical-align: middle;
         }
@@ -54,6 +121,7 @@
             overflow-x: auto;
             max-width: 100%;
             position: relative;
+            z-index: 1;
         }
         .share-funds-row {
             background-color: #f8f9fa;
@@ -130,6 +198,9 @@
         #shareSearch {
             width: 300px;
         }
+        .filtered-out {
+            display: none;
+        }
     </style>
 </head>
 <body class="p-4">
@@ -167,6 +238,17 @@
     </div>
 
     <script>
+        const colorShades = {
+            green: [
+                '#e9fbe9', '#c8f7c5', '#a3f3a3', '#6de26d', '#36c836',
+                '#1e9f1e', '#107a10', '#075c07', '#033b03'
+            ],
+            red: [
+                '#ffe6e6', '#ffc2c2', '#ff9999', '#ff6b6b', '#ff3b3b',
+                '#e60000', '#990000', '#660000', '#330000'
+            ]
+        };
+
         document.addEventListener('DOMContentLoaded', async () => {
             const amcDropdown = document.getElementById('amcDropdown');
             const schemeDropdown = document.getElementById('schemeDropdown');
@@ -254,9 +336,8 @@
                 return;
             }
 
-            // Show/hide search bar based on view
             shareSearchContainer.classList.toggle('show', view === 'share_wise_shares_all');
-            shareSearch.value = ''; // Clear search input when changing views
+            shareSearch.value = '';
 
             if (view !== 'sector_holding_all' && view !== 'share_wise_shares_all' && view !== 'consolidated' && (!amcDropdown.value || !schemeDropdown.value)) {
                 tableContainer.innerHTML = "<div class='text-danger'>Please select both AMC and Scheme</div>";
@@ -266,6 +347,7 @@
             button.disabled = true;
             loadingSpinner.style.display = 'block';
             tableContainer.querySelectorAll('table, .text-danger, h4, .share-funds-row').forEach(el => el.remove());
+            document.querySelectorAll('.color-dropdown').forEach(dd => dd.remove());
 
             try {
                 console.log('Fetching data for view:', view);
@@ -302,9 +384,12 @@
                                 header.innerHTML = `
                                     <div class="sort-buttons">
                                         <span>${headerText}</span>
-                                        <div>
+                                        <div style="display: flex; align-items: center; gap: 5px;">
                                             <button class="sort-btn asc" data-col="${index}" title="Sort Ascending"></button>
                                             <button class="sort-btn desc" data-col="${index}" title="Sort Descending"></button>
+                                            <div class="color-filter">
+                                                <div class="color-btn" data-col="${index}" title="Filter by Color"></div>
+                                            </div>
                                         </div>
                                     </div>`;
                             }
@@ -332,6 +417,48 @@
                             const isAscending = button.classList.contains('asc');
                             sortTable(tableElement, colIndex, isAscending);
                         });
+                    });
+
+                    const colorButtons = tableElement.querySelectorAll('.color-btn');
+                    colorButtons.forEach(button => {
+                        const colIndex = button.getAttribute('data-col');
+                        const dropdown = document.createElement('div');
+                        dropdown.className = 'color-dropdown';
+                        dropdown.innerHTML = `
+                            <div class="color-option clear" data-col="${colIndex}" data-color="none">Clear Filter</div>
+                            ${colorShades.green.map(color => `<div class="color-option" data-col="${colIndex}" data-color="${color}"><div class="color-swatch" style="background-color: ${color};"></div>Colour</div>`).join('')}
+                            ${colorShades.red.map(color => `<div class="color-option" data-col="${colIndex}" data-color="${color}"><div class="color-swatch" style="background-color: ${color};"></div>Colour</div>`).join('')}
+                        `;
+                        document.body.appendChild(dropdown);
+
+                        button.addEventListener('click', (e) => {
+                            e.stopPropagation();
+                            if (dropdown.classList.contains('show')) {
+                                dropdown.classList.remove('show');
+                            } else {
+                                document.querySelectorAll('.color-dropdown').forEach(dd => dd.classList.remove('show'));
+                                const rect = button.getBoundingClientRect();
+                                dropdown.style.top = `${rect.top + window.scrollY}px`; /* Align with top of button */
+                                dropdown.style.left = `${rect.left + window.scrollX}px`;
+                                dropdown.classList.add('show');
+                            }
+                        });
+
+                        dropdown.querySelectorAll('.color-option').forEach(option => {
+                            option.addEventListener('click', (e) => {
+                                e.stopPropagation();
+                                const colIndex = parseInt(option.getAttribute('data-col'));
+                                const color = option.getAttribute('data-color');
+                                filterTableByColor(tableElement, colIndex, color);
+                                dropdown.classList.remove('show');
+                            });
+                        });
+                    });
+
+                    document.addEventListener('click', (e) => {
+                        if (!e.target.closest('.color-filter') && !e.target.closest('.color-dropdown')) {
+                            document.querySelectorAll('.color-dropdown').forEach(dd => dd.classList.remove('show'));
+                        }
                     });
 
                     if (view === 'share_wise_shares_all') {
@@ -487,7 +614,7 @@
             const isNumeric = rows.every(row => {
                 const cell = row.cells[colIndex];
                 if (!cell) return false;
-                const value = cell.textContent.trim();
+                const value = cell.textContent.trim().replace(' L', '');
                 return !isNaN(parseFloat(value)) && isFinite(parseFloat(value));
             });
 
@@ -495,8 +622,8 @@
                 const cellA = rowA.cells[colIndex];
                 const cellB = rowB.cells[colIndex];
                 if (!cellA || !cellB) return 0;
-                let valueA = cellA.textContent.trim();
-                let valueB = cellB.textContent.trim();
+                let valueA = cellA.textContent.trim().replace(' L', '');
+                let valueB = cellB.textContent.trim().replace(' L', '');
 
                 if (isNumeric) {
                     const numA = parseFloat(valueA) || 0;
@@ -517,6 +644,41 @@
             if (existingFundsRow) {
                 tbody.appendChild(existingFundsRow);
             }
+        }
+
+        function filterTableByColor(table, colIndex, color) {
+            const tbody = table.querySelector('tbody');
+            if (!tbody) {
+                console.warn('Table body not found');
+                return;
+            }
+            const rows = tbody.querySelectorAll('tr:not(.share-funds-row)');
+            if (rows.length === 0) {
+                console.warn('No rows to filter');
+                return;
+            }
+
+            rows.forEach(row => {
+                const cell = row.cells[colIndex];
+                if (!cell) return;
+                if (color === 'none') {
+                    row.classList.remove('filtered-out');
+                } else {
+                    const cellColor = cell.style.backgroundColor;
+                    const normalizedCellColor = cellColor.startsWith('#') ? cellColor.toLowerCase() : rgbToHex(cellColor).toLowerCase();
+                    row.classList.toggle('filtered-out', normalizedCellColor !== color.toLowerCase());
+                }
+            });
+        }
+
+        function rgbToHex(rgb) {
+            if (!rgb || rgb === '') return '';
+            const match = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+            if (!match) return rgb;
+            const r = parseInt(match[1]).toString(16).padStart(2, '0');
+            const g = parseInt(match[2]).toString(16).padStart(2, '0');
+            const b = parseInt(match[3]).toString(16).padStart(2, '0');
+            return `#${r}${g}${b}`;
         }
     </script>
 </body>

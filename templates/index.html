@@ -120,6 +120,16 @@
             scrollbar-width: thin;
             scrollbar-color: #888 #f1f1f1;
         }
+        #shareSearchContainer {
+            display: none;
+            margin-bottom: 15px;
+        }
+        #shareSearchContainer.show {
+            display: block;
+        }
+        #shareSearch {
+            width: 300px;
+        }
     </style>
 </head>
 <body class="p-4">
@@ -143,6 +153,9 @@
         </div>
 
         <hr>
+        <div id="shareSearchContainer" class="mb-3">
+            <input type="text" id="shareSearch" class="form-control" placeholder="Search share name...">
+        </div>
         <div id="tableContainer" class="mt-4 table-container">
             <div id="loadingSpinner">
                 <div class="spinner-border text-primary" role="status">
@@ -159,8 +172,10 @@
             const schemeDropdown = document.getElementById('schemeDropdown');
             const tableContainer = document.getElementById('tableContainer');
             const loadingSpinner = document.getElementById('loadingSpinner');
+            const shareSearchContainer = document.getElementById('shareSearchContainer');
+            const shareSearch = document.getElementById('shareSearch');
 
-            if (!amcDropdown || !schemeDropdown || !tableContainer || !loadingSpinner) {
+            if (!amcDropdown || !schemeDropdown || !tableContainer || !loadingSpinner || !shareSearchContainer || !shareSearch) {
                 console.error('Required DOM elements not found');
                 return;
             }
@@ -210,6 +225,20 @@
                 console.error('Error loading AMCs:', error);
                 tableContainer.innerHTML = `<div class='text-danger'>Error loading AMCs: ${error.message}</div>`;
             }
+
+            shareSearch.addEventListener('input', () => {
+                const filter = shareSearch.value.trim().toLowerCase();
+                const table = tableContainer.querySelector('table.main-table');
+                if (!table) return;
+
+                const rows = table.querySelectorAll('tbody tr:not(.share-funds-row)');
+                rows.forEach(row => {
+                    const shareCell = row.querySelector('td:first-child');
+                    if (!shareCell) return;
+                    const shareName = shareCell.textContent.trim().toLowerCase();
+                    row.style.display = filter === '' || shareName.includes(filter) ? '' : 'none';
+                });
+            });
         });
 
         async function loadData(view, button) {
@@ -217,11 +246,17 @@
             const schemeDropdown = document.getElementById('schemeDropdown');
             const tableContainer = document.getElementById('tableContainer');
             const loadingSpinner = document.getElementById('loadingSpinner');
+            const shareSearchContainer = document.getElementById('shareSearchContainer');
+            const shareSearch = document.getElementById('shareSearch');
 
-            if (!amcDropdown || !schemeDropdown || !tableContainer || !loadingSpinner) {
+            if (!amcDropdown || !schemeDropdown || !tableContainer || !loadingSpinner || !shareSearchContainer || !shareSearch) {
                 console.error('Required DOM elements not found');
                 return;
             }
+
+            // Show/hide search bar based on view
+            shareSearchContainer.classList.toggle('show', view === 'share_wise_shares_all');
+            shareSearch.value = ''; // Clear search input when changing views
 
             if (view !== 'sector_holding_all' && view !== 'share_wise_shares_all' && view !== 'consolidated' && (!amcDropdown.value || !schemeDropdown.value)) {
                 tableContainer.innerHTML = "<div class='text-danger'>Please select both AMC and Scheme</div>";

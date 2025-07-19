@@ -784,9 +784,7 @@
                     row.classList.remove('filtered-out');
                 } else {
                     const cellColor = cell.style.backgroundColor;
-                    const normalizedCellColor = cellColor.startsWith('#') ? cellColor.toLowerCase() : rgbToHex(cellColor).toLower
-
-Case();
+                    const normalizedCellColor = cellColor.startsWith('#') ? cellColor.toLowerCase() : rgbToHex(cellColor).toLowerCase();
                     row.classList.toggle('filtered-out', normalizedCellColor !== color.toLowerCase());
                 }
             });

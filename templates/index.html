@@ -210,6 +210,14 @@
         .table-header h4 {
             margin: 0;
         }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+            border-top: 1px solid #dee2e6;
+        }
     </style>
 </head>
 <body class="p-4">
@@ -245,6 +253,10 @@
             </div>
         </div>
     </div>
+
+    <footer>
+        Past performance is not equal to future performance. Consult advisor.
+    </footer>
 
     <script>
         const colorShades = {
@@ -772,7 +784,9 @@
                     row.classList.remove('filtered-out');
                 } else {
                     const cellColor = cell.style.backgroundColor;
-                    const normalizedCellColor = cellColor.startsWith('#') ? cellColor.toLowerCase() : rgbToHex(cellColor).toLowerCase();
+                    const normalizedCellColor = cellColor.startsWith('#') ? cellColor.toLowerCase() : rgbToHex(cellColor).toLower
+
+Case();
                     row.classList.toggle('filtered-out', normalizedCellColor !== color.toLowerCase());
                 }
             });

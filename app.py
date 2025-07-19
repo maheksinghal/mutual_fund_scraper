@@ -1,11 +1,14 @@
 import os
 import psycopg2
-from flask import Flask, render_template, request, jsonify, session, redirect, url_for
+from flask import Flask, render_template, request, jsonify, session, redirect, url_for, send_file
+from io import BytesIO
 import pandas as pd
 import numpy as np
 from datetime import datetime
 from dateutil import parser
 from flask_caching import Cache
+from openpyxl.utils import get_column_letter
+from openpyxl.styles import Alignment
 
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
@@ -93,6 +96,7 @@ def login():
 
 # Initialize database when app starts
 init_db()
+
 @app.route('/')
 def home():
     if 'user_email' not in session:
@@ -319,16 +323,6 @@ def get_data():
         "#ffe6e6", "#ffc2c2", "#ff9999", "#ff6b6b", "#ff3b3b", "#e60000", "#990000", "#660000", "#330000"
     ]
 
-    def get_cumulative_color(trend_count, direction):
-        max_index = len(green_shades) - 1
-        trend_count = min(trend_count, max_index)
-        if direction == 'up':
-            return green_shades[trend_count]
-        elif direction == 'down':
-            return red_shades[trend_count]
-        else:
-            return green_shades[0]
-
     def get_trend_colors(values):
         colors = [green_shades[0]] * len(values)
         trend_count = 1
@@ -432,6 +426,188 @@ def get_data():
         html = "<div class='text-danger'>Invalid view selected</div>"
 
     return jsonify({"html": html})
+
+@app.route('/export_to_excel', methods=['POST'])
+def export_to_excel():
+    if 'user_email' not in session:
+        return jsonify({"error": "Unauthorized"}), 401
+    
+    amc = request.json.get('amc')
+    scheme = request.json.get('scheme')
+    min_shares = int(request.json.get('min_shares', 0))
+    view = request.json.get('view', 'holding_percentage')
+
+    dtypes = {
+        'NoOfShare': 'int32',
+        'SharesZG': 'float32',
+        'MarketValue': 'float32',
+        'MarketValueZG': 'float32',
+        'HoldingPercentage': 'float32'
+    }
+
+    # Load data based on view
+    if view in ['sector_holding_all', 'share_wise_shares_all']:
+        try:
+            cache_key = get_cache_key(min_shares)
+            df = load_all_data(min_shares, cache_key)
+            if df.empty:
+                return jsonify({"error": "No valid CSV files found"}), 400
+        except Exception as e:
+            return jsonify({"error": f"Error loading CSVs: {e}"}), 500
+    else:
+        file_path = os.path.join(BASE_DIR, amc, scheme)
+        try:
+            df = pd.read_csv(file_path, usecols=required_cols, dtype=dtypes)
+        except Exception as e:
+            return jsonify({"error": f"Error loading CSV: {e}"}), 500
+        if not required_cols.issubset(df.columns):
+            return jsonify({"error": "Invalid CSV format: Missing required columns"}), 400
+        df = df[df['NoOfShare'] >= min_shares]
+
+    def create_pivot_table(value_col, index_cols=['Name', 'SectorName']):
+        pivot = df.pivot_table(
+            index=index_cols,
+            columns='Month',
+            values=value_col,
+            aggfunc="sum",
+            fill_value=0
+        )
+        pivot.columns = [str(col).strip() for col in pivot.columns]
+        
+        def try_parse(col):
+            try:
+                dt = parser.parse(col, dayfirst=False, fuzzy=True)
+                return (col, dt)
+            except:
+                return None
+
+        parsed = list(filter(None, map(try_parse, pivot.columns)))
+        sorted_cols = [col for col, _ in sorted(parsed, key=lambda x: x[1])]
+        pivot = pivot[sorted_cols]
+        pivot.reset_index(inplace=True)
+        if len(index_cols) == 2:
+            pivot.rename(columns={"Name": "Share", "SectorName": "Sector"}, inplace=True)
+        else:
+            pivot.rename(columns={"SectorName": "Sector"}, inplace=True)
+        pivot.columns.name = None
+        return pivot, sorted_cols
+
+    try:
+        # Create pivot table based on view
+        if view == 'holding_percentage':
+            pivot, month_cols = create_pivot_table('HoldingPercentage')
+        elif view == 'sector_holding':
+            pivot, month_cols = create_pivot_table('HoldingPercentage', index_cols=['SectorName'])
+        elif view == 'sector_holding_all':
+            pivot, month_cols = create_pivot_table('HoldingPercentage', index_cols=['SectorName'])
+        elif view == 'share_wise_shares_all':
+            pivot, month_cols = create_pivot_table('NoOfShare', index_cols=['Name', 'SectorName'])
+            pivot[month_cols] = pivot[month_cols] / 100000  # Convert to lakhs
+        elif view == 'consolidated':
+            # Create pivot tables for each metric
+            pivot_no_shares, month_cols = create_pivot_table('NoOfShare')
+            pivot_no_shares[month_cols] = pivot_no_shares[month_cols] / 100000  # Convert to lakhs
+            pivot_shares_zg, _ = create_pivot_table('SharesZG')
+            pivot_market_value, _ = create_pivot_table('MarketValue')
+            pivot_market_value_zg, _ = create_pivot_table('MarketValueZG')
+            pivot_holding_percentage, _ = create_pivot_table('HoldingPercentage')
+            
+            # Combine all metrics into a single DataFrame, grouping by Share
+            combined_dfs = []
+            metrics = [
+                ("No. of Shares (in L)", pivot_no_shares, False),
+                ("Changes in Holding %", pivot_shares_zg, True),
+                ("Market Value", pivot_market_value, True),
+                ("Changes in Market Value %", pivot_market_value_zg, True),
+                ("% of Total Holding", pivot_holding_percentage, True)
+            ]
+            for metric_name, pivot, is_decimal in metrics:
+                pivot_copy = pivot.copy()
+                pivot_copy['Metric'] = metric_name
+                # Reorder columns to match UI: Share, Sector, Metric, then months
+                pivot_copy = pivot_copy[['Share', 'Sector', 'Metric'] + month_cols]
+                if is_decimal:
+                    pivot_copy[month_cols] = pivot_copy[month_cols].round(2)
+                combined_dfs.append(pivot_copy)
+            
+            # Concatenate and sort by Share, then Metric to group all metrics for each share
+            combined_df = pd.concat(combined_dfs, ignore_index=True)
+            combined_df = combined_df.sort_values(by=['Share', 'Metric'])
+        else:
+            return jsonify({"error": "Invalid view selected"}), 400
+
+        # Create Excel file
+        output = BytesIO()
+        with pd.ExcelWriter(output, engine='openpyxl') as writer:
+            if view == 'consolidated':
+                combined_df.to_excel(writer, sheet_name='Consolidated View', index=False)
+                worksheet = writer.sheets['Consolidated View']
+                
+                # Format cells: Append "L" to No. of Shares and align numbers
+                for row in worksheet.iter_rows(min_row=2, max_row=worksheet.max_row, min_col=4):
+                    for cell in row:
+                        if cell.column >= 4:  # Month columns
+                            value = cell.value
+                            if value is not None and not np.isnan(value):
+                                if worksheet.cell(row=cell.row, column=3).value == 'No. of Shares (in L)':
+                                    cell.value = f"{value:.2f} L"
+                                    cell.alignment = Alignment(horizontal='right')
+                                else:
+                                    cell.value = f"{value:.2f}"
+                                    cell.alignment = Alignment(horizontal='right')
+                
+                # Adjust column widths
+                for col in worksheet.columns:
+                    max_length = 0
+                    column = col[0].column_letter
+                    for cell in col:
+                        try:
+                            if len(str(cell.value)) > max_length:
+                                max_length = len(str(cell.value))
+                        except:
+                            pass
+                    adjusted_width = max_length + 2
+                    worksheet.column_dimensions[column].width = adjusted_width
+            else:
+                pivot.to_excel(writer, sheet_name=view, index=False)
+                worksheet = writer.sheets[view]
+                
+                # Format numeric columns
+                for row in worksheet.iter_rows(min_row=2, max_row=worksheet.max_row, min_col=3):
+                    for cell in row:
+                        if cell.column >= 3:  # Month columns
+                            value = cell.value
+                            if value is not None and not np.isnan(value):
+                                if view == 'share_wise_shares_all':
+                                    cell.value = f"{value:.2f} L"
+                                    cell.alignment = Alignment(horizontal='right')
+                                else:
+                                    cell.value = f"{value:.2f}"
+                                    cell.alignment = Alignment(horizontal='right')
+                
+                # Adjust column widths
+                for col in worksheet.columns:
+                    max_length = 0
+                    column = col[0].column_letter
+                    for cell in col:
+                        try:
+                            if len(str(cell.value)) > max_length:
+                                max_length = len(str(cell.value))
+                        except:
+                            pass
+                    adjusted_width = max_length + 2
+                    worksheet.column_dimensions[column].width = adjusted_width
+
+        output.seek(0)
+        return send_file(
+            output,
+            mimetype='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+            as_attachment=True,
+            download_name=f'table_data_{view}.xlsx'
+        )
+
+    except Exception as e:
+        return jsonify({"error": f"Error generating Excel: {e}"}), 500
 
 if __name__ == '__main__':
     app.run(debug=True)

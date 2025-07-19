@@ -201,6 +201,15 @@
         .filtered-out {
             display: none;
         }
+        .table-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .table-header h4 {
+            margin: 0;
+        }
     </style>
 </head>
 <body class="p-4">
@@ -336,6 +345,11 @@
         });
 
         async function loadData(view, button) {
+            // Remove active class from all buttons
+            document.querySelectorAll('.btn-warning, .btn-danger, .btn-dark, .btn-success, .btn-primary').forEach(btn => btn.classList.remove('active'));
+            // Add active class to the clicked button
+            button.classList.add('active');
+            
             const amcDropdown = document.getElementById('amcDropdown');
             const schemeDropdown = document.getElementById('schemeDropdown');
             const tableContainer = document.getElementById('tableContainer');
@@ -358,7 +372,7 @@
 
             button.disabled = true;
             loadingSpinner.style.display = 'block';
-            tableContainer.querySelectorAll('table, .text-danger, h4, .share-funds-row').forEach(el => el.remove());
+            tableContainer.querySelectorAll('table, .text-danger, h4, .share-funds-row, .table-header').forEach(el => el.remove());
             document.querySelectorAll('.color-dropdown').forEach(dd => dd.remove());
 
             try {
@@ -387,9 +401,18 @@
                 tableContainer.innerHTML = '<div id="loadingSpinner" style="display: none;"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p>Loading data...</p></div>';
                 
                 let html = data.html;
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                const titleElement = doc.querySelector('h4');
+                let titleText = titleElement ? titleElement.textContent : 'Data Table';
+                
+                // Remove the <h4> from the HTML to prevent duplication
+                if (titleElement) {
+                    titleElement.remove();
+                    html = doc.body.innerHTML;
+                }
+
                 if (view !== 'consolidated') {
-                    const parser = new DOMParser();
-                    const doc = parser.parseFromString(html, 'text/html');
                     const parsedTable = doc.querySelector('table');
                     if (parsedTable) {
                         parsedTable.classList.add('main-table');
@@ -413,16 +436,20 @@
                             }
                         });
                         html = parsedTable.outerHTML;
-                        const title = doc.querySelector('h4');
-                        if (title) {
-                            html = `<h4>${title.textContent}</h4><div style='display:block; overflow-x:auto; width:100%' class='table-container'>${html}</div>`;
-                        }
                     } else {
                         console.error('No table found in main data HTML');
                         tableContainer.innerHTML = `<div class='text-danger'>No table data available</div>`;
                         return;
                     }
                 }
+
+                // Add table header with title and export button for all views
+                html = `
+                    <div class="table-header">
+                        <h4>${titleText}</h4>
+                        <button class="btn btn-info btn-sm" onclick="exportToExcel()">Export to Excel</button>
+                    </div>
+                    <div style='display:block; overflow-x:auto; width:100%' class='table-container'>${html}</div>`;
                 
                 tableContainer.insertAdjacentHTML('beforeend', html);
 
@@ -607,6 +634,64 @@
                 tableContainer.insertAdjacentHTML('beforeend', `<div class='text-danger'>Error loading data: ${error.message}</div>`);
             } finally {
                 button.disabled = false;
+                loadingSpinner.style.display = 'none';
+            }
+        }
+
+        async function exportToExcel() {
+            const amcDropdown = document.getElementById('amcDropdown');
+            const schemeDropdown = document.getElementById('schemeDropdown');
+            const tableContainer = document.getElementById('tableContainer');
+            const loadingSpinner = document.getElementById('loadingSpinner');
+
+            if (!amcDropdown || !schemeDropdown || !tableContainer || !loadingSpinner) {
+                console.error('Required DOM elements not found');
+                return;
+            }
+
+            // Determine the current view from the active button
+            const activeButton = document.querySelector('.btn-warning.active, .btn-danger.active, .btn-dark.active, .btn-success.active, .btn-primary.active');
+            const view = activeButton ? activeButton.getAttribute('onclick').match(/'([^']+)'/)[1] : 'holding_percentage';
+
+            if (view !== 'sector_holding_all' && view !== 'share_wise_shares_all' && view !== 'consolidated' && (!amcDropdown.value || !schemeDropdown.value)) {
+                alert('Please select both AMC and Scheme before exporting.');
+                return;
+            }
+
+            loadingSpinner.style.display = 'block';
+            try {
+                const response = await fetch('/export_to_excel', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        amc: amcDropdown.value,
+                        scheme: schemeDropdown.value,
+                        min_shares: 1,
+                        view: view
+                    })
+                });
+
+                if (!response.ok) {
+                    if (response.status === 401) {
+                        window.location.href = '/login';
+                        return;
+                    }
+                    throw new Error(`Failed to export: ${response.statusText}`);
+                }
+
+                const blob = await response.blob();
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `table_data_${view}.xlsx`;
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+                window.URL.revokeObjectURL(url);
+            } catch (error) {
+                console.error('Error exporting to Excel:', error);
+                tableContainer.insertAdjacentHTML('beforeend', `<div class='text-danger'>Error exporting to Excel: ${error.message}</div>`);
+            } finally {
                 loadingSpinner.style.display = 'none';
             }
         }

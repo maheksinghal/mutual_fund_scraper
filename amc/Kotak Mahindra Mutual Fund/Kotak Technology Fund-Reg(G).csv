@@ -1,28 +1,52 @@
 CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,Type,NoOfShare,PrevNoOfShare,SharesZG,MarketValue,PrevMarketValue,MarketValueZG,HoldingPercentage,Priority,SecuritySlug,McapCategory,Month
-171889,4926,1,Infosys Ltd.,IT,Information Technology,Domestic Equities,725226.0,707726.0,2.472708364536558,116.1667,110.59629999999999,5.036696526013989,18.7228183436935,1100,infosys,Large Cap,Jun-2025
+171889,4926,1,Infosys Ltd.,IT,Information Technology,Domestic Equities,770226.0,725226.0,6.204962315195539,116.2271,116.1667,0.05199424619963427,19.8167531188338,1100,infosys,Large Cap,Jul-2025
+133593,6508,1,Bharti Airtel Ltd.,Telecom,Telecom,Domestic Equities,491577.0,491577.0,0.0,94.1026,98.7873,-4.742208765701657,16.0445196691681,1100,bharti-airtel,Large Cap,Jul-2025
+171915,6797,1,Tata Consultancy Services Ltd.,IT,Information Technology,Domestic Equities,139672.0,139672.0,0.0,42.415600000000005,48.3544,-12.281819234650811,7.23187168558112,1100,tata-consultancy-services,Large Cap,Jul-2025
+171369,7531,1,Tech Mahindra Ltd.,IT,Information Technology,Domestic Equities,285579.0,285579.0,0.0,41.800200000000004,48.1772,-13.236551729863915,7.12694581313545,1100,tech-mahindra,Large Cap,Jul-2025
+156921,98676,1,Eternal Ltd.,Retailing,Information Technology,Domestic Equities,1295016.0,1295016.0,0.0,39.8606,34.2078,16.52488613707984,6.79624346962614,1100,eternal,Large Cap,Jul-2025
+19255,6350,1,Mphasis Ltd.,IT,Information Technology,Domestic Equities,83822.0,83822.0,0.0,23.388,23.850700000000003,-1.939984989958365,3.98766055372012,1100,mphasis,Mid Cap,Jul-2025
+84908,112552,1,Swiggy Ltd.,Retailing,Information Technology,Domestic Equities,533378.0,533378.0,0.0,21.535100000000003,21.3565,0.8362793528902268,3.67174058450565,1100,swiggy,Mid Cap,Jul-2025
+171528,8219,1,HCL Technologies Ltd.,IT,Information Technology,Domestic Equities,141107.0,141107.0,0.0,20.7131,24.3918,-15.081707787043182,3.5315893541671,1100,hcl-technologies,Large Cap,Jul-2025
+171511,5199,1,Wipro Ltd.,IT,Information Technology,Domestic Equities,827882.0,827882.0,0.0,20.5563,22.02,-6.647138964577652,3.50485491022904,1100,wipro,Large Cap,Jul-2025
+95548,5980,1,Persistent Systems Ltd.,IT,Information Technology,Domestic Equities,39276.0,34276.0,14.587466448827168,20.2684,20.707800000000002,-2.1219057553192653,3.45576787955451,1100,persistent-systems,Mid Cap,Jul-2025
+133657,7260,1,Coforge Ltd.,IT,Information Technology,Domestic Equities,93000.0,85000.0,9.411764705882353,16.2583,16.3583,-0.6113104662464927,2.77204470585547,1100,coforge,Mid Cap,Jul-2025
+114402,5275,1,Hexaware Technologies Ltd.,IT,Information Technology,Domestic Equities,223641.0,223641.0,0.0,15.7443,19.0218,-17.230230577547864,2.68440756182383,1100,hexaware-technologies,Mid Cap,Jul-2025
+76174,111823,1,Bharti Hexacom Ltd.,Telecom,Telecom,Domestic Equities,80302.0,80302.0,0.0,14.8374,15.6806,-5.377345254645864,2.52978085769484,1100,bharti-hexacom,Mid Cap,Jul-2025
+171698,8307,1,Oracle Financial Services Software Ltd.,IT,Information Technology,Domestic Equities,17000.0,17000.0,0.0,14.4075,15.2762,-5.686623636768299,2.45648278722946,1100,oracle-financial-services-software,Mid Cap,Jul-2025
+38803,5403,1,Indus Towers Ltd.,Telecom,Telecom,Domestic Equities,307098.0,307098.0,0.0,11.1477,12.9319,-13.796889861505274,1.9006859737774,1100,indus-towers,Large Cap,Jul-2025
+171687,7000,1,Zensar Technologies Ltd.,IT,Information Technology,Domestic Equities,119060.0,119060.0,0.0,9.597999999999999,10.0314,-4.320433837749469,1.63646168952479,1100,zensar-technologies,Small Cap,Jul-2025
+171771,7580,1,Firstsource Solutions Ltd.,IT,Information Technology,Domestic Equities,264000.0,264000.0,0.0,9.020900000000001,9.8908,-8.795041857079307,1.53806597781143,1100,firstsource-solutions,Small Cap,Jul-2025
+153405,17058,1,LTIMindtree Ltd.,IT,Information Technology,Domestic Equities,15050.0,15050.0,0.0,7.684500000000001,8.0021,-3.968958148486021,1.31020940332915,1100,ltimindtree,Large Cap,Jul-2025
+133561,8133,1,Birlasoft Ltd.,IT,Information Technology,Domestic Equities,192000.0,192000.0,0.0,7.5168,8.3232,-9.688581314878904,1.28161650633673,1100,birlasoft,Small Cap,Jul-2025
+191600,99819,1,FSN E-Commerce Ventures Ltd.,Retailing,Information Technology,Domestic Equities,355802.0,355802.0,0.0,7.4583,7.4146,0.589377714239474,1.27164223994402,1100,fsn-e-commerce-ventures,Mid Cap,Jul-2025
+57445,86554,1,Dixon Technologies (India) Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,3780.0,2900.0,30.344827586206897,6.3659,4.3450999999999995,46.507560240270664,1.08538773383474,1100,dixon-technologies-india,Mid Cap,Jul-2025
+152572,7512,1,Info Edge (India) Ltd.,IT,Information Technology,Domestic Equities,29585.0,39585.0,-25.26209422761147,4.1191,5.8914,-30.082832603455877,0.702307704242712,1100,info-edge-india,Large Cap,Jul-2025
+123232,111772,1,Brainbees Solutions Ltd.,Retailing,Information Technology,Domestic Equities,82503.0,82503.0,0.0,2.8327,3.1845999999999997,-11.050053381900396,0.482976143771292,1100,brainbees-solutions,Small Cap,Jul-2025
+153885,104233,1,Kaynes Technology India Ltd.,Electricals,Electricals,Domestic Equities,1602.0,1602.0,0.0,0.9887999999999999,0.9764,1.26997132322818,0.168590677078778,1100,kaynes-technology-india,Mid Cap,Jul-2025
+171889,4926,1,Infosys Ltd.,IT,Information Technology,Domestic Equities,725226.0,707726.0,2.472708364536558,116.1667,110.5963,5.036696526013989,18.7228183436935,1100,infosys,Large Cap,Jun-2025
 133593,6508,1,Bharti Airtel Ltd.,Telecom,Telecom,Domestic Equities,491577.0,477577.0,2.931464454946532,98.7873,88.6478,11.437960107301013,15.9217458407956,1100,bharti-airtel,Large Cap,Jun-2025
-171915,6797,1,Tata Consultancy Services Ltd.,IT,Information Technology,Domestic Equities,139672.0,139672.0,0.0,48.3544,48.373999999999995,-0.0405176334394517,7.79337492860081,1100,tata-consultancy-services,Large Cap,Jun-2025
+171915,6797,1,Tata Consultancy Services Ltd.,IT,Information Technology,Domestic Equities,139672.0,139672.0,0.0,48.3544,48.374,-0.0405176334394517,7.79337492860081,1100,tata-consultancy-services,Large Cap,Jun-2025
 171369,7531,1,Tech Mahindra Ltd.,IT,Information Technology,Domestic Equities,285579.0,285579.0,0.0,48.1772,44.9473,7.185971126185571,7.76481525176999,1100,tech-mahindra,Large Cap,Jun-2025
-156921,98676,1,Eternal Ltd.,Retailing,Information Technology,Domestic Equities,1295016.0,1295016.0,0.0,34.2078,30.8615,10.842959674675571,5.51333923867509,1100,eternal,Large Cap,Jun-2025
-171528,8219,1,HCL Technologies Ltd.,IT,Information Technology,Domestic Equities,141107.0,141107.0,0.0,24.3918,23.093600000000002,5.621470883708027,3.93127497360003,1100,hcl-technologies,Large Cap,Jun-2025
-19255,6350,1,Mphasis Ltd.,IT,Information Technology,Domestic Equities,83822.0,83822.0,0.0,23.850700000000003,21.448400000000003,11.200369258312975,3.8440648091917,1100,mphasis,Mid Cap,Jun-2025
+156921,98676,1,Eternal Ltd.,Retailing,Information Technology,Domestic Equities,1295016.0,1295016.0,0.0,34.2078,30.8615,10.842959674675573,5.51333923867509,1100,eternal,Large Cap,Jun-2025
+171528,8219,1,HCL Technologies Ltd.,IT,Information Technology,Domestic Equities,141107.0,141107.0,0.0,24.3918,23.0936,5.621470883708027,3.93127497360003,1100,hcl-technologies,Large Cap,Jun-2025
+19255,6350,1,Mphasis Ltd.,IT,Information Technology,Domestic Equities,83822.0,83822.0,0.0,23.850700000000003,21.448400000000003,11.200369258312977,3.8440648091917,1100,mphasis,Mid Cap,Jun-2025
 171511,5199,1,Wipro Ltd.,IT,Information Technology,Domestic Equities,827882.0,827882.0,0.0,22.02,20.6697,6.532750838183437,3.54900724500335,1100,wipro,Large Cap,Jun-2025
 84908,112552,1,Swiggy Ltd.,Retailing,Information Technology,Domestic Equities,533378.0,533378.0,0.0,21.3565,17.764200000000002,20.222132153432185,3.44206962887893,1100,swiggy,Mid Cap,Jun-2025
-95548,5980,1,Persistent Systems Ltd.,IT,Information Technology,Domestic Equities,34276.0,34276.0,0.0,20.707800000000002,19.3248,7.156607054148047,3.33751735822345,1100,persistent-systems,Mid Cap,Jun-2025
+95548,5980,1,Persistent Systems Ltd.,IT,Information Technology,Domestic Equities,34276.0,34276.0,0.0,20.7078,19.3248,7.156607054148047,3.33751735822345,1100,persistent-systems,Mid Cap,Jun-2025
 114402,5275,1,Hexaware Technologies Ltd.,IT,Information Technology,Domestic Equities,223641.0,223641.0,0.0,19.0218,19.1772,-0.8103372755146717,3.06578138115371,1100,hexaware-technologies,Mid Cap,Jun-2025
-133657,7260,1,Coforge Ltd.,IT,Information Technology,Domestic Equities,85000.0,15400.0,451.94805194805195,16.3583,13.1678,24.229559987241604,2.63649978274016,1100,coforge,Mid Cap,Jun-2025
-76174,111823,1,Bharti Hexacom Ltd.,Telecom,Telecom,Domestic Equities,80302.0,90802.0,-11.563621946653157,15.6806,16.6231,-5.669820911863612,2.52727352434148,1100,bharti-hexacom,Mid Cap,Jun-2025
+133657,7260,1,Coforge Ltd.,IT,Information Technology,Domestic Equities,85000.0,15400.0,451.948051948052,16.3583,13.1678,24.229559987241604,2.63649978274016,1100,coforge,Mid Cap,Jun-2025
+76174,111823,1,Bharti Hexacom Ltd.,Telecom,Telecom,Domestic Equities,80302.0,90802.0,-11.563621946653155,15.6806,16.6231,-5.669820911863612,2.52727352434148,1100,bharti-hexacom,Mid Cap,Jun-2025
 171698,8307,1,Oracle Financial Services Software Ltd.,IT,Information Technology,Domestic Equities,17000.0,17000.0,0.0,15.2762,14.3863,6.185746161278423,2.46209557112262,1100,oracle-financial-services-software,Mid Cap,Jun-2025
 38803,5403,1,Indus Towers Ltd.,Telecom,Telecom,Domestic Equities,307098.0,307098.0,0.0,12.9319,11.7972,9.618384023327572,2.08426007228241,1100,indus-towers,Large Cap,Jun-2025
 171687,7000,1,Zensar Technologies Ltd.,IT,Information Technology,Domestic Equities,119060.0,119060.0,0.0,10.0314,9.9183,1.140316384864336,1.6167807119676,1100,zensar-technologies,Small Cap,Jun-2025
 171771,7580,1,Firstsource Solutions Ltd.,IT,Information Technology,Domestic Equities,264000.0,239000.0,10.460251046025103,9.8908,8.877699999999999,11.41173952712978,1.59411993001267,1100,firstsource-solutions,Small Cap,Jun-2025
 133561,8133,1,Birlasoft Ltd.,IT,Information Technology,Domestic Equities,192000.0,192000.0,0.0,8.3232,7.6896,8.239700374531836,1.34146671669445,1100,birlasoft,Small Cap,Jun-2025
-153405,17058,1,LTIMindtree Ltd.,IT,Information Technology,Domestic Equities,15050.0,15050.0,0.0,8.0021,7.6287,4.8946740598004945,1.28971439033793,1100,ltimindtree,Large Cap,Jun-2025
+153405,17058,1,LTIMindtree Ltd.,IT,Information Technology,Domestic Equities,15050.0,15050.0,0.0,8.0021,7.6287,4.894674059800495,1.28971439033793,1100,ltimindtree,Large Cap,Jun-2025
 191600,99819,1,FSN E-Commerce Ventures Ltd.,Retailing,Information Technology,Domestic Equities,355802.0,355802.0,0.0,7.4146,7.232,2.524889380530972,1.1950258455405,1100,fsn-e-commerce-ventures,Mid Cap,Jun-2025
-152572,7512,1,Info Edge (India) Ltd.,IT,Information Technology,Domestic Equities,39585.0,39585.0,0.0,5.8914,5.6508,4.2578042047143665,0.949528668629097,1100,info-edge-india,Large Cap,Jun-2025
-57445,86554,1,Dixon Technologies (India) Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,2900.0,2900.0,0.0,4.3450999999999995,4.2607,1.9808951580726166,0.700308418722254,1100,dixon-technologies-india,Mid Cap,Jun-2025
-123232,111772,1,Brainbees Solutions Ltd.,Retailing,Information Technology,Domestic Equities,82503.0,137503.0,-39.999127291768175,3.1845999999999997,4.7913,-33.53369649155762,0.513268322998985,1100,brainbees-solutions,Small Cap,Jun-2025
-153885,104233,1,Kaynes Technology India Ltd.,Electricals,Electricals,Domestic Equities,1602.0,2800.0,-42.785714285714285,0.9764,1.6743999999999999,-41.68657429526995,0.157368332153554,1100,kaynes-technology-india,Mid Cap,Jun-2025
+152572,7512,1,Info Edge (India) Ltd.,IT,Information Technology,Domestic Equities,39585.0,39585.0,0.0,5.8914,5.6508,4.257804204714367,0.949528668629097,1100,info-edge-india,Large Cap,Jun-2025
+57445,86554,1,Dixon Technologies (India) Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,2900.0,2900.0,0.0,4.3451,4.2607,1.9808951580726168,0.700308418722254,1100,dixon-technologies-india,Mid Cap,Jun-2025
+123232,111772,1,Brainbees Solutions Ltd.,Retailing,Information Technology,Domestic Equities,82503.0,137503.0,-39.999127291768175,3.1846,4.7913,-33.53369649155762,0.513268322998985,1100,brainbees-solutions,Small Cap,Jun-2025
+153885,104233,1,Kaynes Technology India Ltd.,Electricals,Electricals,Domestic Equities,1602.0,2800.0,-42.785714285714285,0.9764,1.6744,-41.68657429526995,0.157368332153554,1100,kaynes-technology-india,Mid Cap,Jun-2025
 171889,4926,1,Infosys Ltd.,IT,Information Technology,Domestic Equities,686726.0,686726.0,0.0,129.1045,127.5834,1.1922397427878593,21.1990737099434,1100,infosys,Large Cap,Dec-2024
 133593,6508,1,Bharti Airtel Ltd.,Telecom,Telecom,Domestic Equities,444377.0,444377.0,0.0,70.556,72.30680000000001,-2.421349029413553,11.5853579439816,1100,bharti-airtel,Large Cap,Dec-2024
 171915,6797,1,Tata Consultancy Services Ltd.,IT,Information Technology,Domestic Equities,125972.0,125972.0,0.0,51.583,53.8008,-4.1222435354121085,8.46997447168774,1100,tata-consultancy-services,Large Cap,Dec-2024

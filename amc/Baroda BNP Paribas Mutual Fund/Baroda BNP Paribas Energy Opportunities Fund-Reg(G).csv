@@ -1,30 +1,60 @@
 CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,Type,NoOfShare,PrevNoOfShare,SharesZG,MarketValue,PrevMarketValue,MarketValueZG,HoldingPercentage,Priority,SecuritySlug,McapCategory,Month
-171531,4897,1,Reliance Industries Ltd.,Crude Oil,Crude Oil,Domestic Equities,505000.0,515000.0,-1.9417475728155338,75.7803,73.1764,3.558387676901288,9.93740821407857,1100,reliance-industries,Large Cap,Jun-2025
+133664,7760,1,NTPC Ltd.,Power,Power,Domestic Equities,1940000.0,1940000.0,0.0,64.8445,64.9706,-0.1940877873992326,8.70408707993177,1100,ntpc,Large Cap,Jul-2025
+171531,4897,1,Reliance Industries Ltd.,Crude Oil,Crude Oil,Domestic Equities,460000.0,505000.0,-8.91089108910891,63.9492,75.7803,-15.612368913820607,8.58391082500402,1100,reliance-industries,Large Cap,Jul-2025
+171365,5279,1,Hindustan Petroleum Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,950000.0,950000.0,0.0,39.7528,41.614799999999995,-4.474369695396815,5.33602437941709,1100,hindustan-petroleum-corporation,Mid Cap,Jul-2025
+517,7825,1,Power Grid Corporation Of India Ltd.,Power,Power,Domestic Equities,1300000.0,1300000.0,0.0,37.83,38.986999999999995,-2.967655885295094,5.07792664349049,1100,power-grid-corporation-of-india,Large Cap,Jul-2025
+115643,7007,1,Coal India Ltd.,Mining,Mining,Domestic Equities,1000000.0,1180000.0,-15.254237288135593,37.635,46.2501,-18.6272029682098,5.05175176388487,1100,coal-india,Large Cap,Jul-2025
+152256,5774,1,Oil & Natural Gas Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,1500000.0,1850000.0,-18.91891891891892,36.15,45.178900000000006,-19.984771652253603,4.85241998842668,1100,oil-natural-gas-corporation,Large Cap,Jul-2025
+171741,5431,1,GAIL (India) Ltd.,Inds. Gases & Fuels,Industrials Gases & Fuels,Domestic Equities,2000000.0,2000000.0,0.0,35.536,38.168,-6.89582896667366,4.77000267520693,1100,gail-india,Large Cap,Jul-2025
+152316,5915,1,Tata Power Company Ltd.,Power,Power,Domestic Equities,830000.0,990000.0,-16.161616161616163,33.0133,40.1396,-17.753789275428755,4.43138027120128,1100,tata-power-company,Large Cap,Jul-2025
+171877,6125,1,Cummins India Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,77700.0,77700.0,0.0,27.626199999999997,26.4133,4.592004785467926,3.70826902031184,1100,cummins-india,Mid Cap,Jul-2025
+177212,94646,1,Hitachi Energy India Ltd.,Capital Goods,Capital Goods,Domestic Equities,12000.0,12000.0,0.0,24.114,24.0084,0.4398460538811393,3.23682588107665,1100,hitachi-energy-india,Mid Cap,Jul-2025
+677,6026,1,Oil India Ltd.,Crude Oil,Crude Oil,Domestic Equities,525000.0,525000.0,0.0,23.1,22.798099999999998,1.3242331597808612,3.10071650712742,1100,oil-india,Mid Cap,Jul-2025
+227975,113151,1,Siemens Energy India Ltd.,Capital Goods,Capital Goods,Domestic Equities,70000.0,30000.0,133.33333333333331,22.665300000000002,8.9277,153.8761383110992,3.04236666012966,1100,siemens-energy-india,Large Cap,Jul-2025
+152203,8715,1,KSB Ltd.,Capital Goods,Capital Goods,Domestic Equities,251685.0,251685.0,0.0,21.1063,20.5891,2.5120087813454814,2.83310185343651,1100,ksb,Small Cap,Jul-2025
+152376,5012,1,Bharat Petroleum Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,625000.0,625000.0,0.0,20.581300000000002,20.7469,-0.7981915370489059,2.76263102372907,1100,bharat-petroleum-corporation,Large Cap,Jul-2025
+133272,5382,1,ABB India Ltd.,Capital Goods,Capital Goods,Domestic Equities,35895.0,35895.0,0.0,19.7781,21.826,-9.382846146797396,2.65481736578428,1100,abb-india,Large Cap,Jul-2025
+152574,8059,1,Torrent Power Ltd.,Power,Power,Domestic Equities,148000.0,148000.0,0.0,19.387999999999998,21.7205,-10.73870306852974,2.60245418355785,1100,torrent-power,Mid Cap,Jul-2025
+133342,5963,1,Bharat Heavy Electricals Ltd.,Capital Goods,Capital Goods,Domestic Equities,810000.0,810000.0,0.0,19.3145,21.570300000000003,-10.457898128445137,2.59258826739881,1100,bharat-heavy-electricals,Mid Cap,Jul-2025
+220003,112628,1,Aegis Vopak Terminals Ltd.,Miscellaneous,Miscellaneous,Domestic Equities,789216.0,789216.0,0.0,18.9222,19.365,-2.2865995352439956,2.53992977883838,1100,aegis-vopak-terminals,Small Cap,Jul-2025
+133654,6850,1,Ultratech Cement Ltd.,Construction Materials,Construction Materials,Domestic Equities,15000.0,10000.0,50.0,18.3735,12.093,51.935003721160996,2.46627769453271,1100,ultratech-cement,Large Cap,Jul-2025
+152079,6815,1,Linde India Ltd.,Inds. Gases & Fuels,Industrials Gases & Fuels,Domestic Equities,27650.0,27650.0,0.0,18.1757,18.4025,-1.2324412443961452,2.43972697050198,1100,linde-india,Mid Cap,Jul-2025
+133850,17036,1,Mahanagar Gas Ltd.,Gas Transmission,Gas Transmission,Domestic Equities,108835.0,108835.0,0.0,14.780899999999999,16.1424,-8.43430964416692,1.9840424510909,1100,mahanagar-gas,Small Cap,Jul-2025
+151967,5716,1,GE Vernova T&D India Ltd.,Capital Goods,Capital Goods,Domestic Equities,50000.0,50000.0,0.0,13.634,11.8055,15.48854347549872,1.8300938899643,1100,ge-vernova-td-india,Mid Cap,Jul-2025
+222201,112407,1,NTPC Green Energy Ltd.,Power,Power,Domestic Equities,1200000.0,1200000.0,0.0,12.5124,12.5628,-0.4011844493265804,1.67954135167884,1100,ntpc-green-energy,Mid Cap,Jul-2025
+43013,99994,1,Tega Industries Ltd.,Capital Goods,Capital Goods,Domestic Equities,61939.0,61939.0,0.0,11.8056,9.648200000000001,22.36064758193237,1.58466748036985,1100,tega-industries,Small Cap,Jul-2025
+57031,5903,1,Indian Oil Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,750000.0,750000.0,0.0,10.921500000000002,11.022,-0.9118127381600394,1.46599460314252,1100,indian-oil-corporation,Large Cap,Jul-2025
+139531,7409,1,Gulf Oil Lubricants India Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,88814.0,88814.0,0.0,10.7358,11.2137,-4.261751250702263,1.44106806394886,1100,gulf-oil-lubricants-india,Small Cap,Jul-2025
+152343,5043,1,Hindalco Industries Ltd.,Non - Ferrous Metals,Non - Ferrous Metals,Domestic Equities,145000.0,145000.0,0.0,9.9042,10.0463,-1.414451091446606,1.32944226969227,1100,hindalco-industries,Large Cap,Jul-2025
+153586,8183,1,NHPC Ltd.,Power,Power,Domestic Equities,1100000.0,1100000.0,0.0,9.1575,9.4391,-2.9833352756089,1.22921261532551,1100,nhpc,Mid Cap,Jul-2025
+38126,6453,1,The India Cements Ltd.,Construction Materials,Construction Materials,Domestic Equities,210000.0,,,7.7511,,,1.04043132980066,1100,the-india-cements,Small Cap,Jul-2025
+19113,7706,1,Kennametal India Ltd.,Capital Goods,Capital Goods,Domestic Equities,14334.0,,,3.1043000000000003,,,0.416690660306305,1100,kennametal-india,Small Cap,Jul-2025
+171531,4897,1,Reliance Industries Ltd.,Crude Oil,Crude Oil,Domestic Equities,505000.0,515000.0,-1.9417475728155336,75.7803,73.1764,3.558387676901288,9.93740821407857,1100,reliance-industries,Large Cap,Jun-2025
 133664,7760,1,NTPC Ltd.,Power,Power,Domestic Equities,1940000.0,1940000.0,0.0,64.9706,64.7766,0.2994908655286098,8.5198841138609,1100,ntpc,Large Cap,Jun-2025
 115643,7007,1,Coal India Ltd.,Mining,Mining,Domestic Equities,1180000.0,1180000.0,0.0,46.2501,46.881400000000006,-1.3465894789831383,6.06498158019901,1100,coal-india,Large Cap,Jun-2025
-152256,5774,1,Oil & Natural Gas Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,1850000.0,1850000.0,0.0,45.178900000000006,44.288999999999994,2.009302535618341,5.92451035378633,1100,oil-natural-gas-corporation,Large Cap,Jun-2025
-171365,5279,1,Hindustan Petroleum Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,950000.0,1100000.0,-13.636363636363635,41.614799999999995,45.2155,-7.963419623801586,5.45713404865429,1100,hindustan-petroleum-corporation,Mid Cap,Jun-2025
+152256,5774,1,Oil & Natural Gas Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,1850000.0,1850000.0,0.0,45.178900000000006,44.289,2.009302535618341,5.92451035378633,1100,oil-natural-gas-corporation,Large Cap,Jun-2025
+171365,5279,1,Hindustan Petroleum Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,950000.0,1100000.0,-13.636363636363637,41.6148,45.2155,-7.963419623801586,5.45713404865429,1100,hindustan-petroleum-corporation,Mid Cap,Jun-2025
 152316,5915,1,Tata Power Company Ltd.,Power,Power,Domestic Equities,990000.0,990000.0,0.0,40.1396,38.8872,3.220597008784388,5.26368450309418,1100,tata-power-company,Large Cap,Jun-2025
-517,7825,1,Power Grid Corporation Of India Ltd.,Power,Power,Domestic Equities,1300000.0,1300000.0,0.0,38.986999999999995,37.6675,3.5030198446936964,5.11253893218001,1100,power-grid-corporation-of-india,Large Cap,Jun-2025
+517,7825,1,Power Grid Corporation Of India Ltd.,Power,Power,Domestic Equities,1300000.0,1300000.0,0.0,38.987,37.6675,3.5030198446936964,5.11253893218001,1100,power-grid-corporation-of-india,Large Cap,Jun-2025
 171741,5431,1,GAIL (India) Ltd.,Inds. Gases & Fuels,Industrials Gases & Fuels,Domestic Equities,2000000.0,1700000.0,17.647058823529413,38.168,32.266,18.291700241740543,5.00513981489847,1100,gail-india,Large Cap,Jun-2025
-171877,6125,1,Cummins India Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,77700.0,77700.0,0.0,26.4133,25.3931,4.0176268356364515,3.46369365627903,1100,cummins-india,Mid Cap,Jun-2025
+171877,6125,1,Cummins India Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,77700.0,77700.0,0.0,26.4133,25.3931,4.017626835636452,3.46369365627903,1100,cummins-india,Mid Cap,Jun-2025
 177212,94646,1,Hitachi Energy India Ltd.,Capital Goods,Capital Goods,Domestic Equities,12000.0,16500.0,-27.27272727272727,24.0084,31.8417,-24.60075938156568,3.14832840945317,1100,hitachi-energy-india,Mid Cap,Jun-2025
-677,6026,1,Oil India Ltd.,Crude Oil,Crude Oil,Domestic Equities,525000.0,525000.0,0.0,22.798099999999998,22.406999999999996,1.7454366938903079,2.98961638058156,1100,oil-india,Mid Cap,Jun-2025
+677,6026,1,Oil India Ltd.,Crude Oil,Crude Oil,Domestic Equities,525000.0,525000.0,0.0,22.7981,22.407,1.745436693890308,2.98961638058156,1100,oil-india,Mid Cap,Jun-2025
 133272,5382,1,ABB India Ltd.,Capital Goods,Capital Goods,Domestic Equities,35895.0,35895.0,0.0,21.826,21.4329,1.834096179238458,2.8621405784944,1100,abb-india,Large Cap,Jun-2025
 152574,8059,1,Torrent Power Ltd.,Power,Power,Domestic Equities,148000.0,148000.0,0.0,21.7205,20.3352,6.812325425862554,2.84830589366753,1100,torrent-power,Mid Cap,Jun-2025
 133342,5963,1,Bharat Heavy Electricals Ltd.,Capital Goods,Capital Goods,Domestic Equities,810000.0,810000.0,0.0,21.570300000000003,21.0462,2.4902357670268414,2.82860949877658,1100,bharat-heavy-electricals,Mid Cap,Jun-2025
 152376,5012,1,Bharat Petroleum Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,625000.0,625000.0,0.0,20.7469,19.9,4.255778894472365,2.72063338990037,1100,bharat-petroleum-corporation,Large Cap,Jun-2025
 152203,8715,1,KSB Ltd.,Capital Goods,Capital Goods,Domestic Equities,251685.0,251685.0,0.0,20.5891,21.297600000000003,-3.326665915408326,2.69994037316407,1100,ksb,Small Cap,Jun-2025
-220003,112628,1,Aegis Vopak Terminals Ltd.,Miscellaneous,Miscellaneous,Domestic Equities,789216.0,969216.0,-18.57171156893819,19.365,22.7766,-14.978530597191849,2.53941868883643,1100,aegis-vopak-terminals,Small Cap,Jun-2025
+220003,112628,1,Aegis Vopak Terminals Ltd.,Miscellaneous,Miscellaneous,Domestic Equities,789216.0,969216.0,-18.57171156893819,19.365,22.7766,-14.978530597191847,2.53941868883643,1100,aegis-vopak-terminals,Small Cap,Jun-2025
 152079,6815,1,Linde India Ltd.,Inds. Gases & Fuels,Industrials Gases & Fuels,Domestic Equities,27650.0,27650.0,0.0,18.4025,20.7527,-11.324791472916775,2.41320177750129,1100,linde-india,Mid Cap,Jun-2025
 133850,17036,1,Mahanagar Gas Ltd.,Gas Transmission,Gas Transmission,Domestic Equities,108835.0,108835.0,0.0,16.1424,14.4228,11.92278891754722,2.11682479951837,1100,mahanagar-gas,Small Cap,Jun-2025
-222201,112407,1,NTPC Green Energy Ltd.,Power,Power,Domestic Equities,1200000.0,1200000.0,0.0,12.5628,13.351199999999999,-5.90508718317454,1.64741591035963,1100,ntpc-green-energy,Mid Cap,Jun-2025
+222201,112407,1,NTPC Green Energy Ltd.,Power,Power,Domestic Equities,1200000.0,1200000.0,0.0,12.5628,13.3512,-5.90508718317454,1.64741591035963,1100,ntpc-green-energy,Mid Cap,Jun-2025
 133654,6850,1,Ultratech Cement Ltd.,Construction Materials,Construction Materials,Domestic Equities,10000.0,10000.0,0.0,12.093,11.21,7.876895628902761,1.58580894418275,1100,ultratech-cement,Large Cap,Jun-2025
-151967,5716,1,GE Vernova T&D India Ltd.,Capital Goods,Capital Goods,Domestic Equities,50000.0,60000.0,-16.666666666666664,11.8055,13.4484,-12.216323131376221,1.54810778884888,1100,ge-vernova-td-india,Mid Cap,Jun-2025
+151967,5716,1,GE Vernova T&D India Ltd.,Capital Goods,Capital Goods,Domestic Equities,50000.0,60000.0,-16.666666666666664,11.8055,13.4484,-12.21632313137622,1.54810778884888,1100,ge-vernova-td-india,Mid Cap,Jun-2025
 139531,7409,1,Gulf Oil Lubricants India Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,88814.0,88814.0,0.0,11.2137,10.5351,6.441324714525718,1.4705024193651,1100,gulf-oil-lubricants-india,Small Cap,Jun-2025
 57031,5903,1,Indian Oil Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,750000.0,750000.0,0.0,11.022,10.6478,3.5143409906271788,1.44536394466074,1100,indian-oil-corporation,Large Cap,Jun-2025
 152343,5043,1,Hindalco Industries Ltd.,Non - Ferrous Metals,Non - Ferrous Metals,Domestic Equities,145000.0,145000.0,0.0,10.0463,9.1858,9.367719741339888,1.31741605854157,1100,hindalco-industries,Large Cap,Jun-2025
-43013,99994,1,Tega Industries Ltd.,Capital Goods,Capital Goods,Domestic Equities,61939.0,53939.0,14.831568994605016,9.648200000000001,8.8999,8.40795963999596,1.26521143266882,1100,tega-industries,Small Cap,Jun-2025
+43013,99994,1,Tega Industries Ltd.,Capital Goods,Capital Goods,Domestic Equities,61939.0,53939.0,14.831568994605016,9.6482,8.8999,8.40795963999596,1.26521143266882,1100,tega-industries,Small Cap,Jun-2025
 153586,8183,1,NHPC Ltd.,Power,Power,Domestic Equities,1100000.0,2050000.0,-46.34146341463415,9.4391,17.9191,-47.32380532504423,1.23779121847642,1100,nhpc,Mid Cap,Jun-2025
 227975,113151,1,Siemens Energy India Ltd.,Capital Goods,Capital Goods,Domestic Equities,30000.0,15000.0,100.0,8.9277,3.7172,140.17271064241902,1.1707290590408,1100,siemens-energy-india,Large Cap,Jun-2025
 133664,7760,1,NTPC Ltd.,Power,Power,Domestic Equities,1730000.0,,,53.8809,,,8.06214692224303,1100,ntpc,Large Cap,Feb-2025
@@ -59,10 +89,10 @@ CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,
 152316,5915,1,Tata Power Company Ltd.,Power,Power,Domestic Equities,990000.0,845000.0,17.159763313609467,37.1646,28.6624,29.66325220497936,5.00988440003747,1100,tata-power-company,Large Cap,Mar-2025
 177212,94646,1,Hitachi Energy India Ltd.,Capital Goods,Capital Goods,Domestic Equities,21550.0,7550.0,185.43046357615893,27.268600000000003,8.5197,220.06526051386783,3.67587795242951,1100,hitachi-energy-india,Mid Cap,Mar-2025
 171877,6125,1,Cummins India Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,77700.0,62700.0,23.92344497607656,23.7129,17.0415,39.14796232725992,3.19656037706981,1100,cummins-india,Large Cap,Mar-2025
-133654,6850,1,Ultratech Cement Ltd.,Construction Materials,Construction Materials,Domestic Equities,20000.0,6000.0,233.33333333333331,23.0191,6.077100000000001,278.7842885586875,3.1030343389382,1100,ultratech-cement,Large Cap,Mar-2025
+133654,6850,1,Ultratech Cement Ltd.,Construction Materials,Construction Materials,Domestic Equities,20000.0,6000.0,233.3333333333333,23.0191,6.077100000000001,278.7842885586875,3.1030343389382,1100,ultratech-cement,Large Cap,Mar-2025
 133272,5382,1,ABB India Ltd.,Capital Goods,Capital Goods,Domestic Equities,40895.0,30895.0,32.36769703835572,22.6814,15.2479,48.75097554417329,3.05751150371617,1100,abb-india,Large Cap,Mar-2025
 152574,8059,1,Torrent Power Ltd.,Power,Power,Domestic Equities,148000.0,,,22.0054,,,2.96638495171708,1100,torrent-power,Mid Cap,Mar-2025
-152377,4902,1,Siemens Ltd.,Capital Goods,Capital Goods,Domestic Equities,38956.0,14956.0,160.47071409467773,20.550700000000003,6.9149,197.19446412818695,2.77028762154981,1100,siemens,Large Cap,Mar-2025
+152377,4902,1,Siemens Ltd.,Capital Goods,Capital Goods,Domestic Equities,38956.0,14956.0,160.47071409467773,20.550700000000003,6.9149,197.19446412818692,2.77028762154981,1100,siemens,Large Cap,Mar-2025
 677,6026,1,Oil India Ltd.,Crude Oil,Crude Oil,Domestic Equities,500000.0,500000.0,0.0,19.3375,17.135,12.853807995331191,2.60674511728162,1100,oil-india,Mid Cap,Mar-2025
 133342,5963,1,Bharat Heavy Electricals Ltd.,Capital Goods,Capital Goods,Domestic Equities,810000.0,600000.0,35.0,17.5308,10.7502,63.07417536417926,2.36319727483081,1100,bharat-heavy-electricals,Mid Cap,Mar-2025
 152079,6815,1,Linde India Ltd.,Inds. Gases & Fuels,Industrials Gases & Fuels,Domestic Equities,27650.0,16500.0,67.57575757575758,17.3017,9.7796,76.91623379279316,2.33231400106898,1100,linde-india,Mid Cap,Mar-2025
@@ -108,7 +138,7 @@ CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,
 227975,113151,1,Siemens Energy India Ltd.,Others,,Domestic Equities,15000.0,,,3.7172,,,0.49557829822476,1100,siemens-energy-india,,Apr-2025
 171531,4897,1,Reliance Industries Ltd.,Crude Oil,Crude Oil,Domestic Equities,515000.0,515000.0,0.0,73.1764,72.3575,1.131741699201884,9.67271106462953,1100,reliance-industries,Large Cap,May-2025
 133664,7760,1,NTPC Ltd.,Power,Power,Domestic Equities,1940000.0,1940000.0,0.0,64.7766,68.7827,-5.824284304047392,8.56239628553852,1100,ntpc,Large Cap,May-2025
-115643,7007,1,Coal India Ltd.,Mining,Mining,Domestic Equities,1180000.0,1180000.0,0.0,46.881400000000006,45.4654,3.1144562678432477,6.1969465087832,1100,coal-india,Large Cap,May-2025
+115643,7007,1,Coal India Ltd.,Mining,Mining,Domestic Equities,1180000.0,1180000.0,0.0,46.881400000000006,45.4654,3.114456267843248,6.1969465087832,1100,coal-india,Large Cap,May-2025
 171365,5279,1,Hindustan Petroleum Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,1100000.0,1105000.0,-0.4524886877828055,45.2155,41.8464,8.051110728760415,5.97674205266666,1100,hindustan-petroleum-corporation,Mid Cap,May-2025
 152256,5774,1,Oil & Natural Gas Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,1850000.0,1850000.0,0.0,44.289,45.2233,-2.0659704179040514,5.85427406023495,1100,oil-natural-gas-corporation,Large Cap,May-2025
 152316,5915,1,Tata Power Company Ltd.,Power,Power,Domestic Equities,990000.0,990000.0,0.0,38.8872,38.0556,2.1852237252861566,5.14024534839731,1100,tata-power-company,Large Cap,May-2025

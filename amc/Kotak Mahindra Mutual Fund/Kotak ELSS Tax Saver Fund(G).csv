@@ -1,48 +1,101 @@
 CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,Type,NoOfShare,PrevNoOfShare,SharesZG,MarketValue,PrevMarketValue,MarketValueZG,HoldingPercentage,Priority,SecuritySlug,McapCategory,Month
+171875,5051,1,HDFC Bank Ltd.,Bank,Banking,Domestic Equities,3000000.0,3000000.0,0.0,605.46,600.45,0.8343742193354984,9.52772772395983,1100,hdfc-bank,Large Cap,Jul-2025
+171888,8748,1,ICICI Bank Ltd.,Bank,Banking,Domestic Equities,2599780.0,2599780.0,0.0,385.1314,375.87620000000004,2.4623000871031384,6.06056075900548,1100,icici-bank,Large Cap,Jul-2025
+133593,6508,1,Bharti Airtel Ltd.,Telecom,Telecom,Domestic Equities,1239286.0,1239286.0,0.0,237.2365,249.0469,-4.742239313157471,3.73323552040629,1100,bharti-airtel,Large Cap,Jul-2025
+171889,4926,1,Infosys Ltd.,IT,Information Technology,Domestic Equities,1500000.0,1500000.0,0.0,226.35,240.27,-5.793482332376077,3.56192179552457,1100,infosys,Large Cap,Jul-2025
+133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,2700000.0,2700000.0,0.0,215.06849999999997,221.49450000000002,-2.901200707015308,3.38439221418501,1100,state-bank-of-india,Large Cap,Jul-2025
+171369,7531,1,Tech Mahindra Ltd.,IT,Information Technology,Domestic Equities,1350000.0,1350000.0,0.0,197.5995,227.745,-13.236514522821574,3.10949399529383,1100,tech-mahindra,Large Cap,Jul-2025
+171400,5889,1,Axis Bank Ltd.,Bank,Banking,Domestic Equities,1750000.0,1750000.0,0.0,186.97,209.86,-10.907271514342895,2.94222451119606,1100,axis-bank,Large Cap,Jul-2025
+133664,7760,1,NTPC Ltd.,Power,Power,Domestic Equities,5000000.0,5000000.0,0.0,167.125,167.45,-0.19408778739922367,2.62993673548506,1100,ntpc,Large Cap,Jul-2025
+152374,6232,1,Bosch Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,40000.0,40000.0,0.0,161.54,130.72,23.577111383108935,2.54204924607484,1100,bosch,Mid Cap,Jul-2025
+171365,5279,1,Hindustan Petroleum Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,3750000.0,3750000.0,0.0,156.9188,164.2688,-4.474373709432356,2.46932844642174,1100,hindustan-petroleum-corporation,Mid Cap,Jul-2025
+152372,4964,1,Larsen & Toubro Ltd.,Infrastructure,Infrastructure,Domestic Equities,400000.0,500000.0,-20.0,145.46,183.49,-20.72592511853507,2.28900881103161,1100,larsen-toubro,Large Cap,Jul-2025
+171628,5788,1,Britannia Industries Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,250000.0,250000.0,0.0,144.275,146.275,-1.3672876431379253,2.27036124165808,1100,britannia-industries,Large Cap,Jul-2025
+156921,98676,1,Eternal Ltd.,Retailing,Information Technology,Domestic Equities,4610398.0,4610398.0,0.0,141.9081,121.78370000000001,16.524707329470186,2.23311488558198,1100,eternal,Large Cap,Jul-2025
+19182,5589,1,Coromandel International Ltd.,Chemicals,Chemicals,Domestic Equities,500000.0,550000.0,-9.090909090909092,134.57,137.786,-2.334054258052345,2.11764000894076,1100,coromandel-international,Mid Cap,Jul-2025
+96486,15829,1,Interglobe Aviation Ltd.,Aviation,Aviation,Domestic Equities,225000.0,225000.0,0.0,132.9863,134.47129999999999,-1.104324863372333,2.09271835863119,1100,interglobe-aviation,Large Cap,Jul-2025
+171484,6114,1,Bajaj Finance Ltd.,Finance,Finance,Domestic Equities,1500000.0,1500000.0,0.0,132.18,140.475,-5.90496529631607,2.08003014328446,1100,bajaj-finance,Large Cap,Jul-2025
+152376,5012,1,Bharat Petroleum Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,4000000.0,4000000.0,0.0,131.72,132.78,-0.7983129989456242,2.07279142437153,1100,bharat-petroleum-corporation,Large Cap,Jul-2025
+152079,6815,1,Linde India Ltd.,Inds. Gases & Fuels,Industrials Gases & Fuels,Domestic Equities,200000.0,200000.0,0.0,131.47,133.11,-1.232063706708737,2.06885733800581,1100,linde-india,Mid Cap,Jul-2025
+420,5071,1,Sun Pharmaceutical Industries Ltd.,Healthcare,Healthcare,Domestic Equities,750000.0,750000.0,0.0,128.0025,125.6775,1.849973145551113,2.01429156011325,1100,sun-pharmaceutical-industries,Large Cap,Jul-2025
+19255,6350,1,Mphasis Ltd.,IT,Information Technology,Domestic Equities,450000.0,450000.0,0.0,125.559,128.043,-1.9399732902228133,1.97583979997468,1100,mphasis,Mid Cap,Jul-2025
+171531,4897,1,Reliance Industries Ltd.,Crude Oil,Crude Oil,Domestic Equities,900000.0,900000.0,0.0,125.118,135.054,-7.3570571771291515,1.96890007162555,1100,reliance-industries,Large Cap,Jul-2025
+171741,5431,1,GAIL (India) Ltd.,Inds. Gases & Fuels,Industrials Gases & Fuels,Domestic Equities,6000000.0,6000000.0,0.0,106.60799999999999,114.50399999999999,-6.8958289666736565,1.6776203171075,1100,gail-india,Large Cap,Jul-2025
+133654,6850,1,Ultratech Cement Ltd.,Construction Materials,Construction Materials,Domestic Equities,85000.0,85000.0,0.0,104.1165,102.7905,1.2900024807740051,1.63841321238672,1100,ultratech-cement,Large Cap,Jul-2025
+171799,4956,1,Dabur India Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,1900000.0,1900000.0,0.0,100.51,92.1975,9.015971148892325,1.58166008247482,1100,dabur-india,Mid Cap,Jul-2025
+171520,5812,1,Kalpataru Projects International Ltd.,Infrastructure,Infrastructure,Domestic Equities,875000.0,875000.0,0.0,100.3975,107.38,-6.502607561929596,1.57988974361024,1100,kalpataru-projects-international,Small Cap,Jul-2025
+171462,6372,1,Divi's Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,148400.0,148400.0,0.0,97.87719999999999,101.053,-3.142707292212996,1.54022943214013,1100,divis-laboratories,Large Cap,Jul-2025
+171942,7813,1,Jindal Steel & Power Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,1000000.0,1000000.0,0.0,96.5,94.17,2.4742486991610915,1.51855733716864,1100,jindal-steel-power,Large Cap,Jul-2025
+171656,5311,1,Mahindra & Mahindra Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,300000.0,300000.0,0.0,96.09299999999999,95.49600000000001,0.6251570746418583,1.51215264456524,1100,mahindra-mahindra,Large Cap,Jul-2025
+171383,5551,1,Hero MotoCorp Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,225000.0,225000.0,0.0,95.8658,95.3348,0.556984438001657,1.50857734687607,1100,hero-motocorp,Mid Cap,Jul-2025
+152334,5218,1,Ambuja Cements Ltd.,Construction Materials,Construction Materials,Domestic Equities,1600000.0,1600000.0,0.0,94.83200000000001,92.39200000000001,2.6409212918867433,1.49230911293654,1100,ambuja-cements,Large Cap,Jul-2025
+153885,104233,1,Kaynes Technology India Ltd.,Electricals,Electricals,Domestic Equities,150000.0,150000.0,0.0,92.58,91.425,1.2633305988515178,1.45687086295412,1100,kaynes-technology-india,Mid Cap,Jul-2025
+517,7825,1,Power Grid Corporation Of India Ltd.,Power,Power,Domestic Equities,3100000.0,3100000.0,0.0,90.21,92.969,-2.9676558852950943,1.41957572420708,1100,power-grid-corporation-of-india,Large Cap,Jul-2025
+171492,5886,1,Kotak Mahindra Bank Ltd.,Bank,Banking,Domestic Equities,450000.0,450000.0,0.0,89.037,97.3575,-8.5463369540097,1.40111699097911,1100,kotak-mahindra-bank,Large Cap,Jul-2025
+96369,112590,1,HDB Financial Services Ltd.,Finance,Finance,Domestic Equities,1173560.0,1173560.0,0.0,89.02040000000001,86.8434,2.5068111105737536,1.40085576764442,1100,hdb-financial-services,,Jul-2025
+171511,5199,1,Wipro Ltd.,IT,Information Technology,Domestic Equities,3575000.0,3575000.0,0.0,88.76729999999999,95.0879,-6.647112829287441,1.39687289860777,1100,wipro,Large Cap,Jul-2025
+115768,100528,1,Data Patterns (India) Ltd.,Capital Goods,Capital Goods,Domestic Equities,325000.0,325000.0,0.0,85.8293,94.2728,-8.956454035522444,1.3506395156378,1100,data-patterns-india,Small Cap,Jul-2025
+171839,6306,1,Solar Industries India Ltd.,Chemicals,Chemicals,Domestic Equities,60000.0,60000.0,0.0,85.32,105.588,-19.195363109444248,1.34262499489356,1100,solar-industries-india,Large Cap,Jul-2025
+133333,4917,1,CRISIL Ltd.,Ratings,Ratings,Domestic Equities,160000.0,160000.0,0.0,84.86399999999999,96.76799999999999,-12.301587301587299,1.33544922136248,1100,crisil,Mid Cap,Jul-2025
+114405,5008,1,Bank Of Baroda,Bank,Banking,Domestic Equities,3500000.0,3500000.0,0.0,83.25450000000001,87.073,-4.38540075568774,1.31012157333996,1100,bank-of-baroda,Large Cap,Jul-2025
+152379,5838,1,Voltas Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,500000.0,500000.0,0.0,66.385,65.705,1.034928848641656,1.04465729355378,1100,voltas,Mid Cap,Jul-2025
+165,7447,1,SRF Ltd.,Chemicals,Chemicals,Domestic Equities,200000.0,200000.0,0.0,60.816,64.842,-6.208938650874425,0.957021585670962,1100,srf,Mid Cap,Jul-2025
+114436,6959,1,Engineers India Ltd.,Capital Goods,Capital Goods,Domestic Equities,2800000.0,1324352.0,111.42415309524961,59.8612,31.8917,87.70150227175095,0.941996523022997,1100,engineers-india,Small Cap,Jul-2025
+133583,8200,1,United Spirits Ltd.,Alcohol,Alcohol,Domestic Equities,425000.0,425000.0,0.0,56.9585,60.694300000000005,-6.155108469823359,0.896318633047874,1100,united-spirits,Large Cap,Jul-2025
+171968,4931,1,Zydus Lifesciences Ltd.,Healthcare,Healthcare,Domestic Equities,575000.0,575000.0,0.0,55.7635,56.9221,-2.035413310471674,0.877513700219723,1100,zydus-lifesciences,Large Cap,Jul-2025
+1905,111539,1,Dee Development Engineers Ltd,Capital Goods,Capital Goods,Domestic Equities,1868544.0,1868544.0,0.0,52.216499999999996,59.8868,-12.807997755765888,0.821696882862862,1100,dee-development-engineers,Small Cap,Jul-2025
+133272,5382,1,ABB India Ltd.,Capital Goods,Capital Goods,Domestic Equities,85000.0,85000.0,0.0,46.835,51.6843,-9.382539765460695,0.737011739754333,1100,abb-india,Large Cap,Jul-2025
+152532,6617,1,Sun TV Network Ltd.,Media & Entertainment,Media & Entertainment,Domestic Equities,800000.0,800000.0,0.0,45.028,47.872,-5.940842245989297,0.708576163502895,1100,sun-tv-network,Small Cap,Jul-2025
+171646,5397,1,Carborundum Universal Ltd.,Abrasives,Abrasives,Domestic Equities,415000.0,415000.0,0.0,38.6199,40.0662,-3.6097758210162207,0.607736088142166,1100,carborundum-universal,Small Cap,Jul-2025
+95396,111416,1,Nuvama Wealth Management Ltd.,Finance,Finance,Domestic Equities,52118.0,52118.0,0.0,37.7308,42.8983,-12.045931890074899,0.593744903391113,1100,nuvama-wealth-management,Small Cap,Jul-2025
+56642,6032,1,Garware Technical Fibres Ltd.,Textile,Textile,Domestic Equities,352725.0,352725.0,0.0,31.6994,32.6465,-2.9010766850964127,0.498832709366254,1100,garware-technical-fibres,Small Cap,Jul-2025
+38127,7192,1,JK Tyre & Industries Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,825000.0,825000.0,0.0,27.641599999999997,29.4113,-6.017075069786111,0.434977766746949,1100,jk-tyre-industries,Small Cap,Jul-2025
+84908,112552,1,Swiggy Ltd.,Retailing,Information Technology,Domestic Equities,547279.0,547279.0,0.0,22.0964,21.9131,0.836485937635475,0.347716583886146,1100,swiggy,Mid Cap,Jul-2025
+38007,8655,1,Hawkins Cookers Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,15000.0,17999.0,-16.6620367798211,13.5536,15.2683,-11.230457876777377,0.213284131865791,1100,hawkins-cookers,Small Cap,Jul-2025
 171875,5051,1,HDFC Bank Ltd.,Bank,Banking,Domestic Equities,3000000.0,3000000.0,0.0,600.45,583.47,2.9101753303511746,9.24815082804488,1100,hdfc-bank,Large Cap,Jun-2025
-171888,8748,1,ICICI Bank Ltd.,Bank,Banking,Domestic Equities,2599780.0,2599780.0,0.0,375.87620000000004,375.87620000000004,0.0,5.78925770717356,1100,icici-bank,Large Cap,Jun-2025
+171888,8748,1,ICICI Bank Ltd.,Bank,Banking,Domestic Equities,2599780.0,2599780.0,0.0,375.8762,375.8762,0.0,5.78925770717356,1100,icici-bank,Large Cap,Jun-2025
 133593,6508,1,Bharti Airtel Ltd.,Telecom,Telecom,Domestic Equities,1239286.0,1239286.0,0.0,249.0469,230.0363,8.264173958631735,3.83582861929721,1100,bharti-airtel,Large Cap,Jun-2025
 171889,4926,1,Infosys Ltd.,IT,Information Technology,Domestic Equities,1500000.0,1600000.0,-6.25,240.27,250.032,-3.904300249568058,3.70064651420492,1100,infosys,Large Cap,Jun-2025
-171369,7531,1,Tech Mahindra Ltd.,IT,Information Technology,Domestic Equities,1350000.0,1350000.0,0.0,227.745,212.47650000000002,7.185971154457074,3.50773604851875,1100,tech-mahindra,Large Cap,Jun-2025
-133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,2700000.0,2700000.0,0.0,221.49450000000002,219.321,0.9910131724732343,3.41146564007392,1100,state-bank-of-india,Large Cap,Jun-2025
+171369,7531,1,Tech Mahindra Ltd.,IT,Information Technology,Domestic Equities,1350000.0,1350000.0,0.0,227.745,212.4765,7.185971154457074,3.50773604851875,1100,tech-mahindra,Large Cap,Jun-2025
+133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,2700000.0,2700000.0,0.0,221.4945,219.321,0.9910131724732344,3.41146564007392,1100,state-bank-of-india,Large Cap,Jun-2025
 171400,5889,1,Axis Bank Ltd.,Bank,Banking,Domestic Equities,1750000.0,1750000.0,0.0,209.86,208.635,0.587149807079349,3.23227068494212,1100,axis-bank,Large Cap,Jun-2025
 152372,4964,1,Larsen & Toubro Ltd.,Infrastructure,Infrastructure,Domestic Equities,500000.0,500000.0,0.0,183.49,183.755,-0.1442137628908057,2.82611906976094,1100,larsen-toubro,Large Cap,Jun-2025
 133664,7760,1,NTPC Ltd.,Power,Power,Domestic Equities,5000000.0,5000000.0,0.0,167.45,166.95,0.2994908655286014,2.57907045741713,1100,ntpc,Large Cap,Jun-2025
 171365,5279,1,Hindustan Petroleum Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,3750000.0,3750000.0,0.0,164.2688,154.1438,6.568541842098105,2.53007350943782,1100,hindustan-petroleum-corporation,Mid Cap,Jun-2025
 171628,5788,1,Britannia Industries Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,250000.0,,,146.275,,,2.25293240465029,1100,britannia-industries,Large Cap,Jun-2025
-171484,6114,1,Bajaj Finance Ltd.,Finance,Finance,Domestic Equities,1500000.0,150000.0,900.0,140.475,137.7075,2.0096944610859975,2.16360061215689,1100,bajaj-finance,Large Cap,Jun-2025
+171484,6114,1,Bajaj Finance Ltd.,Finance,Finance,Domestic Equities,1500000.0,150000.0,900.0,140.475,137.7075,2.009694461085997,2.16360061215689,1100,bajaj-finance,Large Cap,Jun-2025
 19182,5589,1,Coromandel International Ltd.,Chemicals,Chemicals,Domestic Equities,550000.0,575000.0,-4.3478260869565215,137.786,131.6405,4.668396124293064,2.12218454491297,1100,coromandel-international,Mid Cap,Jun-2025
 171531,4897,1,Reliance Industries Ltd.,Crude Oil,Crude Oil,Domestic Equities,900000.0,900000.0,0.0,135.054,127.881,5.609120979660773,2.08010619024194,1100,reliance-industries,Large Cap,Jun-2025
-96486,15829,1,Interglobe Aviation Ltd.,Aviation,Aviation,Domestic Equities,225000.0,225000.0,0.0,134.47129999999999,119.925,12.129497602668328,2.07113142550299,1100,interglobe-aviation,Large Cap,Jun-2025
-152079,6815,1,Linde India Ltd.,Inds. Gases & Fuels,Industrials Gases & Fuels,Domestic Equities,200000.0,200000.0,0.0,133.11,150.11,-11.325028312570781,2.05016463772346,1100,linde-india,Mid Cap,Jun-2025
+96486,15829,1,Interglobe Aviation Ltd.,Aviation,Aviation,Domestic Equities,225000.0,225000.0,0.0,134.4713,119.925,12.129497602668328,2.07113142550299,1100,interglobe-aviation,Large Cap,Jun-2025
+152079,6815,1,Linde India Ltd.,Inds. Gases & Fuels,Industrials Gases & Fuels,Domestic Equities,200000.0,200000.0,0.0,133.11,150.11,-11.32502831257078,2.05016463772346,1100,linde-india,Mid Cap,Jun-2025
 152376,5012,1,Bharat Petroleum Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,4000000.0,4000000.0,0.0,132.78,127.36,4.255653266331659,2.04508196677125,1100,bharat-petroleum-corporation,Large Cap,Jun-2025
 152374,6232,1,Bosch Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,40000.0,40000.0,0.0,130.72,125.66,4.026738819035493,2.01335377840291,1100,bosch,Mid Cap,Jun-2025
 19255,6350,1,Mphasis Ltd.,IT,Information Technology,Domestic Equities,450000.0,450000.0,0.0,128.043,115.146,11.20056276379552,1.97212253555725,1100,mphasis,Mid Cap,Jun-2025
-420,5071,1,Sun Pharmaceutical Industries Ltd.,Healthcare,Healthcare,Domestic Equities,750000.0,750000.0,0.0,125.6775,125.82,-0.11325703385789224,1.93568902604981,1100,sun-pharmaceutical-industries,Large Cap,Jun-2025
-156921,98676,1,Eternal Ltd.,Retailing,Information Technology,Domestic Equities,4610398.0,4610398.0,0.0,121.78370000000001,109.8704,10.84304780905503,1.87571658922037,1100,eternal,Large Cap,Jun-2025
-171741,5431,1,GAIL (India) Ltd.,Inds. Gases & Fuels,Industrials Gases & Fuels,Domestic Equities,6000000.0,6000000.0,0.0,114.50399999999999,113.88,0.5479452054794488,1.76359440821792,1100,gail-india,Large Cap,Jun-2025
-171520,5812,1,Kalpataru Projects International Ltd.,Infrastructure,Infrastructure,Domestic Equities,875000.0,875000.0,0.0,107.38,99.64059999999999,7.767315732743485,1.65387032378293,1100,kalpataru-projects-international,Small Cap,Jun-2025
-171839,6306,1,Solar Industries India Ltd.,Chemicals,Chemicals,Domestic Equities,60000.0,60000.0,0.0,105.588,96.624,9.277198211624437,1.62626988030911,1100,solar-industries-india,Large Cap,Jun-2025
+420,5071,1,Sun Pharmaceutical Industries Ltd.,Healthcare,Healthcare,Domestic Equities,750000.0,750000.0,0.0,125.6775,125.82,-0.1132570338578922,1.93568902604981,1100,sun-pharmaceutical-industries,Large Cap,Jun-2025
+156921,98676,1,Eternal Ltd.,Retailing,Information Technology,Domestic Equities,4610398.0,4610398.0,0.0,121.7837,109.8704,10.84304780905503,1.87571658922037,1100,eternal,Large Cap,Jun-2025
+171741,5431,1,GAIL (India) Ltd.,Inds. Gases & Fuels,Industrials Gases & Fuels,Domestic Equities,6000000.0,6000000.0,0.0,114.504,113.88,0.5479452054794488,1.76359440821792,1100,gail-india,Large Cap,Jun-2025
+171520,5812,1,Kalpataru Projects International Ltd.,Infrastructure,Infrastructure,Domestic Equities,875000.0,875000.0,0.0,107.38,99.6406,7.767315732743485,1.65387032378293,1100,kalpataru-projects-international,Small Cap,Jun-2025
+171839,6306,1,Solar Industries India Ltd.,Chemicals,Chemicals,Domestic Equities,60000.0,60000.0,0.0,105.588,96.624,9.277198211624436,1.62626988030911,1100,solar-industries-india,Large Cap,Jun-2025
 133654,6850,1,Ultratech Cement Ltd.,Construction Materials,Construction Materials,Domestic Equities,85000.0,85000.0,0.0,102.7905,95.285,7.8768956289027585,1.58318269246423,1100,ultratech-cement,Large Cap,Jun-2025
 171462,6372,1,Divi's Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,148400.0,125000.0,18.72,101.053,82.65,22.266182698124613,1.55642165979918,1100,divi's-laboratories,Large Cap,Jun-2025
-171492,5886,1,Kotak Mahindra Bank Ltd.,Bank,Banking,Domestic Equities,450000.0,450000.0,0.0,97.3575,93.36149999999999,4.280136887260813,1.49950344615102,1100,kotak-mahindra-bank,Large Cap,Jun-2025
-133333,4917,1,CRISIL Ltd.,Ratings,Ratings,Domestic Equities,160000.0,160000.0,0.0,96.76799999999999,83.99520000000001,15.206583233327603,1.49042394758639,1100,crisil,Mid Cap,Jun-2025
-171656,5311,1,Mahindra & Mahindra Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,300000.0,300000.0,0.0,95.49600000000001,89.304,6.93361999462511,1.47083256137059,1100,mahindra-mahindra,Large Cap,Jun-2025
+171492,5886,1,Kotak Mahindra Bank Ltd.,Bank,Banking,Domestic Equities,450000.0,450000.0,0.0,97.3575,93.3615,4.280136887260813,1.49950344615102,1100,kotak-mahindra-bank,Large Cap,Jun-2025
+133333,4917,1,CRISIL Ltd.,Ratings,Ratings,Domestic Equities,160000.0,160000.0,0.0,96.768,83.99520000000001,15.206583233327605,1.49042394758639,1100,crisil,Mid Cap,Jun-2025
+171656,5311,1,Mahindra & Mahindra Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,300000.0,300000.0,0.0,95.496,89.304,6.93361999462511,1.47083256137059,1100,mahindra-mahindra,Large Cap,Jun-2025
 171383,5551,1,Hero MotoCorp Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,225000.0,225000.0,0.0,95.3348,96.9593,-1.6754452641469229,1.46834975362061,1100,hero-motocorp,Mid Cap,Jun-2025
 171511,5199,1,Wipro Ltd.,IT,Information Technology,Domestic Equities,3575000.0,3575000.0,0.0,95.0879,89.257,6.532708919188412,1.46454699162636,1100,wipro,Large Cap,Jun-2025
-115768,100528,1,Data Patterns (India) Ltd.,Capital Goods,Capital Goods,Domestic Equities,325000.0,325000.0,0.0,94.2728,92.56649999999999,1.8433234485478118,1.4519927943744,1100,data-patterns-india,Small Cap,Jun-2025
+115768,100528,1,Data Patterns (India) Ltd.,Capital Goods,Capital Goods,Domestic Equities,325000.0,325000.0,0.0,94.2728,92.5665,1.843323448547812,1.4519927943744,1100,data-patterns-india,Small Cap,Jun-2025
 171942,7813,1,Jindal Steel & Power Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,1000000.0,1000000.0,0.0,94.17,94.89,-0.7587733164717041,1.45040946536262,1100,jindal-steel-power,Large Cap,Jun-2025
 517,7825,1,Power Grid Corporation Of India Ltd.,Power,Power,Domestic Equities,3100000.0,3100000.0,0.0,92.969,89.8225,3.5030198446936973,1.43191162350321,1100,power-grid-corporation-of-india,Large Cap,Jun-2025
-152334,5218,1,Ambuja Cements Ltd.,Construction Materials,Construction Materials,Domestic Equities,1600000.0,1600000.0,0.0,92.39200000000001,88.56,4.327009936766042,1.42302465035344,1100,ambuja-cements,Large Cap,Jun-2025
+152334,5218,1,Ambuja Cements Ltd.,Construction Materials,Construction Materials,Domestic Equities,1600000.0,1600000.0,0.0,92.392,88.56,4.327009936766042,1.42302465035344,1100,ambuja-cements,Large Cap,Jun-2025
 171799,4956,1,Dabur India Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,1900000.0,1900000.0,0.0,92.1975,91.7605,0.4762397763743738,1.42002895489827,1100,dabur-india,Mid Cap,Jun-2025
 153885,104233,1,Kaynes Technology India Ltd.,Electricals,Electricals,Domestic Equities,150000.0,150000.0,0.0,91.425,89.7,1.9230769230769231,1.40813088426014,1100,kaynes-technology-india,Mid Cap,Jun-2025
 114405,5008,1,Bank Of Baroda,Bank,Banking,Domestic Equities,3500000.0,3500000.0,0.0,87.073,87.3425,-0.3085553997195034,1.34110123582372,1100,bank-of-baroda,Large Cap,Jun-2025
 96369,112590,1,HDB Financial Services Ltd.,Finance,Finance,Domestic Equities,1173560.0,,,86.8434,,,1.33756492900363,1100,hdb-financial-services,,Jun-2025
 152379,5838,1,Voltas Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,500000.0,500000.0,0.0,65.705,63.14,4.0624010136205255,1.01199059065149,1100,voltas,Mid Cap,Jun-2025
-165,7447,1,SRF Ltd.,Chemicals,Chemicals,Domestic Equities,200000.0,200000.0,0.0,64.842,57.22,13.320517301642779,0.998698636009803,1100,srf,Mid Cap,Jun-2025
+165,7447,1,SRF Ltd.,Chemicals,Chemicals,Domestic Equities,200000.0,200000.0,0.0,64.842,57.22,13.32051730164278,0.998698636009803,1100,srf,Mid Cap,Jun-2025
 133583,8200,1,United Spirits Ltd.,Alcohol,Alcohol,Domestic Equities,425000.0,425000.0,0.0,60.694300000000005,64.60430000000001,-6.052228721617601,0.934815622953792,1100,united-spirits,Large Cap,Jun-2025
-1905,111539,1,Dee Development Engineers Ltd,Capital Goods,Capital Goods,Domestic Equities,1868544.0,1868544.0,0.0,59.8868,54.514799999999994,9.854204729724787,0.922378481154064,1100,dee-development-engineers,Small Cap,Jun-2025
-171968,4931,1,Zydus Lifesciences Ltd.,Healthcare,Healthcare,Domestic Equities,575000.0,575000.0,0.0,56.9221,53.475,6.4461898083216465,0.876716073360069,1100,zydus-lifesciences,Large Cap,Jun-2025
+1905,111539,1,Dee Development Engineers Ltd,Capital Goods,Capital Goods,Domestic Equities,1868544.0,1868544.0,0.0,59.8868,54.5148,9.854204729724788,0.922378481154064,1100,dee-development-engineers,Small Cap,Jun-2025
+171968,4931,1,Zydus Lifesciences Ltd.,Healthcare,Healthcare,Domestic Equities,575000.0,575000.0,0.0,56.9221,53.475,6.446189808321647,0.876716073360069,1100,zydus-lifesciences,Large Cap,Jun-2025
 133272,5382,1,ABB India Ltd.,Capital Goods,Capital Goods,Domestic Equities,85000.0,85000.0,0.0,51.6843,50.7535,1.8339621897997167,0.796043303925256,1100,abb-india,Large Cap,Jun-2025
 152532,6617,1,Sun TV Network Ltd.,Media & Entertainment,Media & Entertainment,Domestic Equities,800000.0,800000.0,0.0,47.872,50.372,-4.963074724053045,0.737326132800673,1100,sun-tv-network,Small Cap,Jun-2025
 95396,111416,1,Nuvama Wealth Management Ltd.,Finance,Finance,Domestic Equities,52118.0,52118.0,0.0,42.8983,37.4963,14.406754799806908,0.660721040330948,1100,nuvama-wealth-management,Small Cap,Jun-2025
@@ -51,10 +104,10 @@ CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,
 114436,6959,1,Engineers India Ltd.,Capital Goods,Capital Goods,Domestic Equities,1324352.0,,,31.8917,,,0.491197021838219,1100,engineers-india,Small Cap,Jun-2025
 38127,7192,1,JK Tyre & Industries Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,825000.0,825000.0,0.0,29.4113,30.7931,-4.487368923557545,0.452993818717422,1100,jk-tyre-industries,Small Cap,Jun-2025
 84908,112552,1,Swiggy Ltd.,Retailing,Information Technology,Domestic Equities,547279.0,547279.0,0.0,21.9131,18.2271,20.22263552622194,0.337506293463286,1100,swiggy,Mid Cap,Jun-2025
-38007,8655,1,Hawkins Cookers Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,17999.0,17999.0,0.0,15.2683,14.248299999999999,7.1587487630103235,0.23516286333223,1100,hawkins-cookers,Small Cap,Jun-2025
+38007,8655,1,Hawkins Cookers Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,17999.0,17999.0,0.0,15.2683,14.2483,7.158748763010324,0.23516286333223,1100,hawkins-cookers,Small Cap,Jun-2025
 171875,5051,1,HDFC Bank Ltd.,Bank,Banking,Domestic Equities,3000000.0,3000000.0,0.0,531.855,538.815,-1.291723504356783,8.55230317381293,1100,hdfc-bank,Large Cap,Dec-2024
 171889,4926,1,Infosys Ltd.,IT,Information Technology,Domestic Equities,1800000.0,1800000.0,0.0,338.4,334.413,1.1922383400166772,5.44151957585863,1100,infosys,Large Cap,Dec-2024
-171612,88005,1,ICICI Securities Ltd.,Finance,Finance,Domestic Equities,2845156.0,2845156.0,0.0,243.6449,248.2825,-1.8678722825813276,3.91784424618239,1100,icici-securities,Small Cap,Dec-2024
+171612,88005,1,ICICI Securities Ltd.,Finance,Finance,Domestic Equities,2845156.0,2845156.0,0.0,243.6449,248.2825,-1.867872282581328,3.91784424618239,1100,icici-securities,Small Cap,Dec-2024
 171369,7531,1,Tech Mahindra Ltd.,IT,Information Technology,Domestic Equities,1350000.0,1350000.0,0.0,230.337,231.1605,-0.3562459849325406,3.70385134321676,1100,tech-mahindra,Large Cap,Dec-2024
 133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,2700000.0,2700000.0,0.0,214.6365,226.5165,-5.244651051910125,3.45138509587406,1100,state-bank-of-india,Large Cap,Dec-2024
 152372,4964,1,Larsen & Toubro Ltd.,Infrastructure,Infrastructure,Domestic Equities,550000.0,550000.0,0.0,198.4208,204.864,-3.14511090284286,3.19063436009909,1100,larsen-toubro,Large Cap,Dec-2024

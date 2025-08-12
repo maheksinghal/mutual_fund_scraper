@@ -222,22 +222,33 @@
 </head>
 <body class="p-4">
     <div class="container">
-        <h2>Select AMC and Scheme</h2>
-        <div class="mb-3">
-            <label>AMC:</label>
-            <select id="amcDropdown" class="form-select"></select>
-        </div>
-        <div class="mb-3">
-            <label>Scheme:</label>
-            <select id="schemeDropdown" class="form-select"></select>
+        <div class="mb-3 d-flex flex-wrap gap-2">
+            <button id="mfWiseBtn" class="btn btn-primary">MF Wise</button>
+            <button id="consolidatedBtn" class="btn btn-secondary">Consolidated</button>
         </div>
 
-        <div class="mb-3 d-flex flex-wrap gap-2">
-            <button class="btn btn-warning" onclick="loadData('holding_percentage', this)">% of Total Holding</button>
-            <button class="btn btn-danger" onclick="loadData('sector_holding', this)">Sector Wise Holding %</button>
-            <button class="btn btn-dark" onclick="loadData('sector_holding_all', this)">Sector Wise Holding % (All AMCs)</button>
-            <button class="btn btn-success" onclick="loadData('share_wise_shares_all', this)">Share Wise Number of Shares (All AMCs)</button>
-            <button class="btn btn-primary" onclick="loadData('consolidated', this)">Consolidated View</button>
+        <div id="mfWiseContainer" style="display:none;">
+            <h2>Select AMC and Scheme</h2>
+            <div class="mb-3">
+                <label>AMC:</label>
+                <select id="amcDropdown" class="form-select"></select>
+            </div>
+            <div class="mb-3">
+                <label>Scheme:</label>
+                <select id="schemeDropdown" class="form-select"></select>
+            </div>
+            <div class="mb-3 d-flex flex-wrap gap-2">
+                <button class="btn btn-primary" onclick="loadData('consolidated', this)">Consolidated View</button>
+                <button class="btn btn-danger" onclick="loadData('sector_holding', this)">Sector Wise Holding %</button>
+                <button class="btn btn-warning" onclick="loadData('holding_percentage', this)">% of Total Holding</button>
+            </div>
+        </div>
+
+        <div id="consolidatedContainer" style="display:none;">
+            <div class="mb-3 d-flex flex-wrap gap-2">
+                <button class="btn btn-dark" onclick="loadData('sector_holding_all', this)">Sector Wise Holding % (All AMCs)</button>
+                <button class="btn btn-success" onclick="loadData('share_wise_shares_all', this)">Share Wise Number of Shares (All AMCs)</button>
+            </div>
         </div>
 
         <hr>
@@ -277,11 +288,31 @@
             const loadingSpinner = document.getElementById('loadingSpinner');
             const shareSearchContainer = document.getElementById('shareSearchContainer');
             const shareSearch = document.getElementById('shareSearch');
+            const mfWiseBtn = document.getElementById('mfWiseBtn');
+            const consolidatedBtn = document.getElementById('consolidatedBtn');
+            const mfWiseContainer = document.getElementById('mfWiseContainer');
+            const consolidatedContainer = document.getElementById('consolidatedContainer');
 
-            if (!amcDropdown || !schemeDropdown || !tableContainer || !loadingSpinner || !shareSearchContainer || !shareSearch) {
+            if (!amcDropdown || !schemeDropdown || !tableContainer || !loadingSpinner || !shareSearchContainer || !shareSearch || !mfWiseBtn || !consolidatedBtn || !mfWiseContainer || !consolidatedContainer) {
                 console.error('Required DOM elements not found');
                 return;
             }
+
+            mfWiseBtn.addEventListener('click', () => {
+                mfWiseContainer.style.display = 'block';
+                consolidatedContainer.style.display = 'none';
+                mfWiseBtn.classList.add('active');
+                consolidatedBtn.classList.remove('active');
+                tableContainer.innerHTML = '<div id="loadingSpinner" style="display: none;"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p>Loading data...</p></div>';
+            });
+
+            consolidatedBtn.addEventListener('click', () => {
+                mfWiseContainer.style.display = 'none';
+                consolidatedContainer.style.display = 'block';
+                consolidatedBtn.classList.add('active');
+                mfWiseBtn.classList.remove('active');
+                tableContainer.innerHTML = '<div id="loadingSpinner" style="display: none;"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p>Loading data...</p></div>';
+            });
 
             try {
                 const response = await fetch('/get_amcs');
@@ -341,6 +372,9 @@
                 tableContainer.innerHTML = `<div class='text-danger'>Error loading AMCs: ${error.message}</div>`;
             }
 
+            // Initially show MF Wise
+            mfWiseBtn.click();
+
             shareSearch.addEventListener('input', () => {
                 const filter = shareSearch.value.trim().toLowerCase();
                 const table = tableContainer.querySelector('table.main-table');
@@ -357,7 +391,7 @@
         });
 
         async function loadData(view, button) {
-            // Remove active class from all buttons
+            // Remove active class from all sub-buttons
             document.querySelectorAll('.btn-warning, .btn-danger, .btn-dark, .btn-success, .btn-primary').forEach(btn => btn.classList.remove('active'));
             // Add active class to the clicked button
             button.classList.add('active');

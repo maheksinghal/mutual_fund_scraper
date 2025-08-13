@@ -298,6 +298,51 @@ def get_data():
         pivot.columns.name = None
         return pivot, sorted_cols
 
+    # Compute stats boxes if applicable
+    boxes = []
+    if view in ['holding_percentage', 'sector_holding', 'consolidated']:
+        months = sorted(set(df['Month']), key=lambda x: parser.parse(x))
+        if months:
+            latest_month = months[-1]
+            df_latest = df[df['Month'] == latest_month]
+            # Box 1: Highest Allocation
+            top_alloc = df_latest.sort_values('HoldingPercentage', ascending=False).head(5)
+            items = [f"{i+1}. {row['Name']}" for i, (_, row) in enumerate(top_alloc.iterrows())]
+            box_html = f'<div class="card m-1 stats-box" style="flex: 1; background-color: #e3f2fd;"><div class="card-body"><h5 class="card-title">Highest Allocation</h5><ul class="list-group list-group-flush">' + ''.join(f'<li class="list-group-item">{item}</li>' for item in items) + '</ul></div></div>'
+            boxes.append(box_html)
+
+            if len(months) >= 2:
+                prev_month = months[-2]
+                df_prev = df[df['Month'] == prev_month]
+
+                # Box 2: New Entry
+                new_shares = set(df_latest['Name']) - set(df_prev['Name'])
+                new_df = df_latest[df_latest['Name'].isin(new_shares)].sort_values('HoldingPercentage', ascending=False).head(5)
+                items = [f"{i+1}. {row['Name']}" for i, (_, row) in enumerate(new_df.iterrows())]
+                box_html = f'<div class="card m-1 stats-box" style="flex: 1; background-color: #e8f5e9;"><div class="card-body"><h5 class="card-title">New Entry</h5><ul class="list-group list-group-flush">' + ''.join(f'<li class="list-group-item">{item}</li>' for item in items) + '</ul></div></div>'
+                boxes.append(box_html)
+
+                # Box 3: Completely Exited
+                exited_shares = set(df_prev['Name']) - set(df_latest['Name'])
+                exited_df = df_prev[df_prev['Name'].isin(exited_shares)].sort_values('HoldingPercentage', ascending=False).head(5)
+                items = [f"{i+1}. {row['Name']}" for i, (_, row) in enumerate(exited_df.iterrows())]
+                box_html = f'<div class="card m-1 stats-box" style="flex: 1; background-color: #ffebee;"><div class="card-body"><h5 class="card-title">Completely Exited</h5><ul class="list-group list-group-flush">' + ''.join(f'<li class="list-group-item">{item}</li>' for item in items) + '</ul></div></div>'
+                boxes.append(box_html)
+
+                # Box 4: Increasing Stake
+                merged = pd.merge(df_latest[['Name', 'HoldingPercentage']], df_prev[['Name', 'HoldingPercentage']], on='Name', how='inner', suffixes=('_latest', '_prev'))
+                merged['change'] = merged['HoldingPercentage_latest'] - merged['HoldingPercentage_prev']
+                increases = merged[merged['change'] > 0].sort_values('change', ascending=False).head(5)
+                items = [f"{i+1}. {row['Name']}" for i, (_, row) in enumerate(increases.iterrows())]
+                box_html = f'<div class="card m-1 stats-box" style="flex: 1; background-color: #f1f8e9;"><div class="card-body"><h5 class="card-title">Increasing Stake</h5><ul class="list-group list-group-flush">' + ''.join(f'<li class="list-group-item">{item}</li>' for item in items) + '</ul></div></div>'
+                boxes.append(box_html)
+
+                # Box 5: Decreasing Stake
+                decreases = merged[merged['change'] < 0].sort_values('change', ascending=True).head(5)
+                items = [f"{i+1}. {row['Name']}" for i, (_, row) in enumerate(decreases.iterrows())]
+                box_html = f'<div class="card m-1 stats-box" style="flex: 1; background-color: #fff3e0;"><div class="card-body"><h5 class="card-title">Decreasing Stake</h5><ul class="list-group list-group-flush">' + ''.join(f'<li class="list-group-item">{item}</li>' for item in items) + '</ul></div></div>'
+                boxes.append(box_html)
+
     # Create only the necessary pivot table
     if view == 'holding_percentage':
         pivot, month_cols = create_pivot_table('HoldingPercentage')
@@ -425,7 +470,7 @@ def get_data():
     else:
         html = "<div class='text-danger'>Invalid view selected</div>"
 
-    return jsonify({"html": html})
+    return jsonify({"html": html, "boxes": boxes})
 
 @app.route('/export_to_excel', methods=['POST'])
 def export_to_excel():

@@ -190,7 +190,7 @@
         }
         #shareSearchContainer {
             display: none;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
         #shareSearchContainer.show {
             display: block;
@@ -218,26 +218,71 @@
             color: #666;
             border-top: 1px solid #dee2e6;
         }
+        #statsContainer .card-body {
+            text-align: left;
+            padding: 10px;
+        }
+        #statsContainer .list-group-item {
+            text-align: left;
+            border: none;
+            padding: 5px 10px;
+            background: transparent;
+        }
+        #statsContainer .card-title {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+        #statsContainer .card {
+            flex: 1;
+            min-width: 180px;
+            margin: 5px 2px;
+        }
+        #statsContainer {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            margin-bottom: 10px;
+            width: calc(100% - 10px);
+            max-width: 100%;
+        }
+        #statsContainer::-webkit-scrollbar {
+            height: 8px;
+        }
+        #statsContainer::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+        #statsContainer::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+        #statsContainer::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        #statsContainer {
+            scrollbar-width: thin;
+            scrollbar-color: #888 #f1f1f1;
+        }
     </style>
 </head>
-<body class="p-4">
+<body class="p-3">
     <div class="container">
-        <div class="mb-3 d-flex flex-wrap gap-2">
+        <div class="mb-2 d-flex flex-wrap gap-2">
             <button id="mfWiseBtn" class="btn btn-primary">MF Wise</button>
             <button id="consolidatedBtn" class="btn btn-secondary">Consolidated</button>
         </div>
 
         <div id="mfWiseContainer" style="display:none;">
-            <h2>Select AMC and Scheme</h2>
-            <div class="mb-3">
-                <label>AMC:</label>
+            <h2 class="mb-3">Select AMC and Scheme</h2>
+            <div class="mb-2">
+                <label class="form-label">AMC:</label>
                 <select id="amcDropdown" class="form-select"></select>
             </div>
-            <div class="mb-3">
-                <label>Scheme:</label>
+            <div class="mb-2">
+                <label class="form-label">Scheme:</label>
                 <select id="schemeDropdown" class="form-select"></select>
             </div>
-            <div class="mb-3 d-flex flex-wrap gap-2">
+            <div class="mb-2 d-flex flex-wrap gap-2">
                 <button class="btn btn-primary" onclick="loadData('consolidated', this)">Consolidated View</button>
                 <button class="btn btn-danger" onclick="loadData('sector_holding', this)">Sector Wise Holding %</button>
                 <button class="btn btn-warning" onclick="loadData('holding_percentage', this)">% of Total Holding</button>
@@ -245,17 +290,18 @@
         </div>
 
         <div id="consolidatedContainer" style="display:none;">
-            <div class="mb-3 d-flex flex-wrap gap-2">
+            <div class="mb-2 d-flex flex-wrap gap-2">
                 <button class="btn btn-dark" onclick="loadData('sector_holding_all', this)">Sector Wise Holding % (All AMCs)</button>
                 <button class="btn btn-success" onclick="loadData('share_wise_shares_all', this)">Share Wise Number of Shares (All AMCs)</button>
             </div>
         </div>
 
-        <hr>
-        <div id="shareSearchContainer" class="mb-3">
+        <hr class="my-3">
+        <div id="statsContainer" style="display:none;"></div>
+        <div id="shareSearchContainer" class="mb-2">
             <input type="text" id="shareSearch" class="form-control" placeholder="Search share name...">
         </div>
-        <div id="tableContainer" class="mt-4 table-container">
+        <div id="tableContainer" class="table-container">
             <div id="loadingSpinner">
                 <div class="spinner-border text-primary" role="status">
                     <span class="visually-hidden">Loading...</span>
@@ -292,8 +338,9 @@
             const consolidatedBtn = document.getElementById('consolidatedBtn');
             const mfWiseContainer = document.getElementById('mfWiseContainer');
             const consolidatedContainer = document.getElementById('consolidatedContainer');
+            const statsContainer = document.getElementById('statsContainer');
 
-            if (!amcDropdown || !schemeDropdown || !tableContainer || !loadingSpinner || !shareSearchContainer || !shareSearch || !mfWiseBtn || !consolidatedBtn || !mfWiseContainer || !consolidatedContainer) {
+            if (!amcDropdown || !schemeDropdown || !tableContainer || !loadingSpinner || !shareSearchContainer || !shareSearch || !mfWiseBtn || !consolidatedBtn || !mfWiseContainer || !consolidatedContainer || !statsContainer) {
                 console.error('Required DOM elements not found');
                 return;
             }
@@ -304,6 +351,8 @@
                 mfWiseBtn.classList.add('active');
                 consolidatedBtn.classList.remove('active');
                 tableContainer.innerHTML = '<div id="loadingSpinner" style="display: none;"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p>Loading data...</p></div>';
+                statsContainer.innerHTML = '';
+                statsContainer.style.display = 'none';
             });
 
             consolidatedBtn.addEventListener('click', () => {
@@ -312,6 +361,8 @@
                 consolidatedBtn.classList.add('active');
                 mfWiseBtn.classList.remove('active');
                 tableContainer.innerHTML = '<div id="loadingSpinner" style="display: none;"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p>Loading data...</p></div>';
+                statsContainer.innerHTML = '';
+                statsContainer.style.display = 'none';
             });
 
             try {
@@ -358,10 +409,20 @@
                             schemeDropdown.appendChild(option);
                         });
                         tableContainer.innerHTML = '<div id="loadingSpinner" style="display: none;"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p>Loading data...</p></div>';
+                        statsContainer.innerHTML = '';
+                        statsContainer.style.display = 'none';
                     } catch (error) {
                         console.error('Error loading schemes:', error);
                         tableContainer.innerHTML = `<div class='text-danger'>Error loading schemes: ${error.message}</div>`;
+                        statsContainer.innerHTML = '';
+                        statsContainer.style.display = 'none';
                     }
+                });
+
+                schemeDropdown.addEventListener('change', () => {
+                    tableContainer.innerHTML = '<div id="loadingSpinner" style="display: none;"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p>Loading data...</p></div>';
+                    statsContainer.innerHTML = '';
+                    statsContainer.style.display = 'none';
                 });
 
                 if (amcs.length > 0) {
@@ -370,6 +431,8 @@
             } catch (error) {
                 console.error('Error loading AMCs:', error);
                 tableContainer.innerHTML = `<div class='text-danger'>Error loading AMCs: ${error.message}</div>`;
+                statsContainer.innerHTML = '';
+                statsContainer.style.display = 'none';
             }
 
             // Initially show MF Wise
@@ -391,7 +454,7 @@
         });
 
         async function loadData(view, button) {
-            // Remove active class from all sub-buttons
+            // Remove active class from all buttons
             document.querySelectorAll('.btn-warning, .btn-danger, .btn-dark, .btn-success, .btn-primary').forEach(btn => btn.classList.remove('active'));
             // Add active class to the clicked button
             button.classList.add('active');
@@ -402,8 +465,9 @@
             const loadingSpinner = document.getElementById('loadingSpinner');
             const shareSearchContainer = document.getElementById('shareSearchContainer');
             const shareSearch = document.getElementById('shareSearch');
+            const statsContainer = document.getElementById('statsContainer');
 
-            if (!amcDropdown || !schemeDropdown || !tableContainer || !loadingSpinner || !shareSearchContainer || !shareSearch) {
+            if (!amcDropdown || !schemeDropdown || !tableContainer || !loadingSpinner || !shareSearchContainer || !shareSearch || !statsContainer) {
                 console.error('Required DOM elements not found');
                 return;
             }
@@ -413,6 +477,8 @@
 
             if (view !== 'sector_holding_all' && view !== 'share_wise_shares_all' && view !== 'consolidated' && (!amcDropdown.value || !schemeDropdown.value)) {
                 tableContainer.innerHTML = "<div class='text-danger'>Please select both AMC and Scheme</div>";
+                statsContainer.innerHTML = '';
+                statsContainer.style.display = 'none';
                 return;
             }
 
@@ -420,6 +486,8 @@
             loadingSpinner.style.display = 'block';
             tableContainer.querySelectorAll('table, .text-danger, h4, .share-funds-row, .table-header').forEach(el => el.remove());
             document.querySelectorAll('.color-dropdown').forEach(dd => dd.remove());
+            statsContainer.innerHTML = '';
+            statsContainer.style.display = 'none';
 
             try {
                 console.log('Fetching data for view:', view);
@@ -485,6 +553,8 @@
                     } else {
                         console.error('No table found in main data HTML');
                         tableContainer.innerHTML = `<div class='text-danger'>No table data available</div>`;
+                        statsContainer.innerHTML = '';
+                        statsContainer.style.display = 'none';
                         return;
                     }
                 }
@@ -498,6 +568,14 @@
                     <div style='display:block; overflow-x:auto; width:100%' class='table-container'>${html}</div>`;
                 
                 tableContainer.insertAdjacentHTML('beforeend', html);
+
+                if (data.boxes && data.boxes.length > 0) {
+                    statsContainer.innerHTML = '<div class="d-flex flex-nowrap">' + data.boxes.join('') + '</div>';
+                    statsContainer.style.display = 'flex';
+                } else {
+                    statsContainer.innerHTML = '';
+                    statsContainer.style.display = 'none';
+                }
 
                 const tableElement = tableContainer.querySelector('table.main-table');
                 if (tableElement && view !== 'consolidated') {
@@ -678,6 +756,8 @@
                 console.error('Error loading data:', error);
                 tableContainer.innerHTML = '<div id="loadingSpinner" style="display: none;"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div><p>Loading data...</p></div>';
                 tableContainer.insertAdjacentHTML('beforeend', `<div class='text-danger'>Error loading data: ${error.message}</div>`);
+                statsContainer.innerHTML = '';
+                statsContainer.style.display = 'none';
             } finally {
                 button.disabled = false;
                 loadingSpinner.style.display = 'none';

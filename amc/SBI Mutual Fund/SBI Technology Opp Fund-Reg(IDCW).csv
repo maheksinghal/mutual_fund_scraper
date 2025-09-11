@@ -1,26 +1,53 @@
 CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,Type,NoOfShare,PrevNoOfShare,SharesZG,MarketValue,PrevMarketValue,MarketValueZG,HoldingPercentage,Priority,SecuritySlug,McapCategory,Month
-171889,4926.0,1,Infosys Ltd.,IT,Information Technology,Domestic Equities,4500000.0,4200000.0,7.142857142857142,679.05,672.7560000000001,0.9355546438827659,14.4866194239955,1100,infosys,Large Cap,Jul-2025
+171889,4926.0,1,Infosys Ltd.,IT,Information Technology,Domestic Equities,4500000.0,4500000.0,0.0,661.32,679.05,-2.6110006626905236,13.8906815627626,1100,infosys,Large Cap,Aug-2025
+133593,6508.0,1,Bharti Airtel Ltd.,Telecom,Telecom,Domestic Equities,3400000.0,3400000.0,0.0,642.192,650.862,-1.332079611346184,13.4889079026094,1100,bharti-airtel,Large Cap,Aug-2025
+133657,7260.0,1,Coforge Ltd.,IT,Information Technology,Domestic Equities,1900000.0,1900000.0,0.0,327.617,332.158,-1.3671204667658228,6.88142415403676,1100,coforge,Mid Cap,Aug-2025
+171771,7580.0,1,Firstsource Solutions Ltd.,IT,Information Technology,Domestic Equities,7645887.0,7645887.0,0.0,268.3706,261.26,2.7216565873076677,5.63698443326609,1100,firstsource-solutions,Small Cap,Aug-2025
+153405,17058.0,1,LTIMindtree Ltd.,IT,Information Technology,Domestic Equities,500000.0,500000.0,0.0,256.675,255.3,0.5385820603211908,5.39132445733093,1100,ltimindtree,Large Cap,Aug-2025
+156921,98676.0,1,Eternal Ltd.,Retailing,Information Technology,Domestic Equities,7530530.0,7530530.0,0.0,236.421,231.7897,1.9980611735551552,4.96589975465719,1100,eternal,Large Cap,Aug-2025
+65894,112188.0,1,BlackBuck Ltd.,Logistics,Logistics,Domestic Equities,3536533.0,3536533.0,0.0,225.18869999999998,164.8201,36.62696479373572,4.72997115349978,1100,blackbuck,Small Cap,Aug-2025
+46521,101004.0,1,Delhivery Ltd.,Logistics,Logistics,Domestic Equities,2900000.0,2900000.0,0.0,135.7345,123.3225,10.064667842445626,2.85103235435311,1100,delhivery,Small Cap,Aug-2025
+157113,99763.0,1,PB Fintech Ltd.,IT,Information Technology,Domestic Equities,700000.0,700000.0,0.0,123.956,126.84700000000001,-2.27912366867171,2.6036311071702,1100,pb-fintech,Mid Cap,Aug-2025
+171915,6797.0,1,Tata Consultancy Services Ltd.,IT,Information Technology,Domestic Equities,400000.0,400000.0,0.0,123.38799999999999,121.47200000000001,1.577318229715478,2.59170056351865,1100,tata-consultancy-services,Large Cap,Aug-2025
+95548,5980.0,1,Persistent Systems Ltd.,IT,Information Technology,Domestic Equities,220000.0,220000.0,0.0,116.721,113.531,2.809805251429125,2.45166370696064,1100,persistent-systems,Mid Cap,Aug-2025
+171528,8219.0,1,HCL Technologies Ltd.,IT,Information Technology,Domestic Equities,800000.0,800000.0,0.0,116.384,117.432,-0.892431364534378,2.44458519778709,1100,hcl-technologies,Large Cap,Aug-2025
+171369,7531.0,1,Tech Mahindra Ltd.,IT,Information Technology,Domestic Equities,700000.0,700000.0,0.0,103.698,102.459,1.2092641934822674,2.17812238658343,1100,tech-mahindra,Large Cap,Aug-2025
+171511,5199.0,1,Wipro Ltd.,IT,Information Technology,Domestic Equities,3600000.0,3600000.0,0.0,89.7876,89.38799999999999,0.44703987112365134,1.88594169219849,1100,wipro,Large Cap,Aug-2025
+44430,82482.0,1,L&T Technology Services Ltd.,IT,Information Technology,Domestic Equities,200000.0,200000.0,0.0,84.47,86.164,-1.966018290701449,1.77424827860424,1100,lt-technology-services,Mid Cap,Aug-2025
+2515,87584.0,1,Nazara Technologies Ltd.,IT,Information Technology,Domestic Equities,712331.0,800000.0,-10.958625,82.7088,108.11200000000001,-23.497114103892272,1.7372551914931,1100,nazara-technologies,Small Cap,Aug-2025
+195742,102041.0,1,TBO Tek Ltd.,Hospitality,Hospitality,Domestic Equities,544309.0,544309.0,0.0,71.1575,73.7321,-3.4918305595527594,1.49462616177082,1100,tbo-tek,Small Cap,Aug-2025
+191600,99819.0,1,FSN E-Commerce Ventures Ltd.,Retailing,Information Technology,Domestic Equities,3000000.0,3000000.0,0.0,69.045,62.886,9.793912794580663,1.45025420144702,1100,fsn-e-commerce-ventures,Mid Cap,Aug-2025
+114402,5275.0,1,Hexaware Technologies Ltd.,IT,Information Technology,Domestic Equities,873911.0,873911.0,0.0,66.2206,61.5233,7.634993571541196,1.39092915305008,1100,hexaware-technologies,Mid Cap,Aug-2025
+63725,92864.0,1,Route Mobile Ltd.,IT,Information Technology,Domestic Equities,739640.0,750000.0,-1.3813333333333333,62.7178,67.6725,-7.321585577597994,1.31735466660169,1100,route-mobile,Small Cap,Aug-2025
+97967,101080.0,1,eMudhra Ltd.,IT,Information Technology,Domestic Equities,681746.0,681746.0,0.0,49.0687,52.9239,-7.284421594024636,1.03066244238603,1100,emudhra,Small Cap,Aug-2025
+76268,106949.0,1,Indegene Ltd.,Business Services,Other,Domestic Equities,892860.0,892860.0,0.0,48.419799999999995,48.482299999999995,-0.12891302599092866,1.01703263644325,1100,indegene,Small Cap,Aug-2025
+152491,5679.0,1,PVR Inox Ltd.,Media & Entertainment,Media & Entertainment,Domestic Equities,400000.0,400000.0,0.0,44.79600000000001,39.992,12.012402480496114,0.940916608125435,1100,pvr-inox,Small Cap,Aug-2025
+77478,110778.0,1,NIIT Learning Systems Ltd. ,IT,Information Technology,Domestic Equities,1091456.0,1091456.0,0.0,35.838,34.697399999999995,3.2872780093033023,0.75275849187426,1100,niit-learning-systems,Small Cap,Aug-2025
+214823,111795.0,1,Unicommerce eSolutions Ltd.,IT,Information Technology,Domestic Equities,1252886.0,1252886.0,0.0,16.3614,15.0021,9.060731497590341,0.343662670599685,1100,unicommerce-esolutions,Small Cap,Aug-2025
+58217,,1,SIP Technologies & Exports Ltd,Miscellaneous,,Domestic Equities,35014.0,35014.0,0.0,0.0,0.0,,0.0,1100,,,Aug-2025
+76959,71098.0,1,Indbazaar Com Ltd,Retailing,Retailing,Domestic Equities,100000.0,100000.0,0.0,0.0,0.0,,0.0,1100,indbazaar-com,,Aug-2025
+171889,4926.0,1,Infosys Ltd.,IT,Information Technology,Domestic Equities,4500000.0,4200000.0,7.142857142857142,679.05,672.7560000000001,0.935554643882766,14.4866194239955,1100,infosys,Large Cap,Jul-2025
 133593,6508.0,1,Bharti Airtel Ltd.,Telecom,Telecom,Domestic Equities,3400000.0,3400000.0,0.0,650.862,683.2639999999999,-4.742237261146493,13.8852663155005,1100,bharti-airtel,Large Cap,Jul-2025
 133657,7260.0,1,Coforge Ltd.,IT,Information Technology,Domestic Equities,1900000.0,1900000.0,0.0,332.158,365.655,-9.160820992465569,7.08614466480452,1100,coforge,Mid Cap,Jul-2025
 171771,7580.0,1,Firstsource Solutions Ltd.,IT,Information Technology,Domestic Equities,7645887.0,7645887.0,0.0,261.26,286.4532,-8.794874695063626,5.57363108859889,1100,firstsource-solutions,Small Cap,Jul-2025
 153405,17058.0,1,LTIMindtree Ltd.,IT,Information Technology,Domestic Equities,500000.0,500000.0,0.0,255.3,265.85,-3.9684032349069023,5.44648249605487,1100,ltimindtree,Large Cap,Jul-2025
 156921,98676.0,1,Eternal Ltd.,Retailing,Information Technology,Domestic Equities,7530530.0,7530530.0,0.0,231.7897,198.9189,16.524724397731948,4.94492183241602,1100,eternal,Large Cap,Jul-2025
-65894,112188.0,1,Zinka Logistics Solutions Ltd.,Logistics,Logistics,Domestic Equities,3536533.0,3536533.0,0.0,164.8201,154.1928,6.8922154601252315,3.51621539227581,1100,zinka-logistics-solutions,Small Cap,Jul-2025
-157113,99763.0,1,PB Fintech Ltd.,IT,Information Technology,Domestic Equities,700000.0,700000.0,0.0,126.84700000000001,127.67299999999999,-0.6469652941498872,2.70611032188434,1100,pb-fintech,Mid Cap,Jul-2025
+65894,112188.0,1,Zinka Logistics Solutions Ltd.,Logistics,Logistics,Domestic Equities,3536533.0,3536533.0,0.0,164.8201,154.1928,6.892215460125232,3.51621539227581,1100,zinka-logistics-solutions,Small Cap,Jul-2025
+157113,99763.0,1,PB Fintech Ltd.,IT,Information Technology,Domestic Equities,700000.0,700000.0,0.0,126.847,127.673,-0.6469652941498872,2.70611032188434,1100,pb-fintech,Mid Cap,Jul-2025
 46521,101004.0,1,Delhivery Ltd.,Logistics,Logistics,Domestic Equities,2900000.0,2900000.0,0.0,123.3225,111.012,11.089341692789962,2.63091984966599,1100,delhivery,Small Cap,Jul-2025
-171915,6797.0,1,Tata Consultancy Services Ltd.,IT,Information Technology,Domestic Equities,400000.0,400000.0,0.0,121.47200000000001,138.48,-12.281917966493351,2.59144191837359,1100,tata-consultancy-services,Large Cap,Jul-2025
+171915,6797.0,1,Tata Consultancy Services Ltd.,IT,Information Technology,Domestic Equities,400000.0,400000.0,0.0,121.472,138.48,-12.281917966493353,2.59144191837359,1100,tata-consultancy-services,Large Cap,Jul-2025
 171528,8219.0,1,HCL Technologies Ltd.,IT,Information Technology,Domestic Equities,800000.0,800000.0,0.0,117.432,138.28799999999998,-15.081568899687598,2.50525394624644,1100,hcl-technologies,Large Cap,Jul-2025
 95548,5980.0,1,Persistent Systems Ltd.,IT,Information Technology,Domestic Equities,220000.0,220000.0,0.0,113.531,132.91299999999998,-14.58247124058594,2.42203135236822,1100,persistent-systems,Mid Cap,Jul-2025
-2515,87584.0,1,Nazara Technologies Ltd.,IT,Information Technology,Domestic Equities,800000.0,800000.0,0.0,108.11200000000001,103.88799999999999,4.065917141537055,2.30642426797291,1100,nazara-technologies,Small Cap,Jul-2025
+2515,87584.0,1,Nazara Technologies Ltd.,IT,Information Technology,Domestic Equities,800000.0,800000.0,0.0,108.112,103.888,4.065917141537055,2.30642426797291,1100,nazara-technologies,Small Cap,Jul-2025
 171369,7531.0,1,Tech Mahindra Ltd.,IT,Information Technology,Domestic Equities,700000.0,500000.0,40.0,102.459,84.35,21.46887966804979,2.1858251079643,1100,tech-mahindra,Large Cap,Jul-2025
 171511,5199.0,1,Wipro Ltd.,IT,Information Technology,Domestic Equities,3600000.0,,,89.38799999999999,,,1.90697288428262,1100,wipro,Large Cap,Jul-2025
 44430,82482.0,1,L&T Technology Services Ltd.,IT,Information Technology,Domestic Equities,200000.0,200000.0,0.0,86.164,88.042,-2.1330728515935697,1.83819317583264,1100,lt-technology-services,Mid Cap,Jul-2025
 195742,102041.0,1,TBO Tek Ltd.,Hospitality,Hospitality,Domestic Equities,544309.0,544309.0,0.0,73.7321,76.1869,-3.2220762362033315,1.57297529199909,1100,tbo-tek,Small Cap,Jul-2025
 63725,92864.0,1,Route Mobile Ltd.,IT,Information Technology,Domestic Equities,750000.0,750000.0,0.0,67.6725,76.7813,-11.863305257920874,1.44370186727095,1100,route-mobile,Small Cap,Jul-2025
-191600,99819.0,1,FSN E-Commerce Ventures Ltd.,Retailing,Information Technology,Domestic Equities,3000000.0,3000000.0,0.0,62.886,62.516999999999996,0.5902394548682846,1.3415883205911,1100,fsn-e-commerce-ventures,Mid Cap,Jul-2025
+191600,99819.0,1,FSN E-Commerce Ventures Ltd.,Retailing,Information Technology,Domestic Equities,3000000.0,3000000.0,0.0,62.886,62.517,0.5902394548682846,1.3415883205911,1100,fsn-e-commerce-ventures,Mid Cap,Jul-2025
 114402,5275.0,1,Hexaware Technologies Ltd.,IT,Information Technology,Domestic Equities,873911.0,873911.0,0.0,61.5233,74.3305,-17.230073792050373,1.31251694692336,1100,hexaware-technologies,Mid Cap,Jul-2025
 97967,101080.0,1,eMudhra Ltd.,IT,Information Technology,Domestic Equities,681746.0,681746.0,0.0,52.9239,52.3479,1.100330672290586,1.12906030150003,1100,emudhra,Small Cap,Jul-2025
-76268,106949.0,1,Indegene Ltd.,Business Services,Other,Domestic Equities,892860.0,892860.0,0.0,48.482299999999995,51.3082,-5.507696625490666,1.03430473293569,1100,indegene,Small Cap,Jul-2025
+76268,106949.0,1,Indegene Ltd.,Business Services,Other,Domestic Equities,892860.0,892860.0,0.0,48.4823,51.3082,-5.507696625490666,1.03430473293569,1100,indegene,Small Cap,Jul-2025
 152491,5679.0,1,PVR Inox Ltd.,Media & Entertainment,Media & Entertainment,Domestic Equities,400000.0,400000.0,0.0,39.992,38.804,3.0615400474177847,0.853175589432928,1100,pvr-inox,Small Cap,Jul-2025
 77478,110778.0,1,NIIT Learning Systems Ltd. ,IT,Information Technology,Domestic Equities,1091456.0,1091456.0,0.0,34.697399999999995,36.6511,-5.330535782009281,0.740222411902132,1100,niit-learning-systems,Small Cap,Jul-2025
 214823,111795.0,1,Unicommerce eSolutions Ltd.,IT,Information Technology,Domestic Equities,1252886.0,1252886.0,0.0,15.0021,15.7751,-4.900127415991021,0.32004964768533,1100,unicommerce-esolutions,Small Cap,Jul-2025

@@ -1,34 +1,63 @@
 CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,Type,NoOfShare,PrevNoOfShare,SharesZG,MarketValue,PrevMarketValue,MarketValueZG,HoldingPercentage,Priority,SecuritySlug,McapCategory,Month
-420,5071,1,Sun Pharmaceutical Industries Ltd.,Healthcare,Healthcare,Domestic Equities,53851.0,53851.0,0.0,9.190800000000001,9.0238,1.850661583811703,10.1018116830088,1100,sun-pharmaceutical-industries,Large Cap,Jul-2025
-38020,6672,1,Apollo Hospitals Enterprise Ltd.,Healthcare,Healthcare,Domestic Equities,6723.0,4264.0,57.668855534709195,5.0409,3.088,63.24158031088082,5.54056475093343,1100,apollo-hospitals-enterprise,Large Cap,Jul-2025
+420,5071,1,Sun Pharmaceutical Industries Ltd.,Healthcare,Healthcare,Domestic Equities,53851.0,53851.0,0.0,8.5865,9.190800000000001,-6.575053314183756,9.7248412981556,1100,sun-pharmaceutical-industries,Large Cap,Aug-2025
+38020,6672,1,Apollo Hospitals Enterprise Ltd.,Healthcare,Healthcare,Domestic Equities,6723.0,6723.0,0.0,5.1162,5.0409,1.4937808724632566,5.79447190934883,1100,apollo-hospitals-enterprise,Large Cap,Aug-2025
+133330,5128,1,Cipla Ltd.,Healthcare,Healthcare,Domestic Equities,31218.0,31218.0,0.0,4.9618,4.8532,2.2376988378801643,5.61960258000215,1100,cipla,Large Cap,Aug-2025
+152331,7581,1,Torrent Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,13130.0,13130.0,0.0,4.6739999999999995,4.9131,-4.866581180924472,5.29364796221735,1100,torrent-pharmaceuticals,Large Cap,Aug-2025
+152636,5140,1,Fortis Healthcare Ltd.,Healthcare,Healthcare,Domestic Equities,42102.0,42102.0,0.0,3.8376,3.61,6.304709141274236,4.34636359003109,1100,fortis-healthcare,Mid Cap,Aug-2025
+171462,6372,1,Divi's Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,6158.0,6158.0,0.0,3.7758,4.0615,-7.034346916163978,4.27637055535735,1100,divis-laboratories,Large Cap,Aug-2025
+201928,105635,1,Piramal Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,198385.0,172111.0,15.265729674454276,3.6392,3.3911000000000002,7.316210079325293,4.12166103211412,1100,piramal-pharma,Small Cap,Aug-2025
+38931,15891,1,Alkem Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,6212.0,6212.0,0.0,3.2944999999999998,3.1252999999999997,5.413880267494326,3.73126298920091,1100,alkem-laboratories,Mid Cap,Aug-2025
+371,7979,1,Neuland Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,2414.0,2414.0,0.0,3.248,3.2060000000000004,1.3100436681222671,3.67859832718912,1100,neuland-laboratories,Small Cap,Aug-2025
+171465,6543,1,Aurobindo Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,31301.0,31301.0,0.0,3.2174,3.5677,-9.818650671300832,3.64394158186524,1100,aurobindo-pharma,Mid Cap,Aug-2025
+152367,6359,1,Abbott India Ltd.,Healthcare,Healthcare,Domestic Equities,968.0,968.0,0.0,3.0473000000000003,3.3304,-8.500480422772041,3.45129085050598,1100,abbott-india,Mid Cap,Aug-2025
+352,7184,1,Ipca Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,18311.0,18311.0,0.0,2.535,2.6989,-6.072844492200521,2.87107350967501,1100,ipca-laboratories,Mid Cap,Aug-2025
+97859,90258,1,Metropolis Healthcare Ltd.,Healthcare,Healthcare,Domestic Equities,11417.0,11417.0,0.0,2.4986,2.278,9.68393327480246,2.82984783876685,1100,metropolis-healthcare,Small Cap,Aug-2025
+97743,96921,1,Gland Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,13351.0,13351.0,0.0,2.4986,2.7567000000000004,-9.362643740704465,2.82984783876685,1100,gland-pharma,Small Cap,Aug-2025
+136265,93840,1,Artemis Medicare Services Ltd.,Healthcare,Healthcare,Domestic Equities,108832.0,108832.0,0.0,2.3832,2.6016000000000004,-8.394833948339494,2.69914887110749,1100,artemis-medicare-services,Small Cap,Aug-2025
+133463,8505,1,Glenmark Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,11994.0,11994.0,0.0,2.3075,2.5596,-9.849195186747933,2.61341306649905,1100,glenmark-pharmaceuticals,Mid Cap,Aug-2025
+224124,112798,1,Onesource Specialty Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,12077.0,7332.0,64.71631205673759,2.2852,1.4472999999999998,57.894009534996215,2.58815668020092,1100,onesource-specialty-pharma,Small Cap,Aug-2025
+133627,5088,1,Navin Fluorine International Ltd.,Chemicals,Chemicals,Domestic Equities,4796.0,4796.0,0.0,2.2481,2.4209,-7.13784129869057,2.54613820792915,1100,navin-fluorine-international,Small Cap,Aug-2025
+140190,112439,1,Dr. Agarwal's Health Care Ltd.,Healthcare,Healthcare,Domestic Equities,49684.0,49684.0,0.0,2.1486,2.2698,-5.339677504625948,2.43344715695768,1100,dr-agarwal's-health-care,Small Cap,Aug-2025
+1152,105806,1,Mankind Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,8577.0,8577.0,0.0,2.1197,2.2019,-3.733139561287978,2.40071578637401,1100,mankind-pharma,Large Cap,Aug-2025
+57415,105415,1,Concord Biotech Ltd.,Healthcare,Healthcare,Domestic Equities,12341.0,12341.0,0.0,2.0754,2.181,-4.841815680880331,2.35054278579073,1100,concord-biotech,Small Cap,Aug-2025
+102429,100653,1,Global Health Ltd.,Healthcare,Healthcare,Domestic Equities,14952.0,14952.0,0.0,2.0544,1.9605000000000001,4.789594491201217,2.32675874488218,1100,global-health,Mid Cap,Aug-2025
+77009,96064,1,Max Healthcare Institute Ltd.,Healthcare,Healthcare,Domestic Equities,16775.0,16775.0,0.0,1.9363,2.0902000000000003,-7.362931776863464,2.193001829106,1100,max-healthcare-institute,Large Cap,Aug-2025
+19805,15724,1,Syngene International Ltd.,Business Services,Healthcare,Domestic Equities,28260.0,28260.0,0.0,1.7688,2.0178,-12.34017246506096,2.0032957885259,1100,syngene-international,Small Cap,Aug-2025
+37877,7189,1,JB Chemicals & Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,9736.0,9736.0,0.0,1.6787999999999998,1.7226,-2.542668059909437,1.90136418463211,1100,jb-chemicals-pharmaceuticals,Small Cap,Aug-2025
+77931,112747,1,Anthem Biosciences Ltd.,Healthcare,Healthcare,Domestic Equities,18495.0,12536.0,47.53509891512444,1.5130000000000001,0.9517,58.97866974887045,1.71358351879222,1100,anthem-biosciences,,Aug-2025
+171411,6555,1,Vinati Organics Ltd.,Chemicals,Chemicals,Domestic Equities,8741.0,8741.0,0.0,1.4950999999999999,1.5997999999999999,-6.544568071008876,1.69331045535113,1100,vinati-organics,Small Cap,Aug-2025
+78344,89378,1,Acutaas Chemicals Ltd.,Healthcare,Healthcare,Domestic Equities,9711.0,9711.0,0.0,1.3654,1.2890000000000001,5.927075252133426,1.54641568840641,1100,acutaas-chemicals,Small Cap,Aug-2025
+152079,6815,1,Linde India Ltd.,Inds. Gases & Fuels,Industrials Gases & Fuels,Domestic Equities,1559.0,1559.0,0.0,0.9944,1.0248,-2.966432474629202,1.12623096568869,1100,linde-india,Mid Cap,Aug-2025
+420,5071,1,Sun Pharmaceutical Industries Ltd.,Healthcare,Healthcare,Domestic Equities,53851.0,53851.0,0.0,9.1908,9.0238,1.850661583811703,10.1018116830088,1100,sun-pharmaceutical-industries,Large Cap,Jul-2025
+38020,6672,1,Apollo Hospitals Enterprise Ltd.,Healthcare,Healthcare,Domestic Equities,6723.0,4264.0,57.6688555347092,5.0409,3.088,63.24158031088082,5.54056475093343,1100,apollo-hospitals-enterprise,Large Cap,Jul-2025
 152331,7581,1,Torrent Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,13130.0,13130.0,0.0,4.9131,4.475,9.789944134078214,5.40009694257197,1100,torrent-pharmaceuticals,Large Cap,Jul-2025
-133330,5128,1,Cipla Ltd.,Healthcare,Healthcare,Domestic Equities,31218.0,31218.0,0.0,4.8532,4.7011,3.2354129884495078,5.33425952691585,1100,cipla,Large Cap,Jul-2025
+133330,5128,1,Cipla Ltd.,Healthcare,Healthcare,Domestic Equities,31218.0,31218.0,0.0,4.8532,4.7011,3.235412988449508,5.33425952691585,1100,cipla,Large Cap,Jul-2025
 171462,6372,1,Divi's Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,6158.0,6158.0,0.0,4.0615,4.1933,-3.143109245701478,4.46408453568135,1100,divis-laboratories,Large Cap,Jul-2025
 152636,5140,1,Fortis Healthcare Ltd.,Healthcare,Healthcare,Domestic Equities,42102.0,42102.0,0.0,3.61,3.345,7.922272047832586,3.96783089346539,1100,fortis-healthcare,Mid Cap,Jul-2025
-171465,6543,1,Aurobindo Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,31301.0,31301.0,0.0,3.5677,3.552,0.44200450450450257,3.92133802731758,1100,aurobindo-pharma,Mid Cap,Jul-2025
-201928,105635,1,Piramal Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,172111.0,172111.0,0.0,3.3911000000000002,3.5004000000000004,-3.122500285681638,3.72723305895581,1100,piramal-pharma,Small Cap,Jul-2025
+171465,6543,1,Aurobindo Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,31301.0,31301.0,0.0,3.5677,3.552,0.4420045045045025,3.92133802731758,1100,aurobindo-pharma,Mid Cap,Jul-2025
+201928,105635,1,Piramal Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,172111.0,172111.0,0.0,3.3911,3.5004000000000004,-3.122500285681638,3.72723305895581,1100,piramal-pharma,Small Cap,Jul-2025
 152367,6359,1,Abbott India Ltd.,Healthcare,Healthcare,Domestic Equities,968.0,968.0,0.0,3.3304,3.4529,-3.5477424773378896,3.66051634559477,1100,abbott-india,Mid Cap,Jul-2025
 371,7979,1,Neuland Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,2414.0,3011.0,-19.82729990036533,3.2060000000000004,3.6132,-11.269788553083131,3.52378555247924,1100,neuland-laboratories,Small Cap,Jul-2025
-38931,15891,1,Alkem Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,6212.0,6212.0,0.0,3.1252999999999997,3.0681,1.864346012189945,3.43508639649512,1100,alkem-laboratories,Mid Cap,Jul-2025
+38931,15891,1,Alkem Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,6212.0,6212.0,0.0,3.1253,3.0681,1.864346012189945,3.43508639649512,1100,alkem-laboratories,Mid Cap,Jul-2025
 97743,96921,1,Gland Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,13351.0,,,2.7567000000000004,,,3.02994997895181,1100,gland-pharma,Small Cap,Jul-2025
 352,7184,1,Ipca Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,18311.0,18311.0,0.0,2.6989,2.5449,6.051318322920341,2.96642071977112,1100,ipca-laboratories,Mid Cap,Jul-2025
 136265,93840,1,Artemis Medicare Services Ltd.,Healthcare,Healthcare,Domestic Equities,108832.0,108832.0,0.0,2.6016000000000004,2.7698,-6.072640623871757,2.85947613640985,1100,artemis-medicare-services,Small Cap,Jul-2025
-133463,8505,1,Glenmark Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,11994.0,12150.0,-1.2839506172839505,2.5596,2.1309,20.118259890187247,2.81331300690139,1100,glenmark-pharmaceuticals,Mid Cap,Jul-2025
+133463,8505,1,Glenmark Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,11994.0,12150.0,-1.2839506172839503,2.5596,2.1309,20.118259890187247,2.81331300690139,1100,glenmark-pharmaceuticals,Mid Cap,Jul-2025
 133627,5088,1,Navin Fluorine International Ltd.,Chemicals,Chemicals,Domestic Equities,4796.0,4796.0,0.0,2.4209,2.3117,4.72379634035559,2.66086476731035,1100,navin-fluorine-international,Small Cap,Jul-2025
-97859,90258,1,Metropolis Healthcare Ltd.,Healthcare,Healthcare,Domestic Equities,11417.0,11417.0,0.0,2.278,1.9480000000000002,16.940451745379875,2.50380021476846,1100,metropolis-healthcare,Small Cap,Jul-2025
+97859,90258,1,Metropolis Healthcare Ltd.,Healthcare,Healthcare,Domestic Equities,11417.0,11417.0,0.0,2.278,1.948,16.940451745379875,2.50380021476846,1100,metropolis-healthcare,Small Cap,Jul-2025
 140190,112439,1,Dr. Agarwal's Health Care Ltd.,Healthcare,Healthcare,Domestic Equities,49684.0,60309.0,-17.617602679533732,2.2698,2.4413,-7.024945725637982,2.494787413293,1100,dr-agarwal's-health-care,Small Cap,Jul-2025
 1152,105806,1,Mankind Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,8577.0,8577.0,0.0,2.2019,1.9897,10.66492436045635,2.42015702058766,1100,mankind-pharma,Large Cap,Jul-2025
 57415,105415,1,Concord Biotech Ltd.,Healthcare,Healthcare,Domestic Equities,12341.0,12341.0,0.0,2.181,2.2703,-3.9334008721314393,2.39718536804654,1100,concord-biotech,Small Cap,Jul-2025
 77009,96064,1,Max Healthcare Institute Ltd.,Healthcare,Healthcare,Domestic Equities,16775.0,16775.0,0.0,2.0902000000000003,2.1405000000000003,-2.3499182434010746,2.29738507853777,1100,max-healthcare-institute,Large Cap,Jul-2025
 19805,15724,1,Syngene International Ltd.,Business Services,Healthcare,Domestic Equities,28260.0,39372.0,-28.22310271258763,2.0178,2.5155000000000003,-19.785330948121647,2.21780863624223,1100,syngene-international,Small Cap,Jul-2025
-102429,100653,1,Global Health Ltd.,Healthcare,Healthcare,Domestic Equities,14952.0,14952.0,0.0,1.9605000000000001,1.6997,15.343884214861452,2.15482893812712,1100,global-health,Mid Cap,Jul-2025
-37877,7189,1,JB Chemicals & Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,9736.0,14752.0,-34.00216919739697,1.7226,2.4773,-30.464618738142335,1.89334778312562,1100,jb-chemicals-pharmaceuticals,Small Cap,Jul-2025
-171411,6555,1,Vinati Organics Ltd.,Chemicals,Chemicals,Domestic Equities,8741.0,15404.0,-43.25499870163594,1.5997999999999999,3.0439999999999996,-47.44415243101183,1.75837558541993,1100,vinati-organics,Small Cap,Jul-2025
+102429,100653,1,Global Health Ltd.,Healthcare,Healthcare,Domestic Equities,14952.0,14952.0,0.0,1.9605,1.6997,15.343884214861452,2.15482893812712,1100,global-health,Mid Cap,Jul-2025
+37877,7189,1,JB Chemicals & Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,9736.0,14752.0,-34.00216919739697,1.7226,2.4773,-30.46461873814233,1.89334778312562,1100,jb-chemicals-pharmaceuticals,Small Cap,Jul-2025
+171411,6555,1,Vinati Organics Ltd.,Chemicals,Chemicals,Domestic Equities,8741.0,15404.0,-43.25499870163594,1.5998,3.044,-47.44415243101183,1.75837558541993,1100,vinati-organics,Small Cap,Jul-2025
 224124,112798,1,Onesource Specialty Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,7332.0,7332.0,0.0,1.4472999999999998,1.6114,-10.183691200198584,1.59075946041896,1100,onesource-specialty-pharma,Small Cap,Jul-2025
 178941,94376,1,Cohance Lifesciences Ltd.,Healthcare,Healthcare,Domestic Equities,13505.0,13505.0,0.0,1.3484,1.3071000000000002,3.159666437150941,1.48205628164785,1100,cohance-lifesciences,Small Cap,Jul-2025
-78344,89378,1,Acutaas Chemicals Ltd.,Healthcare,Healthcare,Domestic Equities,9711.0,9711.0,0.0,1.2890000000000001,1.1113,15.990281652119151,1.41676842705731,1100,acutaas-chemicals,Small Cap,Jul-2025
-171968,4931,1,Zydus Lifesciences Ltd.,Healthcare,Healthcare,Domestic Equities,12957.0,15139.0,-14.413105224915782,1.2566,1.4987000000000001,-16.154000133448996,1.38115687000792,1100,zydus-lifesciences,Large Cap,Jul-2025
-152079,6815,1,Linde India Ltd.,Inds. Gases & Fuels,Industrials Gases & Fuels,Domestic Equities,1559.0,1758.0,-11.319681456200227,1.0248,1.17,-12.410256410256407,1.12638036000646,1100,linde-india,Mid Cap,Jul-2025
+78344,89378,1,Acutaas Chemicals Ltd.,Healthcare,Healthcare,Domestic Equities,9711.0,9711.0,0.0,1.289,1.1113,15.990281652119153,1.41676842705731,1100,acutaas-chemicals,Small Cap,Jul-2025
+171968,4931,1,Zydus Lifesciences Ltd.,Healthcare,Healthcare,Domestic Equities,12957.0,15139.0,-14.413105224915782,1.2566,1.4987,-16.154000133448996,1.38115687000792,1100,zydus-lifesciences,Large Cap,Jul-2025
+152079,6815,1,Linde India Ltd.,Inds. Gases & Fuels,Industrials Gases & Fuels,Domestic Equities,1559.0,1758.0,-11.319681456200229,1.0248,1.17,-12.410256410256409,1.12638036000646,1100,linde-india,Mid Cap,Jul-2025
 77931,112747,1,Anthem Biosciences Ltd.,Healthcare,Healthcare,Domestic Equities,12536.0,,,0.9517,,,1.04603453221912,1100,anthem-biosciences,,Jul-2025
 420,5071,1,Sun Pharmaceutical Industries Ltd.,Healthcare,Healthcare,Domestic Equities,53851.0,53851.0,0.0,9.0238,9.034,-0.1129067965463783,10.2888560007115,1100,sun-pharmaceutical-industries,Large Cap,Jun-2025
 133330,5128,1,Cipla Ltd.,Healthcare,Healthcare,Domestic Equities,31218.0,31218.0,0.0,4.7011,4.5756,2.7428096861613804,5.36015214709377,1100,cipla,Large Cap,Jun-2025
@@ -47,7 +76,7 @@ CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,
 19805,15724,1,Syngene International Ltd.,Business Services,Healthcare,Domestic Equities,39372.0,39372.0,0.0,2.5155000000000003,2.5456,-1.182432432432429,2.86815058731241,1100,syngene-international,Small Cap,Jun-2025
 37877,7189,1,JB Chemicals & Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,14752.0,14752.0,0.0,2.4773,2.4729,0.1779287476242459,2.82459528918666,1100,jb-chemicals-pharmaceuticals,Small Cap,Jun-2025
 140190,112439,1,Dr. Agarwal's Health Care Ltd.,Healthcare,Healthcare,Domestic Equities,60309.0,60309.0,0.0,2.4413,2.0415,19.583639480773936,2.78354841137181,1100,dr-agarwal's-health-care,Small Cap,Jun-2025
-133627,5088,1,Navin Fluorine International Ltd.,Chemicals,Chemicals,Domestic Equities,4796.0,6636.0,-27.727546714888483,2.3117,2.8277,-18.248046115217317,2.63577965123836,1100,navin-fluorine-international,Small Cap,Jun-2025
+133627,5088,1,Navin Fluorine International Ltd.,Chemicals,Chemicals,Domestic Equities,4796.0,6636.0,-27.727546714888483,2.3117,2.8277,-18.24804611521732,2.63577965123836,1100,navin-fluorine-international,Small Cap,Jun-2025
 57415,105415,1,Concord Biotech Ltd.,Healthcare,Healthcare,Domestic Equities,12341.0,12341.0,0.0,2.2703,2.1578,5.213643525813328,2.58857574175129,1100,concord-biotech,Small Cap,Jun-2025
 77009,96064,1,Max Healthcare Institute Ltd.,Healthcare,Healthcare,Domestic Equities,16775.0,16775.0,0.0,2.1405000000000003,1.8875,13.40397350993378,2.44057894340776,1100,max-healthcare-institute,Large Cap,Jun-2025
 133463,8505,1,Glenmark Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,12150.0,12150.0,0.0,2.1309,1.7704,20.362629914143703,2.4296331093238,1100,glenmark-pharmaceuticals,Mid Cap,Jun-2025

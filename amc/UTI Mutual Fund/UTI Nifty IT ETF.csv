@@ -1,14 +1,24 @@
 CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,Type,NoOfShare,PrevNoOfShare,SharesZG,MarketValue,PrevMarketValue,MarketValueZG,HoldingPercentage,Priority,SecuritySlug,McapCategory,Month
-171889,4926,1,Infosys Ltd.,IT,Information Technology,Domestic Equities,12467.0,12444.0,0.18482802957248473,1.8322,1.8778,-2.4283736287144544,29.3198911825892,1100,infosys,Large Cap,Aug-2025
-171915,6797,1,Tata Consultancy Services Ltd.,IT,Information Technology,Domestic Equities,4393.0,4385.0,0.18244013683010263,1.3551,1.3316,1.7647942325022488,21.6850696111378,1100,tata-consultancy-services,Large Cap,Aug-2025
+171889,4926,1,Infosys Ltd.,IT,Information Technology,Domestic Equities,12087.0,12467.0,-3.0480468436672816,1.7427000000000001,1.8322,-4.8848378997925925,29.1543287327478,1100,infosys,Large Cap,Sep-2025
+171915,6797,1,Tata Consultancy Services Ltd.,IT,Information Technology,Domestic Equities,4527.0,4393.0,3.0503073070794446,1.3075999999999999,1.3551,-3.5052763633680173,21.8753659556671,1100,tata-consultancy-services,Large Cap,Sep-2025
+171528,8219,1,HCL Technologies Ltd.,IT,Information Technology,Domestic Equities,4696.0,4557.0,3.050252359008119,0.6504000000000001,0.6629999999999999,-1.9004524886877692,10.8808030112923,1100,hcl-technologies,Large Cap,Sep-2025
+171369,7531,1,Tech Mahindra Ltd.,IT,Information Technology,Domestic Equities,4008.0,4022.0,-0.34808552958727,0.5611999999999999,0.5958,-5.8073178919100386,9.38854035968214,1100,tech-mahindra,Large Cap,Sep-2025
+171511,5199,1,Wipro Ltd.,IT,Information Technology,Domestic Equities,18014.0,18080.0,-0.36504424778761063,0.43119999999999997,0.4509,-4.369039698381029,7.21371810957758,1100,wipro,Large Cap,Sep-2025
+133657,7260,1,Coforge Ltd.,IT,Information Technology,Domestic Equities,2111.0,2112.0,-0.04734848484848485,0.33590000000000003,0.3642,-7.770455793520038,5.6194061062317,1100,coforge,Mid Cap,Sep-2025
+95548,5980,1,Persistent Systems Ltd.,IT,Information Technology,Domestic Equities,677.0,680.0,-0.4411764705882353,0.3265,0.3608,-9.506651884700664,5.46214972814722,1100,persistent-systems,Mid Cap,Sep-2025
+153405,17058,1,LTIMindtree Ltd.,IT,Information Technology,Domestic Equities,585.0,587.0,-0.34071550255536626,0.3017,0.3013,0.13275804845669664,5.04726056043496,1100,ltimindtree,Large Cap,Sep-2025
+19255,6350,1,Mphasis Ltd.,IT,Information Technology,Domestic Equities,719.0,722.0,-0.41551246537396125,0.1909,0.20129999999999998,-5.166418281172375,3.19364282726893,1100,mphasis,Mid Cap,Sep-2025
+171698,8307,1,Oracle Financial Services Software Ltd.,IT,Information Technology,Domestic Equities,150.0,150.0,0.0,0.126,0.1244,1.2861736334405156,2.10790464240903,1100,oracle-financial-services-software,Mid Cap,Sep-2025
+171889,4926,1,Infosys Ltd.,IT,Information Technology,Domestic Equities,12467.0,12444.0,0.1848280295724847,1.8322,1.8778,-2.4283736287144544,29.3198911825892,1100,infosys,Large Cap,Aug-2025
+171915,6797,1,Tata Consultancy Services Ltd.,IT,Information Technology,Domestic Equities,4393.0,4385.0,0.1824401368301026,1.3551,1.3316,1.7647942325022488,21.6850696111378,1100,tata-consultancy-services,Large Cap,Aug-2025
 171528,8219,1,HCL Technologies Ltd.,IT,Information Technology,Domestic Equities,4557.0,4548.0,0.1978891820580475,0.6629999999999999,0.6676000000000001,-0.6890353505092989,10.6096975516083,1100,hcl-technologies,Large Cap,Aug-2025
-171369,7531,1,Tech Mahindra Ltd.,IT,Information Technology,Domestic Equities,4022.0,4015.0,0.17434620174346202,0.5958,0.5877,1.378254211332304,9.53432549207873,1100,tech-mahindra,Large Cap,Aug-2025
-171511,5199,1,Wipro Ltd.,IT,Information Technology,Domestic Equities,18080.0,18047.0,0.18285587632293457,0.4509,0.4481,0.6248605222048674,7.21555448871819,1100,wipro,Large Cap,Aug-2025
-133657,7260,1,Coforge Ltd.,IT,Information Technology,Domestic Equities,2112.0,2108.0,0.18975332068311196,0.3642,0.3685,-1.1668928086838526,5.82813250120019,1100,coforge,Mid Cap,Aug-2025
-95548,5980,1,Persistent Systems Ltd.,IT,Information Technology,Domestic Equities,680.0,679.0,0.14727540500736377,0.3608,0.3504,2.9680365296803632,5.77372379580733,1100,persistent-systems,Mid Cap,Aug-2025
-153405,17058,1,LTIMindtree Ltd.,IT,Information Technology,Domestic Equities,587.0,586.0,0.17064846416382254,0.3013,0.2992,0.7018716577540016,4.82157145143223,1100,ltimindtree,Large Cap,Aug-2025
-19255,6350,1,Mphasis Ltd.,IT,Information Technology,Domestic Equities,722.0,720.0,0.2777777777777778,0.20129999999999998,0.2009,0.19910403185664083,3.22131541046567,1100,mphasis,Mid Cap,Aug-2025
-171698,8307,1,Oracle Financial Services Software Ltd.,IT,Information Technology,Domestic Equities,150.0,150.0,0.0,0.1244,0.12710000000000002,-2.1243115656963125,1.99071851496239,1100,oracle-financial-services-software,Mid Cap,Aug-2025
+171369,7531,1,Tech Mahindra Ltd.,IT,Information Technology,Domestic Equities,4022.0,4015.0,0.174346201743462,0.5958,0.5877,1.378254211332304,9.53432549207873,1100,tech-mahindra,Large Cap,Aug-2025
+171511,5199,1,Wipro Ltd.,IT,Information Technology,Domestic Equities,18080.0,18047.0,0.1828558763229345,0.4509,0.4481,0.6248605222048674,7.21555448871819,1100,wipro,Large Cap,Aug-2025
+133657,7260,1,Coforge Ltd.,IT,Information Technology,Domestic Equities,2112.0,2108.0,0.1897533206831119,0.3642,0.3685,-1.1668928086838526,5.82813250120019,1100,coforge,Mid Cap,Aug-2025
+95548,5980,1,Persistent Systems Ltd.,IT,Information Technology,Domestic Equities,680.0,679.0,0.1472754050073637,0.3608,0.3504,2.9680365296803632,5.77372379580733,1100,persistent-systems,Mid Cap,Aug-2025
+153405,17058,1,LTIMindtree Ltd.,IT,Information Technology,Domestic Equities,587.0,586.0,0.1706484641638225,0.3013,0.2992,0.7018716577540016,4.82157145143223,1100,ltimindtree,Large Cap,Aug-2025
+19255,6350,1,Mphasis Ltd.,IT,Information Technology,Domestic Equities,722.0,720.0,0.2777777777777778,0.2012999999999999,0.2009,0.1991040318566408,3.22131541046567,1100,mphasis,Mid Cap,Aug-2025
+171698,8307,1,Oracle Financial Services Software Ltd.,IT,Information Technology,Domestic Equities,150.0,150.0,0.0,0.1244,0.1271,-2.1243115656963125,1.99071851496239,1100,oracle-financial-services-software,Mid Cap,Aug-2025
 171889,4926,1,Infosys Ltd.,IT,Information Technology,Domestic Equities,12444.0,9878.0,25.976918404535333,1.8778,1.5822999999999998,18.6753460152942,29.9432325551729,1100,infosys,Large Cap,Jul-2025
 171915,6797,1,Tata Consultancy Services Ltd.,IT,Information Technology,Domestic Equities,4385.0,3480.0,26.00574712643678,1.3316,1.2048,10.524568393094285,21.2335757111877,1100,tata-consultancy-services,Large Cap,Jul-2025
 171528,8219,1,HCL Technologies Ltd.,IT,Information Technology,Domestic Equities,4548.0,3610.0,25.98337950138504,0.6676000000000001,0.624,6.987179487179499,10.6454904962368,1100,hcl-technologies,Large Cap,Jul-2025
@@ -17,7 +27,7 @@ CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,
 133657,7260,1,Coforge Ltd.,IT,Information Technology,Domestic Equities,2108.0,1673.0,26.001195457262405,0.3685,0.322,14.44099378881987,5.87606837606838,1100,coforge,Mid Cap,Jul-2025
 95548,5980,1,Persistent Systems Ltd.,IT,Information Technology,Domestic Equities,679.0,539.0,25.97402597402597,0.3504,0.3256,7.616707616707606,5.58744737849216,1100,persistent-systems,Mid Cap,Jul-2025
 153405,17058,1,LTIMindtree Ltd.,IT,Information Technology,Domestic Equities,586.0,465.0,26.021505376344084,0.2992,0.2471999999999999,21.03559870550163,4.77101671131522,1100,ltimindtree,Large Cap,Jul-2025
-19255,6350,1,Mphasis Ltd.,IT,Information Technology,Domestic Equities,720.0,572.0,25.874125874125877,0.2009,0.1628,23.402948402948397,3.20353361398138,1100,mphasis,Mid Cap,Jul-2025
+19255,6350,1,Mphasis Ltd.,IT,Information Technology,Domestic Equities,720.0,572.0,25.87412587412588,0.2009,0.1628,23.4029484029484,3.20353361398138,1100,mphasis,Mid Cap,Jul-2025
 171698,8307,1,Oracle Financial Services Software Ltd.,IT,Information Technology,Domestic Equities,150.0,119.0,26.05042016806723,0.1271,0.1069,18.89616463985034,2.02672534762087,1100,oracle-financial-services-software,Mid Cap,Jul-2025
 171889,4926,1,Infosys Ltd.,IT,Information Technology,Domestic Equities,9878.0,9123.0,8.27578647374767,1.5822999999999998,1.4257,10.984077996773513,28.793696431496,1100,infosys,Large Cap,Jun-2025
 171915,6797,1,Tata Consultancy Services Ltd.,IT,Information Technology,Domestic Equities,3480.0,3357.0,3.6639857015192137,1.2048,1.1627,3.620882428829456,21.9241897621604,1100,tata-consultancy-services,Large Cap,Jun-2025

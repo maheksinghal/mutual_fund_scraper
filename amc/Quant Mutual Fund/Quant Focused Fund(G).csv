@@ -1,8 +1,21 @@
 CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,Type,NoOfShare,PrevNoOfShare,SharesZG,MarketValue,PrevMarketValue,MarketValueZG,HoldingPercentage,Priority,SecuritySlug,McapCategory,Month
+75697,6614,1,Adani Enterprises Ltd.,Trading,Trading,Domestic Equities,360490.0,226992.0,58.81176429125256,90.3352,50.9529,77.29157712318633,9.26670742565929,1100,adani-enterprises,Large Cap,Sep-2025
+152372,4964,1,Larsen & Toubro Ltd.,Infrastructure,Infrastructure,Domestic Equities,236250.0,236250.0,0.0,86.4439,85.0736,1.6107229504805112,8.86753259009721,1100,larsen-toubro,Large Cap,Sep-2025
+58155,95800,1,Life Insurance Corporation of India,Insurance,Finance,Domestic Equities,860666.0,915500.0,-5.989513926815947,77.4901,78.0143,-0.6719280952338235,7.9490396333332,1100,life-insurance-corporation-of-india,Large Cap,Sep-2025
+152316,5915,1,Tata Power Company Ltd.,Power,Power,Domestic Equities,1993340.0,1993340.0,0.0,77.4712,74.5808,3.875528286100444,7.94710084568071,1100,tata-power-company,Large Cap,Sep-2025
+95082,5635,1,Capri Global Capital Ltd.,Finance,Finance,Domestic Equities,3822525.0,3822525.0,0.0,70.7855,70.85430000000001,-0.09710066996639737,7.26127266535089,1100,capri-global-capital,Small Cap,Sep-2025
+133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,746634.0,746634.0,0.0,65.1401,59.9174,8.716499714607115,6.68215987099368,1100,state-bank-of-india,Large Cap,Sep-2025
+171837,6012,1,DLF Ltd.,Realty,Realty,Domestic Equities,911804.0,911804.0,0.0,65.0116,67.3869,-3.524869076927411,6.66897816658392,1100,dlf,Large Cap,Sep-2025
+152604,5456,1,Power Finance Corporation Ltd.,Finance,Finance,Domestic Equities,1369783.0,1369783.0,0.0,56.195299999999996,52.0107,8.04565214465485,5.76459014644515,1100,power-finance-corporation,Large Cap,Sep-2025
+77931,112747,1,Anthem Biosciences Ltd.,Healthcare,Healthcare,Domestic Equities,480000.0,480000.0,0.0,36.537600000000005,39.2664,-6.94945296742252,3.7480765995511,1100,anthem-biosciences,,Sep-2025
+707,8442,1,Bajaj Auto Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,41544.0,41544.0,0.0,36.054,35.8587,0.5446377029842187,3.69846825517318,1100,bajaj-auto,Large Cap,Sep-2025
+420,5071,1,Sun Pharmaceutical Industries Ltd.,Healthcare,Healthcare,Domestic Equities,185292.0,185292.0,0.0,29.5411,29.5448,-0.01252335436353913,3.03036613338038,1100,sun-pharmaceutical-industries,Large Cap,Sep-2025
+171511,5199,1,Wipro Ltd.,IT,Information Technology,Domestic Equities,579919.0,579919.0,0.0,13.8815,14.4638,-4.025912968929328,1.42398311100534,1100,wipro,Large Cap,Sep-2025
+171915,6797,1,Tata Consultancy Services Ltd.,IT,Information Technology,Domestic Equities,30747.0,,,8.881,,,0.911025033954429,1100,tata-consultancy-services,Large Cap,Sep-2025
 152372,4964,1,Larsen & Toubro Ltd.,Infrastructure,Infrastructure,Domestic Equities,236250.0,236250.0,0.0,85.0736,85.9123,-0.9762280837551665,8.70906187297818,1100,larsen-toubro,Large Cap,Aug-2025
 58155,95800,1,Life Insurance Corporation of India,Insurance,Finance,Domestic Equities,915500.0,915500.0,0.0,78.0143,81.9373,-4.787807262382325,7.9863949060235,1100,life-insurance-corporation-of-india,Large Cap,Aug-2025
-152316,5915,1,Tata Power Company Ltd.,Power,Power,Domestic Equities,1993340.0,1993340.0,0.0,74.5808,79.2851,-5.9333973218170915,7.6349043855698,1100,tata-power-company,Large Cap,Aug-2025
-95082,5635,1,Capri Global Capital Ltd.,Finance,Finance,Domestic Equities,3822525.0,3822525.0,0.0,70.85430000000001,71.2098,-0.49922903869971935,7.25341918840342,1100,capri-global-capital,Small Cap,Aug-2025
+152316,5915,1,Tata Power Company Ltd.,Power,Power,Domestic Equities,1993340.0,1993340.0,0.0,74.5808,79.2851,-5.933397321817092,7.6349043855698,1100,tata-power-company,Large Cap,Aug-2025
+95082,5635,1,Capri Global Capital Ltd.,Finance,Finance,Domestic Equities,3822525.0,3822525.0,0.0,70.85430000000001,71.2098,-0.4992290386997193,7.25341918840342,1100,capri-global-capital,Small Cap,Aug-2025
 171837,6012,1,DLF Ltd.,Realty,Realty,Domestic Equities,911804.0,911804.0,0.0,67.3869,71.5082,-5.763394967290466,6.89845829409115,1100,dlf,Large Cap,Aug-2025
 133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,746634.0,746634.0,0.0,59.9174,59.4731,0.7470604357263936,6.13379877973875,1100,state-bank-of-india,Large Cap,Aug-2025
 152604,5456,1,Power Finance Corporation Ltd.,Finance,Finance,Domestic Equities,1369783.0,1369783.0,0.0,52.0107,56.154300000000006,-7.378954060508288,5.324382703411,1100,power-finance-corporation,Large Cap,Aug-2025
@@ -10,7 +23,7 @@ CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,
 77931,112747,1,Anthem Biosciences Ltd.,Healthcare,Healthcare,Domestic Equities,480000.0,480000.0,0.0,39.2664,36.4392,7.758677468221031,4.0197371115024,1100,anthem-biosciences,,Aug-2025
 707,8442,1,Bajaj Auto Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,41544.0,41544.0,0.0,35.8587,33.2684,7.786067259020564,3.67088776053397,1100,bajaj-auto,Large Cap,Aug-2025
 420,5071,1,Sun Pharmaceutical Industries Ltd.,Healthcare,Healthcare,Domestic Equities,185292.0,185292.0,0.0,29.5448,31.623800000000003,-6.574162497865535,3.0245280701036,1100,sun-pharmaceutical-industries,Large Cap,Aug-2025
-133402,7102,1,HFCL Ltd.,Telecom,Telecom,Domestic Equities,3723374.0,3742000.0,-0.4977552111170497,26.149299999999997,28.278299999999998,-7.528741119515675,2.67692764424061,1100,hfcl,Small Cap,Aug-2025
+133402,7102,1,HFCL Ltd.,Telecom,Telecom,Domestic Equities,3723374.0,3742000.0,-0.4977552111170497,26.1493,28.2783,-7.528741119515675,2.67692764424061,1100,hfcl,Small Cap,Aug-2025
 77009,96064,1,Max Healthcare Institute Ltd.,Healthcare,Healthcare,Domestic Equities,174914.0,174914.0,0.0,20.1903,21.7943,-7.359722496249013,2.06689938986937,1100,max-healthcare-institute,Large Cap,Aug-2025
 152256,5774,1,Oil & Natural Gas Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,759494.0,759494.0,0.0,17.7501,18.303800000000003,-3.025054906631416,1.81709389459891,1100,oil-natural-gas-corporation,Large Cap,Aug-2025
 171511,5199,1,Wipro Ltd.,IT,Information Technology,Domestic Equities,579919.0,,,14.4638,,,1.48067237213873,1100,wipro,Large Cap,Aug-2025

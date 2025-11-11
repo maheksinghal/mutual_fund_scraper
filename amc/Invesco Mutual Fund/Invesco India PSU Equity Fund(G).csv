@@ -1,28 +1,51 @@
 CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,Type,NoOfShare,PrevNoOfShare,SharesZG,MarketValue,PrevMarketValue,MarketValueZG,HoldingPercentage,Priority,SecuritySlug,McapCategory,Month
+133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,1426314.0,1426314.0,0.0,133.6456,124.43879999999999,7.398657010514409,9.11638359130627,1100,state-bank-of-india,Large Cap,Oct-2025
+133309,5981,1,Bharat Electronics Ltd.,Capital Goods,Capital Goods,Domestic Equities,2997692.0,3178489.0,-5.688143013866022,127.7317,128.3951,-0.516686384449252,8.71297801027235,1100,bharat-electronics,Large Cap,Oct-2025
+152376,5012,1,Bharat Petroleum Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,2901565.0,3229041.0,-10.141586929370051,103.52780000000001,109.6744,-5.604407227210724,7.06195443145182,1100,bharat-petroleum-corporation,Large Cap,Oct-2025
+152608,7159,1,Indian Bank,Bank,Banking,Domestic Equities,1080618.0,552698.0,95.5169007305979,92.79270000000001,41.49100000000001,123.64536887517774,6.32967974757871,1100,indian-bank,Mid Cap,Oct-2025
+134703,87891,1,Hindustan Aeronautics Ltd.,Capital Goods,Capital Goods,Domestic Equities,196158.0,226465.0,-13.382641909345816,91.79799999999999,107.4916,-14.5998384990083,6.26182815532073,1100,hindustan-aeronautics,Large Cap,Oct-2025
+222201,112407,1,NTPC Green Energy Ltd.,Power,Power,Domestic Equities,8790786.0,8790786.0,0.0,90.6682,85.4552,6.100272423445259,6.1847609703071,1100,ntpc-green-energy,Mid Cap,Oct-2025
+133664,7760,1,NTPC Ltd.,Power,Power,Domestic Equities,2024963.0,3085790.0,-34.37780924819901,68.2311,105.0557,-35.05245312724583,4.65425633508905,1100,ntpc,Large Cap,Oct-2025
+57781,87827,1,Bharat Dynamics Ltd.,Capital Goods,Capital Goods,Domestic Equities,424045.0,330828.0,28.176877410618207,64.8746,49.3992,31.327227971303177,4.42529899175549,1100,bharat-dynamics,Mid Cap,Oct-2025
+114405,5008,1,Bank Of Baroda,Bank,Banking,Domestic Equities,2116392.0,1221807.0,73.2181923986358,58.9204,31.5886,86.5242524201769,4.01914442191289,1100,bank-of-baroda,Large Cap,Oct-2025
+171741,5431,1,GAIL (India) Ltd.,Gas Transmission,Gas Transmission,Domestic Equities,3089630.0,3089630.0,0.0,56.4661,54.4671,3.670105439797596,3.85172895707048,1100,gail-india,Large Cap,Oct-2025
+171943,4973,1,REC Ltd.,Finance,Finance,Domestic Equities,1485615.0,1485615.0,0.0,55.6883,55.3912,0.536366787504153,3.79867279093169,1100,rec,Large Cap,Oct-2025
+133308,5965,1,BEML Ltd.,Capital Goods,Capital Goods,Domestic Equities,126248.0,126248.0,0.0,55.5466,52.693400000000004,5.414719870040645,3.78900699157213,1100,beml,Small Cap,Oct-2025
+517,7825,1,Power Grid Corporation Of India Ltd.,Power,Power,Domestic Equities,1923645.0,3599413.0,-46.55670244009231,55.42979999999999,100.8735,-45.05018661987539,3.78103969894548,1100,power-grid-corporation-of-india,Large Cap,Oct-2025
+152256,5774,1,Oil & Natural Gas Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,1821612.0,1821612.0,0.0,46.5185,43.6276,6.626309950581745,3.17317210661766,1100,oil-natural-gas-corporation,Large Cap,Oct-2025
+152907,86648,1,SBI Life Insurance Company Ltd.,Insurance,Finance,Domestic Equities,234853.0,234853.0,0.0,45.930200000000006,42.0528,9.220313510634268,3.13304232706064,1100,sbi-life-insurance-company,Large Cap,Oct-2025
+171365,5279,1,Hindustan Petroleum Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,949076.0,1042313.0,-8.945201681260812,45.176,46.2162,-2.2507259359272185,3.08159599059641,1100,hindustan-petroleum-corporation,Mid Cap,Oct-2025
+134823,84770,1,Cochin Shipyard Ltd.,Ship Building,Ship Building,Domestic Equities,238488.0,80015.0,198.05411485346497,42.6774,14.3195,198.03694263067842,2.9111586844581,1100,cochin-shipyard,Mid Cap,Oct-2025
+133439,5473,1,National Aluminium Company Ltd.,Non - Ferrous Metals,Non - Ferrous Metals,Domestic Equities,1620851.0,1620851.0,0.0,37.9506,34.6651,9.477832171261577,2.58872890031716,1100,national-aluminium-company,Mid Cap,Oct-2025
+153586,8183,1,NHPC Ltd.,Power,Power,Domestic Equities,4337500.0,7649437.0,-43.29648051222593,36.7994,66.0299,-44.26858135481047,2.51020195449694,1100,nhpc,Mid Cap,Oct-2025
+152111,6943,1,Dredging Corporation Of India Ltd.,Logistics,Logistics,Domestic Equities,471810.0,179848.0,162.3381966994351,34.9682,11.1416,213.85258849716377,2.38529008585031,1100,dredging-corporation-of-india,Small Cap,Oct-2025
+56723,6834,1,Can Fin Homes Ltd.,Finance,Finance,Domestic Equities,349373.0,349373.0,0.0,30.3221,26.664099999999998,13.718820436467016,2.06836510063891,1100,can-fin-homes,Small Cap,Oct-2025
+134830,88309,1,Mazagon Dock Shipbuilders Ltd.,Ship Building,Ship Building,Domestic Equities,85246.0,85246.0,0.0,23.2636,23.5407,-1.1771102813425274,1.58688278038867,1100,mazagon-dock-shipbuilders,Large Cap,Oct-2025
+114652,92620,1,Indian Railway Catering And Tourism Corporation Ltd.,Hospitality,Hospitality,Domestic Equities,198518.0,246545.0,-19.480013790585897,14.2675,17.268,-17.376071345842018,0.973230715331909,1100,indian-railway-catering-and-tourism-corporation,Mid Cap,Oct-2025
 133309,5981,1,Bharat Electronics Ltd.,Capital Goods,Capital Goods,Domestic Equities,3178489.0,3178489.0,0.0,128.3951,117.4134,9.353021035077768,9.05613423452361,1100,bharat-electronics,Large Cap,Sep-2025
-133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,1426314.0,1426314.0,0.0,124.43879999999999,114.46170000000001,8.716540117786115,8.777083212545,1100,state-bank-of-india,Large Cap,Sep-2025
-152376,5012,1,Bharat Petroleum Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,3229041.0,3229041.0,0.0,109.6744,99.51899999999999,10.20448356595224,7.73570088337356,1100,bharat-petroleum-corporation,Large Cap,Sep-2025
+133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,1426314.0,1426314.0,0.0,124.4388,114.4617,8.716540117786115,8.777083212545,1100,state-bank-of-india,Large Cap,Sep-2025
+152376,5012,1,Bharat Petroleum Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,3229041.0,3229041.0,0.0,109.6744,99.519,10.20448356595224,7.73570088337356,1100,bharat-petroleum-corporation,Large Cap,Sep-2025
 134703,87891,1,Hindustan Aeronautics Ltd.,Capital Goods,Capital Goods,Domestic Equities,226465.0,226465.0,0.0,107.4916,98.1182,9.553171582845996,7.58174072596009,1100,hindustan-aeronautics,Large Cap,Sep-2025
-133664,7760,1,NTPC Ltd.,Power,Power,Domestic Equities,3085790.0,3085790.0,0.0,105.0557,101.0751,3.9382597692210988,7.40992858217987,1100,ntpc,Large Cap,Sep-2025
-517,7825,1,Power Grid Corporation Of India Ltd.,Power,Power,Domestic Equities,3599413.0,3599413.0,0.0,100.8735,99.07379999999999,1.8165246513205426,7.11494408046894,1100,power-grid-corporation-of-india,Large Cap,Sep-2025
-222201,112407,1,NTPC Green Energy Ltd.,Power,Power,Domestic Equities,8790786.0,8790786.0,0.0,85.4552,90.50110000000001,-5.57551234183894,6.02744000540567,1100,ntpc-green-energy,Mid Cap,Sep-2025
-153586,8183,1,NHPC Ltd.,Power,Power,Domestic Equities,7649437.0,7649437.0,0.0,66.0299,59.0766,11.769973221207719,4.65730886842388,1100,nhpc,Mid Cap,Sep-2025
+133664,7760,1,NTPC Ltd.,Power,Power,Domestic Equities,3085790.0,3085790.0,0.0,105.0557,101.0751,3.9382597692210983,7.40992858217987,1100,ntpc,Large Cap,Sep-2025
+517,7825,1,Power Grid Corporation Of India Ltd.,Power,Power,Domestic Equities,3599413.0,3599413.0,0.0,100.8735,99.0738,1.8165246513205424,7.11494408046894,1100,power-grid-corporation-of-india,Large Cap,Sep-2025
+222201,112407,1,NTPC Green Energy Ltd.,Power,Power,Domestic Equities,8790786.0,8790786.0,0.0,85.4552,90.5011,-5.57551234183894,6.02744000540567,1100,ntpc-green-energy,Mid Cap,Sep-2025
+153586,8183,1,NHPC Ltd.,Power,Power,Domestic Equities,7649437.0,7649437.0,0.0,66.0299,59.0766,11.76997322120772,4.65730886842388,1100,nhpc,Mid Cap,Sep-2025
 171943,4973,1,REC Ltd.,Finance,Finance,Domestic Equities,1485615.0,1485615.0,0.0,55.3912,51.9965,6.528708663083098,3.90692590769698,1100,rec,Large Cap,Sep-2025
-171741,5431,1,GAIL (India) Ltd.,Gas Transmission,Gas Transmission,Domestic Equities,3089630.0,3089630.0,0.0,54.4671,53.4722,1.8605929810256505,3.84174605545867,1100,gail-india,Large Cap,Sep-2025
-133308,5965,1,BEML Ltd.,Capital Goods,Capital Goods,Domestic Equities,126248.0,126248.0,0.0,52.693400000000004,48.4717,8.70961818958279,3.7166410842271,1100,beml,Small Cap,Sep-2025
-57781,87827,1,Bharat Dynamics Ltd.,Capital Goods,Capital Goods,Domestic Equities,330828.0,330828.0,0.0,49.3992,47.497,4.0048845190222595,3.48429018146392,1100,bharat-dynamics,Mid Cap,Sep-2025
+171741,5431,1,GAIL (India) Ltd.,Gas Transmission,Gas Transmission,Domestic Equities,3089630.0,3089630.0,0.0,54.4671,53.4722,1.8605929810256503,3.84174605545867,1100,gail-india,Large Cap,Sep-2025
+133308,5965,1,BEML Ltd.,Capital Goods,Capital Goods,Domestic Equities,126248.0,126248.0,0.0,52.6934,48.4717,8.70961818958279,3.7166410842271,1100,beml,Small Cap,Sep-2025
+57781,87827,1,Bharat Dynamics Ltd.,Capital Goods,Capital Goods,Domestic Equities,330828.0,330828.0,0.0,49.3992,47.497,4.00488451902226,3.48429018146392,1100,bharat-dynamics,Mid Cap,Sep-2025
 171365,5279,1,Hindustan Petroleum Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,1042313.0,1042313.0,0.0,46.2162,39.1805,17.957147050190773,3.25978258523565,1100,hindustan-petroleum-corporation,Mid Cap,Sep-2025
 152256,5774,1,Oil & Natural Gas Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,1821612.0,1821612.0,0.0,43.6276,42.5729,2.4773975933046666,3.07720000163637,1100,oil-natural-gas-corporation,Large Cap,Sep-2025
 152907,86648,1,SBI Life Insurance Company Ltd.,Insurance,Finance,Domestic Equities,234853.0,234853.0,0.0,42.0528,42.4027,-0.8251833020067281,2.96612411016911,1100,sbi-life-insurance-company,Large Cap,Sep-2025
-152608,7159,1,Indian Bank,Bank,Banking,Domestic Equities,552698.0,552698.0,0.0,41.49100000000001,36.0967,14.944025354118251,2.92649848416816,1100,indian-bank,Mid Cap,Sep-2025
+152608,7159,1,Indian Bank,Bank,Banking,Domestic Equities,552698.0,552698.0,0.0,41.49100000000001,36.0967,14.944025354118253,2.92649848416816,1100,indian-bank,Mid Cap,Sep-2025
 133439,5473,1,National Aluminium Company Ltd.,Non - Ferrous Metals,Non - Ferrous Metals,Domestic Equities,1620851.0,1620851.0,0.0,34.6651,30.177,14.872585081353362,2.44504501225658,1100,national-aluminium-company,Mid Cap,Sep-2025
-114405,5008,1,Bank Of Baroda,Bank,Banking,Domestic Equities,1221807.0,1221807.0,0.0,31.5886,28.4473,11.042524246589311,2.22804921590211,1100,bank-of-baroda,Large Cap,Sep-2025
-133351,5368,1,Steel Authority Of India Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,2051125.0,2051125.0,0.0,27.5835,24.3386,13.332319854058975,1.94555616731466,1100,steel-authority-of-india,Mid Cap,Sep-2025
-56723,6834,1,Can Fin Homes Ltd.,Finance,Finance,Domestic Equities,349373.0,349373.0,0.0,26.664099999999998,25.0728,6.346718356146885,1.88070782173744,1100,can-fin-homes,Small Cap,Sep-2025
+114405,5008,1,Bank Of Baroda,Bank,Banking,Domestic Equities,1221807.0,1221807.0,0.0,31.5886,28.4473,11.042524246589313,2.22804921590211,1100,bank-of-baroda,Large Cap,Sep-2025
+133351,5368,1,Steel Authority Of India Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,2051125.0,2051125.0,0.0,27.5835,24.3386,13.332319854058976,1.94555616731466,1100,steel-authority-of-india,Mid Cap,Sep-2025
+56723,6834,1,Can Fin Homes Ltd.,Finance,Finance,Domestic Equities,349373.0,349373.0,0.0,26.6641,25.0728,6.346718356146885,1.88070782173744,1100,can-fin-homes,Small Cap,Sep-2025
 134830,88309,1,Mazagon Dock Shipbuilders Ltd.,Ship Building,Ship Building,Domestic Equities,85246.0,85246.0,0.0,23.5407,22.1904,6.085063811377902,1.66040401210521,1100,mazagon-dock-shipbuilders,Large Cap,Sep-2025
 114652,92620,1,Indian Railway Catering And Tourism Corporation Ltd.,Hospitality,Hospitality,Domestic Equities,246545.0,246545.0,0.0,17.268,17.0597,1.2210062310591585,1.21796957953811,1100,indian-railway-catering-and-tourism-corporation,Mid Cap,Sep-2025
 134823,84770,1,Cochin Shipyard Ltd.,Ship Building,Ship Building,Domestic Equities,80015.0,80015.0,0.0,14.3195,12.868,11.27991917935966,1.01000204969863,1100,cochin-shipyard,Mid Cap,Sep-2025
-152111,6943,1,Dredging Corporation Of India Ltd.,Logistics,Logistics,Domestic Equities,179848.0,91164.0,97.27962792330305,11.1416,5.3659,107.63711586127212,0.785854173464317,1100,dredging-corporation-of-india,Small Cap,Sep-2025
+152111,6943,1,Dredging Corporation Of India Ltd.,Logistics,Logistics,Domestic Equities,179848.0,91164.0,97.27962792330304,11.1416,5.3659,107.63711586127212,0.785854173464317,1100,dredging-corporation-of-india,Small Cap,Sep-2025
 133309,5981,1,Bharat Electronics Ltd.,Capital Goods,Capital Goods,Domestic Equities,3178489.0,3178489.0,0.0,117.4134,121.7679,-3.576065613351308,8.75744801585887,1100,bharat-electronics,Large Cap,Aug-2025
 133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,1426314.0,1426314.0,0.0,114.4617,113.613,0.7470095851707181,8.53729120830189,1100,state-bank-of-india,Large Cap,Aug-2025
 133664,7760,1,NTPC Ltd.,Power,Power,Domestic Equities,3085790.0,3085790.0,0.0,101.0751,103.1425,-2.004411372615554,7.53883231341343,1100,ntpc,Large Cap,Aug-2025

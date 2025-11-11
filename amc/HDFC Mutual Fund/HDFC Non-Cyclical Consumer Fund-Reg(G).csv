@@ -1,48 +1,95 @@
 CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,Type,NoOfShare,PrevNoOfShare,SharesZG,MarketValue,PrevMarketValue,MarketValueZG,HoldingPercentage,Priority,SecuritySlug,McapCategory,Month
-156921,98676,1,Eternal Ltd.,Retailing,Information Technology,Domestic Equities,3319036.0,3319036.0,0.0,108.0346,104.20110000000001,3.6789438883082664,10.2026214983871,1100,eternal,Large Cap,Sep-2025
-171717,5016,1,Hindustan Unilever Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,375000.0,319000.0,17.55485893416928,94.29,84.8476,11.128658913157235,8.90460260956137,1100,hindustan-unilever,Large Cap,Sep-2025
+156921,98676,1,Eternal Ltd.,Retailing,Information Technology,Domestic Equities,3319036.0,3319036.0,0.0,105.4624,108.0346,-2.38090389560381,9.6355556887452,1100,eternal,Large Cap,Oct-2025
+171717,5016,1,Hindustan Unilever Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,375000.0,375000.0,0.0,92.4563,94.29,-1.9447449358362585,8.44725539552801,1100,hindustan-unilever,Large Cap,Oct-2025
+222979,112566,1,Vishal Mega Mart Ltd.,Retailing,Retailing,Domestic Equities,4291474.0,5241474.0,-18.12467256348119,62.0933,78.1032,-20.498391871267756,5.67314464726729,1100,vishal-mega-mart,Mid Cap,Oct-2025
+133583,8200,1,United Spirits Ltd.,Alcohol,Alcohol,Domestic Equities,413956.0,413956.0,0.0,59.2537,54.82020000000001,8.087347364657543,5.41370503719052,1100,united-spirits,Large Cap,Oct-2025
+95274,89247,1,Chalet Hotels Ltd.,Hospitality,Hospitality,Domestic Equities,566049.0,566049.0,0.0,53.7605,53.842600000000004,-0.15248149234992434,4.91181967795903,1100,chalet-hotels,Small Cap,Oct-2025
+171402,5320,1,Godrej Consumer Products Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,415000.0,415000.0,0.0,46.421899999999994,48.4264,-4.1392711413609256,4.24132963622448,1100,godrej-consumer-products,Large Cap,Oct-2025
+171461,6050,1,Titan Company Ltd.,Diamond  &  Jewellery,Diamond & Jewellery,Domestic Equities,107000.0,107000.0,0.0,40.0897,36.0269,11.277129034138373,3.66278917315639,1100,titan-company,Large Cap,Oct-2025
+38605,83193,1,Varun Beverages Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,835000.0,835000.0,0.0,39.2158,37.049,5.848470943885121,3.58294543627581,1100,varun-beverages,Large Cap,Oct-2025
+133593,6508,1,Bharti Airtel Ltd.,Telecom,Telecom,Domestic Equities,179000.0,179000.0,0.0,36.7756,33.623400000000004,9.375018588245085,3.35999694475963,1100,bharti-airtel,Large Cap,Oct-2025
+114606,112114,1,Hyundai Motor India Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,128304.0,128304.0,0.0,31.289499999999997,33.158899999999996,-5.637702095063469,2.85876027591817,1100,hyundai-motor-india,Large Cap,Oct-2025
+152205,8185,1,Trent Ltd.,Retailing,Retailing,Domestic Equities,66109.0,66109.0,0.0,31.0335,30.9225,0.35896192093135776,2.83537087593943,1100,trent,Large Cap,Oct-2025
+171628,5788,1,Britannia Industries Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,52000.0,52000.0,0.0,30.349800000000002,31.1532,-2.578868302453685,2.77290473232431,1100,britannia-industries,Large Cap,Oct-2025
+222304,112415,1,Leela Palaces Hotels & Resorts Ltd.,Hospitality,Hospitality,Domestic Equities,688874.0,688874.0,0.0,29.8765,28.4505,5.012214196587051,2.72966175181672,1100,leela-palaces-hotels-resorts,Small Cap,Oct-2025
+133800,112656,1,LG Electronics India Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,175240.0,,,29.1529,,,2.66355015093929,1100,lg-electronics-india,,Oct-2025
+157113,99763,1,PB Fintech Ltd.,IT,Information Technology,Domestic Equities,160367.0,160367.0,0.0,28.6319,27.2945,4.899888255875735,2.61594906738879,1100,pb-fintech,Mid Cap,Oct-2025
+152408,5535,1,ITC Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,629844.0,629844.0,0.0,26.4755,25.2914,4.681828605771144,2.4189299185053,1100,itc,Large Cap,Oct-2025
+133507,6902,1,TVS Motor Company Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,72000.0,72000.0,0.0,25.262600000000003,24.7586,2.035656297205823,2.30811349962161,1100,tvs-motor-company,Large Cap,Oct-2025
+96486,15829,1,Interglobe Aviation Ltd.,Aviation,Aviation,Domestic Equities,34608.0,50608.0,-31.61555485298767,19.467,28.312600000000003,-31.242626957608984,1.77859941166523,1100,interglobe-aviation,Large Cap,Oct-2025
+171658,4978,1,Asian Paints Ltd.,Chemicals,Chemicals,Domestic Equities,76000.0,76000.0,0.0,19.0821,17.86,6.842665173572231,1.7434330833378,1100,asian-paints,Large Cap,Oct-2025
+102214,109824,1,Jupiter Life Line Hospitals Ltd.,Healthcare,Healthcare,Domestic Equities,115631.0,115631.0,0.0,18.3657,17.5863,4.431858890158806,1.67797930933477,1100,jupiter-life-line-hospitals,Small Cap,Oct-2025
+171799,4956,1,Dabur India Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,350000.0,350000.0,0.0,17.0643,17.1955,-0.7629903172341538,1.55907710178656,1100,dabur-india,Mid Cap,Oct-2025
+152394,5450,1,Akzo Nobel India Ltd.,Chemicals,Chemicals,Domestic Equities,50000.0,50000.0,0.0,16.2085,16.5475,-2.048647831998797,1.48088706857635,1100,akzo-nobel-india,Small Cap,Oct-2025
+152400,5891,1,Nestle India Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,120780.0,120780.0,0.0,15.3584,13.9247,10.296092554956292,1.40321781497505,1100,nestle-india,Large Cap,Oct-2025
+82862,89857,1,Studds Accessories Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,256400.0,,,14.999400000000001,,,1.3704178360986,1100,studds-accessories,,Oct-2025
+123232,111772,1,Brainbees Solutions Ltd.,Retailing,Information Technology,Domestic Equities,420128.0,420128.0,0.0,14.6373,15.2843,-4.233101941207647,1.33733462620678,1100,brainbees-solutions,Small Cap,Oct-2025
+171383,5551,1,Hero MotoCorp Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,25000.0,,,13.86,,,1.26631673322443,1100,hero-motocorp,Mid Cap,Oct-2025
+190355,99127,1,Vijaya Diagnostic Centre Ltd.,Healthcare,Healthcare,Domestic Equities,135000.0,135000.0,0.0,13.3468,13.5,-1.13481481481481,1.21942829545454,1100,vijaya-diagnostic-centre,Small Cap,Oct-2025
+77009,96064,1,Max Healthcare Institute Ltd.,Healthcare,Healthcare,Domestic Equities,110535.0,45000.0,145.63333333333333,12.6872,5.0162,152.92452454048882,1.15916404457179,1100,max-healthcare-institute,Large Cap,Oct-2025
+97622,113278,1,Lenskart Solutions Ltd.,Trading,Trading,Domestic Equities,310948.0,,,12.5001,,,1.1420696823217,1100,lenskart-solutions,,Oct-2025
+152379,5838,1,Voltas Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,84496.0,156164.0,-45.89277938577393,11.6909,21.136799999999997,-44.68935695091026,1.06813725082637,1100,voltas,Mid Cap,Oct-2025
+175149,111953,1,Baazar Style Retail Ltd.,Retailing,Retailing,Domestic Equities,365032.0,365032.0,0.0,11.5569,13.5317,-14.593879556892334,1.055894361775,1100,baazar-style-retail,Small Cap,Oct-2025
+95355,98927,1,Devyani International Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,695545.0,695545.0,0.0,11.253900000000002,11.6872,-3.707474844274071,1.0282108141439,1100,devyani-international,Small Cap,Oct-2025
+1427,98308,1,Sona BLW Precision Forgings Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,200000.0,200000.0,0.0,9.455,8.235,14.814814814814813,0.863854596871357,1100,sona-blw-precision-forgings,Mid Cap,Oct-2025
+191898,99941,1,Sapphire Foods India Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,315040.0,315040.0,0.0,9.0117,9.2559,-2.6383171814734463,0.823352561673782,1100,sapphire-foods-india,Small Cap,Oct-2025
+171778,6916,1,Shoppers Stop Ltd.,Retailing,Retailing,Domestic Equities,165239.0,162676.0,1.5755243551599498,8.5007,8.4445,0.6655219373556758,0.776665126559952,1100,shoppers-stop,Small Cap,Oct-2025
+171387,6208,1,Pidilite Industries Ltd.,Chemicals,Chemicals,Domestic Equities,58000.0,58000.0,0.0,8.3787,8.5144,-1.593770553415396,0.76551861563258,1100,pidilite-industries,Large Cap,Oct-2025
+151986,6639,1,Safari Industries (India) Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,29870.0,29870.0,0.0,6.3766,6.5365,-2.446263290751933,0.582597062126906,1100,safari-industries-india,Small Cap,Oct-2025
+152572,7512,1,Info Edge (India) Ltd.,IT,Information Technology,Domestic Equities,45000.0,45000.0,0.0,6.2024,5.891900000000001,5.269946876219887,0.566681306360117,1100,info-edge-india,Large Cap,Oct-2025
+77419,105086,1,Sula Vineyards Ltd.,Alcohol,Alcohol,Domestic Equities,206660.0,206660.0,0.0,5.206799999999999,5.381,-3.2373164839249347,0.475718468005265,1100,sula-vineyards,Small Cap,Oct-2025
+171948,7104,1,Emami Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,86767.0,86767.0,0.0,4.6368,4.6701999999999995,-0.7151727977388496,0.423640507115083,1100,emami,Small Cap,Oct-2025
+171327,5699,1,Marico Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,62490.0,112490.0,-44.44839541292559,4.499,7.8450999999999995,-42.65210131164676,0.411050431657772,1100,marico,Mid Cap,Oct-2025
+152401,5684,1,Tata Consumer Products Ltd.,Agri,Agriculture,Domestic Equities,35846.0,35846.0,0.0,4.1761,4.0481,3.161977223882812,0.381548723637702,1100,tata-consumer-products,Large Cap,Oct-2025
+77601,100589,1,Godavari Biorefineries Ltd.,Agri,Agriculture,Domestic Equities,130326.0,130326.0,0.0,3.5292000000000003,3.3249,6.144545700622577,0.322444806269529,1100,godavari-biorefineries,Small Cap,Oct-2025
+221905,112380,1,Laxmi Dental Ltd.,Healthcare,Healthcare,Domestic Equities,110819.0,110819.0,0.0,3.4819,3.6038,-3.382540651534491,0.31812324916408,1100,laxmi-dental,Small Cap,Oct-2025
+171820,5969,1,Colgate-Palmolive (India) Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,6903.0,6903.0,0.0,1.5483000000000002,1.5341,0.9256241444495248,0.141460187449595,1100,colgate-palmolive-india,Mid Cap,Oct-2025
+133909,100034,1,Metro Brands Ltd.,Retailing,Retailing,Domestic Equities,10181.0,10181.0,0.0,1.1492,1.3137,-12.521884752987747,0.104996478342101,1100,metro-brands,Mid Cap,Oct-2025
+153943,100386,1,Vedant Fashions Ltd.,Textile,Textile,Domestic Equities,79.0,79.0,0.0,0.0051,0.0055000000000000005,-7.272727272727278,0.000465960702701631,1100,vedant-fashions,Small Cap,Oct-2025
+156921,98676,1,Eternal Ltd.,Retailing,Information Technology,Domestic Equities,3319036.0,3319036.0,0.0,108.0346,104.2011,3.6789438883082655,10.2026214983871,1100,eternal,Large Cap,Sep-2025
+171717,5016,1,Hindustan Unilever Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,375000.0,319000.0,17.55485893416928,94.29,84.8476,11.128658913157237,8.90460260956137,1100,hindustan-unilever,Large Cap,Sep-2025
 222979,112566,1,Vishal Mega Mart Ltd.,Retailing,Retailing,Domestic Equities,5241474.0,5241474.0,0.0,78.1032,78.3129,-0.2677719762644501,7.37594610812486,1100,vishal-mega-mart,Mid Cap,Sep-2025
 133583,8200,1,United Spirits Ltd.,Alcohol,Alcohol,Domestic Equities,413956.0,413956.0,0.0,54.82020000000001,54.2696,1.0145643233043988,5.1771353905682,1100,united-spirits,Large Cap,Sep-2025
-95274,89247,1,Chalet Hotels Ltd.,Hospitality,Hospitality,Domestic Equities,566049.0,566049.0,0.0,53.842600000000004,57.1879,-5.849664002350143,5.08481234983104,1100,chalet-hotels,Small Cap,Sep-2025
+95274,89247,1,Chalet Hotels Ltd.,Hospitality,Hospitality,Domestic Equities,566049.0,566049.0,0.0,53.8426,57.1879,-5.849664002350143,5.08481234983104,1100,chalet-hotels,Small Cap,Sep-2025
 171402,5320,1,Godrej Consumer Products Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,415000.0,415000.0,0.0,48.4264,51.5679,-6.091968065405022,4.57331475036231,1100,godrej-consumer-products,Large Cap,Sep-2025
 38605,83193,1,Varun Beverages Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,835000.0,835000.0,0.0,37.049,40.677,-8.919045160655893,3.49885058947544,1100,varun-beverages,Large Cap,Sep-2025
-171461,6050,1,Titan Company Ltd.,Diamond  &  Jewellery,Diamond & Jewellery,Domestic Equities,107000.0,107000.0,0.0,36.0269,38.8282,-7.2146017585157205,3.40232503716626,1100,titan-company,Large Cap,Sep-2025
+171461,6050,1,Titan Company Ltd.,Diamond  &  Jewellery,Diamond & Jewellery,Domestic Equities,107000.0,107000.0,0.0,36.0269,38.8282,-7.21460175851572,3.40232503716626,1100,titan-company,Large Cap,Sep-2025
 133593,6508,1,Bharti Airtel Ltd.,Telecom,Telecom,Domestic Equities,179000.0,179000.0,0.0,33.623400000000004,33.8095,-0.5504370073499955,3.17534219304619,1100,bharti-airtel,Large Cap,Sep-2025
-114606,112114,1,Hyundai Motor India Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,128304.0,128304.0,0.0,33.158899999999996,31.567899999999998,5.039929802109102,3.13147552731132,1100,hyundai-motor-india,Large Cap,Sep-2025
-171628,5788,1,Britannia Industries Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,52000.0,27000.0,92.5925925925926,31.1532,15.7248,98.11507936507937,2.94206030349122,1100,britannia-industries,Large Cap,Sep-2025
-152205,8185,1,Trent Ltd.,Retailing,Retailing,Domestic Equities,66109.0,66109.0,0.0,30.9225,35.024499999999996,-11.711801738782848,2.92027335024034,1100,trent,Large Cap,Sep-2025
+114606,112114,1,Hyundai Motor India Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,128304.0,128304.0,0.0,33.1589,31.5679,5.039929802109102,3.13147552731132,1100,hyundai-motor-india,Large Cap,Sep-2025
+171628,5788,1,Britannia Industries Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,52000.0,27000.0,92.5925925925926,31.1532,15.7248,98.11507936507935,2.94206030349122,1100,britannia-industries,Large Cap,Sep-2025
+152205,8185,1,Trent Ltd.,Retailing,Retailing,Domestic Equities,66109.0,66109.0,0.0,30.9225,35.0245,-11.711801738782848,2.92027335024034,1100,trent,Large Cap,Sep-2025
 222304,112415,1,Leela Palaces Hotels & Resorts Ltd.,Hospitality,Hospitality,Domestic Equities,688874.0,688874.0,0.0,28.4505,27.5171,3.392072565786371,2.68682147145324,1100,leela-palaces-hotels-resorts,Small Cap,Sep-2025
 96486,15829,1,Interglobe Aviation Ltd.,Aviation,Aviation,Domestic Equities,50608.0,50608.0,0.0,28.312600000000003,28.5733,-0.9123902384393722,2.6737984075031,1100,interglobe-aviation,Large Cap,Sep-2025
 157113,99763,1,PB Fintech Ltd.,IT,Information Technology,Domestic Equities,160367.0,160367.0,0.0,27.2945,28.397800000000004,-3.8851601180373256,2.57765060904309,1100,pb-fintech,Mid Cap,Sep-2025
 152408,5535,1,ITC Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,629844.0,629844.0,0.0,25.2914,25.8079,-2.0013251756245216,2.38848092522495,1100,itc,Large Cap,Sep-2025
 133507,6902,1,TVS Motor Company Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,72000.0,72000.0,0.0,24.7586,23.5915,4.947120785028507,2.3381641125155,1100,tvs-motor-company,Large Cap,Sep-2025
-152379,5838,1,Voltas Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,156164.0,156164.0,0.0,21.136799999999997,21.4569,-1.4918278036435932,1.99612688978446,1100,voltas,Mid Cap,Sep-2025
-171658,4978,1,Asian Paints Ltd.,Chemicals,Chemicals,Domestic Equities,76000.0,76000.0,0.0,17.86,19.1414,-6.6943901699980195,1.68667093654434,1100,asian-paints,Large Cap,Sep-2025
+152379,5838,1,Voltas Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,156164.0,156164.0,0.0,21.1368,21.4569,-1.4918278036435932,1.99612688978446,1100,voltas,Mid Cap,Sep-2025
+171658,4978,1,Asian Paints Ltd.,Chemicals,Chemicals,Domestic Equities,76000.0,76000.0,0.0,17.86,19.1414,-6.69439016999802,1.68667093654434,1100,asian-paints,Large Cap,Sep-2025
 102214,109824,1,Jupiter Life Line Hospitals Ltd.,Healthcare,Healthcare,Domestic Equities,115631.0,115631.0,0.0,17.5863,16.3086,7.834516758029519,1.66082312941488,1100,jupiter-life-line-hospitals,Small Cap,Sep-2025
 171799,4956,1,Dabur India Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,350000.0,350000.0,0.0,17.1955,18.2385,-5.71867203991556,1.62391657835096,1100,dabur-india,Mid Cap,Sep-2025
-152394,5450,1,Akzo Nobel India Ltd.,Chemicals,Chemicals,Domestic Equities,50000.0,50000.0,0.0,16.5475,17.053,-2.9642878085967252,1.56272045478541,1100,akzo-nobel-india,Small Cap,Sep-2025
-123232,111772,1,Brainbees Solutions Ltd.,Retailing,Information Technology,Domestic Equities,420128.0,420128.0,0.0,15.2843,15.217,0.44226851547611346,1.44342578921751,1100,brainbees-solutions,Small Cap,Sep-2025
-152400,5891,1,Nestle India Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,120780.0,120780.0,0.0,13.9247,13.9646,-0.28572246967331744,1.3150272558846,1100,nestle-india,Large Cap,Sep-2025
-175149,111953,1,Baazar Style Retail Ltd.,Retailing,Retailing,Domestic Equities,365032.0,365032.0,0.0,13.5317,11.8453,14.236870319873715,1.27791294020364,1100,baazar-style-retail,Small Cap,Sep-2025
+152394,5450,1,Akzo Nobel India Ltd.,Chemicals,Chemicals,Domestic Equities,50000.0,50000.0,0.0,16.5475,17.053,-2.964287808596725,1.56272045478541,1100,akzo-nobel-india,Small Cap,Sep-2025
+123232,111772,1,Brainbees Solutions Ltd.,Retailing,Information Technology,Domestic Equities,420128.0,420128.0,0.0,15.2843,15.217,0.4422685154761134,1.44342578921751,1100,brainbees-solutions,Small Cap,Sep-2025
+152400,5891,1,Nestle India Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,120780.0,120780.0,0.0,13.9247,13.9646,-0.2857224696733174,1.3150272558846,1100,nestle-india,Large Cap,Sep-2025
+175149,111953,1,Baazar Style Retail Ltd.,Retailing,Retailing,Domestic Equities,365032.0,365032.0,0.0,13.5317,11.8453,14.236870319873717,1.27791294020364,1100,baazar-style-retail,Small Cap,Sep-2025
 190355,99127,1,Vijaya Diagnostic Centre Ltd.,Healthcare,Healthcare,Domestic Equities,135000.0,135000.0,0.0,13.5,13.6053,-0.7739630879142667,1.27491924094897,1100,vijaya-diagnostic-centre,Small Cap,Sep-2025
-95355,98927,1,Devyani International Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,695545.0,695545.0,0.0,11.6872,12.117799999999999,-3.5534502962583927,1.1037211965051,1100,devyani-international,Small Cap,Sep-2025
+95355,98927,1,Devyani International Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,695545.0,695545.0,0.0,11.6872,12.1178,-3.5534502962583927,1.1037211965051,1100,devyani-international,Small Cap,Sep-2025
 191898,99941,1,Sapphire Foods India Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,315040.0,315040.0,0.0,9.2559,10.3034,-10.166546965079478,0.874112963133302,1100,sapphire-foods-india,Small Cap,Sep-2025
 171387,6208,1,Pidilite Industries Ltd.,Chemicals,Chemicals,Domestic Equities,58000.0,29000.0,100.0,8.5144,8.8459,-3.747498841271095,0.804086843343401,1100,pidilite-industries,Large Cap,Sep-2025
 171778,6916,1,Shoppers Stop Ltd.,Retailing,Retailing,Domestic Equities,162676.0,162676.0,0.0,8.4445,8.7821,-3.8441830541669977,0.797485594829154,1100,shoppers-stop,Small Cap,Sep-2025
 1427,98308,1,Sona BLW Precision Forgings Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,200000.0,200000.0,0.0,8.235,8.861,-7.064665387653767,0.777700736978872,1100,sona-blw-precision-forgings,Mid Cap,Sep-2025
-171327,5699,1,Marico Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,112490.0,112490.0,0.0,7.8450999999999995,8.1651,-3.9191191779647525,0.74087918053102,1100,marico,Mid Cap,Sep-2025
+171327,5699,1,Marico Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,112490.0,112490.0,0.0,7.845099999999999,8.1651,-3.919119177964753,0.74087918053102,1100,marico,Mid Cap,Sep-2025
 151986,6639,1,Safari Industries (India) Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,29870.0,29870.0,0.0,6.5365,6.4014,2.1104758334114395,0.617297008775033,1100,safari-industries-india,Small Cap,Sep-2025
-152572,7512,1,Info Edge (India) Ltd.,IT,Information Technology,Domestic Equities,45000.0,45000.0,0.0,5.891900000000001,6.1114999999999995,-3.593225885625448,0.556421975981277,1100,info-edge-india,Large Cap,Sep-2025
+152572,7512,1,Info Edge (India) Ltd.,IT,Information Technology,Domestic Equities,45000.0,45000.0,0.0,5.891900000000001,6.1115,-3.593225885625448,0.556421975981277,1100,info-edge-india,Large Cap,Sep-2025
 77419,105086,1,Sula Vineyards Ltd.,Alcohol,Alcohol,Domestic Equities,206660.0,206660.0,0.0,5.381,5.1551,4.382068243099073,0.50817336559603,1100,sula-vineyards,Small Cap,Sep-2025
 77009,96064,1,Max Healthcare Institute Ltd.,Healthcare,Healthcare,Domestic Equities,45000.0,,,5.0162,,,0.47372221455172,1100,max-healthcare-institute,Large Cap,Sep-2025
-171948,7104,1,Emami Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,86767.0,86767.0,0.0,4.6701999999999995,4.977,-6.164356037773761,0.44104650659851,1100,emami,Small Cap,Sep-2025
+171948,7104,1,Emami Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,86767.0,86767.0,0.0,4.6702,4.977,-6.164356037773761,0.44104650659851,1100,emami,Small Cap,Sep-2025
 152401,5684,1,Tata Consumer Products Ltd.,Agri,Agriculture,Domestic Equities,35846.0,35846.0,0.0,4.0481,3.819,5.998952605394089,0.382296339206335,1100,tata-consumer-products,Large Cap,Sep-2025
-221905,112380,1,Laxmi Dental Ltd.,Healthcare,Healthcare,Domestic Equities,110819.0,110819.0,0.0,3.6038,3.7817000000000003,-4.704233545759848,0.34033733040977,1100,laxmi-dental,Small Cap,Sep-2025
+221905,112380,1,Laxmi Dental Ltd.,Healthcare,Healthcare,Domestic Equities,110819.0,110819.0,0.0,3.6038,3.7817,-4.704233545759848,0.34033733040977,1100,laxmi-dental,Small Cap,Sep-2025
 77601,100589,1,Godavari Biorefineries Ltd.,Agri,Agriculture,Domestic Equities,130326.0,130326.0,0.0,3.3249,3.2191,3.28663290981951,0.313998443276388,1100,godavari-biorefineries,Small Cap,Sep-2025
-171820,5969,1,Colgate-Palmolive (India) Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,6903.0,6903.0,0.0,1.5341,1.6096000000000001,-4.690606361829032,0.144878045002949,1100,colgate-palmolive-india,Mid Cap,Sep-2025
-133909,100034,1,Metro Brands Ltd.,Retailing,Retailing,Domestic Equities,10181.0,10181.0,0.0,1.3137,1.1614,13.113483726536943,0.124063807913679,1100,metro-brands,Mid Cap,Sep-2025
+171820,5969,1,Colgate-Palmolive (India) Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,6903.0,6903.0,0.0,1.5341,1.6096,-4.690606361829032,0.144878045002949,1100,colgate-palmolive-india,Mid Cap,Sep-2025
+133909,100034,1,Metro Brands Ltd.,Retailing,Retailing,Domestic Equities,10181.0,10181.0,0.0,1.3137,1.1614,13.113483726536945,0.124063807913679,1100,metro-brands,Mid Cap,Sep-2025
 211056,110999,1,DOMS Industries Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,3945.0,3945.0,0.0,0.9808,0.9593,2.2412175544667896,0.0926252438165,1100,doms-industries,Small Cap,Sep-2025
-153943,100386,1,Vedant Fashions Ltd.,Textile,Textile,Domestic Equities,79.0,79.0,0.0,0.0055000000000000005,0.0059,-6.77966101694914,0.00051941154260884,1100,vedant-fashions,Small Cap,Sep-2025
+153943,100386,1,Vedant Fashions Ltd.,Textile,Textile,Domestic Equities,79.0,79.0,0.0,0.0055,0.0059,-6.77966101694914,0.0005194115426088,1100,vedant-fashions,Small Cap,Sep-2025
 156921,98676,1,Eternal Ltd.,Retailing,Information Technology,Domestic Equities,3319036.0,3319036.0,0.0,104.2011,102.1599,1.9980442424082323,9.95970757766124,1100,eternal,Large Cap,Aug-2025
 171717,5016,1,Hindustan Unilever Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,319000.0,319000.0,0.0,84.8476,80.4263,5.497331096917304,8.10986913445607,1100,hindustan-unilever,Large Cap,Aug-2025
 222979,112566,1,Vishal Mega Mart Ltd.,Retailing,Retailing,Domestic Equities,5241474.0,5241474.0,0.0,78.3129,73.1395,7.073332467408175,7.48527207062715,1100,vishal-mega-mart,Mid Cap,Aug-2025
@@ -81,7 +128,7 @@ CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,
 77419,105086,1,Sula Vineyards Ltd.,Alcohol,Alcohol,Domestic Equities,206660.0,206660.0,0.0,5.1551,5.928,-13.038124156545203,0.492732692203839,1100,sula-vineyards,Small Cap,Aug-2025
 171948,7104,1,Emami Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,86767.0,86767.0,0.0,4.977,5.2117,-4.503329048103301,0.475709609726001,1100,emami,Small Cap,Aug-2025
 152401,5684,1,Tata Consumer Products Ltd.,Agri,Agriculture,Domestic Equities,35846.0,35846.0,0.0,3.819,3.847,-0.727839875227453,0.365026120061,1100,tata-consumer-products,Large Cap,Aug-2025
-221905,112380,1,Laxmi Dental Ltd.,Healthcare,Healthcare,Domestic Equities,110819.0,110819.0,0.0,3.7817,4.677099999999999,-19.144341579183678,0.361460926481981,1100,laxmi-dental,Small Cap,Aug-2025
+221905,112380,1,Laxmi Dental Ltd.,Healthcare,Healthcare,Domestic Equities,110819.0,110819.0,0.0,3.7817,4.677099999999999,-19.14434157918368,0.361460926481981,1100,laxmi-dental,Small Cap,Aug-2025
 77601,100589,1,Godavari Biorefineries Ltd.,Agri,Agriculture,Domestic Equities,130326.0,130326.0,0.0,3.2191,4.0683,-20.87358356070102,0.307686719845081,1100,godavari-biorefineries,Small Cap,Aug-2025
 171820,5969,1,Colgate-Palmolive (India) Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,6903.0,6903.0,0.0,1.6096,1.5499,3.851861410413574,0.153848139002405,1100,colgate-palmolive-india,Mid Cap,Aug-2025
 133909,100034,1,Metro Brands Ltd.,Retailing,Retailing,Domestic Equities,10181.0,10181.0,0.0,1.1614,1.2661,-8.26948898191296,0.111008467095796,1100,metro-brands,Mid Cap,Aug-2025

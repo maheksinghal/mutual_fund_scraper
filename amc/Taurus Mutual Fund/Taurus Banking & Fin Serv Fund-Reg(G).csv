@@ -1,18 +1,36 @@
 CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,Type,NoOfShare,PrevNoOfShare,SharesZG,MarketValue,PrevMarketValue,MarketValueZG,HoldingPercentage,Priority,SecuritySlug,McapCategory,Month
-171875,5051,1,HDFC Bank Ltd.,Bank,Banking,Domestic Equities,21388.0,23577.0,-9.284472155066378,2.1212,2.3742,-10.656221042877593,17.6930327219345,1100,hdfc-bank,Large Cap,Dec-2025
-171888,8748,1,ICICI Bank Ltd.,Bank,Banking,Domestic Equities,15267.0,16936.0,-9.8547472838923,2.0502000000000002,2.3519,-12.82792635741315,17.1008182568876,1100,icici-bank,Large Cap,Dec-2025
+171888,8748,1,ICICI Bank Ltd.,Bank,Banking,Domestic Equities,15267.0,15267.0,0.0,2.0688,2.0502000000000002,0.9072285630670106,17.6051603679656,1100,icici-bank,Large Cap,Jan-2026
+171875,5051,1,HDFC Bank Ltd.,Bank,Banking,Domestic Equities,21388.0,21388.0,0.0,1.9877,2.1212,-6.2936073920422375,16.9150122116227,1100,hdfc-bank,Large Cap,Jan-2026
+133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,11984.0,14230.0,-15.783555867884749,1.2913,1.3977000000000002,-7.612506260284764,10.9887584992043,1100,state-bank-of-india,Large Cap,Jan-2026
+171400,5889,1,Axis Bank Ltd.,Bank,Banking,Domestic Equities,7755.0,9527.0,-18.599769077359085,1.0626,1.2087,-12.087366592206502,9.04255771800087,1100,axis-bank,Large Cap,Jan-2026
+171492,5886,1,Kotak Mahindra Bank Ltd.,Bank,Banking,Domestic Equities,23769.0,5289.0,349.4044242768009,0.9698,1.1640000000000001,-16.68384879725086,8.25284441456545,1100,kotak-mahindra-bank,Large Cap,Jan-2026
+152604,5456,1,Power Finance Corporation Ltd.,Finance,Finance,Domestic Equities,17433.0,17433.0,0.0,0.6613,0.6196,6.73014848289218,5.62755827114057,1100,power-finance-corporation,Large Cap,Jan-2026
+77230,112345,1,DAM Capital Advisors Ltd.,Finance,Finance,Domestic Equities,30629.0,27629.0,10.858156285062796,0.5426,0.5813,-6.657491828659907,4.61744006944031,1100,dam-capital-advisors,Small Cap,Jan-2026
+171484,6114,1,Bajaj Finance Ltd.,Finance,Finance,Domestic Equities,4487.0,4487.0,0.0,0.4175,0.44270000000000004,-5.6923424440930726,3.55285888129622,1100,bajaj-finance,Large Cap,Jan-2026
+171776,7342,1,The Karnataka Bank Ltd.,Bank,Banking,Domestic Equities,21319.0,21319.0,0.0,0.38799999999999996,0.43770000000000003,-11.354809230066268,3.30181855315673,1100,the-karnataka-bank,Small Cap,Jan-2026
+171335,5389,1,Bajaj Holdings & Investment Ltd.,Finance,Finance,Domestic Equities,300.0,300.0,0.0,0.3237,0.3396,-4.681978798586582,2.75463573622895,1100,bajaj-holdings-investment,Large Cap,Jan-2026
+152207,5372,1,LIC Housing Finance Ltd.,Finance,Finance,Domestic Equities,5977.0,5043.0,18.52072179258378,0.3146,0.2721,15.61925762587284,2.67719617737914,1100,lic-housing-finance,Small Cap,Jan-2026
+57541,86814,1,General Insurance Corporation of India,Insurance,Finance,Domestic Equities,7712.0,5704.0,35.203366058906035,0.2915,0.21710000000000002,34.26992169507138,2.48061883568347,1100,general-insurance-corporation-of-india,Mid Cap,Jan-2026
+58595,86782,1,Indian Energy Exchange Ltd.,Power,Power,Domestic Equities,20720.0,12720.0,62.893081761006286,0.2627,0.17079999999999998,53.805620608899304,2.23553539668627,1100,indian-energy-exchange,Small Cap,Jan-2026
+114530,88033,1,HDFC Asset Management Company Ltd.,Finance,Finance,Domestic Equities,806.0,356.0,126.40449438202248,0.2029,0.0951,113.35436382754995,1.7266468671018,1100,hdfc-asset-management-company,Large Cap,Jan-2026
+58155,95800,1,Life Insurance Corporation of India,Insurance,Finance,Domestic Equities,2448.0,1393.0,75.73582196697774,0.2018,0.1191,69.43744752308983,1.71728604130677,1100,life-insurance-corporation-of-india,Large Cap,Jan-2026
+114405,5008,1,Bank Of Baroda,Bank,Banking,Domestic Equities,5858.0,5858.0,0.0,0.1754,0.17329999999999998,1.2117714945181817,1.492626222226,1100,bank-of-baroda,Large Cap,Jan-2026
+95265,83775,1,Central Depository Services (India) Ltd.,Business Services,Finance,Domestic Equities,830.0,,,0.1096,,,0.932678642850457,1100,central-depository-services-india,Small Cap,Jan-2026
+152067,7924,1,JM Financial Ltd.,Finance,Finance,Domestic Equities,8200.0,,,0.1057,,,0.899490260486252,1100,jm-financial,Small Cap,Jan-2026
+171875,5051,1,HDFC Bank Ltd.,Bank,Banking,Domestic Equities,21388.0,23577.0,-9.284472155066378,2.1212,2.3742,-10.656221042877592,17.6930327219345,1100,hdfc-bank,Large Cap,Dec-2025
+171888,8748,1,ICICI Bank Ltd.,Bank,Banking,Domestic Equities,15267.0,16936.0,-9.8547472838923,2.0502,2.3519,-12.82792635741315,17.1008182568876,1100,icici-bank,Large Cap,Dec-2025
 133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,14230.0,15379.0,-7.471226997854216,1.3977000000000002,1.5064,-7.215878916622395,11.6582839126192,1100,state-bank-of-india,Large Cap,Dec-2025
-171400,5889,1,Axis Bank Ltd.,Bank,Banking,Domestic Equities,9527.0,11341.0,-15.995062163830351,1.2087,1.4519,-16.750464908051516,10.0818256887621,1100,axis-bank,Large Cap,Dec-2025
-171492,5886,1,Kotak Mahindra Bank Ltd.,Bank,Banking,Domestic Equities,5289.0,5289.0,0.0,1.1640000000000001,1.1234,3.614028841018339,9.7089808072467,1100,kotak-mahindra-bank,Large Cap,Dec-2025
+171400,5889,1,Axis Bank Ltd.,Bank,Banking,Domestic Equities,9527.0,11341.0,-15.995062163830353,1.2087,1.4519,-16.750464908051516,10.0818256887621,1100,axis-bank,Large Cap,Dec-2025
+171492,5886,1,Kotak Mahindra Bank Ltd.,Bank,Banking,Domestic Equities,5289.0,5289.0,0.0,1.164,1.1234,3.614028841018339,9.7089808072467,1100,kotak-mahindra-bank,Large Cap,Dec-2025
 152604,5456,1,Power Finance Corporation Ltd.,Finance,Finance,Domestic Equities,17433.0,17433.0,0.0,0.6196,0.633,-2.1169036334913054,5.16811383863407,1100,power-finance-corporation,Large Cap,Dec-2025
 77230,112345,1,DAM Capital Advisors Ltd.,Finance,Finance,Domestic Equities,27629.0,6364.0,334.14519170333125,0.5813,0.1424,308.21629213483146,4.84865166946092,1100,dam-capital-advisors,Small Cap,Dec-2025
-171484,6114,1,Bajaj Finance Ltd.,Finance,Finance,Domestic Equities,4487.0,4487.0,0.0,0.44270000000000004,0.4656,-4.9183848797250835,3.69258230529907,1100,bajaj-finance,Large Cap,Dec-2025
-171776,7342,1,The Karnataka Bank Ltd.,Bank,Banking,Domestic Equities,21319.0,10794.0,97.50787474522883,0.43770000000000003,0.2289,91.21887287024903,3.65087706128169,1100,the-karnataka-bank,Small Cap,Dec-2025
-171335,5389,1,Bajaj Holdings & Investment Ltd.,Finance,Finance,Domestic Equities,300.0,300.0,0.0,0.3396,0.34490000000000004,-1.536677297767472,2.83262017366064,1100,bajaj-holdings-investment,Large Cap,Dec-2025
-152207,5372,1,LIC Housing Finance Ltd.,Finance,Finance,Domestic Equities,5043.0,5043.0,0.0,0.2721,0.27690000000000003,-1.7334777898158193,2.26959937942597,1100,lic-housing-finance,Small Cap,Dec-2025
-57541,86814,1,General Insurance Corporation of India,Insurance,Finance,Domestic Equities,5704.0,5704.0,0.0,0.21710000000000002,0.22089999999999999,-1.7202354006337666,1.81084169523476,1100,general-insurance-corporation-of-india,Mid Cap,Dec-2025
-114405,5008,1,Bank Of Baroda,Bank,Banking,Domestic Equities,5858.0,5858.0,0.0,0.17329999999999998,0.1698,2.06124852767961,1.44550375764249,1100,bank-of-baroda,Large Cap,Dec-2025
-58595,86782,1,Indian Energy Exchange Ltd.,Power,Power,Domestic Equities,12720.0,12720.0,0.0,0.17079999999999998,0.1773,-3.6661026508742367,1.42465113563379,1100,indian-energy-exchange,Small Cap,Dec-2025
+171484,6114,1,Bajaj Finance Ltd.,Finance,Finance,Domestic Equities,4487.0,4487.0,0.0,0.4427,0.4656,-4.918384879725084,3.69258230529907,1100,bajaj-finance,Large Cap,Dec-2025
+171776,7342,1,The Karnataka Bank Ltd.,Bank,Banking,Domestic Equities,21319.0,10794.0,97.50787474522885,0.4377,0.2289,91.21887287024904,3.65087706128169,1100,the-karnataka-bank,Small Cap,Dec-2025
+171335,5389,1,Bajaj Holdings & Investment Ltd.,Finance,Finance,Domestic Equities,300.0,300.0,0.0,0.3396,0.3449,-1.536677297767472,2.83262017366064,1100,bajaj-holdings-investment,Large Cap,Dec-2025
+152207,5372,1,LIC Housing Finance Ltd.,Finance,Finance,Domestic Equities,5043.0,5043.0,0.0,0.2721,0.2769,-1.7334777898158191,2.26959937942597,1100,lic-housing-finance,Small Cap,Dec-2025
+57541,86814,1,General Insurance Corporation of India,Insurance,Finance,Domestic Equities,5704.0,5704.0,0.0,0.2171,0.2208999999999999,-1.7202354006337666,1.81084169523476,1100,general-insurance-corporation-of-india,Mid Cap,Dec-2025
+114405,5008,1,Bank Of Baroda,Bank,Banking,Domestic Equities,5858.0,5858.0,0.0,0.1732999999999999,0.1698,2.06124852767961,1.44550375764249,1100,bank-of-baroda,Large Cap,Dec-2025
+58595,86782,1,Indian Energy Exchange Ltd.,Power,Power,Domestic Equities,12720.0,12720.0,0.0,0.1707999999999999,0.1773,-3.6661026508742367,1.42465113563379,1100,indian-energy-exchange,Small Cap,Dec-2025
 58155,95800,1,Life Insurance Corporation of India,Insurance,Finance,Domestic Equities,1393.0,1393.0,0.0,0.1191,0.1246,-4.41412520064206,0.993418912494057,1100,life-insurance-corporation-of-india,Large Cap,Dec-2025
 114530,88033,1,HDFC Asset Management Company Ltd.,Finance,Finance,Domestic Equities,356.0,,,0.0951,,,0.79323374121062,1100,hdfc-asset-management-company,Large Cap,Dec-2025
 171875,5051,1,HDFC Bank Ltd.,Bank,Banking,Domestic Equities,23577.0,23577.0,0.0,2.3742,2.3286,1.9582581808812047,19.5067043512554,1100,hdfc-bank,Large Cap,Nov-2025

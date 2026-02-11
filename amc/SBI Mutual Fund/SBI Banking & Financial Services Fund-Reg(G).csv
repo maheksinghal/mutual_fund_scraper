@@ -1,36 +1,71 @@
 CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,Type,NoOfShare,PrevNoOfShare,SharesZG,MarketValue,PrevMarketValue,MarketValueZG,HoldingPercentage,Priority,SecuritySlug,McapCategory,Month
+171875,5051,1,HDFC Bank Ltd.,Bank,Banking,Domestic Equities,12629430.0,12629430.0,0.0,1173.5898,1251.8291,-6.249998502191719,11.2685330019803,1100,hdfc-bank,Large Cap,Jan-2026
+133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,9330364.0,6730364.0,38.63089722933262,1005.0202,661.0563999999999,52.03244382778838,9.64996738328573,1100,state-bank-of-india,Large Cap,Jan-2026
+171400,5889,1,Axis Bank Ltd.,Bank,Banking,Domestic Equities,7261517.0,5840195.0,24.336892860597978,995.1183,741.3544,34.22976919001223,9.55489167034726,1100,axis-bank,Large Cap,Jan-2026
+171492,5886,1,Kotak Mahindra Bank Ltd.,Bank,Banking,Domestic Equities,21957770.0,3940636.0,457.21386090976176,895.877,867.3734,3.286197155688658,8.60200006869102,1100,kotak-mahindra-bank,Large Cap,Jan-2026
+171708,8443,1,Bajaj Finserv Ltd.,Finance,Finance,Domestic Equities,3411808.0,3411808.0,0.0,666.1896,695.9747,-4.279623957595002,6.39659572124437,1100,bajaj-finserv,Large Cap,Jan-2026
+171888,8748,1,ICICI Bank Ltd.,Bank,Banking,Domestic Equities,4435814.0,4435814.0,0.0,601.0527999999999,595.6855,0.9010291504493494,5.77116750054632,1100,icici-bank,Large Cap,Jan-2026
+77293,6578,1,Muthoot Finance Ltd.,Finance,Finance,Domestic Equities,1174249.0,1074249.0,9.308828772472676,449.6904,409.4715,9.822148794238425,4.31782136575634,1100,muthoot-finance,Large Cap,Jan-2026
+152686,7802,1,Multi Commodity Exchange Of India Ltd.,Finance,Finance,Domestic Equities,1405000.0,281000.0,400.0,355.184,312.9216,13.505747126436788,3.41039315932651,1100,multi-commodity-exchange-of-india,Mid Cap,Jan-2026
+152907,86648,1,SBI Life Insurance Company Ltd.,Insurance,Finance,Domestic Equities,1729622.0,2408631.0,-28.190661002038087,345.665,490.13230000000004,-29.47516415465784,3.31899396205515,1100,sbi-life-insurance-company,Large Cap,Jan-2026
+114608,113233,1,ICICI Prudential Asset Management Company Ltd.,Finance,Finance,Domestic Equities,1139694.0,1327904.0,-14.173464346820253,338.7854,353.3685,-4.126881711301369,3.25293766228122,1100,icici-prudential-asset-management-company,Large Cap,Jan-2026
+114405,5008,1,Bank Of Baroda,Bank,Banking,Domestic Equities,9985585.0,9985585.0,0.0,298.9684,295.4735,1.182813348743632,2.87062420101916,1100,bank-of-baroda,Large Cap,Jan-2026
+57620,82559,1,ICICI Prudential Life Insurance Company Ltd.,Insurance,Finance,Domestic Equities,4536806.0,3900000.0,16.328358974358974,288.92650000000003,260.6175,10.862279010427164,2.77420424103605,1100,icici-prudential-life-insurance-company,Mid Cap,Jan-2026
+56728,7719,1,Shriram Finance Ltd.,Finance,Finance,Domestic Equities,2655000.0,2655000.0,0.0,270.81,264.4911,2.389078498293513,2.6002538725765,1100,shriram-finance,Large Cap,Jan-2026
+58168,86912,1,HDFC Life Insurance Company Ltd.,Insurance,Finance,Domestic Equities,3663085.0,3663085.0,0.0,267.7715,274.6764,-2.513830820558293,2.57107891082537,1100,hdfc-life-insurance-company,Large Cap,Jan-2026
+171484,6114,1,Bajaj Finance Ltd.,Finance,Finance,Domestic Equities,2700000.0,2700000.0,0.0,251.0595,266.436,-5.771179570328326,2.410614220753,1100,bajaj-finance,Large Cap,Jan-2026
+152222,5634,1,Max Financial Services Ltd.,Finance,Finance,Domestic Equities,1297123.0,1305123.0,-0.6129690458293969,209.30380000000002,218.1905,-4.072908765505365,2.00968581845197,1100,max-financial-services,Mid Cap,Jan-2026
+118743,98929,1,Aptus Value Housing Finance India Ltd.,Finance,Finance,Domestic Equities,7435950.0,7435950.0,0.0,204.7861,207.53740000000002,-1.3256887674221658,1.96630792649769,1100,aptus-value-housing-finance-india,Small Cap,Jan-2026
+114414,5238,1,Bank Of India,Bank,Banking,Domestic Equities,10394730.0,8990730.0,15.616084567104116,170.5775,129.3317,31.891485227519624,1.63784500184416,1100,bank-of-india,Mid Cap,Jan-2026
+77639,92991,1,SBI Cards And Payment Services Ltd.,Finance,Finance,Domestic Equities,2133685.0,2133685.0,0.0,160.78379999999999,183.8596,-12.550772437229277,1.54380819983592,1100,sbi-cards-and-payment-services,Mid Cap,Jan-2026
+58178,99657,1,Star Health and Allied Insurance Company Ltd.,Insurance,Finance,Domestic Equities,3324592.0,3324592.0,0.0,156.0065,151.2689,3.1319061618085424,1.49793768979028,1100,star-health-and-allied-insurance-company,Small Cap,Jan-2026
+79346,86555,1,Aditya Birla Capital Ltd.,Finance,Finance,Domestic Equities,4165143.0,4165143.0,0.0,141.5316,148.9872,-5.004188279261571,1.3589531073149,1100,aditya-birla-capital,Mid Cap,Jan-2026
+76200,82667,1,BSE Ltd.,Finance,Finance,Domestic Equities,500000.0,500000.0,0.0,139.85,131.61,6.260922422308335,1.34280677995577,1100,bse,Mid Cap,Jan-2026
+152519,8782,1,Mahindra & Mahindra Financial Services Ltd.,Finance,Finance,Domestic Equities,3340865.0,3340865.0,0.0,125.46620000000001,134.6369,-6.811431338659755,1.20469691823588,1100,mahindra-mahindra-financial-services,Mid Cap,Jan-2026
+171404,5514,1,Cholamandalam Financial Holdings Ltd.,Finance,Finance,Domestic Equities,605052.0,405052.0,49.376376366491215,100.09379999999999,73.4319,36.30833466109416,0.961077105981676,1100,cholamandalam-financial-holdings,Mid Cap,Jan-2026
+152629,7733,1,ICRA Ltd.,Ratings,Ratings,Domestic Equities,153760.0,153760.0,0.0,96.96870000000001,93.4169,3.802095766397732,0.931070631415785,1100,icra,Small Cap,Jan-2026
+135555,92715,1,360 One Wam Ltd.,Finance,Finance,Domestic Equities,800000.0,800000.0,0.0,90.744,95.2,-4.680672268907567,0.871302527281422,1100,360-one-wam,Mid Cap,Jan-2026
+58811,7827,1,Care Ratings Ltd.,Ratings,Ratings,Domestic Equities,561424.0,561424.0,0.0,89.96260000000001,89.8222,0.15630879671173578,0.863799708419374,1100,care-ratings,Small Cap,Jan-2026
+38741,90008,1,Angel One Ltd.,Finance,Finance,Domestic Equities,310118.0,310118.0,0.0,78.7979,72.6917,8.400133715403545,0.756598887138199,1100,angel-one,Small Cap,Jan-2026
+135194,112166,1,Niva Bupa Health Insurance Company Ltd.,Insurance,Finance,Domestic Equities,9100000.0,9100000.0,0.0,71.7717,68.61399999999999,4.602122015915126,0.689134968673235,1100,niva-bupa-health-insurance-company,Small Cap,Jan-2026
+114457,7574,1,The South Indian Bank Ltd.,Bank,Banking,Domestic Equities,18000000.0,18000000.0,0.0,67.64399999999999,68.976,-1.9311064718162945,0.649501764914755,1100,the-south-indian-bank,Small Cap,Jan-2026
+40274,113178,1,Pine Labs Ltd.,IT,Information Technology,Domestic Equities,2714907.0,2714907.0,0.0,61.929700000000004,64.9759,-4.6881997786871725,0.594634401434588,1100,pine-labs,Small Cap,Jan-2026
+133333,4917,1,CRISIL Ltd.,Ratings,Ratings,Domestic Equities,82223.0,82223.0,0.0,38.3496,35.5335,7.925197348980544,0.368223831881244,1100,crisil,Mid Cap,Jan-2026
+96369,112590,1,HDB Financial Services Ltd.,Finance,Finance,Domestic Equities,535166.0,535166.0,0.0,37.857600000000005,40.9696,-7.595875966570331,0.363499763695772,1100,hdb-financial-services,Mid Cap,Jan-2026
+233245,113399,1,Billionbrains Garage Ventures Ltd.,IT,Finance,Domestic Equities,1499850.0,1499850.0,0.0,26.5533,23.4232,13.363246695583856,0.254958536075793,1100,billionbrains-garage-ventures,Mid Cap,Jan-2026
+157113,99763,1,PB Fintech Ltd.,IT,Information Technology,Domestic Equities,66770.0,66770.0,0.0,11.0471,12.1895,-9.372000492226917,0.106071653763671,1100,pb-fintech,Mid Cap,Jan-2026
 171875,5051,1,HDFC Bank Ltd.,Bank,Banking,Domestic Equities,12629430.0,12629430.0,0.0,1251.8291,1272.5414,-1.6276327041304872,12.3870195602107,1100,hdfc-bank,Large Cap,Dec-2025
 171492,5886,1,Kotak Mahindra Bank Ltd.,Bank,Banking,Domestic Equities,3940636.0,3591554.0,9.719525308543322,867.3734,762.9897,13.680879309379923,8.58277801003862,1100,kotak-mahindra-bank,Large Cap,Dec-2025
 171400,5889,1,Axis Bank Ltd.,Bank,Banking,Domestic Equities,5840195.0,5235410.0,11.551817336178065,741.3544,669.9753999999999,10.653973265287068,7.33580282951422,1100,axis-bank,Large Cap,Dec-2025
 171708,8443,1,Bajaj Finserv Ltd.,Finance,Finance,Domestic Equities,3411808.0,3411808.0,0.0,695.9747,714.4326,-2.583574713695867,6.88676451307271,1100,bajaj-finserv,Large Cap,Dec-2025
 133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,6730364.0,6730364.0,0.0,661.0563999999999,658.9025999999999,0.3268768403706476,6.54124317544819,1100,state-bank-of-india,Large Cap,Dec-2025
 171888,8748,1,ICICI Bank Ltd.,Bank,Banking,Domestic Equities,4435814.0,4435814.0,0.0,595.6855,616.0458,-3.3049977777626256,5.89438921034339,1100,icici-bank,Large Cap,Dec-2025
-152907,86648,1,SBI Life Insurance Company Ltd.,Insurance,Finance,Domestic Equities,2408631.0,2408631.0,0.0,490.13230000000004,473.5369,3.504563213553159,4.84992591016701,1100,sbi-life-insurance-company,Large Cap,Dec-2025
-77293,6578,1,Muthoot Finance Ltd.,Finance,Finance,Domestic Equities,1074249.0,1074249.0,0.0,409.4715,402.2203,1.8027931459451516,4.05177630065382,1100,muthoot-finance,Large Cap,Dec-2025
+152907,86648,1,SBI Life Insurance Company Ltd.,Insurance,Finance,Domestic Equities,2408631.0,2408631.0,0.0,490.1323,473.5369,3.504563213553159,4.84992591016701,1100,sbi-life-insurance-company,Large Cap,Dec-2025
+77293,6578,1,Muthoot Finance Ltd.,Finance,Finance,Domestic Equities,1074249.0,1074249.0,0.0,409.4715,402.2203,1.802793145945152,4.05177630065382,1100,muthoot-finance,Large Cap,Dec-2025
 114608,113233,1,ICICI Prudential Asset Management Company Ltd.,Finance,Finance,Domestic Equities,1327904.0,,,353.3685,,,3.49662946920015,1100,icici-prudential-asset-management-company,Large Cap,Dec-2025
 152686,7802,1,Multi Commodity Exchange Of India Ltd.,Finance,Finance,Domestic Equities,281000.0,208916.0,34.503819717015446,312.9216,210.4515,48.69060092230275,3.09640188106541,1100,multi-commodity-exchange-of-india,,Dec-2025
 114405,5008,1,Bank Of Baroda,Bank,Banking,Domestic Equities,9985585.0,9985585.0,0.0,295.4735,289.3823,2.104897224190972,2.92375055350919,1100,bank-of-baroda,Large Cap,Dec-2025
 58168,86912,1,HDFC Life Insurance Company Ltd.,Insurance,Finance,Domestic Equities,3663085.0,3663085.0,0.0,274.6764,279.9696,-1.8906338402455112,2.71796041450726,1100,hdfc-life-insurance-company,Large Cap,Dec-2025
 171484,6114,1,Bajaj Finance Ltd.,Finance,Finance,Domestic Equities,2700000.0,2700000.0,0.0,266.436,280.125,-4.886746987951812,2.63642053339732,1100,bajaj-finance,Large Cap,Dec-2025
-56728,7719,1,Shriram Finance Ltd.,Finance,Finance,Domestic Equities,2655000.0,2155000.0,23.201856148491878,264.4911,183.53060000000002,44.11280734656781,2.61717548282081,1100,shriram-finance,Large Cap,Dec-2025
+56728,7719,1,Shriram Finance Ltd.,Finance,Finance,Domestic Equities,2655000.0,2155000.0,23.20185614849188,264.4911,183.5306,44.11280734656781,2.61717548282081,1100,shriram-finance,Large Cap,Dec-2025
 57620,82559,1,ICICI Prudential Life Insurance Company Ltd.,Insurance,Finance,Domestic Equities,3900000.0,3900000.0,0.0,260.6175,241.7025,7.825736183945139,2.57884568287572,1100,icici-prudential-life-insurance-company,Mid Cap,Dec-2025
-152222,5634,1,Max Financial Services Ltd.,Finance,Finance,Domestic Equities,1305123.0,1382129.0,-5.571549399513359,218.1905,235.25220000000002,-7.252514535464501,2.15902473536695,1100,max-financial-services,Mid Cap,Dec-2025
-118743,98929,1,Aptus Value Housing Finance India Ltd.,Finance,Finance,Domestic Equities,7435950.0,7435950.0,0.0,207.53740000000002,207.53740000000002,0.0,2.05361085892257,1100,aptus-value-housing-finance-india,Small Cap,Dec-2025
+152222,5634,1,Max Financial Services Ltd.,Finance,Finance,Domestic Equities,1305123.0,1382129.0,-5.571549399513359,218.1905,235.2522,-7.252514535464501,2.15902473536695,1100,max-financial-services,Mid Cap,Dec-2025
+118743,98929,1,Aptus Value Housing Finance India Ltd.,Finance,Finance,Domestic Equities,7435950.0,7435950.0,0.0,207.5374,207.5374,0.0,2.05361085892257,1100,aptus-value-housing-finance-india,Small Cap,Dec-2025
 77639,92991,1,SBI Cards And Payment Services Ltd.,Finance,Finance,Domestic Equities,2133685.0,2133685.0,0.0,183.8596,187.7963,-2.09626068245222,1.81931580080101,1100,sbi-cards-and-payment-services,Mid Cap,Dec-2025
 58178,99657,1,Star Health and Allied Insurance Company Ltd.,Insurance,Finance,Domestic Equities,3324592.0,3324592.0,0.0,151.2689,162.2235,-6.752782426713767,1.49682638241238,1100,star-health-and-allied-insurance-company,Small Cap,Dec-2025
 79346,86555,1,Aditya Birla Capital Ltd.,Finance,Finance,Domestic Equities,4165143.0,8981743.0,-53.626562238532095,148.9872,321.5913,-53.67188104902092,1.47424864993234,1100,aditya-birla-capital,Mid Cap,Dec-2025
-152519,8782,1,Mahindra & Mahindra Financial Services Ltd.,Finance,Finance,Domestic Equities,3340865.0,3340865.0,0.0,134.6369,124.23010000000001,8.377035839140436,1.33225047558499,1100,mahindra-mahindra-financial-services,Mid Cap,Dec-2025
-76200,82667,1,BSE Ltd.,Finance,Finance,Domestic Equities,500000.0,500000.0,0.0,131.61,145.12,-9.309536934950385,1.3022988875393,1100,bse,Mid Cap,Dec-2025
+152519,8782,1,Mahindra & Mahindra Financial Services Ltd.,Finance,Finance,Domestic Equities,3340865.0,3340865.0,0.0,134.6369,124.2301,8.377035839140436,1.33225047558499,1100,mahindra-mahindra-financial-services,Mid Cap,Dec-2025
+76200,82667,1,BSE Ltd.,Finance,Finance,Domestic Equities,500000.0,500000.0,0.0,131.61,145.12,-9.309536934950383,1.3022988875393,1100,bse,Mid Cap,Dec-2025
 114414,5238,1,Bank Of India,Bank,Banking,Domestic Equities,8990730.0,18190730.0,-50.57521056054375,129.3317,267.65840000000003,-51.680313414411806,1.27975479852266,1100,bank-of-india,Mid Cap,Dec-2025
 135555,92715,1,360 One Wam Ltd.,Finance,Finance,Domestic Equities,800000.0,800000.0,0.0,95.2,94.656,0.5747126436781571,0.942016975106311,1100,360-one-wam,Mid Cap,Dec-2025
-152629,7733,1,ICRA Ltd.,Ratings,Ratings,Domestic Equities,153760.0,153760.0,0.0,93.4169,95.30040000000001,-1.9763820508623293,0.924372957582025,1100,icra,Small Cap,Dec-2025
+152629,7733,1,ICRA Ltd.,Ratings,Ratings,Domestic Equities,153760.0,153760.0,0.0,93.4169,95.3004,-1.976382050862329,0.924372957582025,1100,icra,Small Cap,Dec-2025
 58811,7827,1,Care Ratings Ltd.,Ratings,Ratings,Domestic Equities,561424.0,561424.0,0.0,89.8222,85.4487,5.118275643748805,0.888802911149097,1100,care-ratings,Small Cap,Dec-2025
-171404,5514,1,Cholamandalam Financial Holdings Ltd.,Finance,Finance,Domestic Equities,405052.0,405052.0,0.0,73.4319,74.7807,-1.8036739426081878,0.726618658763751,1100,cholamandalam-financial-holdings,Mid Cap,Dec-2025
+171404,5514,1,Cholamandalam Financial Holdings Ltd.,Finance,Finance,Domestic Equities,405052.0,405052.0,0.0,73.4319,74.7807,-1.803673942608188,0.726618658763751,1100,cholamandalam-financial-holdings,Mid Cap,Dec-2025
 38741,90008,1,Angel One Ltd.,Finance,Finance,Domestic Equities,310118.0,310118.0,0.0,72.6917,83.8497,-13.307143615302133,0.719294278879574,1100,angel-one,Small Cap,Dec-2025
-114457,7574,1,The South Indian Bank Ltd.,Bank,Banking,Domestic Equities,18000000.0,8811663.0,104.27472090115113,68.976,34.876599999999996,97.77157177018404,0.682526920955178,1100,the-south-indian-bank,Small Cap,Dec-2025
+114457,7574,1,The South Indian Bank Ltd.,Bank,Banking,Domestic Equities,18000000.0,8811663.0,104.27472090115111,68.976,34.8766,97.77157177018404,0.682526920955178,1100,the-south-indian-bank,Small Cap,Dec-2025
 135194,112166,1,Niva Bupa Health Insurance Company Ltd.,Insurance,Finance,Domestic Equities,9100000.0,9100000.0,0.0,68.61399999999999,67.6494,1.4258810868980367,0.678944881617063,1100,niva-bupa-health-insurance-company,Small Cap,Dec-2025
 40274,113178,1,Pine Labs Ltd.,IT,Information Technology,Domestic Equities,2714907.0,2714907.0,0.0,64.9759,67.8075,-4.175939239759612,0.642945386269014,1100,pine-labs,Small Cap,Dec-2025
-96369,112590,1,HDB Financial Services Ltd.,Finance,Finance,Domestic Equities,535166.0,535166.0,0.0,40.9696,41.0579,-0.21506214394793516,0.405399775875163,1100,hdb-financial-services,Mid Cap,Dec-2025
+96369,112590,1,HDB Financial Services Ltd.,Finance,Finance,Domestic Equities,535166.0,535166.0,0.0,40.9696,41.0579,-0.2150621439479351,0.405399775875163,1100,hdb-financial-services,Mid Cap,Dec-2025
 133333,4917,1,CRISIL Ltd.,Ratings,Ratings,Domestic Equities,82223.0,82223.0,0.0,35.5335,36.373000000000005,-2.308030682099367,0.35160882547206,1100,crisil,Mid Cap,Dec-2025
 233245,113399,1,Billionbrains Garage Ventures Ltd.,IT,Finance,Domestic Equities,1499850.0,2999700.0,-50.0,23.4232,47.6592,-50.85272098566489,0.231775756421325,1100,billionbrains-garage-ventures,Mid Cap,Dec-2025
 157113,99763,1,PB Fintech Ltd.,IT,Information Technology,Domestic Equities,66770.0,,,12.1895,,,0.120616763845151,1100,pb-fintech,Mid Cap,Dec-2025

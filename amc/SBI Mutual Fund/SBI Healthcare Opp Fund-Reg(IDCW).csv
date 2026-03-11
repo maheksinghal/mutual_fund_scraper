@@ -1,31 +1,63 @@
 CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,Type,NoOfShare,PrevNoOfShare,SharesZG,MarketValue,PrevMarketValue,MarketValueZG,HoldingPercentage,Priority,SecuritySlug,McapCategory,Month
-420,5071,1,Sun Pharmaceutical Industries Ltd.,Healthcare,Healthcare,Domestic Equities,2400000.0,2700000.0,-11.11111111111111,382.87199999999996,464.319,-17.541173202044295,10.0156788620813,1100,sun-pharmaceutical-industries,Large Cap,Jan-2026
+420,5071,1,Sun Pharmaceutical Industries Ltd.,Healthcare,Healthcare,Domestic Equities,2500000.0,2400000.0,4.166666666666666,434.25,382.87199999999996,13.419106124239963,10.6520734527738,1100,sun-pharmaceutical-industries,Large Cap,Feb-2026
+171462,6372,1,Divi's Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,480000.0,440000.0,9.090909090909092,307.608,266.244,15.53612475774101,7.5455682456208,1100,divis-laboratories,Large Cap,Feb-2026
+38020,6672,1,Apollo Hospitals Enterprise Ltd.,Healthcare,Healthcare,Domestic Equities,300000.0,300000.0,0.0,234.645,208.815,12.369801020041663,5.75579913719309,1100,apollo-hospitals-enterprise,Large Cap,Feb-2026
+77009,96064,1,Max Healthcare Institute Ltd.,Healthcare,Healthcare,Domestic Equities,1800000.0,2000000.0,-10.0,196.551,191.36,2.7126881270902934,4.8213602515052,1100,max-healthcare-institute,Large Cap,Feb-2026
+78344,89378,1,Acutaas Chemicals Ltd.,Healthcare,Healthcare,Domestic Equities,900000.0,900000.0,0.0,194.292,172.125,12.878431372549024,4.76594739271461,1100,acutaas-chemicals,Small Cap,Feb-2026
+152331,7581,1,Torrent Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,400000.0,400000.0,0.0,173.332,158.43200000000002,9.404665724096143,4.25180240809714,1100,torrent-pharmaceuticals,Large Cap,Feb-2026
+152211,6247,1,Lupin Ltd.,Healthcare,Healthcare,Domestic Equities,750000.0,840000.0,-10.714285714285714,172.6425,180.83520000000001,-4.530478579391625,4.23488909860793,1100,lupin,Mid Cap,Feb-2026
+20865,87606,1,Aster DM Healthcare Ltd.,Healthcare,Healthcare,Domestic Equities,2400000.0,2400000.0,0.0,157.10399999999998,132.516,18.554740559630527,3.85373252210609,1100,aster-dm-healthcare,Small Cap,Feb-2026
+133643,6434,1,Biocon Ltd.,Healthcare,Healthcare,Domestic Equities,3750000.0,3750000.0,0.0,146.175,137.55,6.270447110141767,3.58564614152954,1100,biocon,Mid Cap,Feb-2026
+139924,82380,1,Laurus Labs Ltd.,Healthcare,Healthcare,Domestic Equities,1320000.0,1320000.0,0.0,142.0056,127.38,11.48186528497409,3.48337151849213,1100,laurus-labs,Mid Cap,Feb-2026
+195785,102076,1,Aether Industries Ltd.,Chemicals,Chemicals,Domestic Equities,1400000.0,1400000.0,0.0,134.204,140.28,-4.331337325349304,3.29199969062994,1100,aether-industries,Small Cap,Feb-2026
+152636,5140,1,Fortis Healthcare Ltd.,Healthcare,Healthcare,Domestic Equities,1400000.0,1400000.0,0.0,131.971,119.21,10.704638872577807,3.23722460710652,1100,fortis-healthcare,Mid Cap,Feb-2026
+1152,105806,1,Mankind Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,540000.0,540000.0,0.0,121.3704,114.696,5.819209039548027,2.97719381875079,1100,mankind-pharma,Mid Cap,Feb-2026
+58504,98271,1,Krishna Institute of Medical Sciences Ltd,Healthcare,Healthcare,Domestic Equities,1600000.0,1600000.0,0.0,119.208,96.6,23.403726708074526,2.92415054037595,1100,krishna-institute-of-medical-sciences,Small Cap,Feb-2026
+102214,109824,1,Jupiter Life Line Hospitals Ltd.,Healthcare,Healthcare,Domestic Equities,900000.0,900000.0,0.0,113.56200000000001,121.60799999999999,-6.61634103019537,2.78565518812641,1100,jupiter-life-line-hospitals,Small Cap,Feb-2026
+38931,15891,1,Alkem Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,200000.0,200000.0,0.0,112.79,113.55,-0.6693086745926904,2.76671816865481,1100,alkem-laboratories,Mid Cap,Feb-2026
+77931,112747,1,Anthem Biosciences Ltd.,Healthcare,Healthcare,Domestic Equities,1559811.0,1400000.0,11.415071428571428,109.3817,83.902,30.36840599747323,2.68311319007315,1100,anthem-biosciences,Mid Cap,Feb-2026
+97743,96921,1,Gland Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,600000.0,600000.0,0.0,109.33200000000001,110.796,-1.3213473410592407,2.68189405812012,1100,gland-pharma,Small Cap,Feb-2026
+57415,105415,1,Concord Biotech Ltd.,Healthcare,Healthcare,Domestic Equities,720000.0,720000.0,0.0,87.8832,84.6144,3.8631722260040746,2.15575889847969,1100,concord-biotech,Small Cap,Feb-2026
+22435,113173,1,Sudeep Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,1360000.0,1341887.0,1.3498155955009625,86.8972,81.741,6.307972743176606,2.13157249796286,1100,sudeep-pharma,Small Cap,Feb-2026
+95205,5743,1,Poly Medicure Ltd.,Healthcare,Healthcare,Domestic Equities,640000.0,640000.0,0.0,80.3904,97.33760000000001,-17.410743638635022,1.97196187840613,1100,poly-medicure,Small Cap,Feb-2026
+861,112211,1,Sai Life Sciences Ltd.,Healthcare,Healthcare,Domestic Equities,800000.0,600000.0,33.33333333333333,79.86,50.108999999999995,59.372567802191234,1.9589512629557,1100,sai-life-sciences,Small Cap,Feb-2026
+152367,6359,1,Abbott India Ltd.,Healthcare,Healthcare,Domestic Equities,30000.0,35000.0,-14.285714285714285,79.59,96.4775,-17.504081262470525,1.95232821210423,1100,abbott-india,Mid Cap,Feb-2026
+133495,5019,1,Ajanta Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,250000.0,,,74.8475,,,1.83599555038914,1100,ajanta-pharma,Small Cap,Feb-2026
+231749,113277,1,Nephrocare Health Services Ltd.,Healthcare,Healthcare,Domestic Equities,800000.0,800000.0,0.0,47.504,42.216,12.52605647147999,1.16526447277044,1100,nephrocare-health-services,Small Cap,Feb-2026
+178941,94376,1,Cohance Lifesciences Ltd.,Healthcare,Healthcare,Domestic Equities,1200000.0,1200000.0,0.0,37.194,45.756,-18.71230002622607,0.912362049516332,1100,cohance-lifesciences,Small Cap,Feb-2026
+219108,112373,1,Sanofi Consumer Healthcare India Ltd.,Healthcare,Healthcare,Domestic Equities,75000.0,75000.0,0.0,33.6698,31.851,5.710338764873947,0.825914065032129,1100,sanofi-consumer-healthcare-india,Small Cap,Feb-2026
+38067,7792,1,Gufic Biosciences Ltd.,Healthcare,Healthcare,Domestic Equities,995771.0,1000000.0,-0.4229,28.1853,30.725,-8.26590724165988,0.691380278384489,1100,gufic-biosciences,Small Cap,Feb-2026
+59506,99993,1,Medplus Health Services Ltd.,Retailing,Retailing,Domestic Equities,300000.0,500000.0,-40.0,25.428,39.9475,-36.34645472182238,0.623744211300245,1100,medplus-health-services,Small Cap,Feb-2026
+190355,99127,1,Vijaya Diagnostic Centre Ltd.,Healthcare,Healthcare,Domestic Equities,250000.0,400000.0,-37.5,25.1125,38.348,-34.51418587670805,0.616005053731217,1100,vijaya-diagnostic-centre,Small Cap,Feb-2026
+228759,113039,1,CORONA Remedies Ltd.,Healthcare,Healthcare,Domestic Equities,100000.0,100000.0,0.0,15.872,14.792,7.301243915630071,0.389337270794301,1100,corona-remedies,Small Cap,Feb-2026
+152391,5643,1,Pfizer Ltd.,Healthcare,Healthcare,Domestic Equities,30000.0,100000.0,-70.0,15.1866,45.636,-66.72232448067315,0.372524533558766,1100,pfizer,Small Cap,Feb-2026
+420,5071,1,Sun Pharmaceutical Industries Ltd.,Healthcare,Healthcare,Domestic Equities,2400000.0,2700000.0,-11.11111111111111,382.872,464.319,-17.541173202044295,10.0156788620813,1100,sun-pharmaceutical-industries,Large Cap,Jan-2026
 171462,6372,1,Divi's Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,440000.0,440000.0,0.0,266.244,281.27,-5.342197888150171,6.96476734510741,1100,divis-laboratories,Large Cap,Jan-2026
 38020,6672,1,Apollo Hospitals Enterprise Ltd.,Healthcare,Healthcare,Domestic Equities,300000.0,,,208.815,,,5.4624626026074,1100,apollo-hospitals-enterprise,Large Cap,Jan-2026
 77009,96064,1,Max Healthcare Institute Ltd.,Healthcare,Healthcare,Domestic Equities,2000000.0,2000000.0,0.0,191.36,209.02,-8.448952253372884,5.00585132119317,1100,max-healthcare-institute,Large Cap,Jan-2026
-152211,6247,1,Lupin Ltd.,Healthcare,Healthcare,Domestic Equities,840000.0,840000.0,0.0,180.83520000000001,177.19799999999998,2.0526191040531,4.73052949852754,1100,lupin,Mid Cap,Jan-2026
+152211,6247,1,Lupin Ltd.,Healthcare,Healthcare,Domestic Equities,840000.0,840000.0,0.0,180.8352,177.19799999999998,2.0526191040531,4.73052949852754,1100,lupin,Mid Cap,Jan-2026
 78344,89378,1,Acutaas Chemicals Ltd.,Healthcare,Healthcare,Domestic Equities,900000.0,900000.0,0.0,172.125,153.441,12.17666725321133,4.50267641440413,1100,acutaas-chemicals,Small Cap,Jan-2026
 152331,7581,1,Torrent Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,400000.0,400000.0,0.0,158.43200000000002,154.0,2.877922077922083,4.14447657043936,1100,torrent-pharmaceuticals,Large Cap,Jan-2026
 195785,102076,1,Aether Industries Ltd.,Chemicals,Chemicals,Domestic Equities,1400000.0,1400000.0,0.0,140.28,120.414,16.498081618416467,3.66963222897668,1100,aether-industries,Small Cap,Jan-2026
-133643,6434,1,Biocon Ltd.,Healthcare,Healthcare,Domestic Equities,3750000.0,3200000.0,17.1875,137.55,126.04799999999999,9.125095201827882,3.59821723050857,1100,biocon,Mid Cap,Jan-2026
+133643,6434,1,Biocon Ltd.,Healthcare,Healthcare,Domestic Equities,3750000.0,3200000.0,17.1875,137.55,126.048,9.125095201827882,3.59821723050857,1100,biocon,Mid Cap,Jan-2026
 20865,87606,1,Aster DM Healthcare Ltd.,Healthcare,Healthcare,Domestic Equities,2400000.0,2000000.0,20.0,132.516,123.37,7.413471670584423,3.46653111245419,1100,aster-dm-healthcare,Small Cap,Jan-2026
 139924,82380,1,Laurus Labs Ltd.,Healthcare,Healthcare,Domestic Equities,1320000.0,1400000.0,-5.714285714285714,127.38,155.12,-17.882929345023207,3.33217674170979,1100,laurus-labs,Mid Cap,Jan-2026
-102214,109824,1,Jupiter Life Line Hospitals Ltd.,Healthcare,Healthcare,Domestic Equities,900000.0,900000.0,0.0,121.60799999999999,125.406,-3.028563226639882,3.18118503066293,1100,jupiter-life-line-hospitals,Small Cap,Jan-2026
+102214,109824,1,Jupiter Life Line Hospitals Ltd.,Healthcare,Healthcare,Domestic Equities,900000.0,900000.0,0.0,121.608,125.406,-3.028563226639882,3.18118503066293,1100,jupiter-life-line-hospitals,Small Cap,Jan-2026
 152636,5140,1,Fortis Healthcare Ltd.,Healthcare,Healthcare,Domestic Equities,1400000.0,1400000.0,0.0,119.21,123.76,-3.6764705882352944,3.11845493310743,1100,fortis-healthcare,Mid Cap,Jan-2026
 1152,105806,1,Mankind Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,540000.0,540000.0,0.0,114.696,118.611,-3.300705668108354,3.00037167190412,1100,mankind-pharma,Mid Cap,Jan-2026
 38931,15891,1,Alkem Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,200000.0,200000.0,0.0,113.55,110.13,3.1054208662489784,2.97039306815157,1100,alkem-laboratories,Mid Cap,Jan-2026
 97743,96921,1,Gland Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,600000.0,600000.0,0.0,110.796,103.32,7.235772357723581,2.8983502455211,1100,gland-pharma,Small Cap,Jan-2026
-95205,5743,1,Poly Medicure Ltd.,Healthcare,Healthcare,Domestic Equities,640000.0,600000.0,6.666666666666667,97.33760000000001,106.42200000000001,-8.536204920035335,2.54628738274337,1100,poly-medicure,Small Cap,Jan-2026
-58504,98271,1,Krishna Institute of Medical Sciences Ltd,Healthcare,Healthcare,Domestic Equities,1600000.0,1750000.0,-8.571428571428571,96.6,106.505,-9.300032862306933,2.52699225348694,1100,krishna-institute-of-medical-sciences,Small Cap,Jan-2026
+95205,5743,1,Poly Medicure Ltd.,Healthcare,Healthcare,Domestic Equities,640000.0,600000.0,6.666666666666667,97.3376,106.422,-8.536204920035335,2.54628738274337,1100,poly-medicure,Small Cap,Jan-2026
+58504,98271,1,Krishna Institute of Medical Sciences Ltd,Healthcare,Healthcare,Domestic Equities,1600000.0,1750000.0,-8.571428571428571,96.6,106.505,-9.300032862306931,2.52699225348694,1100,krishna-institute-of-medical-sciences,Small Cap,Jan-2026
 152367,6359,1,Abbott India Ltd.,Healthcare,Healthcare,Domestic Equities,35000.0,40000.0,-12.5,96.4775,116.1,-16.901378122308355,2.5237877343249,1100,abbott-india,Mid Cap,Jan-2026
 57415,105415,1,Concord Biotech Ltd.,Healthcare,Healthcare,Domestic Equities,720000.0,720000.0,0.0,84.6144,96.8832,-12.663495838287744,2.21345686680585,1100,concord-biotech,Small Cap,Jan-2026
-171465,6543,1,Aurobindo Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,700000.0,700000.0,0.0,84.539,82.81,2.0879120879120836,2.21148445256244,1100,aurobindo-pharma,Mid Cap,Jan-2026
+171465,6543,1,Aurobindo Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,700000.0,700000.0,0.0,84.539,82.81,2.087912087912084,2.21148445256244,1100,aurobindo-pharma,Mid Cap,Jan-2026
 77931,112747,1,Anthem Biosciences Ltd.,Healthcare,Healthcare,Domestic Equities,1400000.0,1300000.0,7.6923076923076925,83.902,84.695,-0.9363008442056706,2.19482095291988,1100,anthem-biosciences,Mid Cap,Jan-2026
 22435,113173,1,Sudeep Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,1341887.0,1273785.0,5.346428164878688,81.741,76.7774,6.464923271691939,2.13829061896766,1100,sudeep-pharma,Small Cap,Jan-2026
-861,112211,1,Sai Life Sciences Ltd.,Healthcare,Healthcare,Domestic Equities,600000.0,,,50.108999999999995,,,1.31081837298113,1100,sai-life-sciences,Small Cap,Jan-2026
-178941,94376,1,Cohance Lifesciences Ltd.,Healthcare,Healthcare,Domestic Equities,1200000.0,1200000.0,0.0,45.756,63.431999999999995,-27.866061293984103,1.19694676553363,1100,cohance-lifesciences,Small Cap,Jan-2026
-152391,5643,1,Pfizer Ltd.,Healthcare,Healthcare,Domestic Equities,100000.0,100000.0,0.0,45.636,49.876999999999995,-8.502917176253574,1.19380764472184,1100,pfizer,Small Cap,Jan-2026
-231749,113277,1,Nephrocare Health Services Ltd.,Healthcare,Healthcare,Domestic Equities,800000.0,785416.0,1.8568503824724734,42.216,36.8124,14.67874955178148,1.10434270158597,1100,nephrocare-health-services,Small Cap,Jan-2026
+861,112211,1,Sai Life Sciences Ltd.,Healthcare,Healthcare,Domestic Equities,600000.0,,,50.109,,,1.31081837298113,1100,sai-life-sciences,Small Cap,Jan-2026
+178941,94376,1,Cohance Lifesciences Ltd.,Healthcare,Healthcare,Domestic Equities,1200000.0,1200000.0,0.0,45.756,63.432,-27.866061293984103,1.19694676553363,1100,cohance-lifesciences,Small Cap,Jan-2026
+152391,5643,1,Pfizer Ltd.,Healthcare,Healthcare,Domestic Equities,100000.0,100000.0,0.0,45.636,49.877,-8.502917176253574,1.19380764472184,1100,pfizer,Small Cap,Jan-2026
+231749,113277,1,Nephrocare Health Services Ltd.,Healthcare,Healthcare,Domestic Equities,800000.0,785416.0,1.8568503824724731,42.216,36.8124,14.67874955178148,1.10434270158597,1100,nephrocare-health-services,Small Cap,Jan-2026
 59506,99993,1,Medplus Health Services Ltd.,Retailing,Retailing,Domestic Equities,500000.0,500000.0,0.0,39.9475,40.365,-1.0343119038771214,1.04500023857318,1100,medplus-health-services,Small Cap,Jan-2026
 190355,99127,1,Vijaya Diagnostic Centre Ltd.,Healthcare,Healthcare,Domestic Equities,400000.0,600000.0,-33.33333333333333,38.348,63.66,-39.761231542569895,1.0031583740861,1100,vijaya-diagnostic-centre,Small Cap,Jan-2026
 219108,112373,1,Sanofi Consumer Healthcare India Ltd.,Healthcare,Healthcare,Domestic Equities,75000.0,75000.0,0.0,31.851,33.8993,-6.042307658270228,0.833201141468037,1100,sanofi-consumer-healthcare-india,Small Cap,Jan-2026
@@ -43,7 +75,7 @@ CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,
 102214,109824,1,Jupiter Life Line Hospitals Ltd.,Healthcare,Healthcare,Domestic Equities,900000.0,894505.0,0.6143062364100815,125.406,132.3957,-5.279401068161574,3.1434655666367,1100,jupiter-life-line-hospitals,Small Cap,Dec-2025
 152636,5140,1,Fortis Healthcare Ltd.,Healthcare,Healthcare,Domestic Equities,1400000.0,1500000.0,-6.666666666666667,123.76,137.865,-10.231023102310232,3.1022064217578,1100,fortis-healthcare,Mid Cap,Dec-2025
 20865,87606,1,Aster DM Healthcare Ltd.,Healthcare,Healthcare,Domestic Equities,2000000.0,2017054.0,-0.8454905024853079,123.37,134.2249,-8.087098593480045,3.09243056118503,1100,aster-dm-healthcare,Small Cap,Dec-2025
-195785,102076,1,Aether Industries Ltd.,Chemicals,Chemicals,Domestic Equities,1400000.0,1400000.0,0.0,120.414,122.808,-1.9493844049247575,3.0183345513053,1100,aether-industries,Small Cap,Dec-2025
+195785,102076,1,Aether Industries Ltd.,Chemicals,Chemicals,Domestic Equities,1400000.0,1400000.0,0.0,120.414,122.808,-1.9493844049247573,3.0183345513053,1100,aether-industries,Small Cap,Dec-2025
 1152,105806,1,Mankind Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,540000.0,540000.0,0.0,118.611,121.554,-2.4211461572634327,2.97313999588812,1100,mankind-pharma,Mid Cap,Dec-2025
 152367,6359,1,Abbott India Ltd.,Healthcare,Healthcare,Domestic Equities,40000.0,40000.0,0.0,116.1,120.3,-3.491271820448877,2.91019849358501,1100,abbott-india,Mid Cap,Dec-2025
 38931,15891,1,Alkem Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,200000.0,200000.0,0.0,110.13,113.7,-3.1398416886543536,2.7605526278942,1100,alkem-laboratories,Mid Cap,Dec-2025
@@ -53,7 +85,7 @@ CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,
 57415,105415,1,Concord Biotech Ltd.,Healthcare,Healthcare,Domestic Equities,720000.0,720000.0,0.0,96.8832,102.0672,-5.079006772009026,2.42850424370107,1100,concord-biotech,Small Cap,Dec-2025
 77931,112747,1,Anthem Biosciences Ltd.,Healthcare,Healthcare,Domestic Equities,1300000.0,1300000.0,0.0,84.695,82.51100000000001,2.646919804632105,2.12299105438572,1100,anthem-biosciences,Mid Cap,Dec-2025
 171465,6543,1,Aurobindo Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,700000.0,700000.0,0.0,82.81,85.869,-3.562403195565333,2.07574106161735,1100,aurobindo-pharma,Mid Cap,Dec-2025
-22435,113173,1,Sudeep Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,1273785.0,385199.0,230.68232264362055,76.7774,29.8202,157.46775675548787,1.92452604497307,1100,sudeep-pharma,Small Cap,Dec-2025
+22435,113173,1,Sudeep Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,1273785.0,385199.0,230.68232264362052,76.7774,29.8202,157.46775675548787,1.92452604497307,1100,sudeep-pharma,Small Cap,Dec-2025
 190355,99127,1,Vijaya Diagnostic Centre Ltd.,Healthcare,Healthcare,Domestic Equities,600000.0,600000.0,0.0,63.66,59.883,6.307299233505333,1.59572124118537,1100,vijaya-diagnostic-centre,Small Cap,Dec-2025
 178941,94376,1,Cohance Lifesciences Ltd.,Healthcare,Healthcare,Domestic Equities,1200000.0,1200000.0,0.0,63.432,67.72800000000001,-6.343019135364994,1.59000612269668,1100,cohance-lifesciences,Small Cap,Dec-2025
 152391,5643,1,Pfizer Ltd.,Healthcare,Healthcare,Domestic Equities,100000.0,100000.0,0.0,49.877,49.75,0.2552763819095441,1.25023230202015,1100,pfizer,Small Cap,Dec-2025

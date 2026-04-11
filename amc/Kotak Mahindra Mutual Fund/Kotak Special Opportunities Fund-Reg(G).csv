@@ -1,25 +1,59 @@
 CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,Type,NoOfShare,PrevNoOfShare,SharesZG,MarketValue,PrevMarketValue,MarketValueZG,HoldingPercentage,Priority,SecuritySlug,McapCategory,Month
-133625,7239,1,Maruti Suzuki India Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,83000.0,95500.0,-13.089005235602095,138.5851,151.845,-8.732523296782903,8.51952798461747,1100,maruti-suzuki-india,Large Cap,Dec-2025
-171383,5551,1,Hero MotoCorp Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,200000.0,208372.0,-4.0178142936670955,115.42,128.6593,-10.290200552933214,7.09545196406069,1100,hero-motocorp,Large Cap,Dec-2025
-222536,112530,1,Midwest Ltd.,Construction Materials,Construction Materials,Domestic Equities,455780.0,487793.0,-6.562824804783997,77.1291,67.35430000000001,14.512510708299239,4.74151641033819,1100,midwest,Small Cap,Dec-2025
+171383,5551,1,Hero MotoCorp Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,154000.0,160000.0,-3.75,77.9702,91.36,-14.656085814360766,6.32435426578102,1100,hero-motocorp,Large Cap,Mar-2026
+133625,7239,1,Maruti Suzuki India Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,55500.0,57000.0,-2.631578947368421,68.2983,84.6849,-19.350084843933217,5.53984272132932,1100,maruti-suzuki-india,Large Cap,Mar-2026
+171853,7249,1,NLC India Ltd.,Power,Power,Domestic Equities,2300000.0,2500000.0,-8.0,61.778,65.0125,-4.975197077485096,5.0109651871025,1100,nlc-india,Small Cap,Mar-2026
+38803,5403,1,Indus Towers Ltd.,Telecom,Telecom,Domestic Equities,1300632.0,1300632.0,0.0,54.3859,59.17229999999999,-8.088919984519775,4.41137381542358,1100,indus-towers,Mid Cap,Mar-2026
+114442,5285,1,IndusInd Bank Ltd.,Bank,Banking,Domestic Equities,720000.0,720000.0,0.0,54.1764,68.88600000000001,-21.353540632349098,4.39438075629739,1100,indusind-bank,Mid Cap,Mar-2026
+38130,7638,1,Jubilant Pharmova Ltd.,Healthcare,Healthcare,Domestic Equities,640000.0,640000.0,0.0,52.2528,55.4432,-5.754357612836199,4.23835283966185,1100,jubilant-pharmova,Small Cap,Mar-2026
+133623,8531,1,Radico Khaitan Ltd.,Alcohol,Alcohol,Domestic Equities,198087.0,200087.0,-0.9995651891427229,52.083,53.0131,-1.7544720078622116,4.22457994496196,1100,radico-khaitan,Mid Cap,Mar-2026
+222536,112530,1,Midwest Ltd.,Construction Materials,Construction Materials,Domestic Equities,432876.0,432876.0,0.0,49.457,55.4638,-10.83012703781566,4.01157864059258,1100,midwest,Small Cap,Mar-2026
+152532,6617,1,Sun TV Network Ltd.,Media & Entertainment,Media & Entertainment,Domestic Equities,797045.0,797045.0,0.0,45.188500000000005,51.6206,-12.460335602453283,3.66535013042477,1100,sun-tv-network,Small Cap,Mar-2026
+171371,111171,1,Jyoti CNC Automation Ltd.,Capital Goods,Capital Goods,Domestic Equities,606513.0,606513.0,0.0,43.781099999999995,49.7614,-12.017949655757286,3.55119246257654,1100,jyoti-cnc-automation,Small Cap,Mar-2026
+152491,5679,1,PVR Inox Ltd.,Media & Entertainment,Media & Entertainment,Domestic Equities,465000.0,465000.0,0.0,42.7149,47.53229999999999,-10.135002934846407,3.46471036405459,1100,pvr-inox,Small Cap,Mar-2026
+328,7817,1,Marksans Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,2627836.0,2627836.0,0.0,41.228100000000005,45.706,-9.797181989235547,3.34411236735376,1100,marksans-pharma,Small Cap,Mar-2026
+56695,5727,1,Piramal Finance Ltd.,Finance,Finance,Domestic Equities,195000.0,195000.0,0.0,35.772800000000004,33.9027,5.516079840248718,2.90161959670401,1100,piramal-finance,Mid Cap,Mar-2026
+171698,8307,1,Oracle Financial Services Software Ltd.,IT,Information Technology,Domestic Equities,53000.0,54000.0,-1.8518518518518516,35.674299999999995,37.4328,-4.697751704387605,2.89363001997881,1100,oracle-financial-services-software,Mid Cap,Mar-2026
+75687,8264,1,Avanti Feeds Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,300000.0,300000.0,0.0,35.28,38.484,-8.32553788587465,2.86164737934178,1100,avanti-feeds,Small Cap,Mar-2026
+171405,6966,1,Poonawalla Fincorp Ltd.,Finance,Finance,Domestic Equities,938226.0,938226.0,0.0,34.5642,42.670500000000004,-18.99743382430485,2.8035870847235,1100,poonawalla-fincorp,Mid Cap,Mar-2026
+171646,5397,1,Carborundum Universal Ltd.,Abrasives,Abrasives,Domestic Equities,440000.0,440000.0,0.0,34.1308,36.223,-5.775888247798367,2.76843294713261,1100,carborundum-universal,Small Cap,Mar-2026
+227830,112938,1,Park Medi World Ltd.,Healthcare,Healthcare,Domestic Equities,1786884.0,1786884.0,0.0,33.9615,34.4994,-1.5591575505660957,2.75470060865974,1100,park-medi-world,Small Cap,Mar-2026
+212222,111581,1,Azad Engineering Ltd.,Capital Goods,Capital Goods,Domestic Equities,225000.0,225000.0,0.0,33.39,38.547,-13.378473032920846,2.70834484116275,1100,azad-engineering,Small Cap,Mar-2026
+171520,5812,1,Kalpataru Projects International Ltd.,Infrastructure,Infrastructure,Domestic Equities,279817.0,279817.0,0.0,29.593400000000003,34.7001,-14.716672286247015,2.40039329806726,1100,kalpataru-projects-international,Small Cap,Mar-2026
+20865,87606,1,Aster DM Healthcare Ltd.,Healthcare,Healthcare,Domestic Equities,424671.0,424671.0,0.0,28.453000000000003,27.799,2.352602611604737,2.30789265545384,1100,aster-dm-healthcare,Small Cap,Mar-2026
+83342,79963,1,Bandhan Bank Ltd.,Bank,Banking,Domestic Equities,2000000.0,2000000.0,0.0,28.27,36.396,-22.326629299923066,2.29304907636032,1100,bandhan-bank,Small Cap,Mar-2026
+229592,113102,1,KSH International Ltd.,Capital Goods,Capital Goods,Domestic Equities,626027.0,651027.0,-3.840086509468885,27.4669,24.3452,12.82265087162973,2.22790766450234,1100,ksh-international,Small Cap,Mar-2026
+174597,97684,1,Indigo Paints Ltd.,Chemicals,Chemicals,Domestic Equities,369525.0,369525.0,0.0,26.2658,34.6171,-24.12478226079019,2.1304834959273,1100,indigo-paints,Small Cap,Mar-2026
+84908,112552,1,Swiggy Ltd.,Retailing,Information Technology,Domestic Equities,1000000.0,1000000.0,0.0,26.005,30.175,-13.819386909693455,2.10932936790768,1100,swiggy,Mid Cap,Mar-2026
+56633,6412,1,Graphite India Ltd.,Capital Goods,Capital Goods,Domestic Equities,400000.0,400000.0,0.0,24.668000000000003,28.724,-14.120596017267786,2.00088201682548,1100,graphite-india,Small Cap,Mar-2026
+114450,5588,1,The Jammu & Kashmir Bank Ltd.,Bank,Banking,Domestic Equities,2109280.0,2109280.0,0.0,23.2042,25.604499999999998,-9.374524009451454,1.8821496065681,1100,the-jammu-kashmir-bank,Small Cap,Mar-2026
+191898,99941,1,Sapphire Foods India Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,1523160.0,1523160.0,0.0,22.9114,31.1166,-26.369204861713687,1.85839988001846,1100,sapphire-foods-india,Small Cap,Mar-2026
+153691,5278,1,Oberoi Realty Ltd.,Realty,Realty,Domestic Equities,150000.0,150000.0,0.0,21.285,22.842,-6.816390858944043,1.72647858473043,1100,oberoi-realty,Mid Cap,Mar-2026
+317,5676,1,Orchid Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,427811.0,427811.0,0.0,20.639699999999998,26.5136,-22.154290628205914,1.6741367181236,1100,orchid-pharma,Small Cap,Mar-2026
+98379,98534,1,Jana Small Finance Bank Ltd.,Bank,Banking,Domestic Equities,550000.0,550000.0,0.0,19.8083,20.394000000000002,-2.871923114641569,1.60669982381564,1100,jana-small-finance-bank,Small Cap,Mar-2026
+171884,5613,1,Bata India Ltd.,FMCG,Retailing,Domestic Equities,290000.0,290000.0,0.0,17.6175,22.881,-23.003802281368817,1.42899865945447,1100,bata-india,Small Cap,Mar-2026
+114457,7574,1,The South Indian Bank Ltd.,Bank,Banking,Domestic Equities,4996826.0,5000000.0,-0.06348000000000001,17.0991,20.575,-16.89380315917375,1.38694996326823,1100,the-south-indian-bank,Small Cap,Mar-2026
+198396,104128,1,Yatharth Hospital & Trauma Care Services Ltd.,Healthcare,Healthcare,Domestic Equities,260000.0,260000.0,0.0,16.0459,18.4483,-13.0223381016137,1.3015223266491,1100,yatharth-hospital-trauma-care-services,Small Cap,Mar-2026
+133625,7239,1,Maruti Suzuki India Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,83000.0,95500.0,-13.089005235602096,138.5851,151.845,-8.732523296782903,8.51952798461747,1100,maruti-suzuki-india,Large Cap,Dec-2025
+171383,5551,1,Hero MotoCorp Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,200000.0,208372.0,-4.017814293667096,115.42,128.6593,-10.290200552933214,7.09545196406069,1100,hero-motocorp,Large Cap,Dec-2025
+222536,112530,1,Midwest Ltd.,Construction Materials,Construction Materials,Domestic Equities,455780.0,487793.0,-6.562824804783997,77.1291,67.35430000000001,14.51251070829924,4.74151641033819,1100,midwest,Small Cap,Dec-2025
 38130,7638,1,Jubilant Pharmova Ltd.,Healthcare,Healthcare,Domestic Equities,650000.0,650000.0,0.0,69.7645,70.8305,-1.5050013765256542,4.28877714907912,1100,jubilant-pharmova,Small Cap,Dec-2025
 114442,5285,1,IndusInd Bank Ltd.,Bank,Banking,Domestic Equities,770000.0,750000.0,2.666666666666667,66.5434,64.3913,3.3422216976517016,4.09075981827479,1100,indusind-bank,Mid Cap,Dec-2025
 133623,8531,1,Radico Khaitan Ltd.,Alcohol,Alcohol,Domestic Equities,200087.0,285087.0,-29.815459842083293,65.9967,91.4588,-27.83996728581612,4.05715140042042,1100,radico-khaitan,Mid Cap,Dec-2025
 171853,7249,1,NLC India Ltd.,Power,Power,Domestic Equities,2536738.0,2536738.0,0.0,63.4743,61.6935,2.8865277541394136,3.9020866973001,1100,nlc-india,Small Cap,Dec-2025
 171371,111171,1,Jyoti CNC Automation Ltd.,Capital Goods,Capital Goods,Domestic Equities,606513.0,606513.0,0.0,60.0023,61.273,-2.073833499257432,3.68864527277039,1100,jyoti-cnc-automation,Small Cap,Dec-2025
-38803,5403,1,Indus Towers Ltd.,Telecom,Telecom,Domestic Equities,1330632.0,1330632.0,0.0,55.720200000000006,53.365,4.4133795558886995,3.42540289835258,1100,indus-towers,Mid Cap,Dec-2025
+38803,5403,1,Indus Towers Ltd.,Telecom,Telecom,Domestic Equities,1330632.0,1330632.0,0.0,55.720200000000006,53.365,4.4133795558887,3.42540289835258,1100,indus-towers,Mid Cap,Dec-2025
 171698,8307,1,Oracle Financial Services Software Ltd.,IT,Information Technology,Domestic Equities,67102.0,72102.0,-6.934620398879366,51.5813,58.453100000000006,-11.756091635858496,3.17096375319532,1100,oracle-financial-services-software,Mid Cap,Dec-2025
-152491,5679,1,PVR Inox Ltd.,Media & Entertainment,Media & Entertainment,Domestic Equities,478035.0,478035.0,0.0,48.530100000000004,51.0494,-4.935023722120131,2.9833910358782,1100,pvr-inox,Small Cap,Dec-2025
-152408,5535,1,ITC Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,1200000.0,1200000.0,0.0,48.36,48.51,-0.30921459492888065,2.97293412737806,1100,itc,Large Cap,Dec-2025
+152491,5679,1,PVR Inox Ltd.,Media & Entertainment,Media & Entertainment,Domestic Equities,478035.0,478035.0,0.0,48.5301,51.0494,-4.935023722120131,2.9833910358782,1100,pvr-inox,Small Cap,Dec-2025
+152408,5535,1,ITC Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,1200000.0,1200000.0,0.0,48.36,48.51,-0.3092145949288806,2.97293412737806,1100,itc,Large Cap,Dec-2025
 328,7817,1,Marksans Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,2627836.0,2527836.0,3.9559528387126384,47.3773,47.5107,-0.2807788561313587,2.91252258132813,1100,marksans-pharma,Small Cap,Dec-2025
 152532,6617,1,Sun TV Network Ltd.,Media & Entertainment,Media & Entertainment,Domestic Equities,797045.0,797045.0,0.0,46.8304,44.2878,5.741084452151614,2.87890186846082,1100,sun-tv-network,Small Cap,Dec-2025
-174597,97684,1,Indigo Paints Ltd.,Chemicals,Chemicals,Domestic Equities,400000.0,400000.0,0.0,45.751999999999995,51.346000000000004,-10.894714291278786,2.8126071587221,1100,indigo-paints,Small Cap,Dec-2025
+174597,97684,1,Indigo Paints Ltd.,Chemicals,Chemicals,Domestic Equities,400000.0,400000.0,0.0,45.752,51.346,-10.894714291278786,2.8126071587221,1100,indigo-paints,Small Cap,Dec-2025
 171405,6966,1,Poonawalla Fincorp Ltd.,Finance,Finance,Domestic Equities,938226.0,1138226.0,-17.571202906979806,45.3116,54.669,-17.11646454114763,2.78553354024201,1100,poonawalla-fincorp,Mid Cap,Dec-2025
 191898,99941,1,Sapphire Foods India Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,1523160.0,1523160.0,0.0,39.1528,37.881,3.357355930413672,2.40692091196045,1100,sapphire-foods-india,Small Cap,Dec-2025
 84908,112552,1,Swiggy Ltd.,Retailing,Information Technology,Domestic Equities,1000000.0,1000000.0,0.0,38.625,37.83,2.1015067406819985,2.37447437282832,1100,swiggy,Mid Cap,Dec-2025
 171646,5397,1,Carborundum Universal Ltd.,Abrasives,Abrasives,Domestic Equities,440000.0,330000.0,33.33333333333333,37.6596,28.2761,33.18526953858559,2.31512634539716,1100,carborundum-universal,Small Cap,Dec-2025
 212222,111581,1,Azad Engineering Ltd.,Capital Goods,Capital Goods,Domestic Equities,225000.0,225000.0,0.0,37.188,37.8135,-1.6541711293585553,2.2861347048994,1100,azad-engineering,Small Cap,Dec-2025
-171520,5812,1,Kalpataru Projects International Ltd.,Infrastructure,Infrastructure,Domestic Equities,279817.0,279817.0,0.0,33.6452,33.5696,0.22520375577903656,2.06834084579115,1100,kalpataru-projects-international,Small Cap,Dec-2025
+171520,5812,1,Kalpataru Projects International Ltd.,Infrastructure,Infrastructure,Domestic Equities,279817.0,279817.0,0.0,33.6452,33.5696,0.2252037557790365,2.06834084579115,1100,kalpataru-projects-international,Small Cap,Dec-2025
 317,5676,1,Orchid Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,427811.0,397636.0,7.588598617831384,32.4687,33.131,-1.999034137212883,1.99601543220843,1100,orchid-pharma,Small Cap,Dec-2025
 56695,5727,1,Piramal Finance Ltd.,Finance,Finance,Domestic Equities,195000.0,150000.0,30.0,32.0385,23.230500000000003,37.91567120811001,1.96956885938796,1100,piramal-finance,Mid Cap,Dec-2025
 165,7447,1,SRF Ltd.,Chemicals,Chemicals,Domestic Equities,100000.0,100000.0,0.0,30.75,29.273000000000003,5.0456051651692615,1.89035823856235,1100,srf,Mid Cap,Dec-2025
@@ -27,14 +61,14 @@ CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,
 19255,6350,1,Mphasis Ltd.,IT,Information Technology,Domestic Equities,100000.0,100000.0,0.0,27.912,28.114,-0.7185032368215222,1.71589200503259,1100,mphasis,Mid Cap,Dec-2025
 20865,87606,1,Aster DM Healthcare Ltd.,Healthcare,Healthcare,Domestic Equities,424671.0,424671.0,0.0,26.1958,28.2597,-7.303333014858611,1.61038849904818,1100,aster-dm-healthcare,Small Cap,Dec-2025
 56633,6412,1,Graphite India Ltd.,Capital Goods,Capital Goods,Domestic Equities,400000.0,400000.0,0.0,25.668000000000003,22.2,15.621621621621628,1.57794195991605,1100,graphite-india,Small Cap,Dec-2025
-153691,5278,1,Oberoi Realty Ltd.,Realty,Realty,Domestic Equities,150000.0,150000.0,0.0,25.059,24.708000000000002,1.420592520641084,1.54050364553281,1100,oberoi-realty,Mid Cap,Dec-2025
+153691,5278,1,Oberoi Realty Ltd.,Realty,Realty,Domestic Equities,150000.0,150000.0,0.0,25.059,24.708,1.420592520641084,1.54050364553281,1100,oberoi-realty,Mid Cap,Dec-2025
 75687,8264,1,Avanti Feeds Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,300000.0,250000.0,20.0,24.9585,20.1688,23.74806632025702,1.53432540153361,1100,avanti-feeds,Small Cap,Dec-2025
 229592,113102,1,KSH International Ltd.,Capital Goods,Capital Goods,Domestic Equities,651027.0,,,23.280700000000003,,,1.43118253803247,1100,ksh-international,Small Cap,Dec-2025
-114450,5588,1,The Jammu & Kashmir Bank Ltd.,Bank,Banking,Domestic Equities,2109280.0,2109280.0,0.0,21.156100000000002,22.5651,-6.2441557981130185,1.30057261563736,1100,the-jammu-kashmir-bank,Small Cap,Dec-2025
-114457,7574,1,The South Indian Bank Ltd.,Bank,Banking,Domestic Equities,5000000.0,5000000.0,0.0,19.16,19.79,-3.1834259727134917,1.17786223905218,1100,the-south-indian-bank,Small Cap,Dec-2025
-198396,104128,1,Yatharth Hospital & Trauma Care Services Ltd.,Healthcare,Healthcare,Domestic Equities,260000.0,250000.0,4.0,17.7359,17.695,0.23113873975698887,1.09031559945749,1100,yatharth-hospital-trauma-care-services,Small Cap,Dec-2025
+114450,5588,1,The Jammu & Kashmir Bank Ltd.,Bank,Banking,Domestic Equities,2109280.0,2109280.0,0.0,21.1561,22.5651,-6.2441557981130185,1.30057261563736,1100,the-jammu-kashmir-bank,Small Cap,Dec-2025
+114457,7574,1,The South Indian Bank Ltd.,Bank,Banking,Domestic Equities,5000000.0,5000000.0,0.0,19.16,19.79,-3.183425972713492,1.17786223905218,1100,the-south-indian-bank,Small Cap,Dec-2025
+198396,104128,1,Yatharth Hospital & Trauma Care Services Ltd.,Healthcare,Healthcare,Domestic Equities,260000.0,250000.0,4.0,17.7359,17.695,0.2311387397569888,1.09031559945749,1100,yatharth-hospital-trauma-care-services,Small Cap,Dec-2025
 227830,112938,1,Park Medi World Ltd.,Healthcare,Healthcare,Domestic Equities,986884.0,,,14.4628,,,0.889101565290392,1100,park-medi-world,Small Cap,Dec-2025
-171818,5576,1,Nocil Ltd.,Chemicals,Chemicals,Domestic Equities,697703.0,697703.0,0.0,10.745999999999999,11.9126,-9.79299229387372,0.660611044929789,1100,nocil,Small Cap,Dec-2025
+171818,5576,1,Nocil Ltd.,Chemicals,Chemicals,Domestic Equities,697703.0,697703.0,0.0,10.746,11.9126,-9.79299229387372,0.660611044929789,1100,nocil,Small Cap,Dec-2025
 133625,7239,1,Maruti Suzuki India Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,95500.0,95500.0,0.0,151.845,154.5763,-1.76695910045718,8.73233340749975,1100,maruti-suzuki-india,Large Cap,Nov-2025
 171383,5551,1,Hero MotoCorp Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,208372.0,208372.0,0.0,128.6593,115.5214,11.372698045556936,7.39896541588813,1100,hero-motocorp,Mid Cap,Nov-2025
 133623,8531,1,Radico Khaitan Ltd.,Alcohol,Alcohol,Domestic Equities,285087.0,300087.0,-4.99855042037809,91.4588,93.9722,-2.6746207921066034,5.25963143106351,1100,radico-khaitan,Mid Cap,Nov-2025

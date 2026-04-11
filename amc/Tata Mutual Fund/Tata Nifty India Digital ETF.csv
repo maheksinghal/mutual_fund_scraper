@@ -1,33 +1,84 @@
 CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,Type,NoOfShare,PrevNoOfShare,SharesZG,MarketValue,PrevMarketValue,MarketValueZG,HoldingPercentage,Priority,SecuritySlug,McapCategory,Month
-133593,6508,1,Bharti Airtel Ltd.,Telecom,Telecom,Domestic Equities,70403.0,68045.0,3.4653538099786907,13.230799999999999,13.395999999999999,-1.233203941475066,8.16944378765726,1100,bharti-airtel,Large Cap,Feb-2026
-156921,98676,1,Eternal Ltd.,Retailing,Information Technology,Domestic Equities,526016.0,508512.0,3.4421999874142593,12.9558,13.9129,-6.879227192030421,7.99964324335111,1100,eternal,Large Cap,Feb-2026
-171528,8219,1,HCL Technologies Ltd.,IT,Information Technology,Domestic Equities,89235.0,86265.0,3.4428794992175273,12.3956,14.6271,-15.255929063177259,7.65374409818638,1100,hcl-technologies,Large Cap,Feb-2026
+133593,6508,1,Bharti Airtel Ltd.,Telecom,Telecom,Domestic Equities,65190.0,70403.0,-7.40451401218698,11.6195,13.230799999999999,-12.178401910693221,7.63064380941446,1100,bharti-airtel,Large Cap,Mar-2026
+171915,6797,1,Tata Consultancy Services Ltd.,IT,Information Technology,Domestic Equities,48974.0,45173.0,8.414318287472605,11.5525,11.913900000000002,-3.033431537951477,7.58664422808731,1100,tata-consultancy-services,Large Cap,Mar-2026
+171889,4926,1,Infosys Ltd.,IT,Information Technology,Domestic Equities,91902.0,89487.0,2.698716014616648,11.4933,11.6342,-1.2110845610355798,7.54776698607885,1100,infosys,Large Cap,Mar-2026
+171528,8219,1,HCL Technologies Ltd.,IT,Information Technology,Domestic Equities,85545.0,89235.0,-4.135148764498235,11.476700000000001,12.3956,-7.413114330891597,7.53686559727242,1100,hcl-technologies,Large Cap,Mar-2026
+156921,98676,1,Eternal Ltd.,Retailing,Information Technology,Domestic Equities,493734.0,526016.0,-6.137075678306363,11.3055,12.9558,-12.737924327328297,7.42443681632903,1100,eternal,Large Cap,Mar-2026
+171369,7531,1,Tech Mahindra Ltd.,IT,Information Technology,Domestic Equities,63336.0,67830.0,-6.625386996904024,8.7657,9.21,-4.824104234527682,5.75652432894568,1100,tech-mahindra,Large Cap,Mar-2026
+157113,99763,1,PB Fintech Ltd.,IT,Information Technology,Domestic Equities,58620.0,66416.0,-11.738135389062876,8.3698,9.8402,-14.94278571573748,5.49653277301408,1100,pb-fintech,Mid Cap,Mar-2026
+152795,99590,1,One97 Communications Ltd.,IT,Information Technology,Domestic Equities,72358.0,79091.0,-8.512978720714113,6.9391,8.6866,-20.11719199686874,4.55697753413726,1100,one97-communications,Mid Cap,Mar-2026
+152572,7512,1,Info Edge (India) Ltd.,IT,Information Technology,Domestic Equities,65743.0,75694.0,-13.146352418949983,6.362,7.7935,-18.36787066144864,4.17799009557165,1100,info-edge-india,Mid Cap,Mar-2026
+84908,112552,1,Swiggy Ltd.,Retailing,Information Technology,Domestic Equities,236087.0,260386.0,-9.331914926301721,6.1394,7.8571,-21.86175560957605,4.03180641193848,1100,swiggy,Mid Cap,Mar-2026
+191600,99819,1,FSN E-Commerce Ventures Ltd.,Retailing,Information Technology,Domestic Equities,235264.0,266108.0,-11.590782689734995,5.5287,7.0646,-21.74079211844974,3.63075351169239,1100,fsn-e-commerce-ventures,Mid Cap,Mar-2026
+171511,5199,1,Wipro Ltd.,IT,Information Technology,Domestic Equities,285107.0,305081.0,-6.5471137173406415,5.3497,6.1309000000000005,-12.742011776411294,3.51320239143031,1100,wipro,Large Cap,Mar-2026
+95548,5980,1,Persistent Systems Ltd.,IT,Information Technology,Domestic Equities,10854.0,11625.0,-6.6322580645161295,5.2937,5.5021,-3.7876447174715167,3.47642662196285,1100,persistent-systems,Mid Cap,Mar-2026
+152616,7532,1,Vodafone Idea Ltd.,Telecom,Telecom,Domestic Equities,4750254.0,5378749.0,-11.684780234214312,4.052,5.6961,-28.863608433840703,2.66098960503872,1100,vodafone-idea,Mid Cap,Mar-2026
+133657,7260,1,Coforge Ltd.,IT,Information Technology,Domestic Equities,33507.0,35785.0,-6.365795724465559,3.735,4.243399999999999,-11.98095866522128,2.4528124814461,1100,coforge,Mid Cap,Mar-2026
+153405,17058,1,LTM Ltd.,IT,Information Technology,Domestic Equities,9256.0,9908.0,-6.580540976988292,3.7152,4.4209,-15.962813001877446,2.43980962009868,1100,ltm,Large Cap,Mar-2026
+171509,5522,1,Tata Communications Ltd.,Telecom,Telecom,Domestic Equities,20206.0,22885.0,-11.706357876338211,2.7236000000000002,3.6559,-25.501244563582148,1.78861581645692,1100,tata-communications,Mid Cap,Mar-2026
+19255,6350,1,Mphasis Ltd.,IT,Information Technology,Domestic Equities,13202.0,12171.0,8.470955550078054,2.7104000000000004,2.7950999999999997,-3.03030303030302,1.77994724222531,1100,mphasis,Mid Cap,Mar-2026
+114652,92620,1,Indian Railway Catering And Tourism Corporation Ltd.,Hospitality,Hospitality,Domestic Equities,51902.0,58775.0,-11.693747341556785,2.5666,3.3475,-23.32785660941,1.68551231991421,1100,indian-railway-catering-and-tourism-corporation,Mid Cap,Mar-2026
+76174,111823,1,Bharti Hexacom Ltd.,Telecom,Telecom,Domestic Equities,12940.0,14656.0,-11.708515283842795,1.9523,2.3550999999999997,-17.103307715171333,1.2820952630595,1100,bharti-hexacom,Mid Cap,Mar-2026
+171698,8307,1,Oracle Financial Services Software Ltd.,IT,Information Technology,Domestic Equities,2376.0,2558.0,-7.114933541829554,1.5993000000000002,1.7731999999999999,-9.807128355515445,1.05027657338066,1100,oracle-financial-services-software,Mid Cap,Mar-2026
+152323,7533,1,Tata Elxsi Ltd.,IT,Information Technology,Domestic Equities,3433.0,3668.0,-6.406761177753544,1.3652000000000002,1.6554,-17.530506222061124,0.896540722803272,1100,tata-elxsi,Small Cap,Mar-2026
+63978,98925,1,CarTrade Tech Ltd.,Automobile & Ancillaries,Information Technology,Domestic Equities,7260.0,,,1.1979,,,0.78667311151922,1100,cartrade-tech,Small Cap,Mar-2026
+171385,89248,1,Indiamart Intermesh Ltd.,Retailing,Information Technology,Domestic Equities,5263.0,5971.0,-11.857310333277509,1.0453000000000001,1.273,-17.886881382560876,0.686459139720378,1100,indiamart-intermesh,Small Cap,Mar-2026
+123299,91366,1,KPIT Technologies Ltd.,IT,Information Technology,Domestic Equities,16353.0,17514.0,-6.628982528263104,1.038,1.3505,-23.13957793409849,0.681665155486226,1100,kpit-technologies,Small Cap,Mar-2026
+219753,112169,1,Sagility Ltd.,Business Services,Other,Domestic Equities,229725.0,,,0.9178000000000001,,,0.602728593164989,1100,sagility,Small Cap,Mar-2026
+154545,89466,1,Affle 3i Ltd.,IT,Information Technology,Domestic Equities,6325.0,6764.0,-6.490242460082792,0.9166,0.9315000000000001,-1.5995705850778412,0.601940540962115,1100,affle-3i,Small Cap,Mar-2026
+171580,109023,1,Tata Technologies Ltd.,IT,Information Technology,Domestic Equities,17134.0,18331.0,-6.529921990071463,0.8725,1.0732,-18.70108087961237,0.572979622506486,1100,tata-technologies,Small Cap,Mar-2026
+44430,82482,1,L&T Technology Services Ltd.,IT,Information Technology,Domestic Equities,2750.0,2951.0,-6.811250423585226,0.8584999999999999,1.0365,-17.1731789676797,0.56378568013962,1100,lt-technology-services,Mid Cap,Mar-2026
+123232,111772,1,Brainbees Solutions Ltd.,Retailing,Information Technology,Domestic Equities,38091.0,,,0.7936,,,0.521165190167504,1100,brainbees-solutions,Small Cap,Mar-2026
+232979,113371,1,Physicswallah Ltd.,Education & Training,Other,Domestic Equities,79545.0,,,0.6944,,,0.456019541396566,1100,physicswallah,Mid Cap,Mar-2026
+234411,113589,1,Meesho Ltd.,Retailing,Information Technology,Domestic Equities,48405.0,,,0.6796,,,0.44630023089445,1100,meesho,Mid Cap,Mar-2026
+42557,112281,1,Inventurus Knowledge Solutions Ltd.,IT,Information Technology,Domestic Equities,4938.0,,,0.6559999999999999,,,0.43080187090459,1100,inventurus-knowledge-solutions,Small Cap,Mar-2026
+114433,5462,1,Cyient Ltd.,IT,Information Technology,Domestic Equities,8448.0,9027.0,-6.414091060152876,0.636,0.8256999999999999,-22.97444592466997,0.417667667523352,1100,cyient,Small Cap,Mar-2026
+114402,5275,1,Hexaware Technologies Ltd.,IT,Information Technology,Domestic Equities,14796.0,,,0.6288,,,0.412939354306107,1100,hexaware-technologies,Mid Cap,Mar-2026
+195742,102041,1,TBO Tek Ltd.,Hospitality,Hospitality,Domestic Equities,5874.0,,,0.6211,,,0.407882686004331,1100,tbo-tek,Small Cap,Mar-2026
+171687,7000,1,Zensar Technologies Ltd.,IT,Information Technology,Domestic Equities,11363.0,,,0.5847,,,0.383978435850478,1100,zensar-technologies,Small Cap,Mar-2026
+133561,8133,1,Birlasoft Ltd.,IT,Information Technology,Domestic Equities,16547.0,,,0.5503,,,0.36138760603475,1100,birlasoft,Small Cap,Mar-2026
+114727,84195,1,Tejas Networks Ltd.,Telecom,Telecom,Domestic Equities,14143.0,,,0.5463,,,0.358760765358502,1100,tejas-networks,Small Cap,Mar-2026
+101649,14929,1,Intellect Design Arena Ltd.,IT,Information Technology,Domestic Equities,8695.0,9572.0,-9.162139573756791,0.5204,0.6677,-22.060805751085812,0.3417519719798,1100,intellect-design-arena,Small Cap,Mar-2026
+207271,109317,1,Netweb Technologies India Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,1652.0,,,0.5119,,,0.336169935542774,1100,netweb-technologies-india,Small Cap,Mar-2026
+83618,17010,1,BLS International Services Ltd.,Business Services,Hospitality,Domestic Equities,20865.0,,,0.4917,,,0.322904390127724,1100,bls-international-services,Small Cap,Mar-2026
+40274,113178,1,Pine Labs Ltd.,IT,Information Technology,Domestic Equities,30452.0,,,0.4756,,,0.312331356405828,1100,pine-labs,Small Cap,Mar-2026
+133437,6005,1,Sonata Software Ltd.,IT,Information Technology,Domestic Equities,19425.0,20811.0,-6.659939455095863,0.4071,0.5582,-27.06915084199212,0.267346709825089,1100,sonata-software,Small Cap,Mar-2026
+228706,113028,1,Urban Company Ltd.,Business Services,Other,Domestic Equities,33964.0,,,0.40369999999999995,,,0.265113895250279,1100,urban-company,Small Cap,Mar-2026
+152110,5928,1,ITI Ltd.,Telecom,Telecom,Domestic Equities,16540.0,,,0.3954,,,0.259663200847065,1100,iti,Small Cap,Mar-2026
+757,97957,1,Railtel Corporation Of India Ltd.,Telecom,Telecom,Domestic Equities,15035.0,,,0.37,,,0.242982762552894,1100,railtel-corporation-of-india,Small Cap,Mar-2026
+171516,6987,1,Tata Teleservices (Maharashtra) Ltd.,Telecom,Telecom,Domestic Equities,86475.0,,,0.2712,,,0.17809979784958,1100,tata-teleservices-maharashtra,Small Cap,Mar-2026
+134343,87380,1,Newgen Software Technologies Ltd.,IT,Information Technology,Domestic Equities,6343.0,,,0.2552,,,0.16759243514459,1100,newgen-software-technologies,Small Cap,Mar-2026
+59494,100957,1,Latent View Analytics Ltd.,Business Services,Other,Domestic Equities,7217.0,,,0.1813,,,0.119061553650918,1100,latent-view-analytics,Small Cap,Mar-2026
+192488,100187,1,CE Info Systems Ltd.,IT,Information Technology,Domestic Equities,1728.0,,,0.1384,,,0.0908886873981635,1100,ce-info-systems,Small Cap,Mar-2026
+133593,6508,1,Bharti Airtel Ltd.,Telecom,Telecom,Domestic Equities,70403.0,68045.0,3.4653538099786907,13.2308,13.396,-1.233203941475066,8.16944378765726,1100,bharti-airtel,Large Cap,Feb-2026
+156921,98676,1,Eternal Ltd.,Retailing,Information Technology,Domestic Equities,526016.0,508512.0,3.4421999874142597,12.9558,13.9129,-6.879227192030421,7.99964324335111,1100,eternal,Large Cap,Feb-2026
+171528,8219,1,HCL Technologies Ltd.,IT,Information Technology,Domestic Equities,89235.0,86265.0,3.442879499217528,12.3956,14.6271,-15.25592906317726,7.65374409818638,1100,hcl-technologies,Large Cap,Feb-2026
 171915,6797,1,Tata Consultancy Services Ltd.,IT,Information Technology,Domestic Equities,45173.0,43678.0,3.4227757681212507,11.913900000000002,13.6446,-12.684138780176768,7.35631529021449,1100,tata-consultancy-services,Large Cap,Feb-2026
-171889,4926,1,Infosys Ltd.,IT,Information Technology,Domestic Equities,89487.0,86513.0,3.437633650434039,11.6342,14.196800000000001,-18.050546602051163,7.18361270024202,1100,infosys,Large Cap,Feb-2026
+171889,4926,1,Infosys Ltd.,IT,Information Technology,Domestic Equities,89487.0,86513.0,3.437633650434039,11.6342,14.1968,-18.050546602051163,7.18361270024202,1100,infosys,Large Cap,Feb-2026
 157113,99763,1,PB Fintech Ltd.,IT,Information Technology,Domestic Equities,66416.0,64210.0,3.43560193116337,9.8402,10.6235,-7.373276227232075,6.0758956948412,1100,pb-fintech,Mid Cap,Feb-2026
-171369,7531,1,Tech Mahindra Ltd.,IT,Information Technology,Domestic Equities,67830.0,65574.0,3.4403879586421446,9.21,11.4302,-19.423982082553234,5.68677459294399,1100,tech-mahindra,Large Cap,Feb-2026
-152795,99590,1,One97 Communications Ltd.,IT,Information Technology,Domestic Equities,79091.0,76455.0,3.4477797397161734,8.6866,8.6968,-0.11728451844356337,5.36359784789004,1100,one97-communications,Mid Cap,Feb-2026
+171369,7531,1,Tech Mahindra Ltd.,IT,Information Technology,Domestic Equities,67830.0,65574.0,3.4403879586421446,9.21,11.4302,-19.423982082553238,5.68677459294399,1100,tech-mahindra,Large Cap,Feb-2026
+152795,99590,1,One97 Communications Ltd.,IT,Information Technology,Domestic Equities,79091.0,76455.0,3.4477797397161734,8.6866,8.6968,-0.1172845184435633,5.36359784789004,1100,one97-communications,Mid Cap,Feb-2026
 84908,112552,1,Swiggy Ltd.,Retailing,Information Technology,Domestic Equities,260386.0,251704.0,3.449289641801481,7.8571,7.7965,0.7772718527544487,4.85141766061023,1100,swiggy,Mid Cap,Feb-2026
-152572,7512,1,Info Edge (India) Ltd.,IT,Information Technology,Domestic Equities,75694.0,73170.0,3.4495011616782834,7.7935,9.1419,-14.749669105984536,4.81214742563616,1100,info-edge-india,Mid Cap,Feb-2026
+152572,7512,1,Info Edge (India) Ltd.,IT,Information Technology,Domestic Equities,75694.0,73170.0,3.449501161678284,7.7935,9.1419,-14.749669105984536,4.81214742563616,1100,info-edge-india,Mid Cap,Feb-2026
 191600,99819,1,FSN E-Commerce Ventures Ltd.,Retailing,Information Technology,Domestic Equities,266108.0,257253.0,3.442136729212099,7.0646,6.1098,15.627352777504994,4.36208336474616,1100,fsn-e-commerce-ventures,Mid Cap,Feb-2026
-171511,5199,1,Wipro Ltd.,IT,Information Technology,Domestic Equities,305081.0,294913.0,3.4477964687891007,6.1309000000000005,6.9864999999999995,-12.246475345308802,3.78556420758744,1100,wipro,Large Cap,Feb-2026
-152616,7532,1,Vodafone Idea Ltd.,Telecom,Telecom,Domestic Equities,5378749.0,5199685.0,3.443747073140008,5.6961,5.808,-1.9266528925619735,3.51709411062631,1100,vodafone-idea,Mid Cap,Feb-2026
+171511,5199,1,Wipro Ltd.,IT,Information Technology,Domestic Equities,305081.0,294913.0,3.4477964687891007,6.1309000000000005,6.9865,-12.246475345308802,3.78556420758744,1100,wipro,Large Cap,Feb-2026
+152616,7532,1,Vodafone Idea Ltd.,Telecom,Telecom,Domestic Equities,5378749.0,5199685.0,3.443747073140008,5.6961,5.808,-1.9266528925619733,3.51709411062631,1100,vodafone-idea,Mid Cap,Feb-2026
 95548,5980,1,Persistent Systems Ltd.,IT,Information Technology,Domestic Equities,11625.0,11239.0,3.434469258830857,5.5021,6.7827,-18.880386866587045,3.39730754482488,1100,persistent-systems,Mid Cap,Feb-2026
 153405,17058,1,LTIMindtree Ltd.,IT,Information Technology,Domestic Equities,9908.0,9578.0,3.4453956984756737,4.4209,5.7224,-22.743953585908017,2.72971355026559,1100,ltimindtree,Large Cap,Feb-2026
-133657,7260,1,Coforge Ltd.,IT,Information Technology,Domestic Equities,35785.0,34585.0,3.469712303021541,4.243399999999999,5.7197000000000005,-25.810794272426886,2.62011501712253,1100,coforge,Mid Cap,Feb-2026
+133657,7260,1,Coforge Ltd.,IT,Information Technology,Domestic Equities,35785.0,34585.0,3.469712303021541,4.243399999999999,5.7197000000000005,-25.81079427242689,2.62011501712253,1100,coforge,Mid Cap,Feb-2026
 171509,5522,1,Tata Communications Ltd.,Telecom,Telecom,Domestic Equities,22885.0,22120.0,3.4584086799276674,3.6559,3.4739,5.239068482109442,2.25735930883213,1100,tata-communications,Mid Cap,Feb-2026
-114652,92620,1,Indian Railway Catering And Tourism Corporation Ltd.,Hospitality,Hospitality,Domestic Equities,58775.0,56804.0,3.4698260685867193,3.3475,3.5392,-5.416478300180836,2.06693571659935,1100,indian-railway-catering-and-tourism-corporation,Mid Cap,Feb-2026
-19255,6350,1,Mphasis Ltd.,IT,Information Technology,Domestic Equities,12171.0,11775.0,3.3630573248407645,2.7950999999999997,3.2487,-13.962508080155143,1.72585273232766,1100,mphasis,Mid Cap,Feb-2026
-76174,111823,1,Bharti Hexacom Ltd.,Telecom,Telecom,Domestic Equities,14656.0,14165.0,3.4662901517825624,2.3550999999999997,2.1882,7.627273558175669,1.45417186143783,1100,bharti-hexacom,Mid Cap,Feb-2026
-171698,8307,1,Oracle Financial Services Software Ltd.,IT,Information Technology,Domestic Equities,2558.0,2462.0,3.899268887083672,1.7731999999999999,1.9105,-7.186600366396241,1.09487390968602,1100,oracle-financial-services-software,Mid Cap,Feb-2026
-152323,7533,1,Tata Elxsi Ltd.,IT,Information Technology,Domestic Equities,3668.0,3551.0,3.294846522106449,1.6554,1.8903999999999999,-12.431231485399916,1.02213753107052,1100,tata-elxsi,Small Cap,Feb-2026
-123299,91366,1,KPIT Technologies Ltd.,IT,Information Technology,Domestic Equities,17514.0,16922.0,3.4984044439191586,1.3505,1.7631000000000001,-23.401962452498434,0.833875036674361,1100,kpit-technologies,Small Cap,Feb-2026
-171385,89248,1,Indiamart Intermesh Ltd.,Retailing,Information Technology,Domestic Equities,5971.0,5763.0,3.6092313031407253,1.273,1.2690000000000001,0.31520882584711696,0.786022156006265,1100,indiamart-intermesh,Small Cap,Feb-2026
-171580,109023,1,Tata Technologies Ltd.,IT,Information Technology,Domestic Equities,18331.0,17723.0,3.4305704451842236,1.0732,1.1448,-6.254367575122301,0.662654342361291,1100,tata-technologies,Small Cap,Feb-2026
+114652,92620,1,Indian Railway Catering And Tourism Corporation Ltd.,Hospitality,Hospitality,Domestic Equities,58775.0,56804.0,3.4698260685867197,3.3475,3.5392,-5.416478300180836,2.06693571659935,1100,indian-railway-catering-and-tourism-corporation,Mid Cap,Feb-2026
+19255,6350,1,Mphasis Ltd.,IT,Information Technology,Domestic Equities,12171.0,11775.0,3.3630573248407645,2.7951,3.2487,-13.962508080155144,1.72585273232766,1100,mphasis,Mid Cap,Feb-2026
+76174,111823,1,Bharti Hexacom Ltd.,Telecom,Telecom,Domestic Equities,14656.0,14165.0,3.4662901517825624,2.3551,2.1882,7.627273558175669,1.45417186143783,1100,bharti-hexacom,Mid Cap,Feb-2026
+171698,8307,1,Oracle Financial Services Software Ltd.,IT,Information Technology,Domestic Equities,2558.0,2462.0,3.899268887083672,1.7732,1.9105,-7.186600366396241,1.09487390968602,1100,oracle-financial-services-software,Mid Cap,Feb-2026
+152323,7533,1,Tata Elxsi Ltd.,IT,Information Technology,Domestic Equities,3668.0,3551.0,3.294846522106449,1.6554,1.8904,-12.431231485399916,1.02213753107052,1100,tata-elxsi,Small Cap,Feb-2026
+123299,91366,1,KPIT Technologies Ltd.,IT,Information Technology,Domestic Equities,17514.0,16922.0,3.4984044439191586,1.3505,1.7631,-23.401962452498434,0.833875036674361,1100,kpit-technologies,Small Cap,Feb-2026
+171385,89248,1,Indiamart Intermesh Ltd.,Retailing,Information Technology,Domestic Equities,5971.0,5763.0,3.609231303140725,1.273,1.269,0.3152088258471169,0.786022156006265,1100,indiamart-intermesh,Small Cap,Feb-2026
+171580,109023,1,Tata Technologies Ltd.,IT,Information Technology,Domestic Equities,18331.0,17723.0,3.430570445184224,1.0732,1.1448,-6.254367575122301,0.662654342361291,1100,tata-technologies,Small Cap,Feb-2026
 44430,82482,1,L&T Technology Services Ltd.,IT,Information Technology,Domestic Equities,2951.0,2848.0,3.6165730337078648,1.0365,1.0603,-2.244647741205315,0.63999368790298,1100,lt-technology-services,Mid Cap,Feb-2026
-154545,89466,1,Affle 3i Ltd.,IT,Information Technology,Domestic Equities,6764.0,6542.0,3.3934576582084994,0.9315000000000001,1.0122,-7.972732661529336,0.57516075280427,1100,affle-3i,Small Cap,Feb-2026
+154545,89466,1,Affle 3i Ltd.,IT,Information Technology,Domestic Equities,6764.0,6542.0,3.3934576582084994,0.9315,1.0122,-7.972732661529336,0.57516075280427,1100,affle-3i,Small Cap,Feb-2026
 114433,5462,1,Cyient Ltd.,IT,Information Technology,Domestic Equities,9027.0,8738.0,3.3073929961089497,0.8256999999999999,0.9945,-16.97335344394169,0.50983385248576,1100,cyient,Small Cap,Feb-2026
-101649,14929,1,Intellect Design Arena Ltd.,IT,Information Technology,Domestic Equities,9572.0,9249.0,3.4922694345334633,0.6677,0.8451000000000001,-20.991598627381382,0.412275721575321,1100,intellect-design-arena,Small Cap,Feb-2026
+101649,14929,1,Intellect Design Arena Ltd.,IT,Information Technology,Domestic Equities,9572.0,9249.0,3.4922694345334637,0.6677,0.8451000000000001,-20.991598627381386,0.412275721575321,1100,intellect-design-arena,Small Cap,Feb-2026
 133437,6005,1,Sonata Software Ltd.,IT,Information Technology,Domestic Equities,20811.0,20108.0,3.496120946886811,0.5582,0.638,-12.507836990595608,0.344664232115237,1100,sonata-software,Small Cap,Feb-2026
 171528,8219,1,HCL Technologies Ltd.,IT,Information Technology,Domestic Equities,86265.0,91441.0,-5.660480528428167,14.6271,14.8436,-1.4585410547306492,8.11757015662377,1100,hcl-technologies,Large Cap,Jan-2026
 171889,4926,1,Infosys Ltd.,IT,Information Technology,Domestic Equities,86513.0,87677.0,-1.327600168801396,14.1968,14.1633,0.236526798133213,7.87876749318432,1100,infosys,Large Cap,Jan-2026

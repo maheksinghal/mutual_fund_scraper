@@ -1,29 +1,66 @@
 CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,Type,NoOfShare,PrevNoOfShare,SharesZG,MarketValue,PrevMarketValue,MarketValueZG,HoldingPercentage,Priority,SecuritySlug,McapCategory,Month
-533,7363,1,Religare Enterprises Ltd.,Finance,Finance,Domestic Equities,510000.0,510000.0,0.0,10.3097,10.805399999999999,-4.587521054287666,9.36899653400654,1100,religare-enterprises,Small Cap,Mar-2026
-152362,5226,1,Tata Steel Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,179295.0,179295.0,0.0,3.44,3.807,-9.640136590491197,3.12611890520408,1100,tata-steel,Large Cap,Mar-2026
-133507,6902,1,TVS Motor Company Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,9919.0,9919.0,0.0,3.3366000000000002,3.8383999999999996,-13.073155481450593,3.03215358694882,1100,tvs-motor-company,Large Cap,Mar-2026
-152608,7159,1,Indian Bank,Bank,Banking,Domestic Equities,39106.0,39106.0,0.0,3.3072000000000004,3.8733999999999997,-14.617648577477137,3.00543617537527,1100,indian-bank,Mid Cap,Mar-2026
+533,7363,1,Religare Enterprises Ltd.,Finance,Finance,Domestic Equities,410000.0,510000.0,-19.607843137254903,9.087200000000001,10.3097,-11.857765017410788,7.20238029189328,1100,religare-enterprises,Small Cap,Apr-2026
+152362,5226,1,Tata Steel Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,203795.0,179295.0,13.664630915530271,4.3074,3.44,25.215116279069772,3.41398152008332,1100,tata-steel,Large Cap,Apr-2026
+38708,8062,1,Adani Power Ltd.,Power,Power,Domestic Equities,190270.0,,,4.2211,,,3.34558141673021,1100,adani-power,Large Cap,Apr-2026
+75659,6055,1,Lloyds Metals & Energy Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,23738.0,23738.0,0.0,4.1883,3.0188,38.74055916258116,3.31958462194478,1100,lloyds-metals-energy,Mid Cap,Apr-2026
+114439,5439,1,Gujarat Mineral Development Corporation Ltd.,Mining,Mining,Domestic Equities,54564.0,54564.0,0.0,4.0167,3.0891,30.028163542779446,3.18357700044543,1100,gujarat-mineral-development-corporation,Small Cap,Apr-2026
+19275,7232,1,NMDC Ltd.,Mining,Mining,Domestic Equities,435592.0,386592.0,12.674861352537043,3.9364,2.9485,33.50517212141765,3.11993240833356,1100,nmdc,Mid Cap,Apr-2026
+214946,111813,1,KRN Heat Exchanger And Refrigeration Ltd.,Capital Goods,Capital Goods,Domestic Equities,29623.0,29623.0,0.0,3.8372,2.5234,52.06467464531982,3.04130795581179,1100,krn-heat-exchanger-and-refrigeration,Small Cap,Apr-2026
+114673,111130,1,Inox India Ltd.,Capital Goods,Capital Goods,Domestic Equities,25309.0,25309.0,0.0,3.6875,2.9737999999999998,23.999596475889437,2.92265795034295,1100,inox-india,Small Cap,Apr-2026
+133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,33207.0,33207.0,0.0,3.548,3.2523,9.09202718076438,2.81209231398421,1100,state-bank-of-india,Large Cap,Apr-2026
+171685,5596,1,The Federal Bank Ltd.,Bank,Banking,Domestic Equities,122377.0,122377.0,0.0,3.5116,3.1745,10.618995117341326,2.78324221245405,1100,the-federal-bank,Mid Cap,Apr-2026
+133507,6902,1,TVS Motor Company Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,9919.0,9919.0,0.0,3.4646,3.3366000000000002,3.836240484325347,2.74599070773103,1100,tvs-motor-company,Large Cap,Apr-2026
+152574,8059,1,Torrent Power Ltd.,Power,Power,Domestic Equities,19395.0,,,3.367,,,2.66863439154026,1100,torrent-power,Mid Cap,Apr-2026
+171403,76579,1,Equitas Small Finance Bank Ltd.,Bank,Banking,Domestic Equities,501470.0,423470.0,18.41925047819208,3.3523,2.1906,53.0311330229161,2.65698338899923,1100,equitas-small-finance-bank,Small Cap,Apr-2026
+152608,7159,1,Indian Bank,Bank,Banking,Domestic Equities,39106.0,39106.0,0.0,3.3312,3.3072000000000004,0.725689404934681,2.64025984113422,1100,indian-bank,Mid Cap,Apr-2026
+133623,8531,1,Radico Khaitan Ltd.,Alcohol,Alcohol,Domestic Equities,9695.0,,,3.3187,,,2.63035252604831,1100,radico-khaitan,Mid Cap,Apr-2026
+98869,15650,1,PTC Industries Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,2039.0,2039.0,0.0,3.2763,3.0554,7.229822609151003,2.59674691327691,1100,ptc-industries,Small Cap,Apr-2026
+19830,100227,1,Tamilnad Mercantile Bank Ltd.,Bank,Banking,Domestic Equities,43860.0,,,3.2441000000000004,,,2.57122566961561,1100,tamilnad-mercantile-bank,Small Cap,Apr-2026
+133351,5368,1,Steel Authority Of India Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,175469.0,175469.0,0.0,3.2395,2.657,21.92322167858487,2.567579777664,1100,steel-authority-of-india,Mid Cap,Apr-2026
+171383,5551,1,Hero MotoCorp Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,6223.0,6223.0,0.0,3.1731,3.1507,0.7109531215285521,2.51495211992765,1100,hero-motocorp,Large Cap,Apr-2026
+171572,5156,1,Eicher Motors Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,4458.0,4458.0,0.0,3.1692,2.9360000000000004,7.94277929155313,2.51186103762085,1100,eicher-motors,Large Cap,Apr-2026
+133445,6416,1,Apar Industries Ltd.,Capital Goods,Capital Goods,Domestic Equities,2553.0,,,3.1481,,,2.49513748975584,1100,apar-industries,Mid Cap,Apr-2026
+133414,7150,1,India Glycols Ltd.,Alcohol,Alcohol,Domestic Equities,30077.0,,,3.1342000000000003,,,2.48412055538031,1100,india-glycols,Small Cap,Apr-2026
+141614,85778,1,AU Small Finance Bank Ltd.,Bank,Banking,Domestic Equities,30504.0,30504.0,0.0,3.0991000000000004,2.5706,20.55940247413056,2.45630081461908,1100,au-small-finance-bank,Mid Cap,Apr-2026
+152316,5915,1,Tata Power Company Ltd.,Power,Power,Domestic Equities,67419.0,,,2.9970999999999997,,,2.37545712351806,1100,tata-power-company,Large Cap,Apr-2026
+133348,5626,1,Chennai Petroleum Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,26335.0,,,2.9715,,,2.35516694222212,1100,chennai-petroleum-corporation,Small Cap,Apr-2026
+745,109745,1,RR Kabel Ltd.,Electricals,Electricals,Domestic Equities,18644.0,18644.0,0.0,2.929,2.4114,21.46470929750352,2.32148207093003,1100,rr-kabel,Small Cap,Apr-2026
+201312,105351,1,Avalon Technologies Ltd.,Electricals,Electricals,Domestic Equities,27460.0,,,2.9032,,,2.30103337259272,1100,avalon-technologies,Small Cap,Apr-2026
+171942,7813,1,Jindal Steel Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,23591.0,23591.0,0.0,2.8854,2.6258999999999997,9.882326059636714,2.28692535591039,1100,jindal-steel,Mid Cap,Apr-2026
+46444,92584,1,Ujjivan Small Finance Bank Ltd.,Bank,Banking,Domestic Equities,501412.0,501412.0,0.0,2.852,2.5326,12.611545447366343,2.26045301000084,1100,ujjivan-small-finance-bank,Small Cap,Apr-2026
+37897,5454,1,Tilaknagar Industries Ltd.,Alcohol,Alcohol,Domestic Equities,61382.0,,,2.8487,,,2.25783747881816,1100,tilaknagar-industries,Small Cap,Apr-2026
+113892,8292,1,KEI Industries Ltd.,Electricals,Electricals,Domestic Equities,5708.0,5708.0,0.0,2.7727,2.3049,20.295891361881196,2.19760100309584,1100,kei-industries,Mid Cap,Apr-2026
+134131,90516,1,Polycab India Ltd.,Electricals,Electricals,Domestic Equities,3356.0,3356.0,0.0,2.7218999999999998,2.2967,18.51351939739627,2.15733767458671,1100,polycab-india,Large Cap,Apr-2026
+171531,4897,1,Reliance Industries Ltd.,Crude Oil,Crude Oil,Domestic Equities,18974.0,,,2.7148000000000003,,,2.15171031961791,1100,reliance-industries,Large Cap,Apr-2026
+543,5039,1,Karur Vysya Bank Ltd.,Bank,Banking,Domestic Equities,89116.0,89116.0,0.0,2.6156,2.5789999999999997,1.4191547111283542,2.07308586709614,1100,karur-vysya-bank,Small Cap,Apr-2026
+77359,100627,1,Waaree Energies Ltd.,Capital Goods,Capital Goods,Domestic Equities,8246.0,,,2.5718,,,2.03837063503512,1100,waaree-energies,Mid Cap,Apr-2026
+133608,7612,1,Union Bank Of India,Bank,Banking,Domestic Equities,153775.0,,,2.5517,,,2.02243967237698,1100,union-bank-of-india,Large Cap,Apr-2026
+171883,5324,1,Mangalore Refinery And Petrochemicals Ltd.,Crude Oil,Crude Oil,Domestic Equities,147101.0,147101.0,0.0,2.4647,2.6455,-6.834246834246839,1.95348475937906,1100,mangalore-refinery-and-petrochemicals,Small Cap,Apr-2026
+533,7363,1,Religare Enterprises Ltd.,Finance,Finance,Domestic Equities,510000.0,510000.0,0.0,10.3097,10.8054,-4.587521054287666,9.36899653400654,1100,religare-enterprises,Small Cap,Mar-2026
+152362,5226,1,Tata Steel Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,179295.0,179295.0,0.0,3.44,3.807,-9.640136590491196,3.12611890520408,1100,tata-steel,Large Cap,Mar-2026
+133507,6902,1,TVS Motor Company Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,9919.0,9919.0,0.0,3.3366,3.8384,-13.073155481450591,3.03215358694882,1100,tvs-motor-company,Large Cap,Mar-2026
+152608,7159,1,Indian Bank,Bank,Banking,Domestic Equities,39106.0,39106.0,0.0,3.3072000000000004,3.8734,-14.617648577477135,3.00543617537527,1100,indian-bank,Mid Cap,Mar-2026
 114451,6891,1,City Union Bank Ltd.,Bank,Banking,Domestic Equities,135855.0,135855.0,0.0,3.2585,3.8454,-15.26239142872003,2.96117978273474,1100,city-union-bank,Small Cap,Mar-2026
-133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,33207.0,33207.0,0.0,3.2523,3.9905,-18.498934970555066,2.9555454986614,1100,state-bank-of-india,Large Cap,Mar-2026
-171685,5596,1,The Federal Bank Ltd.,Bank,Banking,Domestic Equities,122377.0,122377.0,0.0,3.1745,3.6694999999999998,-13.48957623654449,2.88484432109603,1100,the-federal-bank,Mid Cap,Mar-2026
-171383,5551,1,Hero MotoCorp Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,6223.0,6223.0,0.0,3.1507,3.5532999999999997,-11.33031266709819,2.8632159402984,1100,hero-motocorp,Large Cap,Mar-2026
+133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,33207.0,33207.0,0.0,3.2523,3.9905,-18.498934970555062,2.9555454986614,1100,state-bank-of-india,Large Cap,Mar-2026
+171685,5596,1,The Federal Bank Ltd.,Bank,Banking,Domestic Equities,122377.0,122377.0,0.0,3.1745,3.6695,-13.48957623654449,2.88484432109603,1100,the-federal-bank,Mid Cap,Mar-2026
+171383,5551,1,Hero MotoCorp Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,6223.0,6223.0,0.0,3.1507,3.5533,-11.33031266709819,2.8632159402984,1100,hero-motocorp,Large Cap,Mar-2026
 114439,5439,1,Gujarat Mineral Development Corporation Ltd.,Mining,Mining,Domestic Equities,54564.0,54564.0,0.0,3.0891,3.1069,-0.5729183430428957,2.80723660176335,1100,gujarat-mineral-development-corporation,Small Cap,Mar-2026
-98869,15650,1,PTC Industries Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,2039.0,2039.0,0.0,3.0554,3.6572000000000005,-16.45521163731817,2.7766115415583,1100,ptc-industries,Small Cap,Mar-2026
+98869,15650,1,PTC Industries Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,2039.0,2039.0,0.0,3.0554,3.657200000000001,-16.45521163731817,2.7766115415583,1100,ptc-industries,Small Cap,Mar-2026
 75659,6055,1,Lloyds Metals & Energy Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,23738.0,,,3.0188,,,2.74335109041572,1100,lloyds-metals-energy,Mid Cap,Mar-2026
-114673,111130,1,Inox India Ltd.,Capital Goods,Capital Goods,Domestic Equities,25309.0,,,2.9737999999999998,,,2.70245709310927,1100,inox-india,Small Cap,Mar-2026
+114673,111130,1,Inox India Ltd.,Capital Goods,Capital Goods,Domestic Equities,25309.0,,,2.9738,,,2.70245709310927,1100,inox-india,Small Cap,Mar-2026
 19275,7232,1,NMDC Ltd.,Mining,Mining,Domestic Equities,386592.0,386592.0,0.0,2.9485,3.16,-6.693037974683537,2.67946557906809,1100,nmdc,Mid Cap,Mar-2026
 171572,5156,1,Eicher Motors Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,4458.0,4458.0,0.0,2.9360000000000004,3.5711,-17.784436168127467,2.66810613537185,1100,eicher-motors,Large Cap,Mar-2026
-152376,5012,1,Bharat Petroleum Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,102482.0,102482.0,0.0,2.8797,3.9497000000000004,-27.09066511380611,2.61694320096401,1100,bharat-petroleum-corporation,Large Cap,Mar-2026
-152907,86648,1,SBI Life Insurance Company Ltd.,Insurance,Finance,Domestic Equities,16055.0,16055.0,0.0,2.8535000000000004,3.2706999999999997,-12.755679212401006,2.5931338069767,1100,sbi-life-insurance-company,Large Cap,Mar-2026
-152519,8782,1,Mahindra & Mahindra Financial Services Ltd.,Finance,Finance,Domestic Equities,99130.0,99130.0,0.0,2.8361,3.7104000000000004,-23.5634971970677,2.57732146135154,1100,mahindra-mahindra-financial-services,Mid Cap,Mar-2026
+152376,5012,1,Bharat Petroleum Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,102482.0,102482.0,0.0,2.8797,3.9497,-27.09066511380611,2.61694320096401,1100,bharat-petroleum-corporation,Large Cap,Mar-2026
+152907,86648,1,SBI Life Insurance Company Ltd.,Insurance,Finance,Domestic Equities,16055.0,16055.0,0.0,2.8535000000000004,3.2707,-12.755679212401006,2.5931338069767,1100,sbi-life-insurance-company,Large Cap,Mar-2026
+152519,8782,1,Mahindra & Mahindra Financial Services Ltd.,Finance,Finance,Domestic Equities,99130.0,99130.0,0.0,2.8361,3.7104,-23.5634971970677,2.57732146135154,1100,mahindra-mahindra-financial-services,Mid Cap,Mar-2026
 1704,6920,1,L&T Finance Ltd.,Finance,Finance,Domestic Equities,117889.0,117889.0,0.0,2.8317,3.3475,-15.408513816280802,2.57332293717046,1100,lt-finance,Mid Cap,Mar-2026
 56649,7087,1,HEG Ltd.,Capital Goods,Capital Goods,Domestic Equities,50457.0,,,2.7368,,,2.48708204062864,1100,heg,Small Cap,Mar-2026
 133351,5368,1,Steel Authority Of India Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,175469.0,,,2.657,,,2.41456335207187,1100,steel-authority-of-india,Mid Cap,Mar-2026
 57031,5903,1,Indian Oil Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,195570.0,195570.0,0.0,2.648,3.6664,-27.77656556840497,2.40638455261058,1100,indian-oil-corporation,Large Cap,Mar-2026
 171883,5324,1,Mangalore Refinery And Petrochemicals Ltd.,Crude Oil,Crude Oil,Domestic Equities,147101.0,,,2.6455,,,2.40411266387133,1100,mangalore-refinery-and-petrochemicals,Small Cap,Mar-2026
-171942,7813,1,Jindal Steel Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,23591.0,,,2.6258999999999997,,,2.38630105615564,1100,jindal-steel,Mid Cap,Mar-2026
-133614,6833,1,Canara Bank,Bank,Banking,Domestic Equities,209763.0,209763.0,0.0,2.5894999999999997,3.301,-21.554074522871865,2.3532223561122,1100,canara-bank,Large Cap,Mar-2026
-543,5039,1,Karur Vysya Bank Ltd.,Bank,Banking,Domestic Equities,89116.0,,,2.5789999999999997,,,2.34368042340736,1100,karur-vysya-bank,Small Cap,Mar-2026
+171942,7813,1,Jindal Steel Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,23591.0,,,2.6259,,,2.38630105615564,1100,jindal-steel,Mid Cap,Mar-2026
+133614,6833,1,Canara Bank,Bank,Banking,Domestic Equities,209763.0,209763.0,0.0,2.5895,3.301,-21.554074522871865,2.3532223561122,1100,canara-bank,Large Cap,Mar-2026
+543,5039,1,Karur Vysya Bank Ltd.,Bank,Banking,Domestic Equities,89116.0,,,2.579,,,2.34368042340736,1100,karur-vysya-bank,Small Cap,Mar-2026
 141614,85778,1,AU Small Finance Bank Ltd.,Bank,Banking,Domestic Equities,30504.0,,,2.5706,,,2.33604687724349,1100,au-small-finance-bank,Mid Cap,Mar-2026
 46444,92584,1,Ujjivan Small Finance Bank Ltd.,Bank,Banking,Domestic Equities,501412.0,,,2.5326,,,2.30151416840693,1100,ujjivan-small-finance-bank,Small Cap,Mar-2026
 214946,111813,1,KRN Heat Exchanger And Refrigeration Ltd.,Capital Goods,Capital Goods,Domestic Equities,29623.0,,,2.5234,,,2.2931536178465,1100,krn-heat-exchanger-and-refrigeration,Small Cap,Mar-2026

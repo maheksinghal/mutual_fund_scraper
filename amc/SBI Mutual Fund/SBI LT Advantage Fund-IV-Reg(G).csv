@@ -1,30 +1,58 @@
 CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,Type,NoOfShare,PrevNoOfShare,SharesZG,MarketValue,PrevMarketValue,MarketValueZG,HoldingPercentage,Priority,SecuritySlug,McapCategory,Month
+171888,8748,1,ICICI Bank Ltd.,Bank,Banking,Domestic Equities,105000.0,75000.0,40.0,13.265699999999999,9.0443,46.6747011930166,6.82354417735238,1100,icici-bank,Large Cap,Apr-2026
+171484,6114,1,Bajaj Finance Ltd.,Finance,Finance,Domestic Equities,140000.0,140000.0,0.0,13.118,11.2217,16.89850913854406,6.74757099274886,1100,bajaj-finance,Large Cap,Apr-2026
+633,7027,1,GKW Ltd.,Logistics,Finance,Domestic Equities,52804.0,52804.0,0.0,8.7185,7.4315999999999995,17.316594003983,4.48457826652545,1100,gkw,Small Cap,Apr-2026
+133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,80000.0,80000.0,0.0,8.5476,7.8351999999999995,9.092301409025936,4.3966715823769,1100,state-bank-of-india,Large Cap,Apr-2026
+171572,5156,1,Eicher Motors Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,12000.0,12000.0,0.0,8.530800000000001,7.903200000000001,7.941087154570299,4.38803008270635,1100,eicher-motors,Large Cap,Apr-2026
+171942,7813,1,Jindal Steel Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,65000.0,65000.0,0.0,7.9502,7.2352,9.882242370632465,4.08938396909224,1100,jindal-steel,Mid Cap,Apr-2026
+46521,101004,1,Delhivery Ltd.,Logistics,Logistics,Domestic Equities,170000.0,,,7.9399,,,4.08408590679422,1100,delhivery,Small Cap,Apr-2026
+171531,4897,1,Reliance Industries Ltd.,Crude Oil,Crude Oil,Domestic Equities,54000.0,54000.0,0.0,7.7263,7.2571,6.465392512160499,3.97421541098304,1100,reliance-industries,Large Cap,Apr-2026
+171889,4926,1,Infosys Ltd.,IT,Information Technology,Domestic Equities,63414.0,63414.0,0.0,7.494299999999999,7.930599999999999,-5.5014752982119886,3.85488041553268,1100,infosys,Large Cap,Apr-2026
+171369,7531,1,Tech Mahindra Ltd.,IT,Information Technology,Domestic Equities,50000.0,50000.0,0.0,7.3675,6.92,6.466763005780347,3.7896576680193,1100,tech-mahindra,Large Cap,Apr-2026
+230962,113209,1,Tenneco Clean Air India Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,116896.0,116896.0,0.0,7.268,6.0213,20.704831182634972,3.73847735747055,1100,tenneco-clean-air-india,Small Cap,Apr-2026
+234053,113617,1,Tata Motors Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,170000.0,170000.0,0.0,6.9683,6.7116,3.8247213779128786,3.58431917584783,1100,tata-motors,Large Cap,Apr-2026
+114405,5008,1,Bank Of Baroda,Bank,Banking,Domestic Equities,250000.0,250000.0,0.0,6.5865,6.19,6.405492730210012,3.38793080833514,1100,bank-of-baroda,Large Cap,Apr-2026
+152362,5226,1,Tata Steel Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,300000.0,300000.0,0.0,6.340800000000001,5.755800000000001,10.163661002814552,3.26154887565345,1100,tata-steel,Large Cap,Apr-2026
+420,5071,1,Sun Pharmaceutical Industries Ltd.,Healthcare,Healthcare,Domestic Equities,35000.0,35000.0,0.0,6.3290999999999995,6.1502,2.908848492731942,3.25553068838289,1100,sun-pharmaceutical-industries,Large Cap,Apr-2026
+133627,5088,1,Navin Fluorine International Ltd.,Chemicals,Chemicals,Domestic Equities,9000.0,9000.0,0.0,6.1389,5.5463,10.684600544507147,3.15769656711282,1100,navin-fluorine-international,Small Cap,Apr-2026
+171492,5886,1,Kotak Mahindra Bank Ltd.,Bank,Banking,Domestic Equities,160000.0,,,6.1328,,,3.15455887973244,1100,kotak-mahindra-bank,Large Cap,Apr-2026
+77293,6578,1,Muthoot Finance Ltd.,Finance,Finance,Domestic Equities,17000.0,17000.0,0.0,5.8211,5.3722,8.355980789992925,2.99422819834505,1100,muthoot-finance,Large Cap,Apr-2026
+139601,89162,1,Aavas Financiers Ltd.,Finance,Finance,Domestic Equities,40000.0,40000.0,0.0,5.5228,4.312,28.079777365491648,2.84079014169488,1100,aavas-financiers,Small Cap,Apr-2026
+171514,5399,1,Cholamandalam Investment and Finance Company Ltd.,Finance,Finance,Domestic Equities,35000.0,35000.0,0.0,5.4702,4.741499999999999,15.368554254982602,2.81373401772639,1100,cholamandalam-investment-and-finance-company,Large Cap,Apr-2026
+171520,5812,1,Kalpataru Projects International Ltd.,Infrastructure,Infrastructure,Domestic Equities,40000.0,40000.0,0.0,5.0012,4.2304,18.220499243570345,2.57249215192374,1100,kalpataru-projects-international,Small Cap,Apr-2026
+137807,98607,1,GR Infraprojects Ltd.,Infrastructure,Infrastructure,Domestic Equities,50000.0,50000.0,0.0,4.686,3.9798,17.744610281923716,2.41036115810498,1100,gr-infraprojects,Small Cap,Apr-2026
+118743,98929,1,Aptus Value Housing Finance India Ltd.,Finance,Finance,Domestic Equities,170000.0,170000.0,0.0,4.4224,3.3076999999999996,33.70015418568795,2.27477191327432,1100,aptus-value-housing-finance-india,Small Cap,Apr-2026
+2332,112289,1,JSW Cement Ltd.,Construction Materials,Construction Materials,Domestic Equities,340068.0,340068.0,0.0,4.1648000000000005,3.7472000000000003,11.144321093082832,2.142268918326,1100,jsw-cement,Small Cap,Apr-2026
+171659,5756,1,Ashok Leyland Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,250000.0,250000.0,0.0,4.0523,3.8533,5.164404536371431,2.08440173303218,1100,ashok-leyland,Mid Cap,Apr-2026
+133388,7039,1,Kansai Nerolac Paints Ltd.,Chemicals,Chemicals,Domestic Equities,200000.0,50837.0,293.4142455298306,3.9438,0.8501000000000001,363.92189154217147,2.02859204765993,1100,kansai-nerolac-paints,Small Cap,Apr-2026
+152907,86648,1,SBI Life Insurance Company Ltd.,Insurance,Finance,Domestic Equities,20000.0,20000.0,0.0,3.638,3.5545999999999998,2.346255556180733,1.87129617865683,1100,sbi-life-insurance-company,Large Cap,Apr-2026
+653,111996,1,Afcons Infrastructure Ltd.,Infrastructure,Infrastructure,Domestic Equities,100000.0,100000.0,0.0,3.397,2.716,25.073637702503664,1.74733180838297,1100,afcons-infrastructure,Small Cap,Apr-2026
 171484,6114,1,Bajaj Finance Ltd.,Finance,Finance,Domestic Equities,140000.0,140000.0,0.0,11.2217,13.9426,-19.515011547344105,6.20611923566794,1100,bajaj-finance,Large Cap,Mar-2026
 171875,5051,1,HDFC Bank Ltd.,Bank,Banking,Domestic Equities,140000.0,140000.0,0.0,10.241700000000002,12.4285,-17.595043649676136,5.66413389913653,1100,hdfc-bank,Large Cap,Mar-2026
-171888,8748,1,ICICI Bank Ltd.,Bank,Banking,Domestic Equities,75000.0,75000.0,0.0,9.0443,10.341800000000001,-12.54617184629369,5.00191630529702,1100,icici-bank,Large Cap,Mar-2026
+171888,8748,1,ICICI Bank Ltd.,Bank,Banking,Domestic Equities,75000.0,75000.0,0.0,9.0443,10.3418,-12.54617184629369,5.00191630529702,1100,icici-bank,Large Cap,Mar-2026
 152242,5741,1,Vedanta Ltd.,Non - Ferrous Metals,Non - Ferrous Metals,Domestic Equities,125000.0,125000.0,0.0,8.185,8.98,-8.853006681514476,4.52668365256085,1100,vedanta,Large Cap,Mar-2026
-171889,4926,1,Infosys Ltd.,IT,Information Technology,Domestic Equities,63414.0,63414.0,0.0,7.930599999999999,8.2445,-3.8073867426769477,4.38598868356739,1100,infosys,Large Cap,Mar-2026
+171889,4926,1,Infosys Ltd.,IT,Information Technology,Domestic Equities,63414.0,63414.0,0.0,7.930599999999999,8.2445,-3.807386742676948,4.38598868356739,1100,infosys,Large Cap,Mar-2026
 171572,5156,1,Eicher Motors Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,12000.0,12000.0,0.0,7.903200000000001,9.6126,-17.782909930715928,4.37083521599498,1100,eicher-motors,Large Cap,Mar-2026
-133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,80000.0,80000.0,0.0,7.8351999999999995,9.6136,-18.4987933760506,4.33322807019484,1100,state-bank-of-india,Large Cap,Mar-2026
-633,7027,1,GKW Ltd.,Logistics,Finance,Domestic Equities,52804.0,52804.0,0.0,7.4315999999999995,8.7517,-15.083926551412869,4.11001859894578,1100,gkw,Small Cap,Mar-2026
-171531,4897,1,Reliance Industries Ltd.,Crude Oil,Crude Oil,Domestic Equities,54000.0,54000.0,0.0,7.2571,7.527100000000001,-3.5870388330166993,4.01351202626749,1100,reliance-industries,Large Cap,Mar-2026
-171942,7813,1,Jindal Steel Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,65000.0,65000.0,0.0,7.2352,8.0873,-10.536272921741501,4.00140031313479,1100,jindal-steel,Mid Cap,Mar-2026
-171369,7531,1,Tech Mahindra Ltd.,IT,Information Technology,Domestic Equities,50000.0,50000.0,0.0,6.92,6.789,1.9295919870378586,3.82708013142591,1100,tech-mahindra,Large Cap,Mar-2026
-234053,113617,1,Tata Motors Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,170000.0,170000.0,0.0,6.7116,8.5901,-21.868197110627353,3.71182529047372,1100,tata-motors,Large Cap,Mar-2026
+133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,80000.0,80000.0,0.0,7.835199999999999,9.6136,-18.4987933760506,4.33322807019484,1100,state-bank-of-india,Large Cap,Mar-2026
+633,7027,1,GKW Ltd.,Logistics,Finance,Domestic Equities,52804.0,52804.0,0.0,7.431599999999999,8.7517,-15.083926551412867,4.11001859894578,1100,gkw,Small Cap,Mar-2026
+171531,4897,1,Reliance Industries Ltd.,Crude Oil,Crude Oil,Domestic Equities,54000.0,54000.0,0.0,7.2571,7.527100000000001,-3.5870388330167,4.01351202626749,1100,reliance-industries,Large Cap,Mar-2026
+171942,7813,1,Jindal Steel Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,65000.0,65000.0,0.0,7.2352,8.0873,-10.5362729217415,4.00140031313479,1100,jindal-steel,Mid Cap,Mar-2026
+171369,7531,1,Tech Mahindra Ltd.,IT,Information Technology,Domestic Equities,50000.0,50000.0,0.0,6.92,6.789,1.9295919870378584,3.82708013142591,1100,tech-mahindra,Large Cap,Mar-2026
+234053,113617,1,Tata Motors Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,170000.0,170000.0,0.0,6.7116,8.5901,-21.868197110627356,3.71182529047372,1100,tata-motors,Large Cap,Mar-2026
 114405,5008,1,Bank Of Baroda,Bank,Banking,Domestic Equities,250000.0,250000.0,0.0,6.19,8.0488,-23.094125832422225,3.42335636033619,1100,bank-of-baroda,Large Cap,Mar-2026
 420,5071,1,Sun Pharmaceutical Industries Ltd.,Healthcare,Healthcare,Domestic Equities,35000.0,,,6.1502,,,3.40134511911787,1100,sun-pharmaceutical-industries,Large Cap,Mar-2026
 230962,113209,1,Tenneco Clean Air India Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,116896.0,251896.0,-53.59354654301776,6.0213,14.6427,-58.87848552521051,3.33005745597614,1100,tenneco-clean-air-india,Small Cap,Mar-2026
-152362,5226,1,Tata Steel Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,300000.0,300000.0,0.0,5.755800000000001,6.3699,-9.640653699430127,3.18322367347706,1100,tata-steel,Large Cap,Mar-2026
+152362,5226,1,Tata Steel Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,300000.0,300000.0,0.0,5.755800000000001,6.3699,-9.640653699430128,3.18322367347706,1100,tata-steel,Large Cap,Mar-2026
 133627,5088,1,Navin Fluorine International Ltd.,Chemicals,Chemicals,Domestic Equities,9000.0,9000.0,0.0,5.5463,5.6309000000000005,-1.5024241240299128,3.06736048163693,1100,navin-fluorine-international,Small Cap,Mar-2026
 77293,6578,1,Muthoot Finance Ltd.,Finance,Finance,Domestic Equities,17000.0,17000.0,0.0,5.3722,5.7010000000000005,-5.767409226451499,2.97107512746334,1100,muthoot-finance,Large Cap,Mar-2026
 171514,5399,1,Cholamandalam Investment and Finance Company Ltd.,Finance,Finance,Domestic Equities,35000.0,,,4.741499999999999,,,2.62226885016705,1100,cholamandalam-investment-and-finance-company,Large Cap,Mar-2026
 139601,89162,1,Aavas Financiers Ltd.,Finance,Finance,Domestic Equities,40000.0,40000.0,0.0,4.312,5.1424,-16.148102053515874,2.38473548073823,1100,aavas-financiers,Small Cap,Mar-2026
 171520,5812,1,Kalpataru Projects International Ltd.,Infrastructure,Infrastructure,Domestic Equities,40000.0,40000.0,0.0,4.2304,4.9604,-14.716555116522862,2.33960690577806,1100,kalpataru-projects-international,Small Cap,Mar-2026
 137807,98607,1,GR Infraprojects Ltd.,Infrastructure,Infrastructure,Domestic Equities,50000.0,50000.0,0.0,3.9798,4.753299999999999,-16.272905139587227,2.20101351257931,1100,gr-infraprojects,Small Cap,Mar-2026
-171659,5756,1,Ashok Leyland Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,250000.0,250000.0,0.0,3.8533,5.2775,-26.986262434864994,2.13105316046582,1100,ashok-leyland,Mid Cap,Mar-2026
-2332,112289,1,JSW Cement Ltd.,Construction Materials,Construction Materials,Domestic Equities,340068.0,340068.0,0.0,3.7472000000000003,4.2536000000000005,-11.905209704720704,2.07237495209237,1100,jsw-cement,Small Cap,Mar-2026
-152907,86648,1,SBI Life Insurance Company Ltd.,Insurance,Finance,Domestic Equities,20000.0,20000.0,0.0,3.5545999999999998,4.0744,-12.757706656194781,1.96585824207609,1100,sbi-life-insurance-company,Large Cap,Mar-2026
-118743,98929,1,Aptus Value Housing Finance India Ltd.,Finance,Finance,Domestic Equities,170000.0,170000.0,0.0,3.3076999999999996,4.148,-20.25795564127291,1.82931112004588,1100,aptus-value-housing-finance-india,Small Cap,Mar-2026
+171659,5756,1,Ashok Leyland Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,250000.0,250000.0,0.0,3.8533,5.2775,-26.986262434864997,2.13105316046582,1100,ashok-leyland,Mid Cap,Mar-2026
+2332,112289,1,JSW Cement Ltd.,Construction Materials,Construction Materials,Domestic Equities,340068.0,340068.0,0.0,3.7472,4.2536000000000005,-11.905209704720704,2.07237495209237,1100,jsw-cement,Small Cap,Mar-2026
+152907,86648,1,SBI Life Insurance Company Ltd.,Insurance,Finance,Domestic Equities,20000.0,20000.0,0.0,3.5546,4.0744,-12.75770665619478,1.96585824207609,1100,sbi-life-insurance-company,Large Cap,Mar-2026
+118743,98929,1,Aptus Value Housing Finance India Ltd.,Finance,Finance,Domestic Equities,170000.0,170000.0,0.0,3.3077,4.148,-20.25795564127291,1.82931112004588,1100,aptus-value-housing-finance-india,Small Cap,Mar-2026
 653,111996,1,Afcons Infrastructure Ltd.,Infrastructure,Infrastructure,Domestic Equities,100000.0,100000.0,0.0,2.716,2.9215,-7.034057846996392,1.50207364695849,1100,afcons-infrastructure,Small Cap,Mar-2026
 133388,7039,1,Kansai Nerolac Paints Ltd.,Chemicals,Chemicals,Domestic Equities,50837.0,,,0.8501000000000001,,,0.470144627127915,1100,kansai-nerolac-paints,Small Cap,Mar-2026
 230962,113209,1,Tenneco Clean Air India Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,251896.0,251896.0,0.0,14.6427,13.1527,11.328472480935474,7.03671150141213,1100,tenneco-clean-air-india,Small Cap,Feb-2026
@@ -50,7 +78,7 @@ CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,
 137807,98607,1,GR Infraprojects Ltd.,Infrastructure,Infrastructure,Domestic Equities,50000.0,50000.0,0.0,4.753299999999999,4.8218,-1.4206312995147086,2.28425090862083,1100,gr-infraprojects,Small Cap,Feb-2026
 2332,112289,1,JSW Cement Ltd.,Construction Materials,Construction Materials,Domestic Equities,340068.0,340068.0,0.0,4.2536000000000005,3.8836,9.52724276444536,2.04411454461313,1100,jsw-cement,Small Cap,Feb-2026
 118743,98929,1,Aptus Value Housing Finance India Ltd.,Finance,Finance,Domestic Equities,170000.0,170000.0,0.0,4.148,4.6818,-11.40159767610748,1.99336729618564,1100,aptus-value-housing-finance-india,Small Cap,Feb-2026
-152907,86648,1,SBI Life Insurance Company Ltd.,Insurance,Finance,Domestic Equities,20000.0,20000.0,0.0,4.0744,3.997,1.9364523392544437,1.95799800182709,1100,sbi-life-insurance-company,Large Cap,Feb-2026
+152907,86648,1,SBI Life Insurance Company Ltd.,Insurance,Finance,Domestic Equities,20000.0,20000.0,0.0,4.0744,3.997,1.936452339254444,1.95799800182709,1100,sbi-life-insurance-company,Large Cap,Feb-2026
 653,111996,1,Afcons Infrastructure Ltd.,Infrastructure,Infrastructure,Domestic Equities,100000.0,100000.0,0.0,2.9215,3.3160000000000003,-11.896863691194223,1.40395915038726,1100,afcons-infrastructure,Small Cap,Feb-2026
 230962,113209,1,Tenneco Clean Air India Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,251896.0,251896.0,0.0,13.1527,12.7938,2.8052650502587086,6.32533843232099,1100,tenneco-clean-air-india,Small Cap,Jan-2026
 171484,6114,1,Bajaj Finance Ltd.,Finance,Finance,Domestic Equities,140000.0,140000.0,0.0,13.0179,13.8152,-5.771179570328335,6.26051101128372,1100,bajaj-finance,Large Cap,Jan-2026

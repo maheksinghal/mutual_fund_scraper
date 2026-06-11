@@ -1,30 +1,55 @@
 CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,Type,NoOfShare,PrevNoOfShare,SharesZG,MarketValue,PrevMarketValue,MarketValueZG,HoldingPercentage,Priority,SecuritySlug,McapCategory,Month
-171888,8748,1,ICICI Bank Ltd.,Bank,Banking,Domestic Equities,14447.0,14447.0,0.0,1.8243,1.7412,4.7725706409372854,15.973207249803,1100,icici-bank,Large Cap,Apr-2026
-171875,5051,1,HDFC Bank Ltd.,Bank,Banking,Domestic Equities,20113.0,20113.0,0.0,1.5511000000000001,1.4719,5.380800326109122,13.581122493652,1100,hdfc-bank,Large Cap,Apr-2026
+171888,8748,1,ICICI Bank Ltd.,Bank,Banking,Domestic Equities,14447.0,14447.0,0.0,1.8144999999999998,1.8243,-0.5371923477498317,16.1777817403709,1100,icici-bank,Large Cap,May-2026
+171875,5051,1,HDFC Bank Ltd.,Bank,Banking,Domestic Equities,20113.0,20113.0,0.0,1.4979,1.5511000000000001,-3.4298239958739094,13.3550285306705,1100,hdfc-bank,Large Cap,May-2026
+171400,5889,1,Axis Bank Ltd.,Bank,Banking,Domestic Equities,6944.0,6944.0,0.0,0.8943000000000001,0.8803,1.5903669203680626,7.97343081312411,1100,axis-bank,Large Cap,May-2026
+133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,8982.0,8982.0,0.0,0.8659,0.9593,-9.736266027311585,7.72022111269615,1100,state-bank-of-india,Large Cap,May-2026
+171492,5886,1,Kotak Mahindra Bank Ltd.,Bank,Banking,Domestic Equities,21269.0,21269.0,0.0,0.8181999999999999,0.8139,0.5283204324855543,7.29493580599144,1100,kotak-mahindra-bank,Large Cap,May-2026
+77230,112345,1,DAM Capital Advisors Ltd.,Finance,Finance,Domestic Equities,30629.0,30629.0,0.0,0.46130000000000004,0.47090000000000004,-2.0386493947759625,4.11287446504993,1100,dam-capital-advisors,Small Cap,May-2026
+152604,5456,1,Power Finance Corporation Ltd.,Finance,Finance,Domestic Equities,9923.0,9923.0,0.0,0.4252,0.4447,-4.384978637283552,3.79101283880171,1100,power-finance-corporation,Large Cap,May-2026
+171484,6114,1,Bajaj Finance Ltd.,Finance,Finance,Domestic Equities,4487.0,4487.0,0.0,0.40590000000000004,0.4203,-3.426124197002136,3.61893723252496,1100,bajaj-finance,Large Cap,May-2026
+171776,7342,1,The Karnataka Bank Ltd.,Bank,Banking,Domestic Equities,12962.0,16937.0,-23.46932750782311,0.34869999999999995,0.45439999999999997,-23.261443661971835,3.1089514978602,1100,the-karnataka-bank,Small Cap,May-2026
+152207,5372,1,LIC Housing Finance Ltd.,Finance,Finance,Domestic Equities,5977.0,5977.0,0.0,0.319,0.33130000000000004,-3.7126471476003737,2.8441512125535,1100,lic-housing-finance,Small Cap,May-2026
+171335,5389,1,Bajaj Holdings & Investment Ltd.,Finance,Finance,Domestic Equities,300.0,300.0,0.0,0.3104,0.308,0.7792207792207742,2.76747503566334,1100,bajaj-holdings-investment,Large Cap,May-2026
+57541,86814,1,General Insurance Corporation of India,Insurance,Finance,Domestic Equities,7712.0,7712.0,0.0,0.29460000000000003,0.3034,-2.9004614370467996,2.62660485021398,1100,general-insurance-corporation-of-india,Mid Cap,May-2026
+114530,88033,1,HDFC Asset Management Company Ltd.,Finance,Finance,Domestic Equities,1068.0,1068.0,0.0,0.2869,0.2897,-0.9665170866413448,2.55795292439372,1100,hdfc-asset-management-company,Large Cap,May-2026
+58595,86782,1,Indian Energy Exchange Ltd.,Power,Power,Domestic Equities,20720.0,20720.0,0.0,0.2655,0.2597,2.233346168656149,2.36715406562054,1100,indian-energy-exchange,Small Cap,May-2026
+2469,110949,1,JIO Financial Services Ltd.,Finance,Finance,Domestic Equities,8946.0,8946.0,0.0,0.2138,0.22039999999999998,-2.994555353901997,1.90620542082739,1100,jio-financial-services,Large Cap,May-2026
+58155,95800,1,Life Insurance Corporation of India,Insurance,Finance,Domestic Equities,4896.0,2448.0,100.0,0.2014,0.1954,3.0706243602865992,1.79564907275321,1100,life-insurance-corporation-of-india,Large Cap,May-2026
+152067,7924,1,JM Financial Ltd.,Finance,Finance,Domestic Equities,13920.0,21520.0,-35.31598513011153,0.1812,0.29960000000000003,-39.51935914552737,1.61554921540656,1100,jm-financial,Small Cap,May-2026
+95265,83775,1,Central Depository Services (India) Ltd.,Business Services,Finance,Domestic Equities,1288.0,1288.0,0.0,0.1603,0.1638,-2.136752136752124,1.42920827389444,1100,central-depository-services-india,Small Cap,May-2026
+114405,5008,1,Bank Of Baroda,Bank,Banking,Domestic Equities,5858.0,5858.0,0.0,0.1573,0.15439999999999998,1.878238341968918,1.4024607703281,1100,bank-of-baroda,Large Cap,May-2026
+83342,79963,1,Bandhan Bank Ltd.,Bank,Banking,Domestic Equities,7186.0,,,0.1496,,,1.33380884450785,1100,bandhan-bank,Small Cap,May-2026
+152686,7802,1,Multi Commodity Exchange Of India Ltd.,Finance,Finance,Domestic Equities,450.0,450.0,0.0,0.133,0.13369999999999999,-0.5235602094240727,1.1858059914408,1100,multi-commodity-exchange-of-india,Mid Cap,May-2026
+192109,100019,1,Prudent Corporate Advisory Services Ltd.,Finance,Finance,Domestic Equities,406.0,,,0.1099,,,0.979850213980029,1100,prudent-corporate-advisory-services,Small Cap,May-2026
+77639,92991,1,SBI Cards And Payment Services Ltd.,Finance,Finance,Domestic Equities,1706.0,1706.0,0.0,0.1066,0.10980000000000001,-2.9143897996357038,0.950427960057061,1100,sbi-cards-and-payment-services,Mid Cap,May-2026
+787,70906,1,RBL Bank Ltd.,Bank,Banking,Domestic Equities,2190.0,5490.0,-60.10928961748634,0.0756,0.1848,-59.09090909090909,0.674037089871612,1100,rbl-bank,Small Cap,May-2026
+19913,93142,1,UTI Asset Management Company Ltd.,Finance,Finance,Domestic Equities,610.0,610.0,0.0,0.057699999999999994,0.0579,-0.34542314335061247,0.51444365192582,1100,uti-asset-management-company,Small Cap,May-2026
+171888,8748,1,ICICI Bank Ltd.,Bank,Banking,Domestic Equities,14447.0,14447.0,0.0,1.8243,1.7412,4.772570640937285,15.973207249803,1100,icici-bank,Large Cap,Apr-2026
+171875,5051,1,HDFC Bank Ltd.,Bank,Banking,Domestic Equities,20113.0,20113.0,0.0,1.5511,1.4719,5.380800326109122,13.581122493652,1100,hdfc-bank,Large Cap,Apr-2026
 133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,8982.0,8982.0,0.0,0.9593,0.8801000000000001,8.998977388933078,8.39943962875405,1100,state-bank-of-india,Large Cap,Apr-2026
 171400,5889,1,Axis Bank Ltd.,Bank,Banking,Domestic Equities,6944.0,6944.0,0.0,0.8803,0.8069,9.096542322468713,7.70773137203397,1100,axis-bank,Large Cap,Apr-2026
 171492,5886,1,Kotak Mahindra Bank Ltd.,Bank,Banking,Domestic Equities,21269.0,21269.0,0.0,0.8139,0.7512000000000001,8.346645367412135,7.12634620436039,1100,kotak-mahindra-bank,Large Cap,Apr-2026
-77230,112345,1,DAM Capital Advisors Ltd.,Finance,Finance,Domestic Equities,30629.0,30629.0,0.0,0.47090000000000004,0.3778,24.642668078348336,4.12310655809474,1100,dam-capital-advisors,Small Cap,Apr-2026
-171776,7342,1,The Karnataka Bank Ltd.,Bank,Banking,Domestic Equities,16937.0,21319.0,-20.55443501102303,0.45439999999999997,0.4755,-4.437434279705572,3.97863584624814,1100,the-karnataka-bank,Small Cap,Apr-2026
+77230,112345,1,DAM Capital Advisors Ltd.,Finance,Finance,Domestic Equities,30629.0,30629.0,0.0,0.4709,0.3778,24.642668078348336,4.12310655809474,1100,dam-capital-advisors,Small Cap,Apr-2026
+171776,7342,1,The Karnataka Bank Ltd.,Bank,Banking,Domestic Equities,16937.0,21319.0,-20.55443501102303,0.4543999999999999,0.4755,-4.437434279705572,3.97863584624814,1100,the-karnataka-bank,Small Cap,Apr-2026
 152604,5456,1,Power Finance Corporation Ltd.,Finance,Finance,Domestic Equities,9923.0,14671.0,-32.36316542839616,0.4447,0.557,-20.16157989228008,3.89370457928378,1100,power-finance-corporation,Large Cap,Apr-2026
-171484,6114,1,Bajaj Finance Ltd.,Finance,Finance,Domestic Equities,4487.0,4487.0,0.0,0.4203,0.35960000000000003,16.879866518353726,3.68006304176517,1100,bajaj-finance,Large Cap,Apr-2026
-152207,5372,1,LIC Housing Finance Ltd.,Finance,Finance,Domestic Equities,5977.0,5977.0,0.0,0.33130000000000004,0.29600000000000004,11.925675675675679,2.90079677786534,1100,lic-housing-finance,Small Cap,Apr-2026
+171484,6114,1,Bajaj Finance Ltd.,Finance,Finance,Domestic Equities,4487.0,4487.0,0.0,0.4203,0.3596,16.879866518353726,3.68006304176517,1100,bajaj-finance,Large Cap,Apr-2026
+152207,5372,1,LIC Housing Finance Ltd.,Finance,Finance,Domestic Equities,5977.0,5977.0,0.0,0.3313,0.296,11.92567567567568,2.90079677786534,1100,lic-housing-finance,Small Cap,Apr-2026
 171335,5389,1,Bajaj Holdings & Investment Ltd.,Finance,Finance,Domestic Equities,300.0,300.0,0.0,0.308,0.2623,17.422798322531452,2.6967866211365,1100,bajaj-holdings-investment,Large Cap,Apr-2026
 57541,86814,1,General Insurance Corporation of India,Insurance,Finance,Domestic Equities,7712.0,7712.0,0.0,0.3034,0.2796,8.512160228898423,2.65650993783382,1100,general-insurance-corporation-of-india,Mid Cap,Apr-2026
-152067,7924,1,JM Financial Ltd.,Finance,Finance,Domestic Equities,21520.0,21520.0,0.0,0.29960000000000003,0.2444,22.585924713584284,2.62323789510551,1100,jm-financial,Small Cap,Apr-2026
-114530,88033,1,HDFC Asset Management Company Ltd.,Finance,Finance,Domestic Equities,1068.0,1068.0,0.0,0.2897,0.23670000000000002,22.391212505280933,2.53655546799755,1100,hdfc-asset-management-company,Large Cap,Apr-2026
+152067,7924,1,JM Financial Ltd.,Finance,Finance,Domestic Equities,21520.0,21520.0,0.0,0.2996,0.2444,22.585924713584284,2.62323789510551,1100,jm-financial,Small Cap,Apr-2026
+114530,88033,1,HDFC Asset Management Company Ltd.,Finance,Finance,Domestic Equities,1068.0,1068.0,0.0,0.2897,0.2367,22.391212505280933,2.53655546799755,1100,hdfc-asset-management-company,Large Cap,Apr-2026
 58595,86782,1,Indian Energy Exchange Ltd.,Power,Power,Domestic Equities,20720.0,20720.0,0.0,0.2597,0.2377,9.25536390408077,2.27388144645828,1100,indian-energy-exchange,Small Cap,Apr-2026
-2469,110949,1,JIO Financial Services Ltd.,Finance,Finance,Domestic Equities,8946.0,,,0.22039999999999998,,,1.92977847824184,1100,jio-financial-services,Large Cap,Apr-2026
+2469,110949,1,JIO Financial Services Ltd.,Finance,Finance,Domestic Equities,8946.0,,,0.2203999999999999,,,1.92977847824184,1100,jio-financial-services,Large Cap,Apr-2026
 58155,95800,1,Life Insurance Corporation of India,Insurance,Finance,Domestic Equities,2448.0,2448.0,0.0,0.1954,0.1776,10.022522522522507,1.71088346029244,1100,life-insurance-corporation-of-india,Large Cap,Apr-2026
 787,70906,1,RBL Bank Ltd.,Bank,Banking,Domestic Equities,5490.0,,,0.1848,,,1.6180719726819,1100,rbl-bank,Small Cap,Apr-2026
-95265,83775,1,Central Depository Services (India) Ltd.,Business Services,Finance,Domestic Equities,1288.0,2126.0,-39.416745061147694,0.1638,0.23800000000000002,-31.1764705882353,1.43420015760441,1100,central-depository-services-india,Small Cap,Apr-2026
-114405,5008,1,Bank Of Baroda,Bank,Banking,Domestic Equities,5858.0,5858.0,0.0,0.15439999999999998,0.145,6.482758620689652,1.35189563085544,1100,bank-of-baroda,Large Cap,Apr-2026
-152686,7802,1,Multi Commodity Exchange Of India Ltd.,Finance,Finance,Domestic Equities,450.0,450.0,0.0,0.13369999999999999,0.1076,24.256505576208173,1.17065055599335,1100,multi-commodity-exchange-of-india,Mid Cap,Apr-2026
-77639,92991,1,SBI Cards And Payment Services Ltd.,Finance,Finance,Domestic Equities,1706.0,,,0.10980000000000001,,,0.961386918833728,1100,sbi-cards-and-payment-services,Mid Cap,Apr-2026
+95265,83775,1,Central Depository Services (India) Ltd.,Business Services,Finance,Domestic Equities,1288.0,2126.0,-39.416745061147694,0.1638,0.238,-31.1764705882353,1.43420015760441,1100,central-depository-services-india,Small Cap,Apr-2026
+114405,5008,1,Bank Of Baroda,Bank,Banking,Domestic Equities,5858.0,5858.0,0.0,0.1543999999999999,0.145,6.482758620689652,1.35189563085544,1100,bank-of-baroda,Large Cap,Apr-2026
+152686,7802,1,Multi Commodity Exchange Of India Ltd.,Finance,Finance,Domestic Equities,450.0,450.0,0.0,0.1336999999999999,0.1076,24.256505576208173,1.17065055599335,1100,multi-commodity-exchange-of-india,Mid Cap,Apr-2026
+77639,92991,1,SBI Cards And Payment Services Ltd.,Finance,Finance,Domestic Equities,1706.0,,,0.1098,,,0.961386918833728,1100,sbi-cards-and-payment-services,Mid Cap,Apr-2026
 19913,93142,1,UTI Asset Management Company Ltd.,Finance,Finance,Domestic Equities,610.0,610.0,0.0,0.0579,0.0572,1.2237762237762289,0.506960861570791,1100,uti-asset-management-company,Small Cap,Apr-2026
 171888,8748,1,ICICI Bank Ltd.,Bank,Banking,Domestic Equities,14447.0,15267.0,-5.371061767210323,1.7412,2.1053,-17.294447347171424,16.813766198652,1100,icici-bank,Large Cap,Mar-2026
 171875,5051,1,HDFC Bank Ltd.,Bank,Banking,Domestic Equities,20113.0,21388.0,-5.9612867028240135,1.4719,1.898,-22.44994731296101,14.2132911025705,1100,hdfc-bank,Large Cap,Mar-2026
-133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,8982.0,9932.0,-9.565042287555377,0.8801000000000001,1.1938,-26.277433405930637,8.49861913130806,1100,state-bank-of-india,Large Cap,Mar-2026
+133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,8982.0,9932.0,-9.565042287555377,0.8801000000000001,1.1938,-26.27743340593064,8.49861913130806,1100,state-bank-of-india,Large Cap,Mar-2026
 171400,5889,1,Axis Bank Ltd.,Bank,Banking,Domestic Equities,6944.0,6944.0,0.0,0.8069,0.9609,-16.02664169008222,7.7917688638251,1100,axis-bank,Large Cap,Mar-2026
 171492,5886,1,Kotak Mahindra Bank Ltd.,Bank,Banking,Domestic Equities,21269.0,21269.0,0.0,0.7512000000000001,0.8833,-14.955281331370989,7.25390602367755,1100,kotak-mahindra-bank,Large Cap,Mar-2026
 152604,5456,1,Power Finance Corporation Ltd.,Finance,Finance,Domestic Equities,14671.0,14671.0,0.0,0.557,0.6054999999999999,-8.00990916597852,5.3786284014755,1100,power-finance-corporation,Large Cap,Mar-2026

@@ -1,22 +1,70 @@
 CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,Type,NoOfShare,PrevNoOfShare,SharesZG,MarketValue,PrevMarketValue,MarketValueZG,HoldingPercentage,Priority,SecuritySlug,McapCategory,Month
-75659,6055.0,1,Lloyds Metals & Energy Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,10500.0,10500.0,0.0,1.8525999999999998,1.3353,38.74035797199131,5.83038813654803,1100,lloyds-metals-energy,Mid Cap,Apr-2026
+133645,6755.0,1,Bank Of Maharashtra,Bank,Banking,Domestic Equities,196200.0,196200.0,0.0,1.7941,1.5553,15.353951006236736,5.52685488963849,1100,bank-of-maharashtra,Mid Cap,Jun-2026
+75659,6055.0,1,Lloyds Metals & Energy Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,9250.0,9250.0,0.0,1.6746,1.6669,0.4619353290539386,5.1587264913821,1100,lloyds-metals-energy,Mid Cap,Jun-2026
+171840,6541.0,1,UNO Minda Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,12600.0,12600.0,0.0,1.3706,1.3881000000000001,-1.2607160867372669,4.22223249079679,1100,uno-minda,Mid Cap,Jun-2026
+133351,5368.0,1,Steel Authority Of India Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,70700.0,70700.0,0.0,1.2266,1.4449,-15.10831199390962,3.77863006946691,1100,steel-authority-of-india,Mid Cap,Jun-2026
+171875,5051.0,1,HDFC Bank Ltd.,Bank,Banking,Domestic Equities,14760.0,14760.0,0.0,1.1778,1.099,7.170154686078248,3.628298137794,1100,hdfc-bank,Large Cap,Jun-2026
+153691,5278.0,1,Oberoi Realty Ltd.,Realty,Realty,Domestic Equities,6389.0,6389.0,0.0,1.1303,1.0907,3.630695883377655,3.48197095020255,1100,oberoi-realty,Mid Cap,Jun-2026
+171465,6543.0,1,Aurobindo Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,7150.0,7150.0,0.0,1.1288,1.0199,10.677517403667029,3.47735009164703,1100,aurobindo-pharma,Mid Cap,Jun-2026
+157113,99763.0,1,PB Fintech Ltd.,IT,Information Technology,Domestic Equities,6526.0,6526.0,0.0,1.0628,1.1111,-4.347043470434703,3.27403231520417,1100,pb-fintech,Mid Cap,Jun-2026
+171685,5596.0,1,The Federal Bank Ltd.,Bank,Banking,Domestic Equities,32000.0,32000.0,0.0,1.0562,0.9246,14.233181916504448,3.25370053755988,1100,the-federal-bank,Mid Cap,Jun-2026
+133657,7260.0,1,Coforge Ltd.,IT,Information Technology,Domestic Equities,7115.0,7115.0,0.0,1.0428,1.0116,3.0842230130486405,3.21242086779724,1100,coforge,Mid Cap,Jun-2026
+221939,112392.0,1,Quality Power Electrical Equipments Ltd.,Capital Goods,Capital Goods,Domestic Equities,8503.0,8503.0,0.0,1.0403,0.9031,15.192116044734801,3.20471943687137,1100,quality-power-electrical-equipments,Small Cap,Jun-2026
+549,6709.0,1,Xpro India Ltd.,Plastic Products,Plastic Products,Domestic Equities,6600.0,6600.0,0.0,0.9209,0.7343999999999999,25.394880174291945,2.83689909585201,1100,xpro-india,Small Cap,Jun-2026
+152608,7159.0,1,Indian Bank,Bank,Banking,Domestic Equities,10058.0,6558.0,53.36992985666361,0.8214,0.5463,50.35694673256452,2.53038214500254,1100,indian-bank,Large Cap,Jun-2026
+171636,86629.0,1,ICICI Lombard General Insurance Company Ltd.,Insurance,Finance,Domestic Equities,4600.0,4600.0,0.0,0.8012,0.8244,-2.814167879670055,2.46815458312154,1100,icici-lombard-general-insurance-company,Mid Cap,Jun-2026
+38741,90008.0,1,Angel One Ltd.,Finance,Finance,Domestic Equities,23120.0,9320.0,148.068669527897,0.7645000000000001,0.3144,143.1615776081425,2.35509757712983,1100,angel-one,Small Cap,Jun-2026
+133630,5815.0,1,Jindal Stainless Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,11000.0,11000.0,0.0,0.7619,0.7536,1.1013800424628426,2.34708808896693,1100,jindal-stainless,Mid Cap,Jun-2026
+191600,99819.0,1,FSN E-Commerce Ventures Ltd.,Retailing,Information Technology,Domestic Equities,24000.0,24000.0,0.0,0.746,0.6295000000000001,18.506751389992043,2.29810698827842,1100,fsn-e-commerce-ventures,Mid Cap,Jun-2026
+152211,6247.0,1,Lupin Ltd.,Healthcare,Healthcare,Domestic Equities,3084.0,3084.0,0.0,0.746,0.6994,6.662853874749781,2.29810698827842,1100,lupin,Mid Cap,Jun-2026
+152367,6359.0,1,Abbott India Ltd.,Healthcare,Healthcare,Domestic Equities,280.0,280.0,0.0,0.7123,0.7519,-5.266657800239385,2.19429169939775,1100,abbott-india,Mid Cap,Jun-2026
+177212,94646.0,1,Hitachi Energy India Ltd.,Capital Goods,Capital Goods,Domestic Equities,200.0,200.0,0.0,0.6984,0.7689,-9.168942645337491,2.15147174344993,1100,hitachi-energy-india,Large Cap,Jun-2026
+19098,6973.0,1,Schaeffler India Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,1615.0,1615.0,0.0,0.6766,0.6668000000000001,1.469706058788227,2.08431526577638,1100,schaeffler-india,Mid Cap,Jun-2026
+115032,83788.0,1,Housing & Urban Development Corporation Ltd.,Finance,Finance,Domestic Equities,32000.0,32000.0,0.0,0.6561,0.6512,0.7524570024569945,2.02116353218428,1100,housing-urban-development-corporation,Mid Cap,Jun-2026
+57445,86554.0,1,Dixon Technologies (India) Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,526.0,526.0,0.0,0.627,0.6062,3.431210821511062,1.9315188762072,1100,dixon-technologies-india,Mid Cap,Jun-2026
+152795,99590.0,1,One97 Communications Ltd.,IT,Information Technology,Domestic Equities,5200.0,5200.0,0.0,0.5936,0.5818,2.028188380886902,1.82862775903763,1100,one97-communications,Mid Cap,Jun-2026
+57781,87827.0,1,Bharat Dynamics Ltd.,Capital Goods,Capital Goods,Domestic Equities,4300.0,4300.0,0.0,0.5884,0.518,13.590733590733603,1.81260878271183,1100,bharat-dynamics,Mid Cap,Jun-2026
+76174,111823.0,1,Bharti Hexacom Ltd.,Telecom,Telecom,Domestic Equities,3830.0,3830.0,0.0,0.568,0.5728,-0.8379888268156493,1.74976510635676,1100,bharti-hexacom,Mid Cap,Jun-2026
+76139,111824.0,1,Bansal Wire Industries Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,16110.0,16110.0,0.0,0.5483,0.5127,6.9436317534620535,1.68907783066094,1100,bansal-wire-industries,Small Cap,Jun-2026
+171531,4897.0,1,Reliance Industries Ltd.,Crude Oil,Crude Oil,Domestic Equities,4100.0,4100.0,0.0,0.5305,0.5417000000000001,-2.067565072918598,1.63424364246877,1100,reliance-industries,Large Cap,Jun-2026
+152222,5634.0,1,Max Financial Services Ltd.,Finance,Finance,Domestic Equities,2750.0,2750.0,0.0,0.43560000000000004,0.4604,-5.386620330147691,1.3418973245229,1100,max-financial-services,Mid Cap,Jun-2026
+171434,4916.0,1,Astral Ltd.,Plastic Products,Plastic Products,Domestic Equities,3000.0,3000.0,0.0,0.4007,0.47350000000000003,-15.374868004223865,1.23438534879781,1100,astral,Mid Cap,Jun-2026
+38312,4952.0,1,Tinna Rubber And Infrastructure Ltd.,Agri,Agriculture,Domestic Equities,3964.0,3964.0,0.0,0.3775,0.3094,22.010342598577886,1.16291606980577,1100,tinna-rubber-and-infrastructure,Small Cap,Jun-2026
+171394,82477.0,1,Endurance Technologies Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,1384.0,1384.0,0.0,0.37,0.3768,-1.8046709129511669,1.13981177702817,1100,endurance-technologies,Mid Cap,Jun-2026
+222304,112415.0,1,Leela Palaces Hotels & Resorts Ltd.,Hospitality,Hospitality,Domestic Equities,7250.0,,,0.3447,,,1.06187329605841,1100,leela-palaces-hotels-resorts,Small Cap,Jun-2026
+133463,8505.0,1,Glenmark Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,1500.0,1500.0,0.0,0.3306,0.34119999999999995,-3.1066822977725534,1.01843722563652,1100,glenmark-pharmaceuticals,Mid Cap,Jun-2026
+114530,88033.0,1,HDFC Asset Management Company Ltd.,Finance,Finance,Domestic Equities,1240.0,1240.0,0.0,0.32899999999999996,0.33159999999999995,-0.7840772014475212,1.01350830984397,1100,hdfc-asset-management-company,Large Cap,Jun-2026
+133642,6320.0,1,Petronet LNG Ltd.,Inds. Gases & Fuels,Industrials Gases & Fuels,Domestic Equities,11500.0,,,0.32289999999999996,,,0.994716818384856,1100,petronet-lng,Mid Cap,Jun-2026
+222979,112566.0,1,Vishal Mega Mart Ltd.,Retailing,Retailing,Domestic Equities,26715.0,26715.0,0.0,0.3151,0.32530000000000003,-3.135567168767291,0.970688353896154,1100,vishal-mega-mart,Mid Cap,Jun-2026
+204607,107645.0,1,Zaggle Prepaid Ocean Services Ltd.,IT,Information Technology,Domestic Equities,14438.0,14438.0,0.0,0.2986,0.3031,-1.484658528538434,0.919858909785438,1100,zaggle-prepaid-ocean-services,Small Cap,Jun-2026
+2504,86728.0,1,Jash Engineering Ltd.,Capital Goods,Capital Goods,Domestic Equities,5645.0,,,0.2864,,,0.882275926867212,1100,jash-engineering,Small Cap,Jun-2026
+56649,7087.0,1,HEG Ltd.,Capital Goods,Capital Goods,Domestic Equities,5300.0,5300.0,0.0,0.27390000000000003,0.3004,-8.821571238348863,0.843768772237882,1100,heg,Small Cap,Jun-2026
+19183,6082.0,1,Deepak Nitrite Ltd.,Chemicals,Chemicals,Domestic Equities,1521.0,1521.0,0.0,0.2352,0.25579999999999997,-8.053166536356523,0.724550621505476,1100,deepak-nitrite,Small Cap,Jun-2026
+94611,8169.0,1,Ganesha Ecosphere Ltd.,Textile,Textile,Domestic Equities,2300.0,2300.0,0.0,0.2079,0.21230000000000002,-2.072538860103633,0.640450995795019,1100,ganesha-ecosphere,Small Cap,Jun-2026
+171888,8748.0,1,ICICI Bank Ltd.,Bank,Banking,Domestic Equities,1460.0,1460.0,0.0,0.20079999999999998,0.1834,9.487459105779708,0.618578931965559,1100,icici-bank,Large Cap,Jun-2026
+38020,6672.0,1,Apollo Hospitals Enterprise Ltd.,Healthcare,Healthcare,Domestic Equities,188.0,188.0,0.0,0.1632,0.1537,6.180871828236832,0.502749410840534,1100,apollo-hospitals-enterprise,Large Cap,Jun-2026
+77009,96064.0,1,Max Healthcare Institute Ltd.,Healthcare,Healthcare,Domestic Equities,1225.0,1225.0,0.0,0.1383,0.1182,17.005076142131976,0.426043158818909,1100,max-healthcare-institute,Mid Cap,Jun-2026
+171514,5399.0,1,Cholamandalam Investment and Finance Company Ltd.,Finance,Finance,Domestic Equities,219.0,219.0,0.0,0.0392,0.0337,16.320474777448066,0.120758436917579,1100,cholamandalam-investment-and-finance-company,Large Cap,Jun-2026
+135339,114101.0,1,Vedanta Power Ltd.,Power,Power,Domestic Equities,8550.0,8550.0,0.0,0.0344,0.0091,278.021978021978,0.105971689539917,1100,vedanta-power,Small Cap,Jun-2026
+239538,114097.0,1,Vedanta Iron And Steel Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,8550.0,8550.0,0.0,0.0301,0.0148,103.37837837837837,0.092725228347427,1100,vedanta-iron-and-steel,Small Cap,Jun-2026
+75659,6055.0,1,Lloyds Metals & Energy Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,10500.0,10500.0,0.0,1.8526,1.3353,38.74035797199131,5.83038813654803,1100,lloyds-metals-energy,Mid Cap,Apr-2026
 133645,6755.0,1,Bank Of Maharashtra,Bank,Banking,Domestic Equities,214000.0,214000.0,0.0,1.6771,1.3125,27.779047619047624,5.27806539123648,1100,bank-of-maharashtra,Mid Cap,Apr-2026
 171840,6541.0,1,UNO Minda Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,12600.0,12600.0,0.0,1.4018000000000002,1.2997999999999998,7.847361132481934,4.41165825856258,1100,uno-minda,Mid Cap,Apr-2026
-133351,5368.0,1,Steel Authority Of India Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,70700.0,70700.0,0.0,1.3053,1.0705,21.933675852405422,4.10795942709497,1100,steel-authority-of-india,Mid Cap,Apr-2026
+133351,5368.0,1,Steel Authority Of India Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,70700.0,70700.0,0.0,1.3053,1.0705,21.933675852405425,4.10795942709497,1100,steel-authority-of-india,Mid Cap,Apr-2026
 221939,112392.0,1,Quality Power Electrical Equipments Ltd.,Capital Goods,Capital Goods,Domestic Equities,9275.0,9275.0,0.0,1.28,0.7471,71.32913933877661,4.02833683190191,1100,quality-power-electrical-equipments,Small Cap,Apr-2026
 171875,5051.0,1,HDFC Bank Ltd.,Bank,Banking,Domestic Equities,14760.0,14760.0,0.0,1.139,1.0798,5.482496758659012,3.58459035276272,1100,hdfc-bank,Large Cap,Apr-2026
-157113,99763.0,1,PB Fintech Ltd.,IT,Information Technology,Domestic Equities,6526.0,6526.0,0.0,1.0874,0.9318000000000001,16.69886241682763,3.42219802422667,1100,pb-fintech,Mid Cap,Apr-2026
+157113,99763.0,1,PB Fintech Ltd.,IT,Information Technology,Domestic Equities,6526.0,6526.0,0.0,1.0874,0.9318,16.69886241682763,3.42219802422667,1100,pb-fintech,Mid Cap,Apr-2026
 153691,5278.0,1,Oberoi Realty Ltd.,Realty,Realty,Domestic Equities,6389.0,6389.0,0.0,1.0667,0.9066,17.659386719611742,3.35705226452326,1100,oberoi-realty,Mid Cap,Apr-2026
-171465,6543.0,1,Aurobindo Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,7150.0,7150.0,0.0,0.9934999999999999,0.9326000000000001,6.530130817070543,3.12668175194887,1100,aurobindo-pharma,Mid Cap,Apr-2026
-171685,5596.0,1,The Federal Bank Ltd.,Bank,Banking,Domestic Equities,32000.0,32000.0,0.0,0.9181999999999999,0.8301000000000001,10.613179135043955,2.88970224925964,1100,the-federal-bank,Mid Cap,Apr-2026
+171465,6543.0,1,Aurobindo Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,7150.0,7150.0,0.0,0.9935,0.9326,6.530130817070543,3.12668175194887,1100,aurobindo-pharma,Mid Cap,Apr-2026
+171685,5596.0,1,The Federal Bank Ltd.,Bank,Banking,Domestic Equities,32000.0,32000.0,0.0,0.9182,0.8301000000000001,10.613179135043955,2.88970224925964,1100,the-federal-bank,Mid Cap,Apr-2026
 133657,7260.0,1,Coforge Ltd.,IT,Information Technology,Domestic Equities,7115.0,7115.0,0.0,0.8509,0.7931,7.287857773294667,2.67789985176979,1100,coforge,Mid Cap,Apr-2026
 133630,5815.0,1,Jindal Stainless Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,11000.0,11000.0,0.0,0.8441,0.782,7.941176470588227,2.65649931235031,1100,jindal-stainless,Mid Cap,Apr-2026
-171636,86629.0,1,ICICI Lombard General Insurance Company Ltd.,Insurance,Finance,Domestic Equities,4600.0,4600.0,0.0,0.8111,0.7868999999999999,3.0753590036853495,2.55264375340284,1100,icici-lombard-general-insurance-company,Mid Cap,Apr-2026
-152367,6359.0,1,Abbott India Ltd.,Healthcare,Healthcare,Domestic Equities,280.0,280.0,0.0,0.7121999999999999,0.7256,-1.8467475192943819,2.24139179037542,1100,abbott-india,Mid Cap,Apr-2026
+171636,86629.0,1,ICICI Lombard General Insurance Company Ltd.,Insurance,Finance,Domestic Equities,4600.0,4600.0,0.0,0.8111,0.7868999999999999,3.075359003685349,2.55264375340284,1100,icici-lombard-general-insurance-company,Mid Cap,Apr-2026
+152367,6359.0,1,Abbott India Ltd.,Healthcare,Healthcare,Domestic Equities,280.0,280.0,0.0,0.7121999999999999,0.7256,-1.8467475192943816,2.24139179037542,1100,abbott-india,Mid Cap,Apr-2026
 152211,6247.0,1,Lupin Ltd.,Healthcare,Healthcare,Domestic Equities,3084.0,3084.0,0.0,0.7109000000000001,0.7136,-0.378363228699546,2.23730051078052,1100,lupin,Mid Cap,Apr-2026
 115032,83788.0,1,Housing & Urban Development Corporation Ltd.,Finance,Finance,Domestic Equities,32000.0,32000.0,0.0,0.7068000000000001,0.5107,38.39827687487763,2.22439724436584,1100,housing-urban-development-corporation,Mid Cap,Apr-2026
 549,6709.0,1,Xpro India Ltd.,Plastic Products,Plastic Products,Domestic Equities,6600.0,6600.0,0.0,0.672,0.6683,0.5536435732455552,2.1148768367485,1100,xpro-india,Small Cap,Apr-2026
-177212,94646.0,1,Hitachi Energy India Ltd.,Capital Goods,Capital Goods,Domestic Equities,200.0,200.0,0.0,0.6709999999999999,0.48469999999999996,38.436146069733844,2.11172969859858,1100,hitachi-energy-india,Mid Cap,Apr-2026
+177212,94646.0,1,Hitachi Energy India Ltd.,Capital Goods,Capital Goods,Domestic Equities,200.0,200.0,0.0,0.6709999999999999,0.4846999999999999,38.43614606973384,2.11172969859858,1100,hitachi-energy-india,Mid Cap,Apr-2026
 19098,6973.0,1,Schaeffler India Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,1615.0,1615.0,0.0,0.6662,0.6209,7.295860847157353,2.09662343547895,1100,schaeffler-india,Mid Cap,Apr-2026
 191600,99819.0,1,FSN E-Commerce Ventures Ltd.,Retailing,Information Technology,Domestic Equities,24000.0,24000.0,0.0,0.6354,0.564,12.659574468085108,1.99969158046131,1100,fsn-e-commerce-ventures,Mid Cap,Apr-2026
 57445,86554.0,1,Dixon Technologies (India) Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,526.0,526.0,0.0,0.5874,0.5088,15.448113207547168,1.84862894926499,1100,dixon-technologies-india,Mid Cap,Apr-2026
@@ -25,27 +73,27 @@ CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,
 76174,111823.0,1,Bharti Hexacom Ltd.,Telecom,Telecom,Domestic Equities,3830.0,3830.0,0.0,0.5811999999999999,0.5778,0.5884389061959091,1.82911669273546,1100,bharti-hexacom,Mid Cap,Apr-2026
 152795,99590.0,1,One97 Communications Ltd.,IT,Information Technology,Domestic Equities,5200.0,5200.0,0.0,0.5698,0.4987,14.257068377782234,1.79323931782633,1100,one97-communications,Mid Cap,Apr-2026
 152608,7159.0,1,Indian Bank,Bank,Banking,Domestic Equities,6558.0,6558.0,0.0,0.5586,0.5546,0.7212405337179923,1.75799137054719,1100,indian-bank,Mid Cap,Apr-2026
-76139,111824.0,1,Bansal Wire Industries Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,16110.0,16110.0,0.0,0.47759999999999997,0.3624,31.78807947019866,1.5030731804034,1100,bansal-wire-industries,Small Cap,Apr-2026
+76139,111824.0,1,Bansal Wire Industries Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,16110.0,16110.0,0.0,0.4775999999999999,0.3624,31.78807947019866,1.5030731804034,1100,bansal-wire-industries,Small Cap,Apr-2026
 133627,5088.0,1,Navin Fluorine International Ltd.,Chemicals,Chemicals,Domestic Equities,700.0,700.0,0.0,0.4775,0.4314,10.68613815484469,1.50275846658841,1100,navin-fluorine-international,Small Cap,Apr-2026
-171434,4916.0,1,Astral Ltd.,Plastic Products,Plastic Products,Domestic Equities,3000.0,3000.0,0.0,0.45890000000000003,0.4797,-4.336043360433601,1.44422169699983,1100,astral,Mid Cap,Apr-2026
+171434,4916.0,1,Astral Ltd.,Plastic Products,Plastic Products,Domestic Equities,3000.0,3000.0,0.0,0.4589,0.4797,-4.336043360433601,1.44422169699983,1100,astral,Mid Cap,Apr-2026
 77639,92991.0,1,SBI Cards And Payment Services Ltd.,Finance,Finance,Domestic Equities,6800.0,9800.0,-30.612244897959183,0.4379,0.6227,-29.6772121406777,1.37813179585144,1100,sbi-cards-and-payment-services,Mid Cap,Apr-2026
-152222,5634.0,1,Max Financial Services Ltd.,Finance,Finance,Domestic Equities,2750.0,2750.0,0.0,0.4361,0.40990000000000004,6.391802878750909,1.37246694718158,1100,max-financial-services,Mid Cap,Apr-2026
-113818,7906.0,1,Samvardhana Motherson International Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,32409.0,32409.0,0.0,0.39280000000000004,0.3406,15.325895478567231,1.2361958652899,1100,samvardhana-motherson-international,Large Cap,Apr-2026
-133463,8505.0,1,Glenmark Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,1500.0,1500.0,0.0,0.36090000000000005,0.31980000000000003,12.851782363977495,1.13580215830734,1100,glenmark-pharmaceuticals,Mid Cap,Apr-2026
-204607,107645.0,1,Zaggle Prepaid Ocean Services Ltd.,IT,Information Technology,Domestic Equities,14438.0,14438.0,0.0,0.34759999999999996,0.2707,28.40783154783893,1.09394522091336,1100,zaggle-prepaid-ocean-services,Small Cap,Apr-2026
-114530,88033.0,1,HDFC Asset Management Company Ltd.,Finance,Finance,Domestic Equities,1240.0,1240.0,0.0,0.33640000000000003,0.2748,22.416302765647742,1.05869727363422,1100,hdfc-asset-management-company,Large Cap,Apr-2026
+152222,5634.0,1,Max Financial Services Ltd.,Finance,Finance,Domestic Equities,2750.0,2750.0,0.0,0.4361,0.4099,6.391802878750909,1.37246694718158,1100,max-financial-services,Mid Cap,Apr-2026
+113818,7906.0,1,Samvardhana Motherson International Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,32409.0,32409.0,0.0,0.3928,0.3406,15.325895478567231,1.2361958652899,1100,samvardhana-motherson-international,Large Cap,Apr-2026
+133463,8505.0,1,Glenmark Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,1500.0,1500.0,0.0,0.3609,0.3198,12.851782363977495,1.13580215830734,1100,glenmark-pharmaceuticals,Mid Cap,Apr-2026
+204607,107645.0,1,Zaggle Prepaid Ocean Services Ltd.,IT,Information Technology,Domestic Equities,14438.0,14438.0,0.0,0.3475999999999999,0.2707,28.40783154783893,1.09394522091336,1100,zaggle-prepaid-ocean-services,Small Cap,Apr-2026
+114530,88033.0,1,HDFC Asset Management Company Ltd.,Finance,Finance,Domestic Equities,1240.0,1240.0,0.0,0.3364,0.2748,22.416302765647742,1.05869727363422,1100,hdfc-asset-management-company,Large Cap,Apr-2026
 222979,112566.0,1,Vishal Mega Mart Ltd.,Retailing,Retailing,Domestic Equities,26715.0,26715.0,0.0,0.3267,0.2813,16.139353003910426,1.02817003357996,1100,vishal-mega-mart,Mid Cap,Apr-2026
 171394,82477.0,1,Endurance Technologies Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,1384.0,1384.0,0.0,0.3226,0.3064,5.287206266318529,1.01526676716528,1100,endurance-technologies,Mid Cap,Apr-2026
 239543,,1,Vedanta Aluminium Metal Ltd.,Others,,Domestic Equities,8550.0,,,0.3207,,,1.00928720468042,1100,,,Apr-2026
 677,6026.0,1,Oil India Ltd.,Crude Oil,Crude Oil,Domestic Equities,6500.0,6500.0,0.0,0.319,0.309,3.2362459546925573,1.00393706982555,1100,oil-india,Mid Cap,Apr-2026
-56649,7087.0,1,HEG Ltd.,Capital Goods,Capital Goods,Domestic Equities,5300.0,5300.0,0.0,0.3159,0.2875,9.878260869565217,0.994180941560792,1100,heg,Small Cap,Apr-2026
+56649,7087.0,1,HEG Ltd.,Capital Goods,Capital Goods,Domestic Equities,5300.0,5300.0,0.0,0.3159,0.2875,9.878260869565215,0.994180941560792,1100,heg,Small Cap,Apr-2026
 38312,4952.0,1,Tinna Rubber And Infrastructure Ltd.,Agri,Agriculture,Domestic Equities,3964.0,3964.0,0.0,0.2853,0.2125,34.25882352941177,0.897878514173137,1100,tinna-rubber-and-infrastructure,Small Cap,Apr-2026
-214823,111795.0,1,Unicommerce eSolutions Ltd.,IT,Information Technology,Domestic Equities,26500.0,26500.0,0.0,0.24539999999999998,0.2096,17.080152671755716,0.772307701991194,1100,unicommerce-esolutions,Small Cap,Apr-2026
+214823,111795.0,1,Unicommerce eSolutions Ltd.,IT,Information Technology,Domestic Equities,26500.0,26500.0,0.0,0.2453999999999999,0.2096,17.080152671755716,0.772307701991194,1100,unicommerce-esolutions,Small Cap,Apr-2026
 94611,8169.0,1,Ganesha Ecosphere Ltd.,Textile,Textile,Domestic Equities,2300.0,2300.0,0.0,0.2414,0.1959,23.226135783563045,0.759719149391501,1100,ganesha-ecosphere,Small Cap,Apr-2026
 152242,5741.0,1,Vedanta Ltd.,Non - Ferrous Metals,Non - Ferrous Metals,Domestic Equities,8550.0,4300.0,98.83720930232558,0.2322,0.2816,-17.54261363636364,0.730765478412206,1100,vedanta,Large Cap,Apr-2026
 171888,8748.0,1,ICICI Bank Ltd.,Bank,Banking,Domestic Equities,1460.0,1460.0,0.0,0.1845,0.1761,4.770017035775127,0.580646988660861,1100,icici-bank,Large Cap,Apr-2026
-38020,6672.0,1,Apollo Hospitals Enterprise Ltd.,Healthcare,Healthcare,Domestic Equities,188.0,188.0,0.0,0.1436,0.13949999999999999,2.939068100358424,0.451929038328996,1100,apollo-hospitals-enterprise,Large Cap,Apr-2026
-77009,96064.0,1,Max Healthcare Institute Ltd.,Healthcare,Healthcare,Domestic Equities,1225.0,1225.0,0.0,0.1216,0.11789999999999999,3.138252756573376,0.382691999030681,1100,max-healthcare-institute,Large Cap,Apr-2026
+38020,6672.0,1,Apollo Hospitals Enterprise Ltd.,Healthcare,Healthcare,Domestic Equities,188.0,188.0,0.0,0.1436,0.1394999999999999,2.939068100358424,0.451929038328996,1100,apollo-hospitals-enterprise,Large Cap,Apr-2026
+77009,96064.0,1,Max Healthcare Institute Ltd.,Healthcare,Healthcare,Domestic Equities,1225.0,1225.0,0.0,0.1216,0.1178999999999999,3.138252756573376,0.382691999030681,1100,max-healthcare-institute,Large Cap,Apr-2026
 19183,6082.0,1,Deepak Nitrite Ltd.,Chemicals,Chemicals,Domestic Equities,676.0,,,0.1174,,,0.369474018801003,1100,deepak-nitrite,Small Cap,Apr-2026
 39478,,1,MALCO Energy Ltd.,Non - Ferrous Metals,,Domestic Equities,8550.0,,,0.0693,,,0.218096673789689,1100,,,Apr-2026
 171514,5399.0,1,Cholamandalam Investment and Finance Company Ltd.,Finance,Finance,Domestic Equities,219.0,219.0,0.0,0.0342,0.0297,15.151515151515142,0.107632124727379,1100,cholamandalam-investment-and-finance-company,Large Cap,Apr-2026

@@ -1,31 +1,61 @@
 CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,Type,NoOfShare,PrevNoOfShare,SharesZG,MarketValue,PrevMarketValue,MarketValueZG,HoldingPercentage,Priority,SecuritySlug,McapCategory,Month
-171875,5051,1,HDFC Bank Ltd.,Bank,Banking,Domestic Equities,596886.0,508178.0,17.4560882210564,44.4411,39.216100000000004,13.323609435920439,9.39771189794232,1100,hdfc-bank,Large Cap,May-2026
-133654,6850,1,Ultratech Cement Ltd.,Construction Materials,Construction Materials,Domestic Equities,34768.0,34768.0,0.0,39.9206,40.282199999999996,-0.8976669596000183,8.44178694030968,1100,ultratech-cement,Large Cap,May-2026
+171875,5051,1,HDFC Bank Ltd.,Bank,Banking,Domestic Equities,596886.0,596886.0,0.0,47.6285,44.4411,7.172189707275489,9.87589046516512,1100,hdfc-bank,Large Cap,Jun-2026
+171888,8748,1,ICICI Bank Ltd.,Bank,Banking,Domestic Equities,315000.0,315000.0,0.0,43.3188,39.5766,9.45558739255015,8.98226322228066,1100,icici-bank,Large Cap,Jun-2026
+133654,6850,1,Ultratech Cement Ltd.,Construction Materials,Construction Materials,Domestic Equities,34768.0,34768.0,0.0,39.1244,39.9206,-1.9944590011172147,8.11254372729156,1100,ultratech-cement,Large Cap,Jun-2026
+152372,4964,1,Larsen & Toubro Ltd.,Infrastructure,Infrastructure,Domestic Equities,66842.0,66842.0,0.0,27.695300000000003,27.2481,1.6412153507951106,5.74269080907203,1100,larsen-toubro,Large Cap,Jun-2026
+133664,7760,1,NTPC Ltd.,Power,Power,Domestic Equities,760275.0,760275.0,0.0,27.1152,29.415,-7.818459969403365,5.62240560045026,1100,ntpc,Large Cap,Jun-2026
+153260,8051,1,Prestige Estates Projects Ltd.,Realty,Realty,Domestic Equities,154989.0,154989.0,0.0,24.2496,21.2211,14.271173501844855,5.02821616099747,1100,prestige-estates-projects,Mid Cap,Jun-2026
+133434,4968,1,JSW Steel Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,174761.0,174761.0,0.0,21.4327,22.3345,-4.0376995231592305,4.44412479025677,1100,jsw-steel,Large Cap,Jun-2026
+152334,5218,1,Ambuja Cements Ltd.,Construction Materials,Construction Materials,Domestic Equities,406600.0,406600.0,0.0,17.1524,18.209600000000002,-5.80572884632282,3.55659371205682,1100,ambuja-cements,Large Cap,Jun-2026
+195746,102043,1,Venus Pipes & Tubes Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,98614.0,142856.0,-30.969647757182056,17.0652,19.9713,-14.551381232068023,3.5385125705436,1100,venus-pipes-tubes,Small Cap,Jun-2026
+96614,6762,1,PG Electroplast Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,290000.0,290000.0,0.0,15.468599999999999,13.994000000000002,10.537373159925668,3.20745350471783,1100,pg-electroplast,Small Cap,Jun-2026
+152379,5838,1,Voltas Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,115000.0,115000.0,0.0,14.6924,14.3256,2.560451220193225,3.04650646294534,1100,voltas,Mid Cap,Jun-2026
+115101,104720,1,Keystone Realtors Ltd,Realty,Realty,Domestic Equities,283568.0,283568.0,0.0,11.8631,11.284600000000001,5.126455523456738,2.45984392070505,1100,keystone-realtors,Small Cap,Jun-2026
+141828,87574,1,Orient Electric Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,645329.0,645329.0,0.0,11.322899999999999,12.160599999999999,-6.8886403631399755,2.34783207844081,1100,orient-electric,Small Cap,Jun-2026
+171492,5886,1,Kotak Mahindra Bank Ltd.,Bank,Banking,Domestic Equities,285000.0,,,11.1791,,,2.31801478314722,1100,kotak-mahindra-bank,Large Cap,Jun-2026
+139932,15713,1,Adani Energy Solutions Ltd.,Power,Power,Domestic Equities,71068.0,71068.0,0.0,10.5991,10.7547,-1.4468093019795947,2.19775030977947,1100,adani-energy-solutions,Large Cap,Jun-2026
+117072,93022,1,Home First Finance Company India Ltd.,Finance,Finance,Domestic Equities,91707.0,,,10.449100000000001,,,2.16664742873609,1100,home-first-finance-company-india,Small Cap,Jun-2026
+133642,6320,1,Petronet LNG Ltd.,Inds. Gases & Fuels,Industrials Gases & Fuels,Domestic Equities,350000.0,,,9.828,,,2.03786076596245,1100,petronet-lng,Mid Cap,Jun-2026
+139601,89162,1,Aavas Financiers Ltd.,Finance,Finance,Domestic Equities,64484.0,64484.0,0.0,9.8067,8.6608,13.230879364492878,2.03344415685429,1100,aavas-financiers,Small Cap,Jun-2026
+133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,90000.0,90000.0,0.0,9.2421,8.6796,6.480713396930733,1.916372912607,1100,state-bank-of-india,Large Cap,Jun-2026
+152362,5226,1,Tata Steel Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,445541.0,445541.0,0.0,8.3788,9.268099999999999,-9.59527842815679,1.73736546457532,1100,tata-steel,Large Cap,Jun-2026
+7737,15826,1,IDFC First Bank Ltd.,Bank,Banking,Domestic Equities,1010157.0,1010157.0,0.0,8.0297,7.204400000000001,11.455499417022926,1.66497869276035,1100,idfc-first-bank,Mid Cap,Jun-2026
+745,109745,1,RR Kabel Ltd.,Electricals,Electricals,Domestic Equities,33348.0,58348.0,-42.846370055528894,7.9875,11.998099999999999,-33.426959268550846,1.65622841556014,1100,rr-kabel,Small Cap,Jun-2026
+171946,6864,1,Godrej Properties Ltd.,Realty,Realty,Domestic Equities,42000.0,42000.0,0.0,7.839700000000001,7.403300000000001,5.894668593735224,1.6255817101054,1100,godrej-properties,Mid Cap,Jun-2026
+152394,5450,1,JSW Dulux Ltd.,Chemicals,Chemicals,Domestic Equities,21513.0,21513.0,0.0,6.9446,6.7805,2.4201755032814813,1.43998045129252,1100,jsw-dulux,Small Cap,Jun-2026
+171658,4978,1,Asian Paints Ltd.,Chemicals,Chemicals,Domestic Equities,23800.0,23800.0,0.0,6.273,6.3584000000000005,-1.343105183694023,1.30072248523428,1100,asian-paints,Large Cap,Jun-2026
+171752,6261,1,The Ramco Cements Ltd.,Construction Materials,Construction Materials,Domestic Equities,51236.0,51236.0,0.0,4.7647,4.4637,6.743284718955132,0.987972648716046,1100,the-ramco-cements,Small Cap,Jun-2026
+133800,112656,1,LG Electronics India Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,30093.0,30093.0,0.0,4.6704,4.5859,1.8426045051135103,0.968419304166773,1100,lg-electronics-india,Mid Cap,Jun-2026
+171942,7813,1,Jindal Steel Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,43608.0,43608.0,0.0,4.6229000000000005,5.2644,-12.18562419269053,0.958570058503035,1100,jindal-steel,Large Cap,Jun-2026
+174599,113181,1,Wakefit Innovations Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,311034.0,311034.0,0.0,3.8453,3.8304,0.3889933166248831,0.797332723174138,1100,wakefit-innovations,Small Cap,Jun-2026
+186383,97418,1,TARC Ltd.,Realty,Realty,Domestic Equities,172845.0,172845.0,0.0,2.1856,2.2428,-2.550383449259853,0.453189712056119,1100,tarc,Small Cap,Jun-2026
+171875,5051,1,HDFC Bank Ltd.,Bank,Banking,Domestic Equities,596886.0,508178.0,17.4560882210564,44.4411,39.2161,13.32360943592044,9.39771189794232,1100,hdfc-bank,Large Cap,May-2026
+133654,6850,1,Ultratech Cement Ltd.,Construction Materials,Construction Materials,Domestic Equities,34768.0,34768.0,0.0,39.9206,40.2822,-0.8976669596000183,8.44178694030968,1100,ultratech-cement,Large Cap,May-2026
 171888,8748,1,ICICI Bank Ltd.,Bank,Banking,Domestic Equities,315000.0,240000.0,31.25,39.5766,30.3216,30.522795630837425,8.36904317625136,1100,icici-bank,Large Cap,May-2026
 133664,7760,1,NTPC Ltd.,Power,Power,Domestic Equities,760275.0,760275.0,0.0,29.415,30.3464,-3.069227321856954,6.22022622027748,1100,ntpc,Large Cap,May-2026
 152372,4964,1,Larsen & Toubro Ltd.,Infrastructure,Infrastructure,Domestic Equities,66842.0,96500.0,-30.733678756476685,27.2481,38.7351,-29.655273898866923,5.76200394603919,1100,larsen-toubro,Large Cap,May-2026
-133434,4968,1,JSW Steel Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,174761.0,174761.0,0.0,22.3345,22.098499999999998,1.067945788175664,4.72295232081548,1100,jsw-steel,Large Cap,May-2026
-153260,8051,1,Prestige Estates Projects Ltd.,Realty,Realty,Domestic Equities,154989.0,154989.0,0.0,21.2211,21.921599999999998,-3.1954784322312113,4.48750782400579,1100,prestige-estates-projects,Mid Cap,May-2026
-195746,102043,1,Venus Pipes & Tubes Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,142856.0,164678.0,-13.251314686843415,19.9713,22.6877,-11.97300740048572,4.22321957888926,1100,venus-pipes-tubes,Small Cap,May-2026
-152334,5218,1,Ambuja Cements Ltd.,Construction Materials,Construction Materials,Domestic Equities,406600.0,406600.0,0.0,18.209600000000002,18.0612,0.821650831616955,3.8506826918499,1100,ambuja-cements,Large Cap,May-2026
-133351,5368,1,Steel Authority Of India Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,722896.0,965257.0,-25.108442622016724,14.773800000000001,17.8206,-17.097067438806764,3.1241332018744,1100,steel-authority-of-india,Mid Cap,May-2026
+133434,4968,1,JSW Steel Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,174761.0,174761.0,0.0,22.3345,22.0985,1.067945788175664,4.72295232081548,1100,jsw-steel,Large Cap,May-2026
+153260,8051,1,Prestige Estates Projects Ltd.,Realty,Realty,Domestic Equities,154989.0,154989.0,0.0,21.2211,21.9216,-3.1954784322312118,4.48750782400579,1100,prestige-estates-projects,Mid Cap,May-2026
+195746,102043,1,Venus Pipes & Tubes Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,142856.0,164678.0,-13.251314686843417,19.9713,22.6877,-11.97300740048572,4.22321957888926,1100,venus-pipes-tubes,Small Cap,May-2026
+152334,5218,1,Ambuja Cements Ltd.,Construction Materials,Construction Materials,Domestic Equities,406600.0,406600.0,0.0,18.2096,18.0612,0.821650831616955,3.8506826918499,1100,ambuja-cements,Large Cap,May-2026
+133351,5368,1,Steel Authority Of India Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,722896.0,965257.0,-25.108442622016724,14.7738,17.8206,-17.097067438806764,3.1241332018744,1100,steel-authority-of-india,Mid Cap,May-2026
 152379,5838,1,Voltas Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,115000.0,,,14.3256,,,3.02935484416818,1100,voltas,Mid Cap,May-2026
 96614,6762,1,PG Electroplast Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,290000.0,190000.0,52.63157894736842,13.994000000000002,10.146,37.92627636506998,2.95923323904685,1100,pg-electroplast,Small Cap,May-2026
-141828,87574,1,Orient Electric Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,645329.0,645329.0,0.0,12.160599999999999,11.884400000000001,2.324055063781082,2.57153435234766,1100,orient-electric,Small Cap,May-2026
-745,109745,1,RR Kabel Ltd.,Electricals,Electricals,Domestic Equities,58348.0,154726.0,-62.289466540852864,11.998099999999999,24.3075,-50.64033734444102,2.53717138240732,1100,rr-kabel,Small Cap,May-2026
-115101,104720,1,Keystone Realtors Ltd,Realty,Realty,Domestic Equities,283568.0,283568.0,0.0,11.284600000000001,11.1456,1.2471289118576023,2.38629151131543,1100,keystone-realtors,Small Cap,May-2026
+141828,87574,1,Orient Electric Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,645329.0,645329.0,0.0,12.1606,11.8844,2.324055063781082,2.57153435234766,1100,orient-electric,Small Cap,May-2026
+745,109745,1,RR Kabel Ltd.,Electricals,Electricals,Domestic Equities,58348.0,154726.0,-62.289466540852864,11.9981,24.3075,-50.64033734444102,2.53717138240732,1100,rr-kabel,Small Cap,May-2026
+115101,104720,1,Keystone Realtors Ltd,Realty,Realty,Domestic Equities,283568.0,283568.0,0.0,11.2846,11.1456,1.2471289118576023,2.38629151131543,1100,keystone-realtors,Small Cap,May-2026
 139932,15713,1,Adani Energy Solutions Ltd.,Power,Power,Domestic Equities,71068.0,,,10.7547,,,2.27423650964536,1100,adani-energy-solutions,Large Cap,May-2026
-152362,5226,1,Tata Steel Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,445541.0,445541.0,0.0,9.268099999999999,9.417,-1.581182966974631,1.95987348740961,1100,tata-steel,Large Cap,May-2026
+152362,5226,1,Tata Steel Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,445541.0,445541.0,0.0,9.2681,9.417,-1.581182966974631,1.95987348740961,1100,tata-steel,Large Cap,May-2026
 133350,8843,1,State Bank Of India,Bank,Banking,Domestic Equities,90000.0,90000.0,0.0,8.6796,9.6161,-9.73887542766818,1.83542667011798,1100,state-bank-of-india,Large Cap,May-2026
 139601,89162,1,Aavas Financiers Ltd.,Finance,Finance,Domestic Equities,64484.0,64484.0,0.0,8.6608,8.9033,-2.723709186481417,1.83145113882642,1100,aavas-financiers,Small Cap,May-2026
-171946,6864,1,Godrej Properties Ltd.,Realty,Realty,Domestic Equities,42000.0,42000.0,0.0,7.403300000000001,7.7078,-3.9505436051791603,1.56553461759579,1100,godrej-properties,Mid Cap,May-2026
+171946,6864,1,Godrej Properties Ltd.,Realty,Realty,Domestic Equities,42000.0,42000.0,0.0,7.403300000000001,7.7078,-3.95054360517916,1.56553461759579,1100,godrej-properties,Mid Cap,May-2026
 7737,15826,1,IDFC First Bank Ltd.,Bank,Banking,Domestic Equities,1010157.0,1010157.0,0.0,7.204400000000001,7.0347,2.4123274624362128,1.52347434238882,1100,idfc-first-bank,Mid Cap,May-2026
 152394,5450,1,JSW Dulux Ltd.,Chemicals,Chemicals,Domestic Equities,21513.0,21513.0,0.0,6.7805,6.347799999999999,6.816534862472034,1.43383457034137,1100,jsw-dulux,Small Cap,May-2026
 171658,4978,1,Asian Paints Ltd.,Chemicals,Chemicals,Domestic Equities,23800.0,23800.0,0.0,6.3584000000000005,5.8179,9.29029374860346,1.34457543426865,1100,asian-paints,Large Cap,May-2026
-171942,7813,1,Jindal Steel Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,43608.0,43608.0,0.0,5.2644,5.3337,-1.2992856741098955,1.11323334740876,1100,jindal-steel,Mid Cap,May-2026
+171942,7813,1,Jindal Steel Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,43608.0,43608.0,0.0,5.2644,5.3337,-1.2992856741098957,1.11323334740876,1100,jindal-steel,Mid Cap,May-2026
 133800,112656,1,LG Electronics India Ltd.,Consumer Durables,Consumer Durables,Domestic Equities,30093.0,30093.0,0.0,4.5859,4.7938,-4.336851766865539,0.969754731380945,1100,lg-electronics-india,Large Cap,May-2026
 171752,6261,1,The Ramco Cements Ltd.,Construction Materials,Construction Materials,Domestic Equities,51236.0,51236.0,0.0,4.4637,4.7911,-6.833503788274093,0.943913777985809,1100,the-ramco-cements,Small Cap,May-2026
-174599,113181,1,Wakefit Innovations Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,311034.0,311034.0,0.0,3.8304,4.2938,-10.792305184219101,0.809993354212166,1100,wakefit-innovations,Small Cap,May-2026
+174599,113181,1,Wakefit Innovations Ltd.,FMCG,Fast Moving Consumer Goods,Domestic Equities,311034.0,311034.0,0.0,3.8304,4.2938,-10.7923051842191,0.809993354212166,1100,wakefit-innovations,Small Cap,May-2026
 186383,97418,1,TARC Ltd.,Realty,Realty,Domestic Equities,172845.0,422845.0,-59.12331941964549,2.2428,5.611599999999999,-60.03278922232519,0.474272424505808,1100,tarc,Small Cap,May-2026
 133654,6850,1,Ultratech Cement Ltd.,Construction Materials,Construction Materials,Domestic Equities,34768.0,34768.0,0.0,40.2822,37.3582,7.8269295629875,8.46078014106046,1100,ultratech-cement,Large Cap,Apr-2026
 171875,5051,1,HDFC Bank Ltd.,Bank,Banking,Domestic Equities,508178.0,508178.0,0.0,39.2161,37.1758,5.48824773105085,8.23685896226723,1100,hdfc-bank,Large Cap,Apr-2026

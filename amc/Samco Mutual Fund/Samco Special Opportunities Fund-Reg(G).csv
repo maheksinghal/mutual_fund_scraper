@@ -1,44 +1,93 @@
 CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,Type,NoOfShare,PrevNoOfShare,SharesZG,MarketValue,PrevMarketValue,MarketValueZG,HoldingPercentage,Priority,SecuritySlug,McapCategory,Month
-533,7363,1,Religare Enterprises Ltd.,Finance,Finance,Domestic Equities,348192.0,410000.0,-15.075121951219511,8.4541,10.3792,-18.547672267612157,6.65356013199928,1100,religare-enterprises,Small Cap,Aug-2026
+133537,5258,1,Sterlite Technologies Ltd.,Electricals,Electricals,Domestic Equities,88699.0,88699.0,0.0,8.0707,6.4613,24.908300187268825,6.49886501168003,1100,sterlite-technologies,Small Cap,Sep-2026
+533,7363,1,Religare Enterprises Ltd.,Finance,Finance,Domestic Equities,348192.0,348192.0,0.0,7.9704999999999995,8.4541,-5.7203013922238934,6.41817978311617,1100,religare-enterprises,Small Cap,Sep-2026
+152683,97601,1,MTAR Technologies Ltd.,Capital Goods,Capital Goods,Domestic Equities,6141.0,6141.0,0.0,4.7881,4.3254,10.697276552457572,3.8555782723215,1100,mtar-technologies,Small Cap,Sep-2026
+56877,7963,1,Shilpa Medicare Ltd.,Healthcare,Healthcare,Domestic Equities,42107.0,42107.0,0.0,4.4094,3.9972000000000003,10.312218552987083,3.55063320189103,1100,shilpa-medicare,Small Cap,Sep-2026
+139924,82380,1,Laurus Labs Ltd.,Healthcare,Healthcare,Domestic Equities,20721.0,20721.0,0.0,4.102799999999999,3.9681,3.3945717093823164,3.30374606538724,1100,laurus-labs,Mid Cap,Sep-2026
+114411,5677,1,Welspun Corp Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,14795.0,14795.0,0.0,4.0198,3.5375,13.633922261484106,3.23691099581838,1100,welspun-corp,Small Cap,Sep-2026
+195785,102076,1,Aether Industries Ltd.,Chemicals,Chemicals,Domestic Equities,21737.0,21737.0,0.0,3.6938,3.6763999999999997,0.4732890871504758,2.97440216835512,1100,aether-industries,Small Cap,Sep-2026
+1336,89761,1,Sansera Engineering Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,8102.0,8102.0,0.0,3.6763,3.2554000000000003,12.929286723597706,2.96031043681952,1100,sansera-engineering,Small Cap,Sep-2026
+78344,89378,1,Acutaas Chemicals Ltd.,Healthcare,Healthcare,Domestic Equities,9632.0,9632.0,0.0,3.1587,3.0443000000000002,3.7578425253752905,2.54351728008645,1100,acutaas-chemicals,Small Cap,Sep-2026
+154098,6604,1,TD Power Systems Ltd.,Capital Goods,Capital Goods,Domestic Equities,40064.0,40064.0,0.0,3.1492,3.113,1.16286540314809,2.53586748296712,1100,td-power-systems,Small Cap,Sep-2026
+133179,8686,1,Diamond Power Infrastructure Ltd.,Electricals,Electricals,Domestic Equities,86859.0,92227.0,-5.820421351664914,3.0765,3.2030000000000003,-3.9494224164845564,2.47732640395921,1100,diamond-power-infrastructure,Small Cap,Sep-2026
+134937,5507,1,Kirloskar Oil Engines Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,13182.0,13182.0,0.0,3.0374,2.7674000000000003,9.756450097564501,2.44584144949966,1100,kirloskar-oil-engines,Small Cap,Sep-2026
+133445,6416,1,Apar Industries Ltd.,Capital Goods,Capital Goods,Domestic Equities,1563.0,1668.0,-6.294964028776978,2.7171,2.9526999999999997,-7.97913773834118,2.187922500308,1100,apar-industries,Mid Cap,Sep-2026
+133402,7102,1,HFCL Ltd.,Telecom,Telecom,Domestic Equities,117741.0,117741.0,0.0,2.673,2.9328,-8.858428805237303,2.15241133683828,1100,hfcl,Small Cap,Sep-2026
+152385,6093,1,Garware Hi-Tech Films Ltd.,Plastic Products,Plastic Products,Domestic Equities,3758.0,3758.0,0.0,2.6364,2.6823,-1.7112179845654965,2.12293948688382,1100,garware-hi-tech-films,Small Cap,Sep-2026
+195442,101899,1,Syrma SGS Technology Ltd.,Electricals,Electricals,Domestic Equities,14717.0,14717.0,0.0,2.6239,2.1148,24.073198411197275,2.11287396435839,1100,syrma-sgs-technology,Small Cap,Sep-2026
+133621,6468,1,Astra Microwave Products Ltd.,Capital Goods,Capital Goods,Domestic Equities,16000.0,16000.0,0.0,2.6187,2.6656,-1.7594537815126043,2.10868670698781,1100,astra-microwave-products,Small Cap,Sep-2026
+123367,112361,1,Ather Energy Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,18336.0,18336.0,0.0,2.6129,3.1496,-17.04025908051815,2.10401630453601,1100,ather-energy,Small Cap,Sep-2026
+171697,5757,1,Aegis Logistics Ltd.,Trading,Gas Transmission,Domestic Equities,17873.0,17873.0,0.0,2.4667,2.2602,9.136359614193424,1.98628995307856,1100,aegis-logistics,Small Cap,Sep-2026
+201312,105351,1,Avalon Technologies Ltd.,Electricals,Electricals,Domestic Equities,10424.0,11199.0,-6.9202607375658545,2.3941,2.6579,-9.925128861130975,1.92782939825085,1100,avalon-technologies,Small Cap,Sep-2026
+204790,107779,1,Honasa Consumer Ltd.,Trading,Fast Moving Consumer Goods,Domestic Equities,54858.0,54858.0,0.0,2.3663,2.6381,-10.302869489405255,1.90544367615429,1100,honasa-consumer,Small Cap,Sep-2026
+155654,90605,1,Neogen Chemicals Ltd.,Chemicals,Chemicals,Domestic Equities,9299.0,9299.0,0.0,2.2797,2.0469,11.37329620401583,1.8357097360981,1100,neogen-chemicals,Small Cap,Sep-2026
+154192,90218,1,Anand Rathi Wealth Ltd.,Finance,Finance,Domestic Equities,10517.0,10517.0,0.0,2.2296,2.3182,-3.8219308083858103,1.79536712181617,1100,anand-rathi-wealth,Small Cap,Sep-2026
+133342,5963,1,Bharat Heavy Electricals Ltd.,Capital Goods,Capital Goods,Domestic Equities,53061.0,53061.0,0.0,2.2047,2.3487,-6.131051219823735,1.77531660094552,1100,bharat-heavy-electricals,Large Cap,Sep-2026
+114673,111130,1,Inox India Ltd.,Capital Goods,Capital Goods,Domestic Equities,10447.0,11147.0,-6.279716515654436,2.1441999999999997,2.379,-9.86969314838168,1.72659947192243,1100,inox-india,Small Cap,Sep-2026
+133613,5313,1,Granules India Ltd.,Healthcare,Healthcare,Domestic Equities,23927.0,23927.0,0.0,2.0255,1.9824000000000002,2.174132364810332,1.63101727002093,1100,granules-india,Small Cap,Sep-2026
+153106,112629,1,Belrise Industries Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,80733.0,80733.0,0.0,1.9405000000000001,1.8758000000000001,3.449195010129011,1.56257171684799,1100,belrise-industries,Small Cap,Sep-2026
+171823,5029,1,Arvind Ltd.,Textile,Textile,Domestic Equities,35902.0,35902.0,0.0,1.9383000000000001,1.9949000000000001,-2.837234949120255,1.56080018488352,1100,arvind,Small Cap,Sep-2026
+152369,6790,1,Bharat Forge Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,9864.0,9864.0,0.0,1.8998,2.0763,-8.500698357655448,1.52979837550519,1100,bharat-forge,Mid Cap,Sep-2026
+133627,5088,1,Navin Fluorine International Ltd.,Chemicals,Chemicals,Domestic Equities,2280.0,2280.0,0.0,1.8799000000000001,1.9780000000000002,-4.959555106167847,1.5137740636447,1100,navin-fluorine-international,Small Cap,Sep-2026
+114808,112465,1,Aditya Infotech Ltd.,Trading,Consumer Durables,Domestic Equities,4851.0,,,1.8659000000000001,,,1.50250067841622,1100,aditya-infotech,Small Cap,Sep-2026
+84712,89792,1,Sky Gold and Diamonds Ltd.,Diamond  &  Jewellery,Diamond & Jewellery,Domestic Equities,22444.0,22444.0,0.0,1.8195,1.8115,0.44162296439413906,1.46513745880182,1100,sky-gold-and-diamonds,Small Cap,Sep-2026
+1427,98308,1,Sona BLW Precision Forgings Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,21515.0,21515.0,0.0,1.7856999999999998,1.7493,2.080832332933165,1.43792028589305,1100,sona-blw-precision-forgings,Mid Cap,Sep-2026
+861,112211,1,Sai Life Sciences Ltd.,Healthcare,Healthcare,Domestic Equities,11706.0,11706.0,0.0,1.7846000000000002,1.7087,4.441973430093055,1.43703451991081,1100,sai-life-sciences,Small Cap,Sep-2026
+171829,5244,1,Thangamayil Jewellery Ltd.,Diamond  &  Jewellery,Diamond & Jewellery,Domestic Equities,3492.0,3492.0,0.0,1.7677,1.8899000000000001,-6.4659505793957335,1.42342593345643,1100,thangamayil-jewellery,Small Cap,Sep-2026
+328,7817,1,Marksans Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,54161.0,,,1.7456,,,1.40563008963147,1100,marksans-pharma,Small Cap,Sep-2026
+171465,6543,1,Aurobindo Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,9754.0,9754.0,0.0,1.6309,1.6747999999999998,-2.621208502507754,1.31326885493811,1100,aurobindo-pharma,Mid Cap,Sep-2026
+96376,16986,1,SPR Auto Technologies Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,3471.0,3471.0,0.0,1.6153,1.5999,0.9625601600099957,1.30070708282637,1100,spr-auto-technologies,Small Cap,Sep-2026
+188394,98230,1,Paras Defence And Space Technologies Ltd.,Capital Goods,Capital Goods,Domestic Equities,12155.0,,,1.5935,,,1.28315281154201,1100,paras-defence-and-space-technologies,Small Cap,Sep-2026
+133623,8531,1,Radico Khaitan Ltd.,Alcohol,Alcohol,Domestic Equities,3538.0,3538.0,0.0,1.5447,1.5868,-2.653138391731792,1.24385701160273,1100,radico-khaitan,Mid Cap,Sep-2026
+191600,99819,1,FSN E-Commerce Ventures Ltd.,Retailing,Information Technology,Domestic Equities,47666.0,47666.0,0.0,1.5253,1.6662000000000001,-8.456367782979237,1.22823532064326,1100,fsn-e-commerce-ventures,Mid Cap,Sep-2026
+39219,111883,1,Akums Drugs & Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,17770.0,,,1.4545,,,1.17122420105922,1100,akums-drugs-pharmaceuticals,Small Cap,Sep-2026
+152331,7581,1,Torrent Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,2996.0,2996.0,0.0,1.4381,1.5178,-5.251021214916325,1.15801823550585,1100,torrent-pharmaceuticals,Large Cap,Sep-2026
+171685,5596,1,The Federal Bank Ltd.,Bank,Banking,Domestic Equities,44066.0,44066.0,0.0,1.3987,1.5718,-11.012851507825424,1.12629170850569,1100,the-federal-bank,Mid Cap,Sep-2026
+171462,6372,1,Divi's Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,1463.0,,,1.3593000000000002,,,1.09456518150553,1100,divis-laboratories,Large Cap,Sep-2026
+371,7979,1,Neuland Laboratories Ltd.,Healthcare,Healthcare,Domestic Equities,590.0,,,1.2597,,,1.01436309802289,1100,neuland-laboratories,Small Cap,Sep-2026
+120445,17045,1,Quess Corp Ltd.,Business Services,Information Technology,Domestic Equities,37281.0,,,1.2487000000000001,,,1.00550543820051,1100,quess-corp,Small Cap,Sep-2026
+171698,8307,1,Oracle Financial Services Software Ltd.,IT,Information Technology,Domestic Equities,1118.0,,,1.1884000000000001,,,0.956949357537828,1100,oracle-financial-services-software,Mid Cap,Sep-2026
+56635,7585,1,Cemindia Projects Ltd.,Infrastructure,Infrastructure,Domestic Equities,9484.0,9484.0,0.0,1.1307,1.1623999999999999,-2.727116311080525,0.910486905560436,1100,cemindia-projects,Small Cap,Sep-2026
+533,7363,1,Religare Enterprises Ltd.,Finance,Finance,Domestic Equities,348192.0,410000.0,-15.075121951219511,8.4541,10.3792,-18.54767226761216,6.65356013199928,1100,religare-enterprises,Small Cap,Aug-2026
 133537,5258,1,Sterlite Technologies Ltd.,Electricals,Electricals,Domestic Equities,88699.0,91155.0,-2.69431188634743,6.4613,5.0778,27.24605143959983,5.08518329341822,1100,sterlite-technologies,Small Cap,Aug-2026
-152683,97601,1,MTAR Technologies Ltd.,Capital Goods,Capital Goods,Domestic Equities,6141.0,6385.0,-3.821456538762725,4.3254,3.6561000000000003,18.306392057110035,3.40418364993905,1100,mtar-technologies,Small Cap,Aug-2026
-56877,7963,1,Shilpa Medicare Ltd.,Healthcare,Healthcare,Domestic Equities,42107.0,42107.0,0.0,3.9972000000000003,2.5738,55.30344238091539,3.14588312885198,1100,shilpa-medicare,Small Cap,Aug-2026
-139924,82380,1,Laurus Labs Ltd.,Healthcare,Healthcare,Domestic Equities,20721.0,20721.0,0.0,3.9681,3.7632999999999996,5.442032258921696,3.12298079745761,1100,laurus-labs,Mid Cap,Aug-2026
-195785,102076,1,Aether Industries Ltd.,Chemicals,Chemicals,Domestic Equities,21737.0,21737.0,0.0,3.6763999999999997,3.3466000000000005,9.85477798362516,2.89340656832568,1100,aether-industries,Small Cap,Aug-2026
+152683,97601,1,MTAR Technologies Ltd.,Capital Goods,Capital Goods,Domestic Equities,6141.0,6385.0,-3.821456538762725,4.3254,3.6561,18.306392057110035,3.40418364993905,1100,mtar-technologies,Small Cap,Aug-2026
+56877,7963,1,Shilpa Medicare Ltd.,Healthcare,Healthcare,Domestic Equities,42107.0,42107.0,0.0,3.9972,2.5738,55.30344238091539,3.14588312885198,1100,shilpa-medicare,Small Cap,Aug-2026
+139924,82380,1,Laurus Labs Ltd.,Healthcare,Healthcare,Domestic Equities,20721.0,20721.0,0.0,3.9681,3.7633,5.442032258921696,3.12298079745761,1100,laurus-labs,Mid Cap,Aug-2026
+195785,102076,1,Aether Industries Ltd.,Chemicals,Chemicals,Domestic Equities,21737.0,21737.0,0.0,3.6764,3.3466000000000005,9.85477798362516,2.89340656832568,1100,aether-industries,Small Cap,Aug-2026
 114411,5677,1,Welspun Corp Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,14795.0,14795.0,0.0,3.5375,2.4421,44.85483804921993,2.78408925455666,1100,welspun-corp,Small Cap,Aug-2026
 1336,89761,1,Sansera Engineering Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,8102.0,8102.0,0.0,3.2554000000000003,2.7117,20.05015304052808,2.56207043371979,1100,sansera-engineering,Small Cap,Aug-2026
-133179,8686,1,Diamond Power Infrastructure Ltd.,Electricals,Electricals,Domestic Equities,92227.0,92227.0,0.0,3.2030000000000003,2.9879000000000002,7.1990361123196855,2.52083049677597,1100,diamond-power-infrastructure,Small Cap,Aug-2026
-123367,112361,1,Ather Energy Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,18336.0,19523.0,-6.0800081954617635,3.1496,2.4605,28.006502743344836,2.47880353813474,1100,ather-energy,Small Cap,Aug-2026
+133179,8686,1,Diamond Power Infrastructure Ltd.,Electricals,Electricals,Domestic Equities,92227.0,92227.0,0.0,3.2030000000000003,2.9879,7.1990361123196855,2.52083049677597,1100,diamond-power-infrastructure,Small Cap,Aug-2026
+123367,112361,1,Ather Energy Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,18336.0,19523.0,-6.080008195461764,3.1496,2.4605,28.00650274334484,2.47880353813474,1100,ather-energy,Small Cap,Aug-2026
 154098,6604,1,TD Power Systems Ltd.,Capital Goods,Capital Goods,Domestic Equities,40064.0,22186.0,80.58234922924366,3.113,2.5092,24.06344651681812,2.44999854400986,1100,td-power-systems,Small Cap,Aug-2026
-78344,89378,1,Acutaas Chemicals Ltd.,Healthcare,Healthcare,Domestic Equities,9632.0,9632.0,0.0,3.0443000000000002,2.9906,1.7956262957266114,2.3959301533984,1100,acutaas-chemicals,Small Cap,Aug-2026
-133445,6416,1,Apar Industries Ltd.,Capital Goods,Capital Goods,Domestic Equities,1668.0,1668.0,0.0,2.9526999999999997,2.3931999999999998,23.378739762660867,2.32383896591645,1100,apar-industries,Mid Cap,Aug-2026
-133402,7102,1,HFCL Ltd.,Telecom,Telecom,Domestic Equities,117741.0,117741.0,0.0,2.9328,2.2832,28.451296426068666,2.30817723413817,1100,hfcl,Small Cap,Aug-2026
-134937,5507,1,Kirloskar Oil Engines Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,13182.0,13182.0,0.0,2.7674000000000003,2.8866,-4.1294256218388465,2.17800384538801,1100,kirloskar-oil-engines,Small Cap,Aug-2026
-152385,6093,1,Garware Hi-Tech Films Ltd.,Plastic Products,Plastic Products,Domestic Equities,3758.0,3758.0,0.0,2.6823,2.6875,-0.19348837209301648,2.11102829893917,1100,garware-hi-tech-films,Small Cap,Aug-2026
+78344,89378,1,Acutaas Chemicals Ltd.,Healthcare,Healthcare,Domestic Equities,9632.0,9632.0,0.0,3.0443,2.9906,1.7956262957266114,2.3959301533984,1100,acutaas-chemicals,Small Cap,Aug-2026
+133445,6416,1,Apar Industries Ltd.,Capital Goods,Capital Goods,Domestic Equities,1668.0,1668.0,0.0,2.9527,2.3932,23.378739762660867,2.32383896591645,1100,apar-industries,Mid Cap,Aug-2026
+133402,7102,1,HFCL Ltd.,Telecom,Telecom,Domestic Equities,117741.0,117741.0,0.0,2.9328,2.2832,28.451296426068662,2.30817723413817,1100,hfcl,Small Cap,Aug-2026
+134937,5507,1,Kirloskar Oil Engines Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,13182.0,13182.0,0.0,2.7674000000000003,2.8866,-4.129425621838847,2.17800384538801,1100,kirloskar-oil-engines,Small Cap,Aug-2026
+152385,6093,1,Garware Hi-Tech Films Ltd.,Plastic Products,Plastic Products,Domestic Equities,3758.0,3758.0,0.0,2.6823,2.6875,-0.1934883720930164,2.11102829893917,1100,garware-hi-tech-films,Small Cap,Aug-2026
 133621,6468,1,Astra Microwave Products Ltd.,Capital Goods,Capital Goods,Domestic Equities,16000.0,16000.0,0.0,2.6656,2.9786,-10.508292486403011,2.09788503659257,1100,astra-microwave-products,Small Cap,Aug-2026
 201312,105351,1,Avalon Technologies Ltd.,Electricals,Electricals,Domestic Equities,11199.0,11199.0,0.0,2.6579,2.0247,31.273768953425208,2.09182496952259,1100,avalon-technologies,Small Cap,Aug-2026
 204790,107779,1,Honasa Consumer Ltd.,Trading,Trading,Domestic Equities,54858.0,54858.0,0.0,2.6381,2.4661,6.974575240257892,2.07624193991404,1100,honasa-consumer,Small Cap,Aug-2026
-745,109745,1,RR Kabel Ltd.,Electricals,Electricals,Domestic Equities,8172.0,8172.0,0.0,2.3931,2.127,12.510578279266579,1.88342162405075,1100,rr-kabel,Small Cap,Aug-2026
-114673,111130,1,Inox India Ltd.,Capital Goods,Capital Goods,Domestic Equities,11147.0,11147.0,0.0,2.379,2.1268000000000002,11.858190709046454,1.8723246181174,1100,inox-india,Small Cap,Aug-2026
+745,109745,1,RR Kabel Ltd.,Electricals,Electricals,Domestic Equities,8172.0,8172.0,0.0,2.3931,2.127,12.51057827926658,1.88342162405075,1100,rr-kabel,Small Cap,Aug-2026
+114673,111130,1,Inox India Ltd.,Capital Goods,Capital Goods,Domestic Equities,11147.0,11147.0,0.0,2.379,2.1268,11.858190709046454,1.8723246181174,1100,inox-india,Small Cap,Aug-2026
 133342,5963,1,Bharat Heavy Electricals Ltd.,Capital Goods,Capital Goods,Domestic Equities,53061.0,53061.0,0.0,2.3487,2.1596,8.756251157621781,1.84847786068614,1100,bharat-heavy-electricals,Large Cap,Aug-2026
 154192,90218,1,Anand Rathi Wealth Ltd.,Finance,Finance,Domestic Equities,10517.0,10517.0,0.0,2.3182,2.1809,6.2955660507130045,1.82447369891541,1100,anand-rathi-wealth,Small Cap,Aug-2026
 177212,94646,1,Hitachi Energy India Ltd.,Capital Goods,Capital Goods,Domestic Equities,673.0,673.0,0.0,2.272,2.1654,4.92287799020966,1.78811329649547,1100,hitachi-energy-india,Large Cap,Aug-2026
-171697,5757,1,Aegis Logistics Ltd.,Trading,Trading,Domestic Equities,17873.0,17873.0,0.0,2.2602,2.2891999999999997,-1.2668181023938396,1.77882644046614,1100,aegis-logistics,Small Cap,Aug-2026
+171697,5757,1,Aegis Logistics Ltd.,Trading,Trading,Domestic Equities,17873.0,17873.0,0.0,2.2602,2.2892,-1.2668181023938396,1.77882644046614,1100,aegis-logistics,Small Cap,Aug-2026
 195442,101899,1,Syrma SGS Technology Ltd.,Electricals,Electricals,Domestic Equities,14717.0,14717.0,0.0,2.1148,2.0115,5.135471041511302,1.66439348566401,1100,syrma-sgs-technology,Small Cap,Aug-2026
 152369,6790,1,Bharat Forge Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,9864.0,9864.0,0.0,2.0763,2.1699,-4.313562836997103,1.63409315031406,1100,bharat-forge,Mid Cap,Aug-2026
 155654,90605,1,Neogen Chemicals Ltd.,Chemicals,Chemicals,Domestic Equities,9299.0,9299.0,0.0,2.0469,1.8813,8.802423855844363,1.61095471241047,1100,neogen-chemicals,Small Cap,Aug-2026
-171823,5029,1,Arvind Ltd.,Textile,Textile,Domestic Equities,35902.0,35902.0,0.0,1.9949000000000001,1.8425,8.271370420624157,1.57002958414561,1100,arvind,Small Cap,Aug-2026
-133613,5313,1,Granules India Ltd.,Healthcare,Healthcare,Domestic Equities,23927.0,23927.0,0.0,1.9824000000000002,1.9731,0.47133951649688655,1.56019181292809,1100,granules-india,Small Cap,Aug-2026
-133627,5088,1,Navin Fluorine International Ltd.,Chemicals,Chemicals,Domestic Equities,2280.0,2280.0,0.0,1.9780000000000002,1.7253999999999998,14.64008345890809,1.55672891745953,1100,navin-fluorine-international,Small Cap,Aug-2026
+171823,5029,1,Arvind Ltd.,Textile,Textile,Domestic Equities,35902.0,35902.0,0.0,1.9949,1.8425,8.271370420624157,1.57002958414561,1100,arvind,Small Cap,Aug-2026
+133613,5313,1,Granules India Ltd.,Healthcare,Healthcare,Domestic Equities,23927.0,23927.0,0.0,1.9824,1.9731,0.4713395164968865,1.56019181292809,1100,granules-india,Small Cap,Aug-2026
+133627,5088,1,Navin Fluorine International Ltd.,Chemicals,Chemicals,Domestic Equities,2280.0,2280.0,0.0,1.978,1.7253999999999998,14.64008345890809,1.55672891745953,1100,navin-fluorine-international,Small Cap,Aug-2026
 139932,15713,1,Adani Energy Solutions Ltd.,Power,Power,Domestic Equities,13938.0,13938.0,0.0,1.9756,2.2934,-13.857155315252465,1.55484006538576,1100,adani-energy-solutions,Large Cap,Aug-2026
-171829,5244,1,Thangamayil Jewellery Ltd.,Diamond  &  Jewellery,Diamond & Jewellery,Domestic Equities,3492.0,3492.0,0.0,1.8899000000000001,1.8251,3.5504903840885533,1.48739230591848,1100,thangamayil-jewellery,Small Cap,Aug-2026
-153106,112629,1,Belrise Industries Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,80733.0,80733.0,0.0,1.8758000000000001,1.9112,-1.8522394307241479,1.47629529998513,1100,belrise-industries,Small Cap,Aug-2026
+171829,5244,1,Thangamayil Jewellery Ltd.,Diamond  &  Jewellery,Diamond & Jewellery,Domestic Equities,3492.0,3492.0,0.0,1.8899,1.8251,3.5504903840885533,1.48739230591848,1100,thangamayil-jewellery,Small Cap,Aug-2026
+153106,112629,1,Belrise Industries Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,80733.0,80733.0,0.0,1.8758,1.9112,-1.852239430724148,1.47629529998513,1100,belrise-industries,Small Cap,Aug-2026
 40249,8148,1,Schneider Electric Infrastructure Ltd.,Capital Goods,Capital Goods,Domestic Equities,15043.0,15043.0,0.0,1.834,2.0388,-10.045124583088086,1.44339779303376,1100,schneider-electric-infrastructure,Small Cap,Aug-2026
 84712,89792,1,Sky Gold and Diamonds Ltd.,Diamond  &  Jewellery,Diamond & Jewellery,Domestic Equities,22444.0,22444.0,0.0,1.8115,1.4447,25.389354191181564,1.42568980484223,1100,sky-gold-and-diamonds,Small Cap,Aug-2026
 1427,98308,1,Sona BLW Precision Forgings Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,21515.0,21515.0,0.0,1.7493,1.6554,5.672345052555283,1.37673705526388,1100,sona-blw-precision-forgings,Mid Cap,Aug-2026
 861,112211,1,Sai Life Sciences Ltd.,Healthcare,Healthcare,Domestic Equities,11706.0,,,1.7087,,,1.34478397434939,1100,sai-life-sciences,Small Cap,Aug-2026
 171465,6543,1,Aurobindo Pharma Ltd.,Healthcare,Healthcare,Domestic Equities,9754.0,,,1.6747999999999998,,,1.31810393880749,1100,aurobindo-pharma,Mid Cap,Aug-2026
-191600,99819,1,FSN E-Commerce Ventures Ltd.,Retailing,Information Technology,Domestic Equities,47666.0,,,1.6662000000000001,,,1.31133555220984,1100,fsn-e-commerce-ventures,Mid Cap,Aug-2026
+191600,99819,1,FSN E-Commerce Ventures Ltd.,Retailing,Information Technology,Domestic Equities,47666.0,,,1.6662,,,1.31133555220984,1100,fsn-e-commerce-ventures,Mid Cap,Aug-2026
 96376,16986,1,SPR Auto Technologies Ltd.,Automobile & Ancillaries,Automobile & Ancillaries,Domestic Equities,3471.0,3471.0,0.0,1.5999,1.5256,4.870214997378086,1.25915601367214,1100,spr-auto-technologies,Small Cap,Aug-2026
 133623,8531,1,Radico Khaitan Ltd.,Alcohol,Alcohol,Domestic Equities,3538.0,,,1.5868,,,1.24884602943619,1100,radico-khaitan,Mid Cap,Aug-2026
 171685,5596,1,The Federal Bank Ltd.,Bank,Banking,Domestic Equities,44066.0,,,1.5718,,,1.23704070397517,1100,the-federal-bank,Mid Cap,Aug-2026
@@ -47,8 +96,8 @@ CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,
 152331,7581,1,Torrent Pharmaceuticals Ltd.,Healthcare,Healthcare,Domestic Equities,2996.0,2996.0,0.0,1.5178,1.5348,-1.1076361740943372,1.1945415323155,1100,torrent-pharmaceuticals,Large Cap,Aug-2026
 20865,87606,1,Aster DM Quality Care Ltd.,Healthcare,Healthcare,Domestic Equities,18703.0,,,1.4139,,,1.11276997795552,1100,aster-dm-quality-care,Mid Cap,Aug-2026
 133403,4970,1,Himadri Speciality Chemical Ltd.,Chemicals,Chemicals,Domestic Equities,20462.0,20462.0,0.0,1.3488999999999998,1.536,-12.18098958333334,1.06161356762445,1100,himadri-speciality-chemical,Small Cap,Aug-2026
-38708,8062,1,Adani Power Ltd.,Power,Power,Domestic Equities,61345.0,85885.0,-28.573091925248878,1.2146,1.8148,-33.07251487767247,0.955916553663468,1100,adani-power,Large Cap,Aug-2026
-56635,7585,1,Cemindia Projects Ltd.,Infrastructure,Infrastructure,Domestic Equities,9484.0,9484.0,0.0,1.1623999999999999,1.2972,-10.391612704286159,0.914834021059127,1100,cemindia-projects,Small Cap,Aug-2026
+38708,8062,1,Adani Power Ltd.,Power,Power,Domestic Equities,61345.0,85885.0,-28.57309192524888,1.2146,1.8148,-33.07251487767247,0.955916553663468,1100,adani-power,Large Cap,Aug-2026
+56635,7585,1,Cemindia Projects Ltd.,Infrastructure,Infrastructure,Domestic Equities,9484.0,9484.0,0.0,1.1624,1.2972,-10.39161270428616,0.914834021059127,1100,cemindia-projects,Small Cap,Aug-2026
 533,7363,1,Religare Enterprises Ltd.,Finance,Finance,Domestic Equities,410000.0,410000.0,0.0,11.0807,9.7396,13.769559324818257,8.39506752753605,1100,religare-enterprises,Small Cap,Jun-2026
 201312,105351,1,Avalon Technologies Ltd.,Electricals,Electricals,Domestic Equities,28027.0,28027.0,0.0,5.0502,4.2615,18.50756775783175,3.82618156141422,1100,avalon-technologies,Small Cap,Jun-2026
 114673,111130,1,Inox India Ltd.,Capital Goods,Capital Goods,Domestic Equities,25730.0,25730.0,0.0,5.039,3.843,31.121519646109803,3.81769610866228,1100,inox-india,Small Cap,Jun-2026
@@ -56,7 +105,7 @@ CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,
 75659,6055,1,Lloyds Metals & Energy Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,24161.0,24161.0,0.0,4.3741,4.3541,0.4593371764543763,3.31394811448694,1100,lloyds-metals-energy,Mid Cap,Jun-2026
 38708,8062,1,Adani Power Ltd.,Power,Power,Domestic Equities,189938.0,189938.0,0.0,4.2502,4.6225,-8.05408328826393,3.22007779341862,1100,adani-power,Large Cap,Jun-2026
 171685,5596,1,The Federal Bank Ltd.,Bank,Banking,Domestic Equities,124791.0,124791.0,0.0,4.1187000000000005,3.6058,14.224305285928232,3.12044948655435,1100,the-federal-bank,Mid Cap,Jun-2026
-133445,6416,1,Apar Industries Ltd.,Capital Goods,Capital Goods,Domestic Equities,2609.0,2609.0,0.0,4.0948,3.4225,19.643535427319215,3.10234213648548,1100,apar-industries,Mid Cap,Jun-2026
+133445,6416,1,Apar Industries Ltd.,Capital Goods,Capital Goods,Domestic Equities,2609.0,2609.0,0.0,4.0948,3.4225,19.64353542731921,3.10234213648548,1100,apar-industries,Mid Cap,Jun-2026
 133179,8686,1,Diamond Power Infrastructure Ltd.,Electricals,Electricals,Domestic Equities,185437.0,185437.0,0.0,3.8819,3.6032,7.734791296625223,2.94104277122765,1100,diamond-power-infrastructure,Small Cap,Jun-2026
 152362,5226,1,Tata Steel Ltd.,Iron & Steel,Iron & Steel,Domestic Equities,202219.0,202219.0,0.0,3.8029,4.2066,-9.596824038415823,2.88119002413808,1100,tata-steel,Large Cap,Jun-2026
 171403,76579,1,Equitas Small Finance Bank Ltd.,Bank,Banking,Domestic Equities,502008.0,502008.0,0.0,3.7856,3.5246,7.405095613686666,2.86808303015518,1100,equitas-small-finance-bank,Small Cap,Jun-2026

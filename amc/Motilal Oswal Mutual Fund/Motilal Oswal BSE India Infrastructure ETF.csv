@@ -1,32 +1,62 @@
 CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,Type,NoOfShare,PrevNoOfShare,SharesZG,MarketValue,PrevMarketValue,MarketValueZG,HoldingPercentage,Priority,SecuritySlug,McapCategory,Month
-152372,4964,1,Larsen & Toubro Ltd.,Infrastructure,Infrastructure,Domestic Equities,770.0,769.0,0.13003901170351106,0.30329999999999996,0.3187,-4.832130530279268,9.88495257960434,1100,larsen-toubro,Large Cap,Jul-2026
-539,7794,1,Adani Ports and Special Economic Zone Ltd.,Logistics,Logistics,Domestic Equities,1578.0,1577.0,0.06341154090044387,0.2682,0.28550000000000003,-6.059544658493872,8.74099664309227,1100,adani-ports-and-special-economic-zone,Large Cap,Jul-2026
-133664,7760,1,NTPC Ltd.,Power,Power,Domestic Equities,7544.0,7539.0,0.06632179334129194,0.2619,0.26899999999999996,-2.6394052044609566,8.5356712185901,1100,ntpc,Large Cap,Jul-2026
+152372,4964,1,Larsen & Toubro Ltd.,Infrastructure,Infrastructure,Domestic Equities,822.0,840.0,-2.142857142857143,0.30870000000000003,0.3385,-8.803545051698672,9.86325004792639,1100,larsen-toubro,Large Cap,Sep-2026
+539,7794,1,Adani Ports and Special Economic Zone Ltd.,Logistics,Logistics,Domestic Equities,1646.0,1722.0,-4.413472706155633,0.294,0.2815,4.440497335701599,9.39357147421561,1100,adani-ports-and-special-economic-zone,Large Cap,Sep-2026
+133664,7760,1,NTPC Ltd.,Power,Power,Domestic Equities,8069.0,8233.0,-1.9919834811125956,0.25980000000000003,0.2698,-3.7064492216456637,8.30084989456195,1100,ntpc,Large Cap,Sep-2026
+96486,15829,1,Interglobe Aviation Ltd.,Aviation,Aviation,Domestic Equities,471.0,524.0,-10.114503816793894,0.2346,0.2716,-13.622974963181145,7.49568662534347,1100,interglobe-aviation,Large Cap,Sep-2026
+517,7825,1,Power Grid Corporation Of India Ltd.,Power,Power,Domestic Equities,7739.0,7897.0,-2.0007597821957703,0.2016,0.2086,-3.3557046979865737,6.44130615374784,1100,power-grid-corporation-of-india,Large Cap,Sep-2026
+171520,5812,1,Kalpataru Projects International Ltd.,Infrastructure,Infrastructure,Domestic Equities,1336.0,1145.0,16.681222707423583,0.18460000000000001,0.1609,14.729645742697334,5.89814045625919,1100,kalpataru-projects-international,Small Cap,Sep-2026
+152256,5774,1,Oil & Natural Gas Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,8200.0,9110.0,-9.989023051591657,0.1845,0.2114,-12.724692526017034,5.89494536392102,1100,oil-natural-gas-corporation,Large Cap,Sep-2026
+38708,8062,1,Adani Power Ltd.,Power,Power,Domestic Equities,7205.0,7017.0,2.6792076385919907,0.1469,0.1394,5.380200860832137,4.69359064476963,1100,adani-power,Large Cap,Sep-2026
+756,88308,1,Rail Vikas Nigam Ltd.,Infrastructure,Infrastructure,Domestic Equities,6675.0,5721.0,16.67540639748296,0.1348,0.1201,12.2398001665279,4.30698447185124,1100,rail-vikas-nigam,Mid Cap,Sep-2026
+152316,5915,1,Tata Power Company Ltd.,Power,Power,Domestic Equities,2821.0,2879.0,-2.0145883987495656,0.1013,0.1002,1.097804391217577,3.23662853856476,1100,tata-power-company,Large Cap,Sep-2026
+152604,5456,1,Power Finance Corporation Ltd.,Finance,Finance,Domestic Equities,3053.0,3392.0,-9.994103773584905,0.09949999999999999,0.1174,-15.247018739352647,3.17911687647773,1100,power-finance-corporation,Large Cap,Sep-2026
+171741,5431,1,GAIL (India) Ltd.,Gas Transmission,Gas Transmission,Domestic Equities,5668.0,6297.0,-9.988883595362871,0.0968,0.10890000000000001,-11.11111111111112,3.09284938334718,1100,gail-india,Large Cap,Sep-2026
+152719,5290,1,NBCC (India) Ltd.,Capital Goods,Other,Domestic Equities,12167.0,10426.0,16.69863802033378,0.0956,0.0895,6.815642458100572,3.05450827528916,1100,nbcc-india,Small Cap,Sep-2026
+645,8087,1,IRB Infrastructure Developers Ltd.,Infrastructure,Infrastructure,Domestic Equities,45832.0,40503.0,13.157050095054688,0.0801,0.0784,2.168367346938775,2.55926896287303,1100,irb-infrastructure-developers,Small Cap,Sep-2026
+171943,4973,1,REC Ltd.,Finance,Finance,Domestic Equities,2602.0,2891.0,-9.996540989277067,0.0779,0.0911,-14.489571899012068,2.48897693143332,1100,rec,Mid Cap,Sep-2026
+84351,88646,1,Adani Green Energy Ltd.,Power,Power,Domestic Equities,559.0,571.0,-2.1015761821366024,0.07139999999999999,0.0695,2.7338129496402805,2.28129592945236,1100,adani-green-energy,Large Cap,Sep-2026
+152551,7908,1,GMR Airports Ltd.,Infrastructure,Aviation,Domestic Equities,7326.0,8386.0,-12.640114476508465,0.0696,0.0787,-11.562897077509533,2.22378426736533,1100,gmr-airports,Mid Cap,Sep-2026
+152241,8254,1,NCC Ltd.,Infrastructure,Infrastructure,Domestic Equities,4764.0,4147.0,14.87822522305281,0.061399999999999996,0.061500000000000006,-0.16260162601627112,1.9617866956355,1100,ncc,Small Cap,Sep-2026
+152513,6479,1,KEC International Ltd.,Infrastructure,Infrastructure,Domestic Equities,1546.0,1325.0,16.67924528301887,0.0584,0.0552,5.797101449275368,1.86593392549045,1100,kec-international,Small Cap,Sep-2026
+114697,5402,1,JSW Energy Ltd.,Power,Power,Domestic Equities,1027.0,944.0,8.792372881355933,0.050499999999999996,0.049800000000000004,1.405622489959827,1.61352163077513,1100,jsw-energy,Mid Cap,Sep-2026
+677,6026,1,Oil India Ltd.,Crude Oil,Crude Oil,Domestic Equities,1128.0,1254.0,-10.047846889952153,0.0504,0.0603,-16.417910447761198,1.61032653843696,1100,oil-india,Mid Cap,Sep-2026
+153586,8183,1,NHPC Ltd.,Power,Power,Domestic Equities,6311.0,5396.0,16.95700518902891,0.046,0.0405,13.580246913580243,1.46974247555754,1100,nhpc,Mid Cap,Sep-2026
+78882,109773,1,JSW Infrastructure Ltd.,Logistics,Logistics,Domestic Equities,1273.0,,,0.0454,,,1.45057192152853,1100,jsw-infrastructure,Mid Cap,Sep-2026
+152574,8059,1,Torrent Power Ltd.,Power,Power,Domestic Equities,325.0,332.0,-2.108433734939759,0.0405,0.0403,0.49627791563274376,1.29401239695827,1100,torrent-power,Mid Cap,Sep-2026
+58145,71025,1,Indian Railway Finance Corporation Ltd.,Finance,Finance,Domestic Equities,4670.0,4274.0,9.265325222274216,0.0369,0.0356,3.651685393258424,1.1789890727842,1100,indian-railway-finance-corporation,Large Cap,Sep-2026
+152380,4958,1,The Great Eastern Shipping Company Ltd.,Logistics,Logistics,Domestic Equities,213.0,237.0,-10.126582278481013,0.0332,0.030899999999999997,7.443365695792881,1.06077065627197,1100,the-great-eastern-shipping-company,Small Cap,Sep-2026
+114654,92672,1,Indian Renewable Energy Development Agency Ltd.,Finance,Finance,Domestic Equities,1653.0,,,0.0184,,,0.587896990223017,1100,indian-renewable-energy-development-agency,Mid Cap,Sep-2026
+115032,83788,1,Housing & Urban Development Corporation Ltd.,Finance,Finance,Domestic Equities,1052.0,,,0.0175,,,0.5591411591795,1100,housing-urban-development-corporation,Mid Cap,Sep-2026
+133327,6870,1,CESC Ltd.,Power,Power,Domestic Equities,1057.0,1080.0,-2.1296296296296298,0.0141,0.0158,-10.759493670886085,0.450508019681769,1100,cesc,Small Cap,Sep-2026
+114515,6989,1,Gujarat Pipavav Port Ltd.,Logistics,Logistics,Domestic Equities,568.0,632.0,-10.126582278481013,0.0095,0.0106,-10.377358490566046,0.303533772126014,1100,gujarat-pipavav-port,Small Cap,Sep-2026
+152372,4964,1,Larsen & Toubro Ltd.,Infrastructure,Infrastructure,Domestic Equities,770.0,769.0,0.130039011703511,0.3032999999999999,0.3187,-4.832130530279268,9.88495257960434,1100,larsen-toubro,Large Cap,Jul-2026
+539,7794,1,Adani Ports and Special Economic Zone Ltd.,Logistics,Logistics,Domestic Equities,1578.0,1577.0,0.0634115409004438,0.2682,0.2855,-6.059544658493872,8.74099664309227,1100,adani-ports-and-special-economic-zone,Large Cap,Jul-2026
+133664,7760,1,NTPC Ltd.,Power,Power,Domestic Equities,7544.0,7539.0,0.0663217933412919,0.2619,0.2689999999999999,-2.6394052044609566,8.5356712185901,1100,ntpc,Large Cap,Jul-2026
 96486,15829,1,Interglobe Aviation Ltd.,Aviation,Aviation,Domestic Equities,480.0,480.0,0.0,0.2482,0.2577,-3.686457120682962,8.08916989864094,1100,interglobe-aviation,Large Cap,Jul-2026
-517,7825,1,Power Grid Corporation Of India Ltd.,Power,Power,Domestic Equities,7236.0,7231.0,0.06914672935970129,0.2057,0.207,-0.6280193236714928,6.70403806668188,1100,power-grid-corporation-of-india,Large Cap,Jul-2026
-152256,5774,1,Oil & Natural Gas Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,8348.0,8341.0,0.08392279103225032,0.2024,0.1959,3.318019397651856,6.59648665384741,1100,oil-natural-gas-corporation,Large Cap,Jul-2026
-38708,8062,1,Adani Power Ltd.,Power,Power,Domestic Equities,6430.0,6426.0,0.06224712107065049,0.1359,0.1437,-5.42797494780793,4.42916272854675,1100,adani-power,Large Cap,Jul-2026
-171520,5812,1,Kalpataru Projects International Ltd.,Infrastructure,Infrastructure,Domestic Equities,1050.0,1049.0,0.09532888465204957,0.13390000000000002,0.1437,-6.819763395963804,4.36398005410162,1100,kalpataru-projects-international,Small Cap,Jul-2026
-152604,5456,1,Power Finance Corporation Ltd.,Finance,Finance,Domestic Equities,3108.0,3106.0,0.0643915003219575,0.1319,0.1318,0.07587253414263875,4.29879737965649,1100,power-finance-corporation,Large Cap,Jul-2026
-756,88308,1,Rail Vikas Nigam Ltd.,Infrastructure,Infrastructure,Domestic Equities,5242.0,5238.0,0.07636502481863307,0.1182,0.12359999999999999,-4.368932038834945,3.85229605970733,1100,rail-vikas-nigam,Mid Cap,Jul-2026
+517,7825,1,Power Grid Corporation Of India Ltd.,Power,Power,Domestic Equities,7236.0,7231.0,0.0691467293597012,0.2057,0.207,-0.6280193236714928,6.70403806668188,1100,power-grid-corporation-of-india,Large Cap,Jul-2026
+152256,5774,1,Oil & Natural Gas Corporation Ltd.,Crude Oil,Crude Oil,Domestic Equities,8348.0,8341.0,0.0839227910322503,0.2024,0.1959,3.318019397651856,6.59648665384741,1100,oil-natural-gas-corporation,Large Cap,Jul-2026
+38708,8062,1,Adani Power Ltd.,Power,Power,Domestic Equities,6430.0,6426.0,0.0622471210706504,0.1359,0.1437,-5.42797494780793,4.42916272854675,1100,adani-power,Large Cap,Jul-2026
+171520,5812,1,Kalpataru Projects International Ltd.,Infrastructure,Infrastructure,Domestic Equities,1050.0,1049.0,0.0953288846520495,0.1339,0.1437,-6.819763395963804,4.36398005410162,1100,kalpataru-projects-international,Small Cap,Jul-2026
+152604,5456,1,Power Finance Corporation Ltd.,Finance,Finance,Domestic Equities,3108.0,3106.0,0.0643915003219575,0.1319,0.1318,0.0758725341426387,4.29879737965649,1100,power-finance-corporation,Large Cap,Jul-2026
+756,88308,1,Rail Vikas Nigam Ltd.,Infrastructure,Infrastructure,Domestic Equities,5242.0,5238.0,0.076365024818633,0.1182,0.1235999999999999,-4.368932038834945,3.85229605970733,1100,rail-vikas-nigam,Mid Cap,Jul-2026
 171741,5431,1,GAIL (India) Ltd.,Gas Transmission,Gas Transmission,Domestic Equities,5770.0,5766.0,0.0693721817551162,0.1047,0.1002,4.491017964071867,3.41231300720269,1100,gail-india,Large Cap,Jul-2026
-152316,5915,1,Tata Power Company Ltd.,Power,Power,Domestic Equities,2638.0,2636.0,0.07587253414264036,0.10039999999999999,0.1017,-1.2782694198623479,3.27217025714565,1100,tata-power-company,Large Cap,Jul-2026
-171943,4973,1,REC Ltd.,Finance,Finance,Domestic Equities,2649.0,2647.0,0.07555723460521345,0.0989,0.09630000000000001,2.6998961578400804,3.2232832513118,1100,rec,Mid Cap,Jul-2026
-152719,5290,1,NBCC (India) Ltd.,Capital Goods,Other,Domestic Equities,9554.0,9547.0,0.07332146223944694,0.0906,0.1001,-9.490509490509485,2.9527751523645,1100,nbcc-india,Small Cap,Jul-2026
-152551,7908,1,GMR Airports Ltd.,Infrastructure,Aviation,Domestic Equities,7684.0,7679.0,0.06511264487563485,0.0809,0.0861,-6.03948896631823,2.63663918130561,1100,gmr-airports,Mid Cap,Jul-2026
-645,8087,1,IRB Infrastructure Developers Ltd.,Infrastructure,Infrastructure,Domestic Equities,37114.0,37087.0,0.07280179038477094,0.0742,0.0795,-6.66666666666667,2.41827722191442,1100,irb-infrastructure-developers,Small Cap,Jul-2026
+152316,5915,1,Tata Power Company Ltd.,Power,Power,Domestic Equities,2638.0,2636.0,0.0758725341426403,0.1003999999999999,0.1017,-1.278269419862348,3.27217025714565,1100,tata-power-company,Large Cap,Jul-2026
+171943,4973,1,REC Ltd.,Finance,Finance,Domestic Equities,2649.0,2647.0,0.0755572346052134,0.0989,0.0963,2.6998961578400804,3.2232832513118,1100,rec,Mid Cap,Jul-2026
+152719,5290,1,NBCC (India) Ltd.,Capital Goods,Other,Domestic Equities,9554.0,9547.0,0.0733214622394469,0.0906,0.1001,-9.490509490509483,2.9527751523645,1100,nbcc-india,Small Cap,Jul-2026
+152551,7908,1,GMR Airports Ltd.,Infrastructure,Aviation,Domestic Equities,7684.0,7679.0,0.0651126448756348,0.0809,0.0861,-6.03948896631823,2.63663918130561,1100,gmr-airports,Mid Cap,Jul-2026
+645,8087,1,IRB Infrastructure Developers Ltd.,Infrastructure,Infrastructure,Domestic Equities,37114.0,37087.0,0.0728017903847709,0.0742,0.0795,-6.66666666666667,2.41827722191442,1100,irb-infrastructure-developers,Small Cap,Jul-2026
 84351,88646,1,Adani Green Energy Ltd.,Power,Power,Domestic Equities,523.0,523.0,0.0,0.0723,0.078,-7.3076923076922995,2.35635368119154,1100,adani-green-energy,Large Cap,Jul-2026
-152513,6479,1,KEC International Ltd.,Infrastructure,Infrastructure,Domestic Equities,1215.0,1214.0,0.08237232289950577,0.057,0.0633,-9.952606635071088,1.85770622168628,1100,kec-international,Small Cap,Jul-2026
-152241,8254,1,NCC Ltd.,Infrastructure,Infrastructure,Domestic Equities,3800.0,3797.0,0.07900974453515934,0.0536,0.0562,-4.62633451957295,1.74689567512955,1100,ncc,Small Cap,Jul-2026
-677,6026,1,Oil India Ltd.,Crude Oil,Crude Oil,Domestic Equities,1149.0,1148.0,0.08710801393728224,0.0527,0.0479,10.02087682672233,1.71756347162924,1100,oil-india,Mid Cap,Jul-2026
-114697,5402,1,JSW Energy Ltd.,Power,Power,Domestic Equities,865.0,864.0,0.11574074074074073,0.048,0.0504,-4.761904761904765,1.56438418668318,1100,jsw-energy,Mid Cap,Jul-2026
+152513,6479,1,KEC International Ltd.,Infrastructure,Infrastructure,Domestic Equities,1215.0,1214.0,0.0823723228995057,0.057,0.0633,-9.952606635071088,1.85770622168628,1100,kec-international,Small Cap,Jul-2026
+152241,8254,1,NCC Ltd.,Infrastructure,Infrastructure,Domestic Equities,3800.0,3797.0,0.0790097445351593,0.0536,0.0562,-4.62633451957295,1.74689567512955,1100,ncc,Small Cap,Jul-2026
+677,6026,1,Oil India Ltd.,Crude Oil,Crude Oil,Domestic Equities,1149.0,1148.0,0.0871080139372822,0.0527,0.0479,10.02087682672233,1.71756347162924,1100,oil-india,Mid Cap,Jul-2026
+114697,5402,1,JSW Energy Ltd.,Power,Power,Domestic Equities,865.0,864.0,0.1157407407407407,0.048,0.0504,-4.761904761904765,1.56438418668318,1100,jsw-energy,Mid Cap,Jul-2026
 152574,8059,1,Torrent Power Ltd.,Power,Power,Domestic Equities,304.0,304.0,0.0,0.043,0.043,0.0,1.40142750057035,1100,torrent-power,Mid Cap,Jul-2026
-153586,8183,1,NHPC Ltd.,Power,Power,Domestic Equities,4944.0,4941.0,0.060716454159077116,0.038900000000000004,0.04019999999999999,-3.233830845771131,1.26780301795783,1100,nhpc,Mid Cap,Jul-2026
-152106,69868,1,Ircon International Ltd.,Infrastructure,Infrastructure,Domestic Equities,3065.0,3063.0,0.0652954619653934,0.038599999999999995,0.04019999999999999,-3.980099502487555,1.25802561679106,1100,ircon-international,Small Cap,Jul-2026
-58145,71025,1,Indian Railway Finance Corporation Ltd.,Finance,Finance,Domestic Equities,3916.0,3913.0,0.07666751852798365,0.0349,0.0354,-1.4124293785310684,1.13743766906756,1100,indian-railway-finance-corporation,Large Cap,Jul-2026
-152380,4958,1,The Great Eastern Shipping Company Ltd.,Logistics,Logistics,Domestic Equities,217.0,217.0,0.0,0.029300000000000003,0.0322,-9.006211180124224,0.954926180621191,1100,the-great-eastern-shipping-company,Small Cap,Jul-2026
-133327,6870,1,CESC Ltd.,Power,Power,Domestic Equities,989.0,989.0,0.0,0.016399999999999998,0.0167,-1.7964071856287442,0.534497930450086,1100,cesc,Small Cap,Jul-2026
-636,7344,1,Reliance Power Ltd.,Power,Power,Domestic Equities,4597.0,4593.0,0.08708904855214457,0.0108,0.011399999999999999,-5.263157894736828,0.351986442003715,1100,reliance-power,Small Cap,Jul-2026
+153586,8183,1,NHPC Ltd.,Power,Power,Domestic Equities,4944.0,4941.0,0.0607164541590771,0.0389,0.0401999999999999,-3.233830845771131,1.26780301795783,1100,nhpc,Mid Cap,Jul-2026
+152106,69868,1,Ircon International Ltd.,Infrastructure,Infrastructure,Domestic Equities,3065.0,3063.0,0.0652954619653934,0.0385999999999999,0.0401999999999999,-3.980099502487555,1.25802561679106,1100,ircon-international,Small Cap,Jul-2026
+58145,71025,1,Indian Railway Finance Corporation Ltd.,Finance,Finance,Domestic Equities,3916.0,3913.0,0.0766675185279836,0.0349,0.0354,-1.4124293785310684,1.13743766906756,1100,indian-railway-finance-corporation,Large Cap,Jul-2026
+152380,4958,1,The Great Eastern Shipping Company Ltd.,Logistics,Logistics,Domestic Equities,217.0,217.0,0.0,0.0293,0.0322,-9.006211180124224,0.954926180621191,1100,the-great-eastern-shipping-company,Small Cap,Jul-2026
+133327,6870,1,CESC Ltd.,Power,Power,Domestic Equities,989.0,989.0,0.0,0.0163999999999999,0.0167,-1.7964071856287442,0.534497930450086,1100,cesc,Small Cap,Jul-2026
+636,7344,1,Reliance Power Ltd.,Power,Power,Domestic Equities,4597.0,4593.0,0.0870890485521445,0.0108,0.0113999999999999,-5.263157894736828,0.351986442003715,1100,reliance-power,Small Cap,Jul-2026
 114515,6989,1,Gujarat Pipavav Port Ltd.,Logistics,Logistics,Domestic Equities,579.0,579.0,0.0,0.0087,0.0088,-1.1363636363636374,0.283544633836326,1100,gujarat-pipavav-port,Small Cap,Jul-2026
 133664,7760,1,NTPC Ltd.,Power,Power,Domestic Equities,6806.0,5152.0,32.10403726708074,0.2525,0.1967,28.36807320793085,9.93234206592715,1100,ntpc,Large Cap,Mar-2026
 152372,4964,1,Larsen & Toubro Ltd.,Infrastructure,Infrastructure,Domestic Equities,694.0,535.0,29.719626168224305,0.2432,0.2289999999999999,6.200873362445423,9.56651718983558,1100,larsen-toubro,Large Cap,Mar-2026
@@ -39,11 +69,11 @@ CompanyID,SecurityID,MfSchemeAssetAllocationID,Name,SectorName,EquitySectorName,
 171520,5812,1,Kalpataru Projects International Ltd.,Infrastructure,Infrastructure,Domestic Equities,947.0,552.0,71.55797101449275,0.1001,0.0682,46.77419354838709,3.93753441900716,1100,kalpataru-projects-international,Small Cap,Mar-2026
 152316,5915,1,Tata Power Company Ltd.,Power,Power,Domestic Equities,2380.0,1802.0,32.075471698113205,0.0901,0.068,32.5,3.54417433718826,1100,tata-power-company,Large Cap,Mar-2026
 38708,8062,1,Adani Power Ltd.,Power,Power,Domestic Equities,5801.0,4183.0,38.68037293808271,0.0873,0.0586,48.97610921501707,3.43403351427897,1100,adani-power,Large Cap,Mar-2026
-645,8087,1,IRB Infrastructure Developers Ltd.,Infrastructure,Infrastructure,Domestic Equities,33484.0,9753.0,243.32000410130215,0.074,0.0407,81.81818181818181,2.91086460545984,1100,irb-infrastructure-developers,Small Cap,Mar-2026
+645,8087,1,IRB Infrastructure Developers Ltd.,Infrastructure,Infrastructure,Domestic Equities,33484.0,9753.0,243.32000410130212,0.074,0.0407,81.81818181818181,2.91086460545984,1100,irb-infrastructure-developers,Small Cap,Mar-2026
 171943,4973,1,REC Ltd.,Finance,Finance,Domestic Equities,2390.0,1673.0,42.85714285714285,0.0729,0.0586,24.40273037542661,2.86759499645976,1100,rec,Mid Cap,Mar-2026
 171741,5431,1,GAIL (India) Ltd.,Gas Transmission,Gas Transmission,Domestic Equities,5206.0,3645.0,42.82578875171468,0.0717,0.0619,15.831987075928913,2.82039178664149,1100,gail-india,Large Cap,Mar-2026
 152719,5290,1,NBCC (India) Ltd.,Capital Goods,Other,Domestic Equities,8619.0,5021.0,71.65903206532563,0.0668,0.0466,43.34763948497853,2.62764534655023,1100,nbcc-india,Small Cap,Mar-2026
-152551,7908,1,GMR Airports Ltd.,Infrastructure,Aviation,Domestic Equities,6933.0,4854.0,42.83065512978986,0.0587,0.0489,20.040899795501037,2.30902368027693,1100,gmr-airports,Mid Cap,Mar-2026
+152551,7908,1,GMR Airports Ltd.,Infrastructure,Aviation,Domestic Equities,6933.0,4854.0,42.83065512978986,0.0587,0.0489,20.04089979550104,2.30902368027693,1100,gmr-airports,Mid Cap,Mar-2026
 152513,6479,1,KEC International Ltd.,Infrastructure,Infrastructure,Domestic Equities,1096.0,638.0,71.78683385579937,0.0561,0.0374,50.0,2.20675005900401,1100,kec-international,Small Cap,Mar-2026
 677,6026,1,Oil India Ltd.,Crude Oil,Crude Oil,Domestic Equities,1037.0,726.0,42.837465564738295,0.0493,0.0351,40.45584045584046,1.93926520336716,1100,oil-india,Mid Cap,Mar-2026
 152241,8254,1,NCC Ltd.,Infrastructure,Infrastructure,Domestic Equities,3428.0,1997.0,71.65748622934402,0.0449,0.0305,47.21311475409838,1.76618676736685,1100,ncc,Small Cap,Mar-2026
